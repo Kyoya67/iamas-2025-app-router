@@ -66,8 +66,8 @@ export default function Modal() {
                 </button>
 
                 <div
-                    className="text-[#000f9f] text-left absolute top-32"
-                    style={{ left: 'clamp(1.25rem, 8vw + 0.5rem, 2rem)' }}
+                    className="text-[#000f9f] text-left absolute top-[6rem]"
+                    style={{ left: 'clamp(1.25rem, 5vw, 2rem)' }}
                 >
                     <div style={{ fontSize: 'clamp(0.875rem, 0.3vw + 1rem, 1.5rem)' }}>
                         情報科学芸術大学院大学<br></br>
@@ -75,7 +75,7 @@ export default function Modal() {
                         プロジェクト研究発表会<br></br>
                     </div>
 
-                    <div className="mt-10 text-xs">
+                    <div className="mt-5 text-xs">
                         2/21 (Fri) - 2/24 (Mon)<br></br>
                         10:00 - 17:00<br></br>
                         <br></br>
@@ -84,7 +84,7 @@ export default function Modal() {
 
                     <div className="mt-5 border-b border-[#000f9f]"></div>
 
-                    <ul className="mt-10">
+                    <ul className="mt-5">
                         <li><Link href="/overview" onClick={closeMenu}>開催概要</Link></li>
                         <li><Link href="/master" onClick={closeMenu}>修士研究発表会</Link></li>
                         <li><Link href="/exhibition" onClick={closeMenu}>関連展示</Link></li>
@@ -93,9 +93,9 @@ export default function Modal() {
                         <li><Link href="/contact" onClick={closeMenu}>お問い合わせ</Link></li>
                     </ul>
 
-                    <div className="mt-10 border-b border-[#000f9f]"></div>
+                    <div className="mt-5 border-b border-[#000f9f]"></div>
 
-                    <ul className="mt-10">
+                    <ul className="mt-5">
                         <li><Link target="_blank" href="https://x.com/iamas_exhibit">X (旧Twitter)</Link></li>
                         <li><Link target="_blank" href="https://www.youtube.com/@iamas-exhibit">YouTube</Link></li>
                         <li><Link target="_blank" href="https://note.com/iamas_exhibit">note</Link></li>
