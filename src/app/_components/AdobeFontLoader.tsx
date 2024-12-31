@@ -10,7 +10,9 @@ export default function AdobeFontLoader() {
             onLoad={() => {
                 try {
                     // Adobe Fontsの初期化
-                    (window as any).Typekit.load();
+                    if (typeof window !== "undefined" && window.Typekit) {
+                        window.Typekit.load();
+                    }
                 } catch (e) {
                     console.error("Failed to load Adobe Fonts:", e);
                 }
