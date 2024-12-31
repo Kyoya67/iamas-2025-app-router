@@ -2,6 +2,8 @@ import Image from "next/image";
 import AdobeFontLoader from "./_components/AdobeFontLoader";
 import "./globals.css";
 import Modal from "./_components/Modal";
+import Icon from "./_components/Icon";
+
 export const metadata = {
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   description: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
@@ -57,16 +59,7 @@ export default function RootLayout({
               objectFit="cover"
               className="absolute top-0 left-0"
             />
-            <Image
-              src="/webP_mobile/icon.webp"
-              alt="アイコン"
-              layout="intrinsic"
-              width={140}
-              height={280}
-              objectFit="cover"
-              className="absolute top-2 left-2"
-              style={{ zIndex: 2 }}
-            />
+            <Icon />
           </div>
           {children}
           <Modal />
