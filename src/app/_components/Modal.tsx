@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { useModal } from "../_contexts/ModalContext";
 import Link from "next/link";
 import Image from "next/image";
@@ -18,6 +19,14 @@ export default function Modal() {
     const closeMenu = () => {
         closeModal();
     };
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    }, [isOpen]);
 
     return (
         <>
