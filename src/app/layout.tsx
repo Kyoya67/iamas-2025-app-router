@@ -4,6 +4,8 @@ import "./globals.css";
 import Modal from "./_components/Modal";
 import Icon from "./_components/Icon";
 import { ModalProvider } from "./_contexts/ModalContext";
+import { motion, AnimatePresence } from "framer-motion";
+import PageTransition from "./_components/PageTransition";
 
 export const metadata = {
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
@@ -63,7 +65,9 @@ export default function RootLayout({
               />
               <Icon />
             </div>
-            {children}
+            <PageTransition>
+              {children}
+            </PageTransition>
             <Modal />
           </div>
         </body>

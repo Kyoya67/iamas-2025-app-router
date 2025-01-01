@@ -71,6 +71,7 @@ export default function Modal() {
                     </button>
 
                     <div className="text-[#000f9f] text-left text-lg absolute top-32 left-10">
+
                         情報科学芸術大学院大学<br></br>
                         23期生修了研究発表会・<br></br>
                         プロジェクト研究発表会<br></br>
@@ -85,6 +86,12 @@ export default function Modal() {
                         <div className="mt-5 border-b border-[#000f9f]"></div>
 
                         <ul className="mt-10">
+                            <div className="mb-3 mr-2">
+                                <Link href="/" className="flex items-center" onClick={closeMenu}>
+                                    <div className="w-3 h-3 bg-[#000f9f]"></div>
+                                    <span className="ml-2">ホームへ戻る</span>
+                                </Link>
+                            </div>
                             <li><Link href="/overview" onClick={closeMenu}>開催概要</Link></li>
                             <li><Link href="/master" onClick={closeMenu}>修士研究発表会</Link></li>
                             <li><Link href="/exhibition" onClick={closeMenu}>関連展示</Link></li>
@@ -102,7 +109,6 @@ export default function Modal() {
                             <li><Link target="_blank" href="https://www.instagram.com/iamas_exhibit/" onClick={closeMenu}>Instagram</Link></li>
                             <li><Link target="_blank" href="https://www.facebook.com/IAMAS.GraduationExhibition/" onClick={closeMenu}>Facebook</Link></li>
                         </ul>
-                        <li className="mt-5"><Link href="/" onClick={closeMenu}>ホームへ戻る</Link></li>
                     </div>
                 </div>
             </div>
