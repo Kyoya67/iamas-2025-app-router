@@ -3,6 +3,7 @@ import AdobeFontLoader from "./_components/AdobeFontLoader";
 import "./globals.css";
 import Modal from "./_components/Modal";
 import Icon from "./_components/Icon";
+import { ModalProvider } from "./_contexts/ModalContext";
 
 export const metadata = {
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
@@ -37,34 +38,36 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <AdobeFontLoader />
-        <div className="overflow-y-auto relative">
-          <div className="relative w-full" style={{ height: "auto" }}>
-            <Image
-              src="/webP_mobile/base.webp"
-              alt="下地"
-              layout="responsive"
-              width={100}
-              height={200}
-              objectFit="cover"
-            />
-            <Image
-              src="/webP_mobile/scan.webp"
-              alt="スキャン"
-              layout="responsive"
-              width={100}
-              height={200}
-              objectFit="cover"
-              className="absolute top-0 left-0"
-            />
-            <Icon />
+    <ModalProvider>
+      <html lang="en">
+        <body>
+          <AdobeFontLoader />
+          <div className="overflow-y-auto relative">
+            <div className="relative w-full" style={{ height: "auto" }}>
+              <Image
+                src="/webP_mobile/base.webp"
+                alt="下地"
+                layout="responsive"
+                width={100}
+                height={200}
+                objectFit="cover"
+              />
+              <Image
+                src="/webP_mobile/scan.webp"
+                alt="スキャン"
+                layout="responsive"
+                width={100}
+                height={200}
+                objectFit="cover"
+                className="absolute top-0 left-0"
+              />
+              <Icon />
+            </div>
+            {children}
+            <Modal />
           </div>
-          {children}
-          <Modal />
-        </div>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ModalProvider>
   );
 }
