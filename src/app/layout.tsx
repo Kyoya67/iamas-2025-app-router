@@ -4,7 +4,6 @@ import "./globals.css";
 import Modal from "./_components/Modal";
 import Icon from "./_components/Icon";
 import { ModalProvider } from "./_contexts/ModalContext";
-import { motion, AnimatePresence } from "framer-motion";
 import PageTransition from "./_components/PageTransition";
 
 export const metadata = {
