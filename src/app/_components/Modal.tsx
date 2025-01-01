@@ -43,10 +43,10 @@ export default function Modal() {
                     alt="メニュー"
                     width={100}
                     height={100}
-                    style={{ zIndex: 1 }}
                     objectFit="cover"
                     className="absolute top-0 right-0 mt-4 mr-3 cursor-pointer"
                     onClick={toggleMenu}
+                    style={{ zIndex: 1, width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)" }}
                 />
                 <div
                     className={`
@@ -66,26 +66,46 @@ export default function Modal() {
                             width={100}
                             height={100}
                             objectFit="cover"
+                            style={{
+                                width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)"
+                            }}
                         />
-                        <span className="text-[#000f9f] absolute mt-[-0.5rem] right-2.5">Close</span>
+                        <span className="text-[#000f9f] absolute right-1" style={{
+                            fontSize: 'clamp(0.75rem, 0.5rem + 1vw, 1rem)'
+                        }}>Close</span>
                     </button>
 
-                    <div className="text-[#000f9f] text-left text-lg absolute top-32 left-10">
-
+                    <div className="text-[#000f9f] text-left absolute top-[6rem]"
+                        style={{
+                            left: 'clamp(1.25rem, 5vw, 2rem)',
+                        }}
+                    >
                         情報科学芸術大学院大学<br></br>
                         23期生修了研究発表会・<br></br>
                         プロジェクト研究発表会<br></br>
 
-                        <div className="mt-10 text-sm">
+                        <div style={{
+                            marginTop: 'clamp(1.25rem, 5vw, 2.5rem)',
+                            fontSize: 'clamp(0.875rem, 0.75rem + 1vw, 1.125rem)'
+                        }}>
                             2/21 (Fri) - 2/24 (Mon)<br></br>
                             10:00 - 17:00<br></br>
-                            <br></br>
-                            ソフトピアジャパン・センタービル
                         </div>
+                        <span className="text-sm"
+                            style={{
+                                marginTop: 'clamp(1.25rem, 7vw, 2.5rem)',
+                                fontSize: 'clamp(0.75rem, 0.5rem + 1vw, 1rem)'
+                            }}
+                        >
+                            ソフトピアジャパン・センタービル
+                        </span>
 
-                        <div className="mt-5 border-b border-[#000f9f]"></div>
+                        <div style={{ marginTop: 'clamp(1.25rem, 5vw, 2.5rem)' }} className="border-b border-[#000f9f]"></div>
 
-                        <ul className="mt-10">
+                        <ul style={{
+                            marginTop: 'clamp(1.25rem, 5vw, 2.5rem)',
+                            fontSize: 'clamp(0.875rem, 0.75rem + 1vw, 1.125rem)'
+                        }}>
                             <div className="mb-3 mr-2">
                                 <Link href="/" className="flex items-center" onClick={closeMenu}>
                                     <div className="w-3 h-3 bg-[#000f9f]"></div>
@@ -100,9 +120,12 @@ export default function Modal() {
                             <li><Link href="/contact" onClick={closeMenu}>お問い合わせ</Link></li>
                         </ul>
 
-                        <div className="mt-10 border-b border-[#000f9f]"></div>
+                        <div style={{ marginTop: 'clamp(1.25rem, 5vw, 2.5rem)' }} className="border-b border-[#000f9f]"></div>
 
-                        <ul className="mt-10">
+                        <ul style={{
+                            marginTop: 'clamp(1.25rem, 5vw, 2.5rem)',
+                            fontSize: 'clamp(0.875rem, 0.75rem + 1vw, 1.125rem)'
+                        }}>
                             <li><Link target="_blank" href="https://x.com/iamas_exhibit" onClick={closeMenu}>X (旧Twitter)</Link></li>
                             <li><Link target="_blank" href="https://www.youtube.com/@iamas-exhibit" onClick={closeMenu}>YouTube</Link></li>
                             <li><Link target="_blank" href="https://note.com/iamas_exhibit" onClick={closeMenu}>note</Link></li>

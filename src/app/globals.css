@@ -5,11 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-body: "貂明朝", serif; /* Adobe Fontsでの貂明朝の指定 */
+  --font-body: "貂明朝", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; /* フォールバックを追加 */
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-body); /* 貂明朝を全体に適用 */
+  font-family: var(--font-body);
 }

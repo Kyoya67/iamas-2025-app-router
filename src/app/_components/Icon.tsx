@@ -14,7 +14,7 @@ export default function Icon() {
                 className="absolute top-3 left-3"
                 style={{
                     zIndex: 2,
-                    width: "clamp(100px, 12vw + 80px, 140px)"
+                    width: "clamp(6rem, 5.273rem + 3.64vw, 8rem)"
                 }}
             />
         </Link>
