@@ -112,12 +112,12 @@ export default function Modal() {
                                     <span className="ml-2">ホームへ戻る</span>
                                 </Link>
                             </div>
-                            <li><Link href="/overview" onClick={closeMenu}>開催概要</Link></li>
-                            <li><Link href="/master" onClick={closeMenu}>修士研究発表会</Link></li>
-                            <li><Link href="/exhibition" onClick={closeMenu}>関連展示</Link></li>
-                            <li><Link href="/event" onClick={closeMenu}>イベント</Link></li>
-                            <li><Link href="/access" onClick={closeMenu}>交通アクセス</Link></li>
-                            <li><Link href="/contact" onClick={closeMenu}>お問い合わせ</Link></li>
+                            <li><Link href="/overview" onClick={closeMenu}>&gt; 開催概要</Link></li>
+                            <li><Link href="/master" onClick={closeMenu}>&gt; 修士研究発表会</Link></li>
+                            <li><Link href="/exhibition" onClick={closeMenu}>&gt; 関連展示</Link></li>
+                            <li><Link href="/event" onClick={closeMenu}>&gt; イベント</Link></li>
+                            <li><Link href="/access" onClick={closeMenu}>&gt; 交通アクセス</Link></li>
+                            <li><Link href="/contact" onClick={closeMenu}>&gt; お問い合わせ</Link></li>
                         </ul>
 
                         <div style={{ marginTop: 'clamp(1.25rem, 5vw, 2.5rem)' }} className="border-b border-[#000f9f]"></div>
