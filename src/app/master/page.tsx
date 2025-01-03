@@ -13,9 +13,9 @@ export default async function Master() {
             <div className="grid grid-cols-2 gap-y-6 max-w-5xl mx-auto mt-[8.5rem]">
                 {data.map((item, index) => (
                     <div key={index} className="mb-4 px-4">
-                        <h2 className="text-[#000f9f] text-2xl font-cho text-center">
+                        <div className="text-[#000f9f] text-2xl font-cho text-center">
                             {item.authorJapaneseName}
-                        </h2>
+                        </div>
                     </div>
                 ))}
             </div>

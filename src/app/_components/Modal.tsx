@@ -39,7 +39,7 @@ export default function Modal() {
             ></div>
             <div className="overflow-hidden">
                 <Image
-                    src="/webP_mobile/menu.webp"
+                    src="/mobile/menu.webp"
                     alt="メニュー"
                     width={100}
                     height={100}
@@ -61,7 +61,7 @@ export default function Modal() {
                 >
                     <button onClick={toggleMenu} className="absolute top-2 right-2">
                         <Image
-                            src="/webP_mobile/close.webp"
+                            src="/mobile/close.webp"
                             alt="閉じる"
                             width={100}
                             height={100}

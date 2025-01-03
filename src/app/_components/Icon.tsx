@@ -5,7 +5,7 @@ export default function Icon() {
     return (
         <Link href="/">
             <Image
-                src="/webP_mobile/icon.webp"
+                src="/mobile/icon.webp"
                 alt="アイコン"
                 layout="intrinsic"
                 width={140}

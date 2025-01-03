@@ -46,7 +46,7 @@ export default function RootLayout({
           <div className="overflow-y-auto relative">
             <div className="relative w-full" style={{ height: "auto" }}>
               <Image
-                src="/webP_mobile/base.webp"
+                src="/mobile/base.webp"
                 alt="下地"
                 layout="responsive"
                 width={100}
@@ -54,7 +54,7 @@ export default function RootLayout({
                 objectFit="cover"
               />
               <Image
-                src="/webP_mobile/scan.webp"
+                src="/mobile/scan.webp"
                 alt="スキャン"
                 layout="responsive"
                 width={100}

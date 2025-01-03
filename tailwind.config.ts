@@ -1,28 +1,21 @@
-import fluid, { extract } from 'fluid-tailwind'
+import type { Config } from "tailwindcss";
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: {
-    files: [
-      "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
-    extract
-  },
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
-      screens: {
-        'xs': '375px',
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
+      fontSize: {
+        'fluid': 'clamp(1rem, 1.2vw + 0.8rem, 1.5rem)', // 16px -> 24px
+        'fluid-lg': 'clamp(0.8rem, 1vw + 1rem, 1.75rem)', // 18px -> 28px
+        'fluid-xl': 'clamp(1rem, 1.2vw + 0.8rem, 1.5rem)', // 16px -> 24px
       },
     },
   },
-  plugins: [
-    fluid
-  ],
+  plugins: [],
 };
+
+export default config;
