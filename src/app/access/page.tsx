@@ -21,7 +21,7 @@ export default function Access() {
                 className="mt-4 border-[0.1rem] border-[#000f9f]"
             />
             <div className="mt-4">
-                <div className="text-[#000f9f] text-2xl font-cho">
+                <div className="text-[#000f9f] text-2xl">
                     大垣駅より
                 </div>
                 <div className="mt-2 text-1xl">

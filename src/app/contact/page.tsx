@@ -8,7 +8,7 @@ export default function Contact() {
     return (
         <div className="absolute inset-0 w-full min-h-screen p-8">
             <div className="max-w-5xl mx-auto mt-[8.5rem]">
-                <ul className="text-fluid-xl text-[#000f9f] flex flex-col gap-y-3">
+                <ul className="text-fluid-base text-[#000f9f] flex flex-col gap-y-3">
                     <li>
                         <div className="flex flex-col gap-y-2">
                             <span>住所：岐阜県大垣市加賀野町4丁目1-7</span>

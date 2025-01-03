@@ -9,9 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
-        'fluid': 'clamp(1rem, 1.2vw + 0.8rem, 1.5rem)', // 16px -> 24px
-        'fluid-lg': 'clamp(0.8rem, 1vw + 1rem, 1.75rem)', // 18px -> 28px
-        'fluid-xl': 'clamp(1rem, 1.2vw + 0.8rem, 1.5rem)', // 16px -> 24px
+        'fluid-xs': 'clamp(0.75rem, 0.7vw + 0.6rem, 0.875rem)',   // 12px -> 14px
+        'fluid-sm': 'clamp(0.875rem, 0.8vw + 0.7rem, 1rem)',      // 14px -> 16px
+        'fluid-base': 'clamp(1rem, 0.9vw + 0.8rem, 1.125rem)',    // 16px -> 18px
+        'fluid-lg': 'clamp(1.125rem, 1vw + 0.9rem, 1.25rem)',     // 18px -> 20px
+        'fluid-xl': 'clamp(1.25rem, 1.1vw + 1rem, 1.5rem)',       // 20px -> 24px
+        'fluid-2xl': 'clamp(1.5rem, 1.2vw + 1.1rem, 2rem)',       // 24px -> 32px
+      },
+      spacing: {
+        'fluid-xs': 'clamp(0.5rem, 0.5vw + 0.3rem, 0.75rem)',     // 8px -> 12px
+        'fluid-sm': 'clamp(0.75rem, 0.7vw + 0.5rem, 1rem)',       // 12px -> 16px
+        'fluid-base': 'clamp(1rem, 1vw + 0.75rem, 1.5rem)',       // 16px -> 24px
+        'fluid-lg': 'clamp(1.5rem, 1.5vw + 1rem, 2rem)',          // 24px -> 32px
+        'fluid-xl': 'clamp(2rem, 2vw + 1.5rem, 3rem)',            // 32px -> 48px
+        'fluid-2xl': 'clamp(3rem, 3vw + 2rem, 4rem)',             // 48px -> 64px
       },
     },
   },
