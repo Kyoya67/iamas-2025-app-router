@@ -1,17 +1,20 @@
 import Image from "next/image";
 
-export default function Home() {
+// サーバーコンポーネントとしてビルド時にデータを取得
+export default async function Home() {
   return (
-    <Image
-      src="/webP_mobile/circle.webp"
-      alt="円"
-      layout="responsive"
-      width={100}
-      height={200}
-      objectFit="cover"
-      className="absolute top-0 left-0"
-      style={{ zIndex: 1 }}
-    />
+    <main>
+      <Image
+        src="/webP_mobile/circle.webp"
+        alt="円"
+        layout="responsive"
+        width={100}
+        height={200}
+        objectFit="cover"
+        className="absolute top-0 left-0"
+        style={{ zIndex: 1 }}
+      />
+    </main>
   );
 }
 
