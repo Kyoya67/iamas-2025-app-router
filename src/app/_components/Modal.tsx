@@ -113,7 +113,7 @@ export default function Modal() {
                                 </Link>
                             </div>
                             <li><Link href="/overview" onClick={closeMenu}>&gt; 開催概要</Link></li>
-                            <li><Link href="/master" onClick={closeMenu}>&gt; 修士研究発表会</Link></li>
+                            <li><Link href="/master" onClick={closeMenu}>&gt; 修士研究発表</Link></li>
                             <li><Link href="/exhibition" onClick={closeMenu}>&gt; 関連展示</Link></li>
                             <li><Link href="/event" onClick={closeMenu}>&gt; イベント</Link></li>
                             <li><Link href="/access" onClick={closeMenu}>&gt; 交通アクセス</Link></li>
