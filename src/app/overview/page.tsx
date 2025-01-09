@@ -9,7 +9,7 @@ export default function Overview() {
         <div className="absolute inset-0 flex justify-center">
             <div className="
                 text-left text-[#000f9f] mx-auto
-                mt-[8.5rem]
+                mt-[8.5rem] text-justify
                 "
                 style={{
                     lineHeight: '1.8',

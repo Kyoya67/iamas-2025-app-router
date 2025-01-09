@@ -10,7 +10,7 @@ export const metadata = {
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   description: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   icons: {
-    icon: "/favicon.webp",
+    icon: "/fav.png",
   },
   openGraph: {
     title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
