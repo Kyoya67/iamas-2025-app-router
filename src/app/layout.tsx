@@ -1,16 +1,19 @@
+import * as React from 'react'
 import Image from "next/image";
 import AdobeFontLoader from "./_components/AdobeFontLoader";
 import "./globals.css";
-import Modal from "./_components/Modal";
+import Modal from "./_components/Menu";
 import Icon from "./_components/Icon";
 import { ModalProvider } from "./_contexts/ModalContext";
 import PageTransition from "./_components/PageTransition";
+import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   description: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   icons: {
-    icon: "/fav.png",
+    icon: "/favico.png",
   },
   openGraph: {
     title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
@@ -35,37 +38,35 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+  modal,
+}: {
   children: React.ReactNode;
-}>) {
+  modal: React.ReactNode;
+}) {
   return (
     <ModalProvider>
       <html lang="en">
         <body>
           <AdobeFontLoader />
-          <div className="overflow-y-auto relative">
-            <div className="relative w-full" style={{ height: "auto" }}>
+          <div className="scroll-container">
+            <div className="relative w-full h-screen">
               <Image
                 src="/mobile/base.webp"
                 alt="下地"
-                layout="responsive"
-                width={100}
-                height={200}
-                objectFit="cover"
+                fill
+                className="!h-screen w-full object-fill"
               />
               <Image
                 src="/mobile/scan.webp"
                 alt="スキャン"
-                layout="responsive"
-                width={100}
-                height={200}
-                objectFit="cover"
-                className="absolute top-0 left-0"
+                fill
+                className="absolute top-0 left-0 !h-screen w-full object-fill"
               />
               <Icon />
             </div>
             <PageTransition>
               {children}
+              {modal}
             </PageTransition>
             <Modal />
           </div>

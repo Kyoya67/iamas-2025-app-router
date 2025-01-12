@@ -12,5 +12,12 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-body);
+  overflow: hidden;
+}
+
+/* スクロールが必要な要素には個別にオーバーフローを設定 */
+.scroll-container {
+  overflow-y: auto;
+  height: 100vh;
 }
 

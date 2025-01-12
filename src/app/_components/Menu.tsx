@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
 import { useModal } from "../_contexts/ModalContext";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Modal() {
+export default function Menu() {
     const { isOpen, openModal, closeModal } = useModal();
 
     const toggleMenu = () => {
@@ -19,14 +18,6 @@ export default function Modal() {
     const closeMenu = () => {
         closeModal();
     };
-
-    useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "auto";
-        }
-    }, [isOpen]);
 
     return (
         <>
@@ -43,10 +34,12 @@ export default function Modal() {
                     alt="メニュー"
                     width={100}
                     height={100}
-                    objectFit="cover"
+                    style={{
+                        width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)",
+                        objectFit: "cover"
+                    }}
                     className="absolute top-0 right-0 mt-4 mr-3 cursor-pointer"
                     onClick={toggleMenu}
-                    style={{ zIndex: 1, width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)" }}
                 />
                 <div
                     className={`
@@ -65,9 +58,9 @@ export default function Modal() {
                             alt="閉じる"
                             width={100}
                             height={100}
-                            objectFit="cover"
                             style={{
-                                width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)"
+                                width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)",
+                                objectFit: "cover"
                             }}
                         />
                         <span className="text-[#000f9f] absolute right-1" style={{

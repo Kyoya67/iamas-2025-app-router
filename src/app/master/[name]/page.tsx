@@ -1,0 +1,37 @@
+import { fetchGASData } from "../../_lib/api";
+import { notFound } from "next/navigation";
+import { Metadata } from "next";
+
+interface Props {
+    params: {
+        name: string;
+    };
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    return {
+        title: `IAMAS 2025 - ${params.name}`,
+    };
+}
+
+export default async function MasterDetail(props: Props) {
+    const data = await fetchGASData();
+    const student = data.find(item =>
+        item.authorEnglishName.split(' ').join('') === props.params.name
+    );
+
+    if (!student) {
+        notFound();
+    }
+
+    return (
+        <div className="absolute inset-0 w-full min-h-screen p-8">
+            <div className="max-w-5xl mx-auto mt-[6.5rem]">
+                <h1 className="text-[#000f9f] text-fluid-xl mb-4">
+                    {student.authorJapaneseName}
+                </h1>
+                {/* 他の学生情報を表示 */}
+            </div>
+        </div>
+    );
+}
