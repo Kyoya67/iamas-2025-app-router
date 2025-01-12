@@ -9,15 +9,20 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { name } = params;
     return {
-        title: `IAMAS 2025 - ${params.name}`,
+        title: `IAMAS 2025 - ${name}`,
     };
 }
 
-export default async function MasterDetail(props: Props) {
-    const data = await fetchGASData();
+export default async function MasterPage({ params }: Props) {
+    const [data, { name }] = await Promise.all([
+        fetchGASData(),
+        params
+    ]);
+
     const student = data.find(item =>
-        item.authorEnglishName.split(' ').join('') === props.params.name
+        item.authorEnglishName.split(' ').join('') === name
     );
 
     if (!student) {
