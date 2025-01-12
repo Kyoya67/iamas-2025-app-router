@@ -2,7 +2,7 @@ import * as React from 'react'
 import Image from "next/image";
 import AdobeFontLoader from "./_components/AdobeFontLoader";
 import "./globals.css";
-import Modal from "./_components/Menu";
+import Menu from "./_components/Menu";
 import Icon from "./_components/Icon";
 import { ModalProvider } from "./_contexts/ModalContext";
 import PageTransition from "./_components/PageTransition";
@@ -48,6 +48,7 @@ export default function RootLayout({
       <html lang="en">
         <body>
           <AdobeFontLoader />
+          <Menu />
           <div className="scroll-container">
             <div className="relative w-full h-screen">
               <Image
@@ -68,7 +69,6 @@ export default function RootLayout({
               {children}
               {modal}
             </PageTransition>
-            <Modal />
           </div>
         </body>
       </html>

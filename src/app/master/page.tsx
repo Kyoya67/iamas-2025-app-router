@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { fetchGASData } from "../_lib/api";
 import Link from "next/link";
-import Image from "next/image";
 
 export const metadata: Metadata = {
     title: "IAMAS 2025 修士研究発表会",
@@ -31,7 +30,10 @@ export default async function Master() {
                     {rightColumn.map((item, index) => (
                         <div key={index} className="px-fluid-xs flex justify-center items-center">
                             <Link href={`/master/${item.authorEnglishName.split(' ').join('')}`} className="text-[#000f9f] text-fluid-lg text-center">
-                                {item.authorJapaneseName}
+                                {(index === 1 || index === 5 || index === 9)
+                                    ? item.authorEnglishName
+                                    : item.authorJapaneseName
+                                }
                             </Link>
                         </div>
                     ))}

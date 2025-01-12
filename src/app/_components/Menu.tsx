@@ -20,15 +20,15 @@ export default function Menu() {
     };
 
     return (
-        <>
+        <div className="fixed inset-0" style={{ zIndex: 2 }}>
             <div
                 className={`
-                    fixed inset-0 bg-[#000f9f44] z-10
+                    fixed inset-0 bg-[#000f9f44]
                     transition-opacity duration-300
-                    ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
+                    ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0"}
                 `}
             ></div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden pointer-events-auto">
                 <Image
                     src="/mobile/menu.webp"
                     alt="メニュー"
@@ -128,6 +128,6 @@ export default function Menu() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
