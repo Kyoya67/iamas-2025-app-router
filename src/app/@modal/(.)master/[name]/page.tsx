@@ -32,12 +32,10 @@ export default async function MasterModal({ params }: Props) {
 
     return (
         <Modal>
-            <div className="p-8 max-w-5xl mx-auto mt-[6.5rem] absolute inset-0 w-full h-screen bg-white/80 backdrop-blur-sm">
-                <h1 className="text-[#000f9f] text-fluid-xl mb-4">
-                    {student.authorJapaneseName}
-                </h1>
-                InterCepted!!!!!!!
-            </div>
+            <h1 className="text-[#000f9f] text-fluid-xl mb-4">
+                {student.authorJapaneseName}
+            </h1>
+            InterCepted!!!!!!!
         </Modal>
     );
 }

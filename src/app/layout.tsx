@@ -48,27 +48,28 @@ export default function RootLayout({
       <html lang="en">
         <body>
           <AdobeFontLoader />
-          <Menu />
           <div className="scroll-container">
             <div className="relative w-full h-screen">
+              <Icon />
               <Image
                 src="/mobile/base.webp"
                 alt="下地"
                 fill
-                className="!h-screen w-full object-fill"
+                className="h-screen w-full object-cover"
               />
               <Image
-                src="/mobile/scan.webp"
+                src="/scan.webp"
                 alt="スキャン"
                 fill
-                className="absolute top-0 left-0 !h-screen w-full object-fill"
+                className="absolute top-0 right-0 h-screen w-full object-cover object-right"
+              // style={{ display: 'none' }}
               />
-              <Icon />
             </div>
             <PageTransition>
               {children}
               {modal}
             </PageTransition>
+            <Menu />
           </div>
         </body>
       </html>

@@ -21,3 +21,9 @@ body {
   height: 100vh;
 }
 
+.texture-bg {
+  background-image: url('/modalTexture.webp');
+  background-repeat: repeat;
+  background-size: 500px;
+}
+

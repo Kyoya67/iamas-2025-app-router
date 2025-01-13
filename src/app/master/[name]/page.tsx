@@ -3,13 +3,14 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
 interface Props {
-    params: {
+    params: Promise<{
         name: string;
-    };
+    }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const { name } = params;
+    const { name } = await params;
     return {
         title: `IAMAS 2025 - ${name}`,
     };

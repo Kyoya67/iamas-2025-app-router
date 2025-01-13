@@ -24,6 +24,17 @@ const config: Config = {
         'fluid-xl': 'clamp(2rem, 2vw + 1.5rem, 3rem)',            // 32px -> 48px
         'fluid-2xl': 'clamp(3rem, 3vw + 2rem, 4rem)',             // 48px -> 64px
       },
+      screens: {
+        'xs': '375px',
+        'sm': '500px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
+      gridAutoFlow: {
+        'col': 'column',
+      }
     },
   },
   plugins: [],

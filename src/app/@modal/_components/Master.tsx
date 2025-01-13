@@ -1,15 +1,23 @@
 'use client';
 
-import { useCallback, useRef, useEffect } from 'react';
+import { useCallback, useRef, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function Modal({ children }: { children: React.ReactNode }) {
     const overlay = useRef<HTMLDivElement>(null);
     const wrapper = useRef<HTMLDivElement>(null);
     const router = useRouter();
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        setIsVisible(true);
+    }, []);
 
     const onDismiss = useCallback(() => {
-        router.back();
+        setIsVisible(false);
+        setTimeout(() => {
+            router.back();
+        }, 1000); // アニメーション時間と合わせる
     }, [router]);
 
     const onClick = useCallback(
@@ -36,12 +44,14 @@ export default function Modal({ children }: { children: React.ReactNode }) {
     return (
         <div
             ref={overlay}
-            className="fixed inset-0 w-full h-screen bg-black/60 backdrop-blur-sm z-50"
+            className={`fixed inset-0 w-full h-screen bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'
+                }`}
             onClick={onClick}
         >
             <div
                 ref={wrapper}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full bg-white"
+                className={`w-[80%] h-[80vh] texture-bg rounded-md transition-all  ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+                    }`}
             >
                 {children}
             </div>
