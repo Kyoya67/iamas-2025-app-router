@@ -8,13 +8,14 @@ import { ModalProvider } from "./_contexts/ModalContext";
 import PageTransition from "./_components/PageTransition";
 import { Metadata } from 'next';
 import Base from "./_components/Base";
+import IconAndMenu from "./_components/IconAndMenu";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   description: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   icons: {
-    icon: "/favico.png",
+    icon: "/favicon.webp",
   },
   openGraph: {
     title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
@@ -51,9 +52,8 @@ export default function RootLayout({
           <AdobeFontLoader />
           <div className="scroll-container">
             <div className="relative w-full h-screen">
-              <div className="hidden sm:hidden">
-                <MobileIcon />
-              </div>
+              <div className="block sm:hidden"><MobileIcon /></div>
+              <div className="hidden sm:block"><IconAndMenu /></div>
               <Base />
               <Image
                 src="/scan.webp"

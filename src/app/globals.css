@@ -5,7 +5,7 @@
 :root {
   --background: #f5f8f9;
   --foreground: #171717;
-  --font-body: "貂明朝", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif; /* フォールバックを追加 */
+  --font-body: "貂明朝", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
 }
 
 body {

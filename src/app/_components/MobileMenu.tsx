@@ -22,7 +22,7 @@ export default function MobileMenu() {
     return (
         <div className="overflow-hidden pointer-events-auto">
             <Image
-                src="/menu.webp"
+                src="/mobile/menu.webp"
                 alt="メニュー"
                 width={50}
                 height={50}
@@ -42,7 +42,7 @@ export default function MobileMenu() {
             >
                 <button onClick={toggleMenu} className="absolute top-2 right-2">
                     <Image
-                        src="/close.webp"
+                        src="/mobile/close.webp"
                         alt="閉じる"
                         width={100}
                         height={100}
