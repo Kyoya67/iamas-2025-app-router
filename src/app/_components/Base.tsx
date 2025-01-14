@@ -18,7 +18,10 @@ export default function Base() {
                 alt="右下"
                 width={600}
                 height={300}
-                className="hidden md:block object-contain fixed bottom-0 right-0 w-fit h-fit"
+                className="object-contain fixed bottom-0 right-0 w-fit h-fit
+                    opacity-0 translate-y-10 pointer-events-none
+                    md:opacity-100 md:translate-y-0 md:pointer-events-auto
+                    transition-opacity duration-500 ease-in-out"
                 style={{
                     width: 'clamp(600px, 60vw + 100px, 900px)'
                 }}
