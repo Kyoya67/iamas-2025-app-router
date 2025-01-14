@@ -2,8 +2,8 @@ import * as React from 'react'
 import Image from "next/image";
 import AdobeFontLoader from "./_components/AdobeFontLoader";
 import "./globals.css";
-import Menu from "./_components/Menu";
-import Icon from "./_components/Icon";
+import MobileMenu from "./_components/MobileMenu";
+import MobileIcon from "./_components/MobileIcon";
 import { ModalProvider } from "./_contexts/ModalContext";
 import PageTransition from "./_components/PageTransition";
 import { Metadata } from 'next';
@@ -51,7 +51,9 @@ export default function RootLayout({
           <AdobeFontLoader />
           <div className="scroll-container">
             <div className="relative w-full h-screen">
-              <Icon />
+              <div className="hidden sm:hidden">
+                <MobileIcon />
+              </div>
               <Base />
               <Image
                 src="/scan.webp"
@@ -65,7 +67,7 @@ export default function RootLayout({
               {modal}
             </PageTransition>
             <div className="sm:hidden">
-              <Menu />
+              <MobileMenu />
             </div>
           </div>
         </body>

@@ -1,9 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Icon() {
+export default function MobileIcon() {
     return (
         <Link href="/">
             <Image

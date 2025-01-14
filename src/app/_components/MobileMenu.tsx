@@ -4,7 +4,7 @@ import { useModal } from "../_contexts/ModalContext";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Menu() {
+export default function MobileMenu() {
     const { isOpen, openModal, closeModal } = useModal();
 
     const toggleMenu = () => {
