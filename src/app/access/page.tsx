@@ -12,7 +12,7 @@ export default function Access() {
                 ACCESS
             </h1>
             <Image
-                src="/mobile/access.webp"
+                src="/access.webp"
                 alt="アクセス"
                 layout="responsive"
                 width={100}

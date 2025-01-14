@@ -1,19 +1,25 @@
 'use client';
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import resolveConfig from 'tailwindcss/resolveConfig';
+import tailwindConfig from '../../tailwind.config';
 
 export default function Home() {
   const [isSmallScreen, setIsSmallScreen] = useState(true);
 
+  // Tailwindの設定からsmブレークポイントの値を取得
+  const fullConfig = resolveConfig(tailwindConfig);
+  const smBreakpoint = parseInt(fullConfig.theme?.screens?.sm?.toString());
+
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < 500);
+      setIsSmallScreen(window.innerWidth < smBreakpoint);
     };
 
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
     return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
+  }, [smBreakpoint]);
 
   return (
     <div className={`h-screen fixed top-0 right-0 overflow-hidden ${isSmallScreen ? 'aspect-[9/16] max-w-[100vw]' : 'w-screen'
@@ -32,7 +38,7 @@ export default function Home() {
           maskRepeat: 'no-repeat',
           WebkitMaskRepeat: 'no-repeat',
           maskPosition: 'right',
-          WebkitMaskPosition: 'right'
+          WebkitMaskPosition: 'right',
         }}
       />
     </div>

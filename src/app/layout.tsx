@@ -7,6 +7,7 @@ import Icon from "./_components/Icon";
 import { ModalProvider } from "./_contexts/ModalContext";
 import PageTransition from "./_components/PageTransition";
 import { Metadata } from 'next';
+import Base from "./_components/Base";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
@@ -51,25 +52,21 @@ export default function RootLayout({
           <div className="scroll-container">
             <div className="relative w-full h-screen">
               <Icon />
-              <Image
-                src="/mobile/base.webp"
-                alt="下地"
-                fill
-                className="h-screen w-full object-cover"
-              />
+              <Base />
               <Image
                 src="/scan.webp"
                 alt="スキャン"
                 fill
                 className="absolute top-0 right-0 h-screen w-full object-cover object-right"
-              // style={{ display: 'none' }}
               />
             </div>
             <PageTransition>
               {children}
               {modal}
             </PageTransition>
-            <Menu />
+            <div className="sm:hidden">
+              <Menu />
+            </div>
           </div>
         </body>
       </html>

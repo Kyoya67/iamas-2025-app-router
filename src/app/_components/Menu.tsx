@@ -22,14 +22,10 @@ export default function Menu() {
     return (
         <div className="overflow-hidden pointer-events-auto">
             <Image
-                src="/mobile/menu.webp"
+                src="/menu.webp"
                 alt="メニュー"
-                width={100}
-                height={100}
-                style={{
-                    width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)",
-                    objectFit: "cover"
-                }}
+                width={50}
+                height={50}
                 className="absolute top-0 right-0 mt-4 mr-3 cursor-pointer"
                 onClick={toggleMenu}
             />
@@ -46,7 +42,7 @@ export default function Menu() {
             >
                 <button onClick={toggleMenu} className="absolute top-2 right-2">
                     <Image
-                        src="/mobile/close.webp"
+                        src="/close.webp"
                         alt="閉じる"
                         width={100}
                         height={100}
