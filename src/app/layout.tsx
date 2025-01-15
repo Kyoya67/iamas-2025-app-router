@@ -58,31 +58,35 @@ export default function RootLayout({
                 <IconAndMenu />
               </div>
               <Base />
-              <Image
-                src="/mobile/scan.webp"
-                alt="スキャン"
-                fill
-                className="
-                sm:hidden 
-                absolute top-0 right-0 
-                h-screen w-full 
-                object-cover object-right"
-              />
-              <Image
-                src="/scan.webp"
-                alt="スキャン"
-                fill
-                className="
-                hidden sm:block 
-                absolute top-0 right-0 
-                h-screen w-full 
-                object-cover object-right"
-              />
+              <div className="isolate">
+                <Image
+                  src="/mobile/scan.webp"
+                  alt="スキャン"
+                  fill
+                  className="
+                  sm:hidden 
+                  absolute top-0 right-0 
+                  h-screen w-full 
+                  object-cover object-right
+                  mix-blend-darken
+                  z-10"
+                />
+                <Image
+                  src="/scan.webp"
+                  alt="スキャン"
+                  fill
+                  className="
+                  hidden sm:block 
+                  absolute top-0 right-0 
+                  h-screen w-full 
+                  object-cover object-right"
+                />
+              </div>
+              <PageTransition>
+                {children}
+                {modal}
+              </PageTransition>
             </div>
-            <PageTransition>
-              {children}
-              {modal}
-            </PageTransition>
             <div className="sm:hidden">
               <MobileMenu />
             </div>
