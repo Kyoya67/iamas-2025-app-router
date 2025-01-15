@@ -31,14 +31,24 @@ export default function MobileMenu() {
             />
             <div
                 className={`
-                        fixed top-0 right-0 
-                        bg-[#f5f8f9] 
-                        shadow-lg 
-                        p-4 z-20 w-3/5 h-full 
-                        transition-transform 
-                        duration-300 
-                        transform ${isOpen ? "translate-x-0" : "translate-x-full"}
-                    `}
+                    fixed inset-0 
+                    bg-[#000f9f]/40
+                    transition-opacity duration-300 
+                    ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
+                    z-10
+                `}
+                onClick={closeMenu}
+            />
+            <div
+                className={`
+                    fixed top-0 right-0 
+                    bg-[#f5f8f9] 
+                    shadow-lg 
+                    p-4 z-20 w-3/5 h-full 
+                    transition-transform 
+                    duration-300 
+                    transform ${isOpen ? "translate-x-0" : "translate-x-full"}
+                `}
             >
                 <button onClick={toggleMenu} className="absolute top-2 right-2">
                     <Image

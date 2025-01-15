@@ -25,7 +25,7 @@ export default function MobileBase() {
             <Image
                 src="/mobile/base/leftBottom.webp"
                 alt="左下"
-                width={100}
+                width={120}
                 height={100}
                 className="
                     object-contain
