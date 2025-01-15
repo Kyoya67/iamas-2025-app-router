@@ -7,7 +7,8 @@ import MobileIcon from "./_components/MobileIcon";
 import { ModalProvider } from "./_contexts/ModalContext";
 import PageTransition from "./_components/PageTransition";
 import { Metadata } from 'next';
-import Base from "./_components/Base";
+import DesktopBase from "./_components/DesktopBase";
+import MobileBase from "./_components/MobileBase";
 import IconAndMenu from "./_components/IconAndMenu";
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
@@ -53,11 +54,12 @@ export default function RootLayout({
             <div className="relative w-full h-screen">
               <div className="sm:hidden">
                 <MobileIcon />
+                <MobileBase />
               </div>
               <div className="hidden sm:block">
                 <IconAndMenu />
+                <DesktopBase />
               </div>
-              <Base />
               <div className="isolate">
                 <Image
                   src="/mobile/scan.webp"
