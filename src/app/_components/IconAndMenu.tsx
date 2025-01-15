@@ -4,11 +4,12 @@ export default function IconAndMenu() {
     return (
         <div>
             <Image
-                src="/iconAndMenu.webp"
+                // src="/iconAndMenu.webp"
+                src="/menu_bar3.png"
                 alt="アイコンとメニュー"
-                width={170}
-                height={280}
-                className="object-contain fixed top-3 left-3"
+                width={200}
+                height={400}
+                className="fixed top-3 left-3"
                 style={{
                     zIndex: 2,
                     width: 'clamp(170px, 5vw, 200px)'

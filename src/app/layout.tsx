@@ -9,13 +9,12 @@ import PageTransition from "./_components/PageTransition";
 import { Metadata } from 'next';
 import Base from "./_components/Base";
 import IconAndMenu from "./_components/IconAndMenu";
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   description: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   icons: {
-    icon: "/favicon.webp",
+    icon: "/favico.png",
   },
   openGraph: {
     title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
@@ -52,14 +51,32 @@ export default function RootLayout({
           <AdobeFontLoader />
           <div className="scroll-container">
             <div className="relative w-full h-screen">
-              <div className="block sm:hidden"><MobileIcon /></div>
-              <div className="hidden sm:block"><IconAndMenu /></div>
+              <div className="sm:hidden">
+                <MobileIcon />
+              </div>
+              <div className="hidden sm:block">
+                <IconAndMenu />
+              </div>
               <Base />
+              <Image
+                src="/mobile/mobileScan.png"
+                alt="スキャン"
+                fill
+                className="
+                sm:hidden 
+                absolute top-0 right-0 
+                h-screen w-full 
+                object-cover object-right"
+              />
               <Image
                 src="/scan.webp"
                 alt="スキャン"
                 fill
-                className="absolute top-0 right-0 h-screen w-full object-cover object-right"
+                className="
+                hidden sm:block 
+                absolute top-0 right-0 
+                h-screen w-full 
+                object-cover object-right"
               />
             </div>
             <PageTransition>
