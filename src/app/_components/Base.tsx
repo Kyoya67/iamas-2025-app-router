@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Base() {
     return (
-        <div>
+        <div className="relative z-0 isolation-auto">
             <Image
                 src="/base/rightTop.webp"
                 alt="右上"
                 width={70}
                 height={20}
-                className="object-contain fixed top-0 right-0 w-fit h-fit"
+                className="object-contain fixed top-0 right-0 w-fit h-fit mix-blend-normal"
                 style={{
                     width: 'clamp(70px, 5vw, 75px)'
                 }}

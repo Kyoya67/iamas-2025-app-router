@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   description: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
   icons: {
-    icon: "/favico.png",
+    icon: "/favicon.webp",
   },
   openGraph: {
     title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
@@ -59,7 +59,7 @@ export default function RootLayout({
               </div>
               <Base />
               <Image
-                src="/mobile/mobileScan.png"
+                src="/mobile/scan.webp"
                 alt="スキャン"
                 fill
                 className="
