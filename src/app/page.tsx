@@ -15,7 +15,7 @@ export default function Home() {
         mix-blend-darken z-10"
       />
       <Image
-        src="/bigCircle.webp"
+        src="/desktop/circle.webp"
         alt="円"
         fill
         className="hidden sm:block 

@@ -73,7 +73,7 @@ export default function RootLayout({
                   pointer-events-none"
                 />
                 <Image
-                  src="/scan.webp"
+                  src="/desktop/scan.webp"
                   alt="スキャン"
                   fill
                   className="

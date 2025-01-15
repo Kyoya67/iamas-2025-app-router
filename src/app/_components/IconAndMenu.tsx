@@ -1,6 +1,28 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import HoverImage from "./HoverImage";
+
+type MenuItemProps = {
+    href: string;
+    text: string;
+    image: string;
+    index: number;
+}
+
 export default function IconAndMenu() {
+    const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+
+    const menuItems: MenuItemProps[] = [
+        { href: "/overview", text: "開催概要", image: "/desktop/hoverCircles/overview.webp", index: 0 },
+        { href: "/master", text: "修士研究発表", image: "/desktop/hoverCircles/master.webp", index: 1 },
+        { href: "/exhibition", text: "関連展示", image: "/desktop/hoverCircles/exhibition.webp", index: 2 },
+        { href: "/event", text: "イベント", image: "/desktop/hoverCircles/event.webp", index: 3 },
+        { href: "/access", text: "交通アクセス", image: "/desktop/hoverCircles/access.webp", index: 4 },
+        { href: "/contact", text: "お問い合わせ", image: "/desktop/hoverCircles/contact.webp", index: 5 }
+    ];
+
     return (
         <div className="fixed top-3 left-3"
             style={{
@@ -8,7 +30,7 @@ export default function IconAndMenu() {
             }}>
             <Link href="/">
                 <Image
-                    src="/iconAndMenu.webp"
+                    src="/desktop/iconAndMenu.webp"
                     alt="アイコンとメニュー"
                     width={200}
                     height={400}
@@ -18,55 +40,30 @@ export default function IconAndMenu() {
                 />
             </Link>
             <ul className="fixed top-[10.2rem] left-3 text-[#000f9f]">
-                <li className="leading-[1.15]"
-                    style={{
-                        textShadow: '1px 1px 0 rgba(255, 255, 255, 0.8)'
-                    }}>
-                    <Link href="/overview">
-                        開催概要
-                    </Link>
-                </li>
-                <li className="leading-[1.15]"
-                    style={{
-                        textShadow: '1px 1px 0 rgba(255, 255, 255, 0.8)'
-                    }}>
-                    <Link href="/master">
-                        修士研究発表
-                    </Link>
-                </li>
-                <li className="leading-[1.15]"
-                    style={{
-                        textShadow: '1px 1px 0 rgba(255, 255, 255, 0.8)'
-                    }}>
-                    <Link href="/exhibition">
-                        関連展示
-                    </Link>
-                </li>
-                <li className="leading-[1.15]"
-                    style={{
-                        textShadow: '1px 1px 0 rgba(255, 255, 255, 0.8)'
-                    }}>
-                    <Link href="/event">
-                        イベント
-                    </Link>
-                </li>
-                <li className="leading-[1.15]"
-                    style={{
-                        textShadow: '1px 1px 0 rgba(255, 255, 255, 0.8)'
-                    }}>
-                    <Link href="/access">
-                        交通アクセス
-                    </Link>
-                </li>
-                <li className="leading-[1.15]"
-                    style={{
-                        textShadow: '1px 1px 0 rgba(255, 255, 255, 0.8)'
-                    }}>
-                    <Link href="/contact">
-                        お問い合わせ
-                    </Link>
-                </li>
+                {menuItems.map((item) => (
+                    <li
+                        key={item.href}
+                        className="leading-[1.15]"
+                        onMouseEnter={() => setHoveredItem(item.image)}
+                        onMouseLeave={() => setHoveredItem(null)}
+                        style={{
+                            textShadow: '1px 1px 0 rgba(255, 255, 255, 0.8)'
+                        }}
+                    >
+                        <Link href={item.href}>
+                            {item.text}
+                        </Link>
+                    </li>
+                ))}
             </ul>
+            {menuItems.map((item) => (
+                <HoverImage
+                    key={item.image}
+                    path={item.image}
+                    isHovered={hoveredItem === item.image}
+                    index={item.index}
+                />
+            ))}
         </div>
     );
 }

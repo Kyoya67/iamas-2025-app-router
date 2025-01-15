@@ -11,7 +11,7 @@ export default function ConceptMovie() {
             className="hidden sm:block fixed top-[-50px] right-0 cursor-pointer z-20"
         >
             <Image
-                src="/conceptMovie.webp"
+                src="/desktop/conceptMovie.webp"
                 alt="コンセプト"
                 width={1000}
                 height={1000}
