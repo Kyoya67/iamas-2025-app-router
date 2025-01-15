@@ -7,13 +7,22 @@ export default function Home() {
         src="/mobile/circle.webp"
         alt="円"
         fill
-        className="sm:hidden h-screen w-full object-cover object-right mix-blend-darken z-10"
+        className="
+        sm:hidden 
+        absolute top-0 right-0 
+        h-screen w-full 
+        object-cover object-right 
+        mix-blend-darken z-10"
       />
       <Image
-        src="/circle.webp"
+        src="/bigCircle.webp"
         alt="円"
         fill
-        className="hidden sm:block h-screen w-full object-cover object-right"
+        className="hidden sm:block 
+        absolute top-0 right-0 
+        h-screen w-full 
+        object-cover object-right
+        pointer-events-none"
       />
     </div>
   );

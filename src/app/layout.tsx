@@ -69,7 +69,8 @@ export default function RootLayout({
                   h-screen w-full 
                   object-cover object-right
                   mix-blend-darken
-                  z-10"
+                  z-10
+                  pointer-events-none"
                 />
                 <Image
                   src="/scan.webp"
@@ -79,7 +80,8 @@ export default function RootLayout({
                   hidden sm:block 
                   absolute top-0 right-0 
                   h-screen w-full 
-                  object-cover object-right"
+                  object-cover object-right
+                  pointer-events-none"
                 />
               </div>
               <PageTransition>

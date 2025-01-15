@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import ConceptMovie from "./ConceptMovie";
 export default function Base() {
     return (
         <div className="relative z-0 isolation-auto">
@@ -8,7 +8,7 @@ export default function Base() {
                 alt="右上"
                 width={70}
                 height={20}
-                className="object-contain fixed top-0 right-0 w-fit h-fit mix-blend-normal"
+                className="object-contain fixed top-0 right-0 w-fit h-fit"
                 style={{
                     width: 'clamp(70px, 5vw, 75px)'
                 }}
@@ -23,9 +23,10 @@ export default function Base() {
                     md:opacity-100 md:translate-y-0 md:pointer-events-auto
                     transition-opacity duration-500 ease-in-out"
                 style={{
-                    width: 'clamp(600px, 60vw + 100px, 900px)'
+                    width: 'clamp(600px, 60vw + 100px, 800px)'
                 }}
             />
+            <ConceptMovie />
             <div className="fixed bottom-0 left-0 flex items-end gap-0">
                 <Image
                     src="/base/leftBottom.webp"
