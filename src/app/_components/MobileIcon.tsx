@@ -7,7 +7,7 @@ export default function MobileIcon() {
             <Image
                 src="/mobile/icon.webp"
                 alt="アイコン"
-                width={150}
+                width={110}
                 height={100}
                 className="absolute top-3 left-3 object-cover"
                 style={{ zIndex: 2 }}
