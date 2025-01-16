@@ -15,10 +15,22 @@ export default function Home() {
         mix-blend-darken z-10"
       />
       <Image
+        src="/desktop/iPadCircle.webp"
+        alt="円"
+        fill
+        className="
+        hidden sm:block md:hidden
+        absolute top-0 right-0 
+        h-screen w-full 
+        object-cover object-right
+        pointer-events-none"
+      />
+      <Image
         src="/desktop/circle.webp"
         alt="円"
         fill
-        className="hidden sm:block 
+        className="
+        hidden md:block 
         absolute top-0 right-0 
         h-screen w-full 
         object-cover object-right

@@ -82,7 +82,7 @@ export default function MobileMenu() {
                         2/21 (Fri) - 2/24 (Mon)<br></br>
                         10:00 - 17:00<br></br>
                     </div>
-                    <span className="text-sm"
+                    <span className="text-md"
                         style={{
                             marginTop: 'clamp(1.25rem, 7vw, 2.5rem)',
                             fontSize: 'clamp(0.75rem, 0.5rem + 1vw, 1rem)'

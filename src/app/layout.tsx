@@ -52,21 +52,25 @@ export default function RootLayout({
           <AdobeFontLoader />
           <div className="scroll-container">
             <div className="relative w-full h-screen">
-              <div className="sm:hidden">
+              <div className="md:hidden">
                 <MobileIcon />
+              </div>
+              <div className="hidden md:block">
+                <IconAndMenu />
+              </div>
+              <div className="sm:hidden">
                 <MobileBase />
               </div>
               <div className="hidden sm:block">
-                <IconAndMenu />
                 <DesktopBase />
               </div>
               <div className="isolate">
                 <Image
-                  src="/mobile/scan.webp"
+                  src="/mobile/iPadScan.webp"
                   alt="スキャン"
                   fill
                   className="
-                  sm:hidden 
+                  md:hidden 
                   absolute top-0 right-0 
                   h-screen w-full 
                   object-cover object-right
@@ -79,7 +83,7 @@ export default function RootLayout({
                   alt="スキャン"
                   fill
                   className="
-                  hidden sm:block 
+                  hidden md:block 
                   absolute top-0 right-0 
                   h-screen w-full 
                   object-cover object-right
@@ -91,7 +95,7 @@ export default function RootLayout({
                 {modal}
               </PageTransition>
             </div>
-            <div className="sm:hidden">
+            <div className="md:hidden">
               <MobileMenu />
             </div>
           </div>
