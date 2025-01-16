@@ -15,6 +15,8 @@ const config: Config = {
         'fluid-lg': 'clamp(1.125rem, 1vw + 0.9rem, 1.25rem)',     // 18px -> 20px
         'fluid-xl': 'clamp(1.25rem, 1.1vw + 1rem, 1.5rem)',       // 20px -> 24px
         'fluid-2xl': 'clamp(1.5rem, 1.2vw + 1.1rem, 2rem)',       // 24px -> 32px
+        'clamp-base': 'clamp(0.875rem, 0.75rem + 1vw, 1.125rem)',
+        'clamp-sm': 'clamp(0.75rem, 0.5rem + 1vw, 1rem)',
       },
       spacing: {
         'fluid-xs': 'clamp(0.5rem, 0.5vw + 0.3rem, 0.75rem)',     // 8px -> 12px
@@ -23,6 +25,9 @@ const config: Config = {
         'fluid-lg': 'clamp(1.5rem, 1.5vw + 1rem, 2rem)',          // 24px -> 32px
         'fluid-xl': 'clamp(2rem, 2vw + 1.5rem, 3rem)',            // 32px -> 48px
         'fluid-2xl': 'clamp(3rem, 3vw + 2rem, 4rem)',             // 48px -> 64px
+        'clamp-mt': 'clamp(1.25rem, 5vw, 2.5rem)',
+        'clamp-mt-lg': 'clamp(1.25rem, 7vw, 2.5rem)',
+        'clamp-pl': 'clamp(1.25rem, 5vw, 2rem)',
       },
       screens: {
         'xs': '375px',
@@ -34,7 +39,9 @@ const config: Config = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };
 
 export default config;

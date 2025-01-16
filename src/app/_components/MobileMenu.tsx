@@ -20,8 +20,12 @@ export default function MobileMenu() {
             <Image
                 src="/mobile/menu.webp"
                 alt="メニュー"
-                width={50}
-                height={50}
+                width={100}
+                height={100}
+                style={{
+                    width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)",
+                    objectFit: "cover"
+                }}
                 className="absolute top-0 right-0 mt-4 mr-3 cursor-pointer z-[110]"
                 onClick={toggleMenu}
             />

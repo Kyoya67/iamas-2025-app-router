@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Image from "next/image";
-import AdobeFontLoader from "./_components/AdobeFontLoader";
 import "./globals.css";
 import MobileMenu from "./_components/MobileMenu";
 import MobileIcon from "./_components/MobileIcon";
@@ -47,7 +46,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AdobeFontLoader />
         <div className="scroll-container">
           <div className="relative w-full h-screen">
             <div className="md:hidden z-10">

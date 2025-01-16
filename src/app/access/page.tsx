@@ -7,7 +7,12 @@ export const metadata: Metadata = {
 
 export default function Access() {
     return (
-        <div className="absolute inset-0 w-full min-h-screen p-8 text-left">
+        <div className="
+            absolute inset-0 w-full min-h-screen p-8
+            xs:w-[80%] xs:max-w-[20rem]
+            sm:w-[80%] sm:max-w-[30rem]
+            mx-auto
+        ">
             <h1 className="text-[#000f9f] text-2xl mt-[6.5rem]">
                 ACCESS
             </h1>
