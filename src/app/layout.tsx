@@ -4,11 +4,10 @@ import AdobeFontLoader from "./_components/AdobeFontLoader";
 import "./globals.css";
 import MobileMenu from "./_components/MobileMenu";
 import MobileIcon from "./_components/MobileIcon";
-import { ModalProvider } from "./_contexts/ModalContext";
 import PageTransition from "./_components/PageTransition";
 import { Metadata } from 'next';
-import DesktopBase from "./_components/DesktopBase";
-import MobileBase from "./_components/MobileBase";
+import DesktopBase from "./_components/base/DesktopBase";
+import MobileBase from "./_components/base/MobileBase";
 import IconAndMenu from "./_components/IconAndMenu";
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
@@ -46,61 +45,55 @@ export default function RootLayout({
   modal: React.ReactNode;
 }) {
   return (
-    <ModalProvider>
-      <html lang="en">
-        <body>
-          <AdobeFontLoader />
-          <div className="scroll-container">
-            <div className="relative w-full h-screen">
-              <div className="md:hidden">
-                <MobileIcon />
-              </div>
-              <div className="hidden md:block">
-                <IconAndMenu />
-              </div>
-              <div className="sm:hidden">
-                <MobileBase />
-              </div>
-              <div className="hidden sm:block">
-                <DesktopBase />
-              </div>
-              <div className="isolate">
-                <Image
-                  src="/mobile/iPadScan.webp"
-                  alt="スキャン"
-                  fill
-                  className="
-                  md:hidden 
-                  absolute top-0 right-0 
-                  h-screen w-full 
-                  object-cover object-right
-                  mix-blend-darken
-                  z-10
-                  pointer-events-none"
-                />
-                <Image
-                  src="/desktop/scan.webp"
-                  alt="スキャン"
-                  fill
-                  className="
-                  hidden md:block 
-                  absolute top-0 right-0 
-                  h-screen w-full 
-                  object-cover object-right
-                  pointer-events-none"
-                />
-              </div>
-              <PageTransition>
-                {children}
-                {modal}
-              </PageTransition>
-            </div>
-            <div className="md:hidden">
+    <html lang="en">
+      <body>
+        <AdobeFontLoader />
+        <div className="scroll-container">
+          <div className="relative w-full h-screen">
+            <div className="md:hidden z-10">
+              <MobileIcon />
               <MobileMenu />
             </div>
+            <div className="hidden md:block z-10">
+              <IconAndMenu />
+            </div>
+            <div className="sm:hidden z-0">
+              <MobileBase />
+            </div>
+            <div className="hidden sm:block z-0">
+              <DesktopBase />
+            </div>
+            <div className='z-10'>
+              <Image
+                src="/mobile/iPadScan.webp"
+                alt="スキャン"
+                fill
+                className="
+                md:hidden 
+                absolute top-0 right-0 
+                h-screen w-full 
+                object-cover object-right
+                pointer-events-none"
+              />
+              <Image
+                src="/desktop/scan.webp"
+                alt="スキャン"
+                fill
+                className="
+                hidden md:block 
+                absolute top-0 right-0 
+                h-screen w-full 
+                object-cover object-right
+                pointer-events-none"
+              />
+            </div>
+            <PageTransition>
+              {children}
+              {modal}
+            </PageTransition>
           </div>
-        </body>
-      </html>
-    </ModalProvider>
+        </div>
+      </body>
+    </html>
   );
 }

@@ -1,22 +1,18 @@
 "use client";
 
-import { useModal } from "../_contexts/ModalContext";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function MobileMenu() {
-    const { isOpen, openModal, closeModal } = useModal();
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-        if (isOpen) {
-            closeModal();
-        } else {
-            openModal();
-        }
+        setIsOpen(!isOpen);
     };
 
     const closeMenu = () => {
-        closeModal();
+        setIsOpen(false);
     };
 
     return (
@@ -26,7 +22,7 @@ export default function MobileMenu() {
                 alt="メニュー"
                 width={50}
                 height={50}
-                className="absolute top-0 right-0 mt-4 mr-3 cursor-pointer"
+                className="absolute top-0 right-0 mt-4 mr-3 cursor-pointer z-[110]"
                 onClick={toggleMenu}
             />
             <div
@@ -35,7 +31,7 @@ export default function MobileMenu() {
                     bg-[#000f9f]/40
                     transition-opacity duration-300 
                     ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
-                    z-10
+                    z-[100]
                 `}
                 onClick={closeMenu}
             />
@@ -44,13 +40,14 @@ export default function MobileMenu() {
                     fixed top-0 right-0 
                     bg-[#f5f8f9] 
                     shadow-lg 
-                    p-4 z-20 w-3/5 h-full 
+                    p-4 z-[110] w-3/5 h-full 
                     transition-transform 
                     duration-300 
                     transform ${isOpen ? "translate-x-0" : "translate-x-full"}
+                    overflow-y-auto
                 `}
             >
-                <button onClick={toggleMenu} className="absolute top-2 right-2">
+                <button onClick={toggleMenu} className="absolute top-2 right-2 z-[110]">
                     <Image
                         src="/mobile/close.webp"
                         alt="閉じる"
@@ -66,9 +63,10 @@ export default function MobileMenu() {
                     }}>Close</span>
                 </button>
 
-                <div className="text-[#000f9f] text-left absolute top-[6rem]"
+                <div className="text-[#000f9f] text-left relative pt-[6rem]"
                     style={{
-                        left: 'clamp(1.25rem, 5vw, 2rem)',
+                        paddingLeft: 'clamp(1.25rem, 5vw, 2rem)',
+                        paddingBottom: '2rem'
                     }}
                 >
                     情報科学芸術大学院大学<br></br>

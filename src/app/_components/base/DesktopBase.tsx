@@ -1,8 +1,8 @@
 import Image from "next/image";
-import ConceptMovie from "./ConceptMovie";
+import ConceptMovie from "../ConceptMovie";
 export default function DesktopBase() {
     return (
-        <div className="relative z-0 isolation-auto">
+        <div className="relative z-0">
             <Image
                 src="/desktop/base/rightTop.webp"
                 alt="右上"

@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function MobileBase() {
     return (
-        <div className="relative z-0 isolation-auto">
+        <div className="relative z-0">
             <Image
                 src="/mobile/base/rightMiddle.webp"
                 alt="右中"
