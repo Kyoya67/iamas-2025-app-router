@@ -19,10 +19,10 @@ export default function Contact() {
             ">
                 <ul className="
                     text-fluid-base text-[#000f9f]
-                    flex flex-col gap-y-3
+                    flex flex-col gap-y-2
                 ">
                     <li>
-                        <div className="flex flex-col gap-y-2">
+                        <div className="flex flex-col gap-y-1">
                             <span>住所：岐阜県大垣市加賀野町4丁目1番地7</span>
                             <span className="ml-[3em]">ソフトピアジャパン・センタービル</span>
                         </div>

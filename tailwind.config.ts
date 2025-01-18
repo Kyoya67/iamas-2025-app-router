@@ -28,6 +28,8 @@ const config: Config = {
         'clamp-mt': 'clamp(1.25rem, 5vw, 2.5rem)',
         'clamp-mt-lg': 'clamp(1.25rem, 7vw, 2.5rem)',
         'clamp-pl': 'clamp(1.25rem, 5vw, 2rem)',
+        'fluid-padding': 'clamp(1rem, 1vw + 0.5rem, 1.5rem)',
+        'fluid-padding-sm': 'clamp(0.5rem, 0.5vw + 0.25rem, 1rem)',
       },
       screens: {
         'xs': '375px',
