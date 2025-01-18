@@ -19,7 +19,7 @@ export default function Overview() {
                     overflow-y-auto
                     text-left text-[#000f9f]
                     text-justify
-                    w-[clamp(15rem,60vw,23rem)]
+                    w-[clamp(18rem,60vw,23rem)]
                     md:w-[clamp(24rem,50vw,40rem)]
                     mask-container
                     overview-scroll
