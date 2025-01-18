@@ -23,14 +23,30 @@ export default function Contact() {
                 ">
                     <li>
                         <div className="flex flex-col gap-y-2">
-                            <span>住所：岐阜県大垣市加賀野町4丁目1-7</span>
+                            <span>住所：岐阜県大垣市加賀野町4丁目1番地7</span>
                             <span className="ml-[3em]">ソフトピアジャパン・センタービル</span>
                         </div>
                     </li>
                     <li>TEL：0584-75-6600</li>
                     <li>FAX：0584-75-6637</li>
                     <li>Mail：iamas25@ml.iamas.ac.jp</li>
-                    <li>WEB：<a href="https://www.iamas.ac.jp/">https://www.iamas.ac.jp/</a></li>
+                    <li>
+                        WEB：
+                        <a
+                            href="https://www.iamas.ac.jp/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+                                hover:opacity-20 
+                                transition-opacity 
+                                duration-200
+                                inline-flex 
+                                items-center
+                            "
+                        >
+                            <span className="ml-1">https://www.iamas.ac.jp/</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
