@@ -1,7 +1,7 @@
-import { fetchGASData } from "../../../_lib/api";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Modal from "../../_components/Master";
+import { getStudentByName } from "../../../_lib/api";
 
 interface Props {
     params: Promise<{
@@ -17,25 +17,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function MasterModal({ params }: Props) {
-    const [data, { name }] = await Promise.all([
-        fetchGASData(),
-        params
-    ]);
-
-    const student = data.find(item =>
-        item.authorEnglishName.split(' ').join('') === name
-    );
-
-    if (!student) {
-        notFound();
-    }
+    const { name } = await params;
+    const student = await getStudentByName(name);
+    if (!student) notFound();
 
     return (
         <Modal>
             <h1 className="text-[#000f9f] text-fluid-xl mb-4">
                 {student.authorJapaneseName}
             </h1>
-            InterCepted!!!!!!!
         </Modal>
     );
 }

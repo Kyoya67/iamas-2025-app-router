@@ -38,15 +38,10 @@ export async function fetchGASData(): Promise<GASResponse[]> {
   }
 }
 
-// キャッシュを手動で更新する関数
-export async function revalidateGASData() {
-  try {
-    // 作成したRoute Handlerを呼び出す
-    await fetch('/api/revalidate', {
-      method: 'POST',
-      body: JSON.stringify({ tag: 'gas-data' })
-    });
-  } catch (error) {
-    console.error('Error revalidating:', error);
-  }
-} 
+// 特定の学生のデータを取得する関数
+export async function getStudentByName(name: string): Promise<GASResponse | undefined> {
+  const data = await fetchGASData();
+  return data.find(item =>
+    item.authorEnglishName.split(' ').join('') === name
+  );
+}

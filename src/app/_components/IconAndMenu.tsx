@@ -32,7 +32,7 @@ export default function IconAndMenu() {
                 <Image
                     src="/desktop/iconAndMenu.webp"
                     alt="アイコンとメニュー"
-                    width={200}
+                    width={300}
                     height={400}
                     style={{
                         width: 'clamp(170px, 5vw, 200px)'

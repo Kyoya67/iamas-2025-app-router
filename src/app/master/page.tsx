@@ -1,15 +1,34 @@
 import type { Metadata } from "next";
-import { fetchGASData } from "../_lib/api";
 import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "IAMAS 2025 修士研究発表会",
 }
 
-export const revalidate = 3600;
-
 export default async function Master() {
-    const data = await fetchGASData();
+    // const data = await fetchStudentNames();
+    const data = [
+        { authorJapaneseName: '嶋 晏澄', authorEnglishName: 'Azumi Shima' },
+        { authorJapaneseName: '竹本誠', authorEnglishName: 'Makoto Takemoto' },
+        { authorJapaneseName: '宮﨑那奈子', authorEnglishName: 'Nanako Miyazaki' },
+        { authorJapaneseName: '後藤朋美', authorEnglishName: 'Tomomi Goto' },
+        { authorJapaneseName: '浅井睦', authorEnglishName: 'Mutsushi Asai' },
+        { authorJapaneseName: '猪﨑康世', authorEnglishName: 'Kosei Izaki' },
+        { authorJapaneseName: '上田麟太朗', authorEnglishName: 'Rintaro UEDA' },
+        { authorJapaneseName: '璃月ゆあ', authorEnglishName: 'Yua Riduki' },
+        { authorJapaneseName: 'カワイタケシ', authorEnglishName: 'KAWAI Takeshi' },
+        { authorJapaneseName: '菊田佳恵', authorEnglishName: 'Yoshie Kikuta' },
+        { authorJapaneseName: '三波蒼菜', authorEnglishName: 'aona minami' },
+        { authorJapaneseName: '志村翔太', authorEnglishName: 'Shota Shimura' },
+        { authorJapaneseName: 'ジョン ジユン', authorEnglishName: 'JUNG Jieyun' },
+        { authorJapaneseName: '對中優', authorEnglishName: 'Masaru Tainaka' },
+        { authorJapaneseName: '徳保晴人', authorEnglishName: 'Tokubo Haruto' },
+        { authorJapaneseName: '成瀬陽太', authorEnglishName: 'Santa NARUSE' },
+        { authorJapaneseName: 'バク ソミン', authorEnglishName: 'BAK Somin' },
+        { authorJapaneseName: '橋本正隆', authorEnglishName: 'Masataka Hashimoto' },
+        { authorJapaneseName: '松井美緒', authorEnglishName: 'Mio Matsui' },
+        { authorJapaneseName: '山口結子', authorEnglishName: 'Yuiko Yamaguchi' },
+        { authorJapaneseName: 'ジョアンナ　リュ', authorEnglishName: 'Joanna LYU' }]
 
     const midPoint = Math.ceil(data.length / 2);
     const leftColumn = data.slice(0, midPoint);
@@ -17,7 +36,7 @@ export default async function Master() {
 
     return (
         <div className="
-            absolute inset-0 flex justify-center overflow-hidden
+            absolute inset-0 flex justify-center 
             p-fluid-padding-sm sm:p-0
             mt-5
         ">
