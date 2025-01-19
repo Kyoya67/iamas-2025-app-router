@@ -66,6 +66,8 @@ export default function RootLayout({
                 src="/mobile/iPadScan.webp"
                 alt="スキャン"
                 fill
+                priority
+                loading="eager"
                 className="
                 md:hidden 
                 absolute top-0 right-0 

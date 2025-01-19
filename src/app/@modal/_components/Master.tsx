@@ -1,66 +1,51 @@
 'use client';
 
-import { useCallback, useRef, useEffect, useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
+import { Overlay } from './Overlay';
 
-export default function Modal({ children }: { children: React.ReactNode }) {
-    const overlay = useRef<HTMLDivElement>(null);
+interface ModalProps {
+    children: React.ReactNode;
+    nextPath?: string | null;
+    previousPath?: string | null;
+}
+
+export default function Modal({ children, nextPath, previousPath }: ModalProps) {
     const router = useRouter();
     const [isVisible, setIsVisible] = useState(false);
-    const [isDismissing, setIsDismissing] = useState(false);
 
     useEffect(() => {
         setIsVisible(true);
     }, []);
 
-    const onDismiss = useCallback(() => {
-        if (isDismissing) return;
-
-        setIsDismissing(true);
-        setIsVisible(false);
-        router.back();
-    }, [router, isDismissing]);
-
-    const onClick = useCallback(
-        (e: React.MouseEvent) => {
-            if (e.target === overlay.current) {
-                onDismiss();
-            }
-        },
-        [onDismiss, overlay]
-    );
-
-    const onKeyDown = useCallback(
-        (e: KeyboardEvent) => {
-            if (e.key === 'Escape') onDismiss();
-        },
-        [onDismiss]
-    );
+    const handleKeyDown = useCallback((e: KeyboardEvent) => {
+        switch (e.key) {
+            case 'ArrowRight':
+                if (nextPath) router.replace(nextPath);
+                break;
+            case 'ArrowLeft':
+                if (previousPath) router.replace(previousPath);
+                break;
+        }
+    }, [nextPath, previousPath, router]);
 
     useEffect(() => {
-        document.addEventListener('keydown', onKeyDown);
-        return () => document.removeEventListener('keydown', onKeyDown);
-    }, [onKeyDown]);
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [handleKeyDown]);
 
     return (
-        <div
-            ref={overlay}
-            className={`
-                fixed inset-0 w-full h-screen 
-                bg-black/60 backdrop-blur-sm z-50 
-                flex items-center justify-center transition-opacity duration-300 
-                ${isVisible ? 'opacity-100' : 'opacity-0'}
-            `}
-            onClick={onClick}
-        >
+        <>
+            <Overlay isVisible={isVisible} />
             <div
                 className={`
-                    w-[80%] h-[80vh] texture-bg rounded-md transition-all 
-                    ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}
+                    fixed z-[120] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                    w-[80%] h-[80vh] texture-bg rounded-md
+                    ${isVisible ? 'block' : 'hidden'}
                 `}
             >
                 {children}
             </div>
-        </div>
+        </>
     );
 }
