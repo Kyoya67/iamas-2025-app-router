@@ -23,8 +23,7 @@ const config: Config = {
         'fluid-sm': 'clamp(0.75rem, 0.7vw + 0.5rem, 0.875rem)',       // 12px -> 16px
         'fluid-base': 'clamp(1rem, 1vw + 0.75rem, 1.5rem)',       // 16px -> 24px
         'fluid-lg': 'clamp(1.5rem, 1.5vw + 1rem, 2rem)',          // 24px -> 32px
-        'fluid-xl': 'clamp(2rem, 2vw + 1.5rem, 3rem)',            // 32px -> 48px
-        'fluid-2xl': 'clamp(3rem, 3vw + 2rem, 4rem)',             // 48px -> 64px
+        'fluid-xl': 'clamp(2rem, 2vw + 1.5rem, 3rem)',
         'clamp-mt': 'clamp(1.25rem, 5vw, 2.5rem)',
         'clamp-mt-lg': 'clamp(1.25rem, 7vw, 2.5rem)',
         'clamp-pl': 'clamp(1.25rem, 5vw, 2rem)',

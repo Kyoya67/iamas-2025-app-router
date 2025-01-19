@@ -14,19 +14,18 @@ export default async function Master() {
     return (
         <div className="
             absolute inset-0 flex justify-center 
-            p-fluid-padding-sm sm:p-0
-            mt-5
+            mt-5 md:mt-0
         ">
             <div className="
                 h-[60vh]
                 mt-[15vh]
+                ml-6
                 overflow-y-auto
                 text-left text-[#000f9f]
-                w-[clamp(18rem,80vw,50rem)]
                 mask-container
                 overview-scroll
             ">
-                <div className="grid grid-cols-2 gap-y-fluid-lg mx-auto">
+                <div className="grid grid-cols-2 gap-x-[6rem] gap-y-fluid-lg pr-6">
                     <div className="flex flex-col gap-y-fluid-lg">
                         {leftColumn.map((item) => (
                             <div key={`left-${item.authorEnglishName}`} className="px-fluid-padding-xs flex justify-center items-center">

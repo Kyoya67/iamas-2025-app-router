@@ -12,7 +12,7 @@ export default function Contact() {
         ">
             <div className="
                 max-w-5xl
-                mt-[8.5rem] mt-[-3rem]
+                mt-[-3rem]
                 mx-auto
             ">
                 <ul className="

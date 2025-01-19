@@ -18,7 +18,6 @@ export default function Access() {
                 relative
                 h-[60vh]
                 mt-[15vh]
-                ml-6
                 sm:ml-12
                 overflow-y-auto
                 mask-container
