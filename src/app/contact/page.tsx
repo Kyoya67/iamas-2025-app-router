@@ -7,19 +7,14 @@ export const metadata: Metadata = {
 export default function Contact() {
     return (
         <div className="
-            absolute inset-0 flex justify-center
-            p-fluid-padding-sm sm:p-0
-            relative h-full w-full
-            flex justify-center
+            absolute inset-0 w-full min-h-screen
+            flex justify-center items-center
         ">
             <div className="
-                    relative
-                    h-[60vh]
-                    mt-[30vh]
-                    overflow-y-auto
-                    mask-container
-                    overview-scroll
-                    ">
+                max-w-5xl
+                mt-[8.5rem] mt-[-3rem]
+                mx-auto
+            ">
                 <ul className="
                     text-fluid-base text-[#000f9f]
                     flex flex-col gap-y-2

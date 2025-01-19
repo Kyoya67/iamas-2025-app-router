@@ -16,6 +16,7 @@ export default function Overview() {
                     relative
                     h-[60vh]
                     mt-[15vh]
+                    ml-6
                     overflow-y-auto
                     text-left text-[#000f9f]
                     text-justify
@@ -27,7 +28,7 @@ export default function Overview() {
                 style={{
                     lineHeight: '1.8',
                 }}>
-                <div className="px-8 pr-12">
+                <div className="px-8 pr-6">
                     情報科学芸術大学院大学 [IAMAS] は、科学的知性と芸術的感性の融合を目指して研究活動を行う大学院大学です。
                     本学では、芸術、デザイン、工学、社会学など、多様な分野を背景に持つ23期生が、それぞれの専門性や視点を活かしながら、制作や研究に取り組んできました。
                     その集大成を発表する場として、このたび「IAMAS 2025」と題した成果展を開催いたします。<br />
