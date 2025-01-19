@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import accessBlur from '../../../public/access.webp'  // 静的インポート
 
 export const metadata: Metadata = {
     title: "IAMAS 2025 アクセス",
@@ -18,7 +19,7 @@ export default function Access() {
                 relative
                 h-[60vh]
                 mt-[15vh]
-                sm:ml-12
+                 sm:ml-12
                 overflow-y-auto
                 mask-container
                 overview-scroll
@@ -34,6 +35,8 @@ export default function Access() {
                         width={90}
                         height={180}
                         objectFit="cover"
+                        placeholder="blur"
+                        blurDataURL={accessBlur.blurDataURL}
                         className="mt-4 border-[0.1rem] border-[#000f9f] w-[90%] mx-auto"
                     />
                     <div className="mt-4">
