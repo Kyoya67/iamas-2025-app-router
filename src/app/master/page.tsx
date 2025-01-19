@@ -18,7 +18,6 @@ export default async function Master() {
             mt-5
         ">
             <div className="
-                relative
                 h-[60vh]
                 mt-[15vh]
                 overflow-y-auto

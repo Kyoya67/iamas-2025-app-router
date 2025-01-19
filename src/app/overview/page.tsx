@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function Overview() {
     return (
         <div className="
-            absolute inset-0 flex justify-center overflow-hidden
+            absolute inset-0 flex justify-center
             p-fluid-padding-sm sm:p-0
             relative h-full w-full
             flex justify-center

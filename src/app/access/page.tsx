@@ -13,28 +13,39 @@ export default function Access() {
             sm:w-[80%] sm:max-w-[30rem]
             mx-auto
         ">
-            <h1 className="text-[#000f9f] text-2xl mt-[6.5rem]">
-                ACCESS
-            </h1>
-            <Image
-                src="/access.webp"
-                alt="アクセス"
-                layout="responsive"
-                width={100}
-                height={200}
-                objectFit="cover"
-                className="mt-4 border-[0.1rem] border-[#000f9f]"
-            />
-            <div className="mt-4">
-                <div className="text-[#000f9f] text-2xl">
-                    大垣駅より
-                </div>
-                <div className="mt-2 text-1xl">
-                    タクシー：JR大垣駅南口より約5分
-                </div>
-                <div className="mt-2 text-1xl">
-                    バス：大垣駅南口から３番乗り場<br />
-                    ソフトピア線・羽島線「ソフトピアジャパン」行き約10分<br />
+            <div className="
+                relative
+                h-[60vh]
+                mt-[15vh]
+                overflow-y-auto
+                mask-container
+                overview-scroll
+            ">
+                <h1 className="text-[#000f9f] text-2xl">
+                    ACCESS
+                </h1>
+                <Image
+                    src="/access.webp"
+                    alt="アクセス"
+                    layout="responsive"
+                    width={100}
+                    height={200}
+                    objectFit="cover"
+                    className="mt-4 border-[0.1rem] border-[#000f9f]"
+                />
+                <div className="mt-4">
+                    <div className="text-[#000f9f] text-2xl">
+                        大垣駅より
+                    </div>
+                    <div className="mt-2 text-xl">
+                        タクシー：JR大垣駅南口より約5分
+                    </div>
+                    <div className="mt-2 text-xl">
+                        バス：大垣駅南口から３番乗り場<br />
+                        &emsp;&emsp;&emsp;ソフトピア線・羽島線<br />
+                        &emsp;&emsp;&emsp;「ソフトピアジャパン」<br />
+                        &emsp;&emsp;&emsp;行き約10分<br />
+                    </div>
                 </div>
             </div>
         </div>
