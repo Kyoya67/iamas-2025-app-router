@@ -89,8 +89,8 @@ export default function RootLayout({
             </div>
             <PageTransition>
               {children}
-              {modal}
             </PageTransition>
+            {modal}
           </div>
         </div>
       </body>

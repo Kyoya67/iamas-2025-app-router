@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Modal from "../../_components/Master";
+import { StudentContent } from "../../_components/StudentContent";
 import { getStudentByName } from "../../../_lib/api";
 import { STUDENT_NAMES } from "@/app/_lib/constants";
 
@@ -35,13 +36,8 @@ export default async function MasterModal({ params }: Props) {
         : null;
 
     return (
-        <Modal
-            nextPath={nextPath}
-            previousPath={previousPath}
-        >
-            <h1 className="text-[#000f9f] text-fluid-xl mb-4">
-                {student.authorJapaneseName}
-            </h1>
+        <Modal nextPath={nextPath} previousPath={previousPath}>
+            <StudentContent name={student.authorJapaneseName} />
         </Modal>
     );
 }
