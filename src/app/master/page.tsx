@@ -25,7 +25,7 @@ export default async function Master() {
                 mask-container
                 overview-scroll
             ">
-                <div className="grid grid-cols-2 gap-x-[6rem] gap-y-fluid-lg pr-6">
+                <div className="grid grid-cols-2 gap-x-[3rem] sm:gap-x-[6rem] gap-y-fluid-lg pr-6">
                     <div className="flex flex-col gap-y-fluid-lg">
                         {leftColumn.map((item) => (
                             <div key={`left-${item.authorEnglishName}`} className="px-fluid-padding-xs flex justify-center items-center">
