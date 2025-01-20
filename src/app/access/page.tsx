@@ -17,7 +17,7 @@ export default function Access() {
             <div className="
                 relative
                 h-[60vh]
-                mt-[15vh]
+                mt-[15vh] md:mt-[10vh]
                 ml-[1rem] md:ml-6
                 overflow-y-auto
                 mask-container

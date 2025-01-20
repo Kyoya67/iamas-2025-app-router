@@ -16,7 +16,7 @@ interface StudentContentProps {
 
 export function StudentContent({
     japaneseName, englishName,
-    profileJapanese, profileEnglish,
+    // profileJapanese, profileEnglish,
     X_URL, instagram_URL, other_URL,
     workTitleJapanese, workTitleEnglish,
     workDescriptionJapanese, workDescriptionEnglish
@@ -48,11 +48,15 @@ export function StudentContent({
                     {workTitleEnglish}
                 </p>
 
-                <Image src={`/work/${englishName.split(' ').join('')}.webp`}
-                    alt={workTitleEnglish}
-                    width={300}
-                    height={300}
-                />
+                <div className="mb-4 relative bg-black aspect-video w-full">
+                    <Image
+                        src={`/work/${englishName.split(' ').join('')}.webp`}
+                        alt={workTitleEnglish}
+                        layout="fill"
+                        objectFit="contain"
+                        className="mix-blend-normal"
+                    />
+                </div>
             </div>
             <p className="text-fluid-sm mb-4">
                 {workDescriptionJapanese}

@@ -37,7 +37,7 @@ export default function Modal({ children, nextPath, previousPath }: ModalProps) 
             <Overlay isVisible={true} />
             <div className="
                 fixed z-[120] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-                w-[80%] h-[80vh] texture-bg rounded-md
+                w-[80%] max-w-[30rem] h-[80vh] texture-bg rounded-md
                 p-8
                 overflow-y-auto
                 text-left text-[#000f9f]
