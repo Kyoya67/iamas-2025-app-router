@@ -37,7 +37,20 @@ export default async function MasterModal({ params }: Props) {
 
     return (
         <Modal nextPath={nextPath} previousPath={previousPath}>
-            <StudentContent name={student.authorJapaneseName} />
+            <StudentContent
+                japaneseName={student.authorJapaneseName}
+                englishName={student.authorEnglishName}
+                profileJapanese={student.profileJapanese}
+                profileEnglish={student.profileEnglish}
+                X_URL={student.X_URL}
+                instagram_URL={student.instagram_URL}
+                other_URL={student.other_URL}
+                workTitleJapanese={student.workTitleJapanese}
+                workTitleEnglish={student.workTitleEnglish}
+                workDescriptionJapanese={student.workDescriptionJapanese}
+                workDescriptionEnglish={student.workDescriptionEnglish}
+
+            />
         </Modal>
     );
 }

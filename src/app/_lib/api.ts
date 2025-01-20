@@ -4,9 +4,9 @@ export interface GASResponse {
   authorEnglishName: string;
   profileJapanese: string;
   profileEnglish: string;
-  X_URL: string;
-  instagram_URL: string;
-  other_URL: string;
+  X_URL?: string;
+  instagram_URL?: string;
+  other_URL?: string;
   workTitleJapanese: string;
   workTitleEnglish: string;
   workDescriptionJapanese: string;
