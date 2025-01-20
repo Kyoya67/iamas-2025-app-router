@@ -28,7 +28,6 @@ export function StudentContent({
     X_URL, instagram_URL, other_URL,
     workTitleJapanese, workTitleEnglish,
     workDescriptionJapanese, workDescriptionEnglish,
-    nextPath, previousPath
 }: StudentContentProps) {
     const { language } = useLanguage();
 
