@@ -56,7 +56,7 @@ export function StudentContent({
                 <p className="text-fluid-sm mb-2">
                     {language === 'ja' ? workTitleJapanese : workTitleEnglish}
                 </p>
-                <div className="mb-4 relative bg-black aspect-video w-full">
+                <div className="mb-4 relative aspect-video w-full">
                     <Image
                         src={`/work/${englishName.split(' ').join('')}.webp`}
                         alt={language === 'ja' ? workTitleJapanese : workTitleEnglish}
