@@ -4,6 +4,7 @@ import Modal from "../../_components/Master";
 import { StudentContent } from "../../_components/StudentContent";
 import { getStudentByName } from "../../../_lib/api";
 import { STUDENT_NAMES } from "@/app/_lib/constants";
+import { LanguageProvider } from '@/app/_contexts/LanguageContext';
 
 interface Props {
     params: Promise<{
@@ -36,21 +37,22 @@ export default async function MasterModal({ params }: Props) {
         : null;
 
     return (
-        <Modal nextPath={nextPath} previousPath={previousPath}>
-            <StudentContent
-                japaneseName={student.authorJapaneseName}
-                englishName={student.authorEnglishName}
-                profileJapanese={student.profileJapanese}
-                profileEnglish={student.profileEnglish}
-                X_URL={student.X_URL}
-                instagram_URL={student.instagram_URL}
-                other_URL={student.other_URL}
-                workTitleJapanese={student.workTitleJapanese}
-                workTitleEnglish={student.workTitleEnglish}
-                workDescriptionJapanese={student.workDescriptionJapanese}
-                workDescriptionEnglish={student.workDescriptionEnglish}
-
-            />
-        </Modal>
+        <LanguageProvider>
+            <Modal nextPath={nextPath} previousPath={previousPath}>
+                <StudentContent
+                    japaneseName={student.authorJapaneseName}
+                    englishName={student.authorEnglishName}
+                    profileJapanese={student.profileJapanese}
+                    profileEnglish={student.profileEnglish}
+                    X_URL={student.X_URL}
+                    instagram_URL={student.instagram_URL}
+                    other_URL={student.other_URL}
+                    workTitleJapanese={student.workTitleJapanese}
+                    workTitleEnglish={student.workTitleEnglish}
+                    workDescriptionJapanese={student.workDescriptionJapanese}
+                    workDescriptionEnglish={student.workDescriptionEnglish}
+                />
+            </Modal>
+        </LanguageProvider>
     );
 }

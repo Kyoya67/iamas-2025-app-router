@@ -1,4 +1,10 @@
+'use client';
+
 import Image from "next/image";
+import { LanguageToggle } from './LanguageToggle';
+import { useLanguage } from '@/app/_contexts/LanguageContext';
+import { FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { BiLinkExternal } from "react-icons/bi";
 
 interface StudentContentProps {
     japaneseName: string;
@@ -21,59 +27,79 @@ export function StudentContent({
     workTitleJapanese, workTitleEnglish,
     workDescriptionJapanese, workDescriptionEnglish
 }: StudentContentProps) {
+    const { language } = useLanguage();
+
     return (
         <div className="pr-3 text-black">
-            <div className="flex mb-4 border-b border-[#000f9f] pb-4">
-                <Image src={`/profile/${englishName.split(' ').join('')}.webp`}
-                    alt={englishName}
-                    width={100}
-                    height={100}
-                    className="mr-3"
-                />
-                <div>
-                    <h1 className="text-fluid-xl">
+            <div className="relative">
+                <LanguageToggle />
+            </div>
+            <div className="flex mb-2 border-b border-[#000f9f] pb-4">
+                <div className="relative bg-black w-[4rem] h-[4rem] mr-3 flex-shrink-0">
+                    <Image src={`/profile/${englishName.split(' ').join('')}.webp`}
+                        alt={englishName}
+                        layout="fill"
+                        objectFit="contain"
+                        className="mr-3"
+                    />
+                </div>
+                <div className="flex flex-col justify-start mt-[-0.2rem]">
+                    <h1 className="text-fluid-lg leading-tight">
                         {japaneseName}
                     </h1>
-                    <h2 className="text-[#000f9f] text-fluid-lg">
+                    <h2 className="text-[#000f9f] text-fluid-base mt-[-0.2rem]">
                         {englishName}
                     </h2>
                 </div>
             </div>
-
             <div className="mb-4">
-                <p className="text-fluid-sm">
-                    {workTitleJapanese}
+                <p className="text-fluid-sm mb-2">
+                    {language === 'ja' ? workTitleJapanese : workTitleEnglish}
                 </p>
-                <p className="text-fluid-sm text-[#000f9f] mb-2">
-                    {workTitleEnglish}
-                </p>
-
                 <div className="mb-4 relative bg-black aspect-video w-full">
                     <Image
                         src={`/work/${englishName.split(' ').join('')}.webp`}
-                        alt={workTitleEnglish}
+                        alt={language === 'ja' ? workTitleJapanese : workTitleEnglish}
                         layout="fill"
                         objectFit="contain"
                         className="mix-blend-normal"
                     />
                 </div>
+                <p className="text-fluid-sm mb-2">
+                    {language === 'ja' ? workDescriptionJapanese : workDescriptionEnglish}
+                </p>
             </div>
-            <p className="text-fluid-sm mb-4">
-                {workDescriptionJapanese}
-            </p>
-            <p className="text-fluid-sm mb-4">
-                {workDescriptionEnglish}
-            </p>
             <div className="flex flex-row gap-4">
-                <a href={X_URL} target="_blank" rel="noopener noreferrer">
-                    X
-                </a>
-                <a href={instagram_URL} target="_blank" rel="noopener noreferrer">
-                    Instagram
-                </a>
-                <a href={other_URL} target="_blank" rel="noopener noreferrer">
-                    Other
-                </a>
+                {X_URL && (
+                    <a
+                        href={X_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#000f9f] hover:opacity-70 transition-opacity"
+                    >
+                        <FaXTwitter size={20} />
+                    </a>
+                )}
+                {instagram_URL && (
+                    <a
+                        href={instagram_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#000f9f] hover:opacity-70 transition-opacity"
+                    >
+                        <FaInstagram size={20} />
+                    </a>
+                )}
+                {other_URL && (
+                    <a
+                        href={other_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#000f9f] hover:opacity-70 transition-opacity"
+                    >
+                        <BiLinkExternal size={20} />
+                    </a>
+                )}
             </div>
         </div>
     );
