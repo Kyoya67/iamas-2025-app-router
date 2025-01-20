@@ -32,11 +32,9 @@ export default function Access() {
                         src="/access.webp"
                         alt="アクセス"
                         layout="responsive"
-                        width={90}
-                        height={180}
+                        width={100}
+                        height={200}
                         objectFit="cover"
-                        placeholder="blur"
-                        blurDataURL={accessBlur.blurDataURL}
                         className="mt-4 border-[0.1rem] border-[#000f9f] w-[90%] mx-auto"
                     />
                     <div className="mt-4">
