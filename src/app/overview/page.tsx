@@ -15,8 +15,8 @@ export default function Overview() {
             <div className="
                     relative
                     h-[60vh]
-                    mt-[15vh]
-                    ml-6
+                    mt-[15vh] sm:mt-[18vh]
+                    ml-[-2rem] md:ml-6
                     overflow-y-auto
                     text-left text-[#000f9f]
                     text-justify

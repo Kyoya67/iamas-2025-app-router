@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import accessBlur from '../../../public/access.webp'  // 静的インポート
 
 export const metadata: Metadata = {
     title: "IAMAS 2025 アクセス",
@@ -10,7 +9,7 @@ export default function Access() {
     return (
         <div className="
             absolute inset-0 w-full min-h-screen p-8
-            xs:max-w-[25rem]
+            xs:max-w-[30rem]
             sm:w-full sm:max-w-[40rem]
             md:w-[70%] md:max-w-[40rem]
             mx-auto
@@ -19,7 +18,7 @@ export default function Access() {
                 relative
                 h-[60vh]
                 mt-[15vh]
-                 sm:ml-12
+                ml-[1rem] md:ml-6
                 overflow-y-auto
                 mask-container
                 overview-scroll
@@ -41,7 +40,7 @@ export default function Access() {
                         <div className="text-[#000f9f] text-xl">
                             大垣駅より
                         </div>
-                        <div className="mt-2 text-[0.6rem] sm:text-fluid-sm">
+                        <div className="mt-2 text-fluid-xs sm:text-fluid-sm">
                             <div>
                                 タクシー：JR大垣駅南口より約5分
                             </div>
