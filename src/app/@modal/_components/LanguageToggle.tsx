@@ -6,7 +6,7 @@ export function LanguageToggle() {
     const { language, setLanguage } = useLanguage();
 
     return (
-        <div className="flex gap-2 absolute xs:bottom-[-4.5rem] right-0">
+        <div className="flex gap-2 absolute bottom-[-4.5rem] sm:bottom-[-1.3rem] right-0">
             <button
                 onClick={() => setLanguage('ja')}
                 className={`
