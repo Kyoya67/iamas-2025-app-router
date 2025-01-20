@@ -3,6 +3,7 @@
 import { useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { Overlay } from './Overlay';
+import { NavigationArrows } from './NavigationArrows';
 
 interface ModalProps {
     children: React.ReactNode;
@@ -35,16 +36,18 @@ export default function Modal({ children, nextPath, previousPath }: ModalProps) 
     return (
         <>
             <Overlay isVisible={true} />
-            <div className="
-                fixed z-[120] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-                w-[80%] max-w-[30rem] h-[80vh] texture-bg rounded-md
-                p-8
-                overflow-y-auto
-                text-left text-[#000f9f]
-                mask-container
-                overview-scroll
-            ">
-                {children}
+            <div className="fixed z-[120] inset-0 flex items-center justify-center">
+                <NavigationArrows nextPath={nextPath} previousPath={previousPath} />
+                <div className="
+                    w-[80%] max-w-[30rem] h-[80vh] texture-bg rounded-md
+                    p-8
+                    overflow-y-auto
+                    text-left text-[#000f9f]
+                    mask-container
+                    overview-scroll
+                ">
+                    {children}
+                </div>
             </div>
         </>
     );

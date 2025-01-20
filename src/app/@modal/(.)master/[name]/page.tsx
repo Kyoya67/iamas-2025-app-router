@@ -51,6 +51,8 @@ export default async function MasterModal({ params }: Props) {
                     workTitleEnglish={student.workTitleEnglish}
                     workDescriptionJapanese={student.workDescriptionJapanese}
                     workDescriptionEnglish={student.workDescriptionEnglish}
+                    nextPath={nextPath}
+                    previousPath={previousPath}
                 />
             </Modal>
         </LanguageProvider>
