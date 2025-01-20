@@ -36,18 +36,20 @@ export default function Modal({ children, nextPath, previousPath }: ModalProps) 
     return (
         <>
             <Overlay isVisible={true} />
-            <div className="fixed z-[120] inset-0 flex items-center justify-center">
-                <NavigationArrows nextPath={nextPath} previousPath={previousPath} />
+            <div className="fixed inset-0 pointer-events-none z-[130]">
                 <div className="
+                    absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                     w-[80%] max-w-[30rem] h-[80vh] texture-bg rounded-md
                     p-8
                     overflow-y-auto
                     text-left text-[#000f9f]
                     mask-container
                     overview-scroll
+                    pointer-events-auto
                 ">
                     {children}
                 </div>
+                <NavigationArrows nextPath={nextPath} previousPath={previousPath} />
             </div>
         </>
     );

@@ -25,7 +25,8 @@ export function Overlay({ isVisible }: OverlayProps) {
                 fixed inset-0 w-full h-screen 
                 bg-black/75
                 flex items-center justify-center 
-                z-[120]
+                cursor-pointer
+                z-[125]
                 ${isVisible ? 'block' : 'hidden'}
             `}
         />
