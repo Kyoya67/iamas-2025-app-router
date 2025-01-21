@@ -36,26 +36,39 @@ export default async function MasterPage({ params }: Props) {
         : null;
 
     return (
-        <main className="container mx-auto px-4 py-8">
-            <div className="max-w-3xl mx-auto bg-white rounded-lg p-6 shadow-lg">
-                <LanguageProvider>
-                    <StudentContent
-                        japaneseName={student.authorJapaneseName}
-                        englishName={student.authorEnglishName}
-                        profileJapanese={student.profileJapanese}
-                        profileEnglish={student.profileEnglish}
-                        X_URL={student.X_URL}
-                        instagram_URL={student.instagram_URL}
-                        other_URL={student.other_URL}
-                        workTitleJapanese={student.workTitleJapanese}
-                        workTitleEnglish={student.workTitleEnglish}
-                        workDescriptionJapanese={student.workDescriptionJapanese}
-                        workDescriptionEnglish={student.workDescriptionEnglish}
-                        nextPath={nextPath}
-                        previousPath={previousPath}
-                    />
-                </LanguageProvider>
+        <div className="
+            absolute inset-0 flex justify-center 
+            max-w-2xl mx-auto
+        ">
+            <div className="
+                h-[60vh]
+                mt-[10vh]
+                ml-6
+                overflow-y-auto
+                text-left text-[#000f9f]
+                mask-container
+                overview-scroll
+            ">
+                <div className="pr-6">
+                    <LanguageProvider>
+                        <StudentContent
+                            japaneseName={student.authorJapaneseName}
+                            englishName={student.authorEnglishName}
+                            profileJapanese={student.profileJapanese}
+                            profileEnglish={student.profileEnglish}
+                            X_URL={student.X_URL}
+                            instagram_URL={student.instagram_URL}
+                            other_URL={student.other_URL}
+                            workTitleJapanese={student.workTitleJapanese}
+                            workTitleEnglish={student.workTitleEnglish}
+                            workDescriptionJapanese={student.workDescriptionJapanese}
+                            workDescriptionEnglish={student.workDescriptionEnglish}
+                            nextPath={nextPath}
+                            previousPath={previousPath}
+                        />
+                    </LanguageProvider>
+                </div>
             </div>
-        </main>
+        </div>
     );
 }
