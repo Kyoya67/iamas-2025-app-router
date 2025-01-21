@@ -1,12 +1,14 @@
-import { fetchGASData } from "../../_lib/api";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { StudentContent } from "@/app/_components/master/StudentContent";
+import { getStudentByName } from "../../_lib/api";
+import { STUDENT_NAMES } from "@/app/_lib/constants";
+import { LanguageProvider } from '@/app/_contexts/LanguageContext';
 
 interface Props {
     params: Promise<{
         name: string;
     }>;
-    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -17,27 +19,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function MasterPage({ params }: Props) {
-    const [data, { name }] = await Promise.all([
-        fetchGASData(),
-        params
-    ]);
+    const { name } = await params;
+    const student = await getStudentByName(name);
+    if (!student) notFound();
 
-    const student = data.find(item =>
-        item.authorEnglishName.split(' ').join('') === name
+    const currentIndex = STUDENT_NAMES.findIndex(
+        s => s.authorEnglishName.split(' ').join('') === name
     );
 
-    if (!student) {
-        notFound();
-    }
+    const nextPath = currentIndex < STUDENT_NAMES.length - 1
+        ? `/master/${STUDENT_NAMES[currentIndex + 1].authorEnglishName.split(' ').join('')}`
+        : null;
+
+    const previousPath = currentIndex > 0
+        ? `/master/${STUDENT_NAMES[currentIndex - 1].authorEnglishName.split(' ').join('')}`
+        : null;
 
     return (
-        <div className="absolute inset-0 w-full min-h-screen p-8">
-            <div className="max-w-5xl mx-auto mt-[6.5rem]">
-                <h1 className="text-[#000f9f] text-fluid-xl mb-4">
-                    {student.authorJapaneseName}
-                </h1>
-                {/* 他の学生情報を表示 */}
+        <main className="container mx-auto px-4 py-8">
+            <div className="max-w-3xl mx-auto bg-white rounded-lg p-6 shadow-lg">
+                <LanguageProvider>
+                    <StudentContent
+                        japaneseName={student.authorJapaneseName}
+                        englishName={student.authorEnglishName}
+                        profileJapanese={student.profileJapanese}
+                        profileEnglish={student.profileEnglish}
+                        X_URL={student.X_URL}
+                        instagram_URL={student.instagram_URL}
+                        other_URL={student.other_URL}
+                        workTitleJapanese={student.workTitleJapanese}
+                        workTitleEnglish={student.workTitleEnglish}
+                        workDescriptionJapanese={student.workDescriptionJapanese}
+                        workDescriptionEnglish={student.workDescriptionEnglish}
+                        nextPath={nextPath}
+                        previousPath={previousPath}
+                    />
+                </LanguageProvider>
             </div>
-        </div>
+        </main>
     );
 }

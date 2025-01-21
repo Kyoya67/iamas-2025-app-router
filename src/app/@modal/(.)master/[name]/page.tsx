@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Modal from "../../_components/Master";
-import { StudentContent } from "../../_components/StudentContent";
+import { StudentContent } from "@/app/_components/master/StudentContent";
 import { getStudentByName } from "../../../_lib/api";
 import { STUDENT_NAMES } from "@/app/_lib/constants";
 import { LanguageProvider } from '@/app/_contexts/LanguageContext';

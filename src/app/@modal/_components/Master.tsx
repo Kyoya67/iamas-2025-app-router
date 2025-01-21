@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { Overlay } from './Overlay';
 import { NavigationArrows } from './NavigationArrows';
 import Image from 'next/image';
-import { LanguageToggle } from './LanguageToggle';
+import { LanguageToggle } from '../../_components/master/LanguageToggle';
 
 interface ModalProps {
     children: React.ReactNode;
