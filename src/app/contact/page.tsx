@@ -42,7 +42,7 @@ export default function Contact() {
                                 items-center
                             "
                         >
-                            <span className="ml-1">https://www.iamas.ac.jp/</span>
+                            <span>https://www.iamas.ac.jp/</span>
                         </a>
                     </li>
                 </ul>
