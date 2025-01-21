@@ -38,7 +38,7 @@ export default async function MasterModal({ params }: Props) {
 
     return (
         <LanguageProvider>
-            <Modal nextPath={nextPath} previousPath={previousPath}>
+            <Modal nextPath={nextPath} previousPath={previousPath} name={name}>
                 <StudentContent
                     japaneseName={student.authorJapaneseName}
                     englishName={student.authorEnglishName}
