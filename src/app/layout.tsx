@@ -8,6 +8,8 @@ import { Metadata } from 'next';
 import DesktopBase from "./_components/base/DesktopBase";
 import MobileBase from "./_components/base/MobileBase";
 import IconAndMenu from "./_components/IconAndMenu";
+import TypekitLoader from './_components/TypekitLoader'
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
@@ -45,6 +47,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <TypekitLoader />
+      </head>
       <body>
         <div className="scroll-container">
           <div className="relative w-full h-screen">

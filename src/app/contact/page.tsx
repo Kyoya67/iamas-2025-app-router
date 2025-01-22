@@ -18,6 +18,7 @@ export default function Contact() {
                 <ul className="
                     text-fluid-base text-[#000f9f]
                     flex flex-col gap-y-2
+                    auto-ovo
                 ">
                     <li>
                         <div className="flex flex-col gap-y-1">
@@ -25,16 +26,20 @@ export default function Contact() {
                             <span className="ml-[3em]">ソフトピアジャパン・センタービル</span>
                         </div>
                     </li>
-                    <li>TEL：0584-75-6600</li>
-                    <li>FAX：0584-75-6637</li>
-                    <li>Mail：iamas25@ml.iamas.ac.jp</li>
+                    <li><span>TEL：</span><span className="ovo">0584-75-6600</span></li>
+                    <li><span>FAX：</span><span className="ovo">0584-75-6637</span></li>
                     <li>
-                        WEB：
+                        <span>Mail：</span>
+                        <span className="ovo">iamas25@ml.iamas.ac.jp</span>
+                    </li>
+                    <li>
+                        <span>WEB：</span>
                         <a
                             href="https://www.iamas.ac.jp/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="
+                                ovo
                                 hover:opacity-20 
                                 transition-opacity 
                                 duration-200

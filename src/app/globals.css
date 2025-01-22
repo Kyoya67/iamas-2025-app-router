@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* フォントの定義 */
+@font-face {
+  font-family: 'Ovo';
+  src: url('/fonts/Ovo-Regular.ttf?v=1') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #f5f8f9;
-  --foreground: #171717;
-  --font-body: "貂明朝", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+  --font-body: "ten-mincho", serif;
+  --font-ten-mincho: "ten-mincho", serif;
+  --font-ovo: "Ovo", serif;
 }
 
 body {
@@ -48,5 +57,34 @@ body {
 
 .overview-scroll::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 15, 159, 0.3);
+}
+
+/* フォントユーティリティクラス */
+.combined-font {
+  font-family: var(--font-ovo), var(--font-ten-mincho);
+}
+
+.ten-mincho {
+  font-family: var(--font-ten-mincho);
+}
+
+.ovo {
+  font-family: var(--font-ovo);
+}
+
+/* アルファベット文字に対してOvoフォントを適用 */
+.auto-ovo {
+  font-family: var(--font-body);
+}
+
+.auto-ovo:lang(en),
+.auto-ovo:not(:lang(ja)) {
+  font-family: var(--font-ovo);
+}
+
+/* 数字のみOvoフォントを適用 */
+.number-ovo {
+  font-variant-numeric: normal;
+  font-family: var(--font-ovo);
 }
 

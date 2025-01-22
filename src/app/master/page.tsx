@@ -24,6 +24,7 @@ export default async function Master() {
                 text-left text-[#000f9f]
                 mask-container
                 overview-scroll
+                auto-ovo
             ">
                 <div className="grid grid-cols-2 gap-x-[3rem] sm:gap-x-[6rem] gap-y-fluid-lg pr-6">
                     <div className="flex flex-col gap-y-fluid-lg">
@@ -31,7 +32,7 @@ export default async function Master() {
                             <div key={`left-${item.authorEnglishName}`} className="px-fluid-padding-xs flex justify-center items-center">
                                 <Link
                                     href={`/master/${item.authorEnglishName.split(' ').join('')}`}
-                                    className="text-[#000f9f] text-fluid-base text-center hover:opacity-70 transition-opacity"
+                                    className="text-[#000f9f] text-fluid-base text-center hover:opacity-70 transition-opacity ten-mincho"
                                     prefetch={false}
                                 >
                                     {item.authorJapaneseName}
@@ -44,7 +45,10 @@ export default async function Master() {
                             <div key={`right-${item.authorEnglishName}`} className="px-fluid-padding-xs flex justify-center items-center">
                                 <Link
                                     href={`/master/${item.authorEnglishName.split(' ').join('')}`}
-                                    className="text-[#000f9f] text-fluid-base text-center hover:opacity-70 transition-opacity"
+                                    className={`
+                                        text-[#000f9f] text-fluid-base text-center hover:opacity-70 transition-opacity
+                                        ${(i === 1 || i === 5 || i === 9) ? 'ovo' : 'ten-mincho'}
+                                    `}
                                     prefetch={false}
                                 >
                                     {(i === 1 || i === 5 || i === 9)

@@ -48,6 +48,7 @@ export default async function MasterPage({ params }: Props) {
                 text-left text-[#000f9f]
                 mask-container
                 overview-scroll
+                auto-ovo
             ">
                 <div className="pr-6">
                     <LanguageProvider>

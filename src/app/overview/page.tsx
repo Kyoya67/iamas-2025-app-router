@@ -15,18 +15,19 @@ export default function Overview() {
             <div className="
                 relative
                 h-[60vh]
-                mt-[20vh] sm:mt-[18vh]
-                sm:ml-[-2rem] md:ml-6
-                overflow-y-hidden sm:overflow-y-auto
+                mt-[15vh] sm:mt-[18vh]
+                ml-[-2rem] md:ml-6
+                overflow-y-auto
                 text-left text-[#000f9f]
                 text-justify
                 w-[clamp(18rem,60vw,23rem)]
                 md:w-[clamp(24rem,50vw,40rem)]
                 mask-container
                 overview-scroll
+                auto-ovo
             ">
                 <div className="
-                    px-8 sm:pr-6
+                    px-8 pr-6
                     sm:text-base
                     text-xs
                     tracking-[-0.25px]
@@ -34,6 +35,7 @@ export default function Overview() {
                     sm:leading-[1.8]
                     font-normal
                     text-justify
+                    font-['a-otf-ryumin-pr6n']
                 ">
                     情報科学芸術大学院大学 [IAMAS] は、科学的知性と芸術的感性の融合を目指して研究活動を行う大学院大学です。
                     本学では、芸術、デザイン、工学、社会学など、多様な分野を背景に持つ23期生が、それぞれの専門性や視点を活かしながら、制作や研究に取り組んできました。
