@@ -17,7 +17,7 @@ export default function Access() {
             <ScrollMaskContent className="
                 h-[60vh]
                 mt-[15vh] md:mt-[10vh]
-                ml-[1rem] md:ml-6
+                ml-[1rem] md:ml-[3rem]
             ">
                 <div className="pr-6">
                     <h1 className="text-[#000f9f] text-2xl">
