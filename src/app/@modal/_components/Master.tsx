@@ -47,6 +47,7 @@ export default function Modal({ children, nextPath, previousPath }: ModalProps) 
                         p-8
                         pointer-events-auto
                         overflow-hidden
+                        ten-mincho
                     ">
                         {children}
                     </div>

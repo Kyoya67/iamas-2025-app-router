@@ -30,7 +30,7 @@ export function StudentContent({
     workDescriptionJapanese, workDescriptionEnglish,
 }: StudentContentProps) {
     return (
-        <div className="text-black relative h-full text-justify">
+        <div className="text-black relative h-full text-justify ten-mincho">
             <div className="relative z-10 h-full flex flex-col">
                 <LanguageProvider>
                     <div className="absolute top-0 right-0 flex flex-col gap-y-1">
@@ -47,7 +47,7 @@ export function StudentContent({
                     </div>
                     <div className="mb-2 border-b border-[#000f9f] pb-4">
                         <div className="flex">
-                            <div className="relative bg-black w-[4rem] h-[4rem] mr-3 flex-shrink-0">
+                            <div className="relative bg-black w-[4rem] h-[4rem] mr-1 sm:mr-3 flex-shrink-0">
                                 <Image
                                     src={`/profile/${englishName.split(' ').join('')}.webp`}
                                     alt={englishName}
@@ -60,7 +60,7 @@ export function StudentContent({
                                 <h1 className="text-fluid-lg leading-tight">
                                     {japaneseName}
                                 </h1>
-                                <h2 className="text-[#000f9f] text-fluid-base mt-[-0.2rem]">
+                                <h2 className="text-[#000f9f] text-fluid-sm sm:text-fluid-base mt-[-0.2rem]">
                                     {englishName}
                                 </h2>
                             </div>

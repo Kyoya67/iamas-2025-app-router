@@ -59,7 +59,7 @@ export default function RootLayout({
         <TypekitLoader />
         <DisableZoom />
       </head>
-      <body>
+      <body className="text-[#000f9f] ten-mincho">
         <div className="scroll-container">
           <div className="relative w-full h-screen">
             <div className="md:hidden z-10">

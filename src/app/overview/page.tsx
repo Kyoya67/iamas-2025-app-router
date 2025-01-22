@@ -21,7 +21,6 @@ export default function Overview() {
                 px-8 pr-6
             ">
                 <div className="
-                    ten-mincho
                     relative
                     mt-[17vh] 
                     text-xl sm:text-2xl 
