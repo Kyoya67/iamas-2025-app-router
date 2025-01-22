@@ -13,6 +13,7 @@ export default function Access() {
             sm:w-full sm:max-w-[40rem]
             md:w-[70%] md:max-w-[40rem]
             mx-auto
+            ten-mincho
         ">
             <ScrollMaskContent className="
                 h-[60vh]

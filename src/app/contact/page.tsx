@@ -9,6 +9,7 @@ export default function Contact() {
         <div className="
             absolute inset-0 w-full min-h-screen
             flex justify-center items-center
+            ten-mincho
         ">
             <div className="
                 max-w-5xl
