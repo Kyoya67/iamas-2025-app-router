@@ -13,6 +13,7 @@ export default function Overview() {
             relative h-full w-full
             flex flex-col items-center
             sm:ml-[0.5rem]
+            text-[#000f9f]
         ">
             <div className="
                 w-[clamp(18rem,60vw,23rem)]
@@ -32,8 +33,8 @@ export default function Overview() {
             </div>
 
             <ScrollMaskContent className="
-                h-[60vh] sm:h-[55vh]
-                mt-3
+                h-[60vh] xs:h-[66vh] sm:h-[55vh]
+                mt-2
                 w-[clamp(18rem,60vw,23rem)]
                 md:w-[clamp(24rem,50vw,40rem)]
             ">

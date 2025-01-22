@@ -35,7 +35,8 @@ const config: Config = {
         'scroll-padding': 'clamp(0.5rem, 0.5vw + 0.25rem, 1rem)',  // スクロールバー用のパディング
       },
       screens: {
-        'xs': '375px',
+        'xxs': '375px',
+        'xs': '390px',
         'sm': '500px',
         'md': '768px',
       },
