@@ -22,6 +22,7 @@ export default function Access() {
                 overflow-y-auto
                 mask-container
                 overview-scroll
+                scroll-mask
             ">
                 <div className="pr-6">
                     <h1 className="text-[#000f9f] text-2xl">

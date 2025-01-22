@@ -42,6 +42,7 @@ export default function Overview() {
                 overview-scroll
                 ten-mincho
                 auto-ovo
+                scroll-mask
             ">
                 <div className="
                     px-8 pr-6

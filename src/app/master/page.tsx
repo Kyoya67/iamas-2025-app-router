@@ -24,6 +24,7 @@ export default async function Master() {
                 text-left text-[#000f9f]
                 mask-container
                 overview-scroll
+                scroll-mask
                 auto-ovo
             ">
                 <div className="grid grid-cols-2 gap-x-[3rem] sm:gap-x-[6rem] gap-y-fluid-lg pr-6">
