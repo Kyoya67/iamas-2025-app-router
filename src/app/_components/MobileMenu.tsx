@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useCallback, memo } from "react";
+import { useState, useCallback, memo, useEffect } from "react";
 
 // 定数を外部化
 const MENU_LINKS = [
@@ -59,9 +59,9 @@ export default function MobileMenu() {
         setIsOpen(false);
     }, []);
 
-    if (typeof document !== 'undefined') {
+    useEffect(() => {
         document.body.style.overflow = isOpen ? 'hidden' : '';
-    }
+    }, [isOpen]);
 
     return (
         <div className="overflow-hidden pointer-events-auto">
