@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import { Overlay } from './Overlay';
 import { NavigationArrows } from './NavigationArrows';
 import Image from 'next/image';
-import { LanguageToggle } from '../../_components/master/LanguageToggle';
 
 interface ModalProps {
     children: React.ReactNode;
@@ -70,7 +69,6 @@ export default function Modal({ children, nextPath, previousPath, imageUrl, name
                         relative
                     ">
                         {children}
-                        <LanguageToggle />
                     </div>
                     <NavigationArrows nextPath={nextPath} previousPath={previousPath} />
                 </div>

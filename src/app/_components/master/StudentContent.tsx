@@ -1,10 +1,8 @@
-'use client';
-
 import Image from "next/image";
-import { LanguageToggle } from './LanguageToggle';
-import { useLanguage } from '@/app/_contexts/LanguageContext';
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { BiLinkExternal } from "react-icons/bi";
+import { LocalizedTextClient } from './LocalizedTextClient';
+import { LanguageToggleClient } from './LanguageToggleClient';
 
 interface StudentContentProps {
     japaneseName: string;
@@ -24,22 +22,18 @@ interface StudentContentProps {
 
 export function StudentContent({
     japaneseName, englishName,
-    // profileJapanese, profileEnglish,
     X_URL, instagram_URL, other_URL,
     workTitleJapanese, workTitleEnglish,
     workDescriptionJapanese, workDescriptionEnglish,
 }: StudentContentProps) {
-    const { language } = useLanguage();
-
     return (
         <div className="pr-3 text-black relative">
             <div className="relative z-10">
-                <div className="relative">
-                    <LanguageToggle />
-                </div>
+                <LanguageToggleClient />
                 <div className="flex mb-2 border-b border-[#000f9f] pb-4">
                     <div className="relative bg-black w-[4rem] h-[4rem] mr-3 flex-shrink-0">
-                        <Image src={`/profile/${englishName.split(' ').join('')}.webp`}
+                        <Image
+                            src={`/profile/${englishName.split(' ').join('')}.webp`}
                             alt={englishName}
                             layout="fill"
                             objectFit="contain"
@@ -56,21 +50,25 @@ export function StudentContent({
                     </div>
                 </div>
                 <div className="mb-4">
-                    <p className="text-fluid-sm mb-2">
-                        {language === 'ja' ? workTitleJapanese : workTitleEnglish}
-                    </p>
+                    <LocalizedTextClient
+                        ja={workTitleJapanese}
+                        en={workTitleEnglish}
+                        className="text-fluid-sm mb-2 text-justify"
+                    />
                     <div className="mb-4 relative aspect-video w-full">
                         <Image
                             src={`/work/${englishName.split(' ').join('')}.webp`}
-                            alt={language === 'ja' ? workTitleJapanese : workTitleEnglish}
+                            alt={workTitleEnglish}
                             layout="fill"
                             objectFit="contain"
                             className="mix-blend-normal"
                         />
                     </div>
-                    <p className="text-fluid-sm mb-2">
-                        {language === 'ja' ? workDescriptionJapanese : workDescriptionEnglish}
-                    </p>
+                    <LocalizedTextClient
+                        ja={workDescriptionJapanese}
+                        en={workDescriptionEnglish}
+                        className="text-fluid-sm mb-2 text-justify"
+                    />
                 </div>
                 <div className="flex flex-row gap-4">
                     {X_URL && (
