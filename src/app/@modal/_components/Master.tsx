@@ -13,7 +13,7 @@ interface ModalProps {
     name: string;
 }
 
-export default function Modal({ children, nextPath, previousPath, imageUrl, name }: ModalProps) {
+export default function Modal({ children, nextPath, previousPath }: ModalProps) {
     const router = useRouter();
 
     const handleKeyDown = useCallback((e: KeyboardEvent) => {
@@ -45,6 +45,8 @@ export default function Modal({ children, nextPath, previousPath, imageUrl, name
                         w-[80%] max-w-[30rem] h-[80vh] texture-bg rounded-md
                         text-left
                         p-8
+                        pointer-events-auto
+                        overflow-hidden
                     ">
                         {children}
                     </div>

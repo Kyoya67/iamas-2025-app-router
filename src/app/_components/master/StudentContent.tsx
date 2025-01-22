@@ -2,9 +2,9 @@ import Image from "next/image";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { BiLinkExternal } from "react-icons/bi";
 import { LocalizedTextClient } from './LocalizedTextClient';
-import { LanguageToggleClient } from './LanguageToggleClient';
 import { LanguageProvider } from '@/app/_contexts/LanguageContext';
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
+import { LanguageToggle } from "./LanguageToggle";
 
 interface StudentContentProps {
     japaneseName: string;
@@ -24,35 +24,54 @@ interface StudentContentProps {
 
 export function StudentContent({
     japaneseName, englishName,
+    profileJapanese, profileEnglish,
     X_URL, instagram_URL, other_URL,
     workTitleJapanese, workTitleEnglish,
     workDescriptionJapanese, workDescriptionEnglish,
 }: StudentContentProps) {
     return (
-        <div className="text-black relative h-full">
+        <div className="text-black relative h-full text-justify">
             <div className="relative z-10 h-full flex flex-col">
                 <LanguageProvider>
-                    <LanguageToggleClient />
-                    <div className="flex mb-2 border-b border-[#000f9f] pb-4">
-                        <div className="relative bg-black w-[4rem] h-[4rem] mr-3 flex-shrink-0">
-                            <Image
-                                src={`/profile/${englishName.split(' ').join('')}.webp`}
-                                alt={englishName}
-                                layout="fill"
-                                objectFit="contain"
-                                className="mr-3"
-                            />
+                    <div className="absolute top-0 right-0 flex flex-col gap-y-1">
+                        <div className="text-[#000f9f] cursor-pointer hover:opacity-70 px-4 border-[0.08rem] border-[#000f9f]">作品</div>
+                        <div className="text-black cursor-pointer hover:opacity-70 px-4 border-[0.08rem] border-black">研究</div>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center">
+                        <div className="ml-[-0.5rem] mb-[-1.3rem]">
+                            <LanguageToggle />
                         </div>
-                        <div className="flex flex-col justify-start mt-[-0.2rem]">
-                            <h1 className="text-fluid-lg leading-tight">
-                                {japaneseName}
-                            </h1>
-                            <h2 className="text-[#000f9f] text-fluid-base mt-[-0.2rem]">
-                                {englishName}
-                            </h2>
+                        <div className="text-[#000f9f] mb-[-1.3rem]">
+                            センタービル4F会議室
                         </div>
                     </div>
-                    <ScrollMaskContent className="mb-4 pr-3 pb-4 text-justify flex-1 overflow-y-auto">
+                    <div className="mb-2 border-b border-[#000f9f] pb-4">
+                        <div className="flex">
+                            <div className="relative bg-black w-[4rem] h-[4rem] mr-3 flex-shrink-0">
+                                <Image
+                                    src={`/profile/${englishName.split(' ').join('')}.webp`}
+                                    alt={englishName}
+                                    layout="fill"
+                                    objectFit="contain"
+                                    className="mr-3"
+                                />
+                            </div>
+                            <div className="flex flex-col justify-start mt-[-0.2rem]">
+                                <h1 className="text-fluid-lg leading-tight">
+                                    {japaneseName}
+                                </h1>
+                                <h2 className="text-[#000f9f] text-fluid-base mt-[-0.2rem]">
+                                    {englishName}
+                                </h2>
+                            </div>
+                        </div>
+                        <LocalizedTextClient
+                            ja={profileJapanese}
+                            en={profileEnglish}
+                            className="text-fluid-xs mt-1"
+                        />
+                    </div>
+                    <ScrollMaskContent className="mb-4 pr-3 pb-4 flex-1 overflow-y-auto">
                         <LocalizedTextClient
                             ja={workTitleJapanese}
                             en={workTitleEnglish}
