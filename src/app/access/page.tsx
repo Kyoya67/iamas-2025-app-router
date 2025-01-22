@@ -15,7 +15,6 @@ export default function Access() {
             mx-auto
         ">
             <ScrollMaskContent className="
-                relative
                 h-[60vh]
                 mt-[15vh] md:mt-[10vh]
                 ml-[1rem] md:ml-6

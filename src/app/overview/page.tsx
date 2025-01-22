@@ -33,8 +33,6 @@ export default function Overview() {
 
             <ScrollMaskContent className="
                 h-[60vh] sm:h-[55vh]
-                mt-[15vh] md:mt-[10vh]
-                ml-6
                 mt-3
                 w-[clamp(18rem,60vw,23rem)]
                 md:w-[clamp(24rem,50vw,40rem)]
@@ -47,6 +45,7 @@ export default function Overview() {
                     leading-[17px]
                     sm:leading-[1.8]
                     text-justify
+                    ten-mincho
                 ">
                     情報科学芸術大学院大学 [IAMAS] は、科学的知性と芸術的感性の融合を目指して研究活動を行う大学院大学です。
                     本学では、芸術、デザイン、工学、社会学など、多様な分野を背景に持つ23期生が、それぞれの専門性や視点を活かしながら、制作や研究に取り組んできました。
