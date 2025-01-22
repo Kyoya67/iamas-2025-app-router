@@ -5,8 +5,6 @@ import { useRouter } from 'next/navigation';
 import { Overlay } from './Overlay';
 import { NavigationArrows } from './NavigationArrows';
 
-
-
 interface ModalProps {
     children: React.ReactNode;
     nextPath?: string | null;

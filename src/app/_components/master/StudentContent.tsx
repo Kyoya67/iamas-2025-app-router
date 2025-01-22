@@ -29,8 +29,8 @@ export function StudentContent({
     workDescriptionJapanese, workDescriptionEnglish,
 }: StudentContentProps) {
     return (
-        <div className="text-black relative">
-            <div className="relative z-10">
+        <div className="text-black relative h-full">
+            <div className="relative z-10 h-full flex flex-col">
                 <LanguageProvider>
                     <LanguageToggleClient />
                     <div className="flex mb-2 border-b border-[#000f9f] pb-4">
@@ -52,7 +52,7 @@ export function StudentContent({
                             </h2>
                         </div>
                     </div>
-                    <ScrollMaskContent className="mb-4 pr-3 pb-4 text-justify">
+                    <ScrollMaskContent className="mb-4 pr-3 pb-4 text-justify flex-1 overflow-y-auto">
                         <LocalizedTextClient
                             ja={workTitleJapanese}
                             en={workTitleEnglish}
