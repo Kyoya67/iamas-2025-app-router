@@ -4,6 +4,7 @@ import { BiLinkExternal } from "react-icons/bi";
 import { LocalizedTextClient } from './LocalizedTextClient';
 import { LanguageToggleClient } from './LanguageToggleClient';
 import { LanguageProvider } from '@/app/_contexts/LanguageContext';
+import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 
 interface StudentContentProps {
     japaneseName: string;
@@ -28,7 +29,7 @@ export function StudentContent({
     workDescriptionJapanese, workDescriptionEnglish,
 }: StudentContentProps) {
     return (
-        <div className="pr-3 text-black relative">
+        <div className="text-black relative">
             <div className="relative z-10">
                 <LanguageProvider>
                     <LanguageToggleClient />
@@ -51,11 +52,11 @@ export function StudentContent({
                             </h2>
                         </div>
                     </div>
-                    <div className="mb-4">
+                    <ScrollMaskContent className="mb-4 pr-3 pb-4 text-justify">
                         <LocalizedTextClient
                             ja={workTitleJapanese}
                             en={workTitleEnglish}
-                            className="text-fluid-sm mb-2 text-justify"
+                            className="text-fluid-sm mb-2"
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image
@@ -69,42 +70,42 @@ export function StudentContent({
                         <LocalizedTextClient
                             ja={workDescriptionJapanese}
                             en={workDescriptionEnglish}
-                            className="text-fluid-sm mb-2 text-justify"
+                            className="text-fluid-sm mb-2"
                         />
-                    </div>
+                        <div className="flex flex-row gap-4">
+                            {X_URL && (
+                                <a
+                                    href={X_URL}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#000f9f] hover:opacity-70 transition-opacity"
+                                >
+                                    <FaXTwitter size={20} />
+                                </a>
+                            )}
+                            {instagram_URL && (
+                                <a
+                                    href={instagram_URL}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#000f9f] hover:opacity-70 transition-opacity"
+                                >
+                                    <FaInstagram size={20} />
+                                </a>
+                            )}
+                            {other_URL && (
+                                <a
+                                    href={other_URL}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#000f9f] hover:opacity-70 transition-opacity"
+                                >
+                                    <BiLinkExternal size={20} />
+                                </a>
+                            )}
+                        </div>
+                    </ScrollMaskContent>
                 </LanguageProvider>
-                <div className="flex flex-row gap-4">
-                    {X_URL && (
-                        <a
-                            href={X_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#000f9f] hover:opacity-70 transition-opacity"
-                        >
-                            <FaXTwitter size={20} />
-                        </a>
-                    )}
-                    {instagram_URL && (
-                        <a
-                            href={instagram_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#000f9f] hover:opacity-70 transition-opacity"
-                        >
-                            <FaInstagram size={20} />
-                        </a>
-                    )}
-                    {other_URL && (
-                        <a
-                            href={other_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#000f9f] hover:opacity-70 transition-opacity"
-                        >
-                            <BiLinkExternal size={20} />
-                        </a>
-                    )}
-                </div>
             </div>
         </div>
     );

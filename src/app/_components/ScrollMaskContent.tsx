@@ -16,7 +16,7 @@ export function ScrollMaskContent({ children, className = '' }: ScrollMaskConten
             className={`
                 relative
                 overflow-y-auto
-                text-left text-[#000f9f]
+                text-left
                 text-justify
                 mask-container
                 overview-scroll
