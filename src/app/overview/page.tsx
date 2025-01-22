@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
+import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 
 export const metadata: Metadata = {
     title: "IAMAS 2025 開催概要",
-}
+};
 
 export default function Overview() {
     return (
@@ -29,20 +30,14 @@ export default function Overview() {
                     ごあいさつ
                 </div>
             </div>
-            <div className="
-                relative
+
+            <ScrollMaskContent className="
                 h-[60vh] sm:h-[55vh]
+                mt-[15vh] md:mt-[10vh]
+                ml-6
                 mt-3
-                overflow-y-auto
-                text-left text-[#000f9f]
-                text-justify
                 w-[clamp(18rem,60vw,23rem)]
                 md:w-[clamp(24rem,50vw,40rem)]
-                mask-container
-                overview-scroll
-                ten-mincho
-                auto-ovo
-                scroll-mask
             ">
                 <div className="
                     px-8 pr-6
@@ -65,7 +60,7 @@ export default function Overview() {
                     IAMAS2025 実行委員長 <br />
                     成瀬陽太
                 </div>
-            </div>
+            </ScrollMaskContent>
         </div>
     );
 }

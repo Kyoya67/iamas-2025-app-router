@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-
+import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 export const metadata: Metadata = {
     title: "IAMAS 2025 アクセス",
 }
@@ -14,15 +14,11 @@ export default function Access() {
             md:w-[70%] md:max-w-[40rem]
             mx-auto
         ">
-            <div className="
+            <ScrollMaskContent className="
                 relative
                 h-[60vh]
                 mt-[15vh] md:mt-[10vh]
                 ml-[1rem] md:ml-6
-                overflow-y-auto
-                mask-container
-                overview-scroll
-                scroll-mask
             ">
                 <div className="pr-6">
                     <h1 className="text-[#000f9f] text-2xl">
@@ -53,7 +49,7 @@ export default function Access() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </ScrollMaskContent>
+        </div >
     );
 }

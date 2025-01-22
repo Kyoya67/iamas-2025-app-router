@@ -100,5 +100,31 @@ body {
     rgba(0, 0, 0, 1) 85%,
     rgba(0, 0, 0, 0) 100%
   );
+  transition: mask-image 0.3s ease, -webkit-mask-image 0.3s ease;
+}
+
+/* スクロールが最下部に達した時のマスク解除 */
+.scroll-mask.at-bottom {
+  mask-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  -webkit-mask-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+/* タッチデバイスでのズーム防止 */
+html, body {
+  touch-action: manipulation;  /* ダブルタップによるズームを防止 */
+  -webkit-text-size-adjust: none;  /* iOSでのテキストサイズ自動調整を無効化 */
+  -webkit-touch-callout: none;  /* タッチ&ホールドメニューを無効化 */
+  user-select: none;  /* テキスト選択を無効化 */
+}
+
+/* 必要に応じて特定の要素でのみテキスト選択を許可 */
+.allow-select {
+  user-select: text;
 }
 

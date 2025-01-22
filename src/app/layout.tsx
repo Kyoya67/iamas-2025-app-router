@@ -9,6 +9,7 @@ import DesktopBase from "./_components/base/DesktopBase";
 import MobileBase from "./_components/base/MobileBase";
 import IconAndMenu from "./_components/IconAndMenu";
 import TypekitLoader from './_components/TypekitLoader'
+import DisableZoom from './_components/DisableZoom';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
@@ -36,6 +37,13 @@ export const metadata: Metadata = {
     title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
     images: ["/OGP.webp"],
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    minimumScale: 1,
+    userScalable: false
+  }
 };
 
 export default function RootLayout({
@@ -49,6 +57,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <TypekitLoader />
+        <DisableZoom />
       </head>
       <body>
         <div className="scroll-container">

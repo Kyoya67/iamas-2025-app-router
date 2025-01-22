@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { STUDENT_NAMES } from "@/app/_lib/constants";
+import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
+
 export const metadata: Metadata = {
     title: "IAMAS 2025 修士研究発表会",
 }
@@ -16,16 +18,10 @@ export default async function Master() {
             absolute inset-0 flex justify-center 
             mt-5 md:mt-0
         ">
-            <div className="
-                h-[60vh]
+            <ScrollMaskContent className="
+                h-[60vh] sm:h-[55vh]
                 mt-[15vh]
                 ml-6
-                overflow-y-auto
-                text-left text-[#000f9f]
-                mask-container
-                overview-scroll
-                scroll-mask
-                auto-ovo
             ">
                 <div className="grid grid-cols-2 gap-x-[3rem] sm:gap-x-[6rem] gap-y-fluid-lg pr-6">
                     <div className="flex flex-col gap-y-fluid-lg">
@@ -61,7 +57,7 @@ export default async function Master() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </ScrollMaskContent>
         </div>
     );
 }
