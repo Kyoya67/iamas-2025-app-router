@@ -33,7 +33,7 @@ export default function TypekitLoader() {
                 f = true
                 clearTimeout(t)
                 try {
-                    // @ts-ignore - TypeKit will be available when script loads
+                    // @ts-expect-error - TypeKit will be available when script loads
                     window.Typekit?.load(config)
                     // フォントの読み込みを確認
                     console.log('TypeKit loaded')
