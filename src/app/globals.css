@@ -101,6 +101,8 @@ body {
     rgba(0, 0, 0, 0) 100%
   );
   transition: mask-image 0.3s ease, -webkit-mask-image 0.3s ease;
+  -webkit-overflow-scrolling: touch; /* Safari用 */
+  overscroll-behavior: none;
 }
 
 /* スクロールが最下部に達した時のマスク解除 */
@@ -126,5 +128,11 @@ html, body {
 /* 必要に応じて特定の要素でのみテキスト選択を許可 */
 .allow-select {
   user-select: text;
+}
+
+/* モバイルメニューのスクロール設定 */
+[role="dialog"] {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
 }
 

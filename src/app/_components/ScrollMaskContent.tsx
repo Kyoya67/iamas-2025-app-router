@@ -23,6 +23,7 @@ export function ScrollMaskContent({ children, className = '' }: ScrollMaskConten
                 ten-mincho
                 auto-ovo
                 scroll-mask
+                overscroll-none
                 ${className}
             `}
         >

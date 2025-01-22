@@ -105,6 +105,7 @@ export default function MobileMenu() {
                     duration-300 ease-in-out
                     transform ${isOpen ? "translate-x-0" : "translate-x-full"}
                     overflow-y-auto
+                    overscroll-none
                 `}
             >
                 <button
