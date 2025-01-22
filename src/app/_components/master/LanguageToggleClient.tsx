@@ -1,5 +1,3 @@
-'use client';
-
 import { LanguageToggle } from './LanguageToggle';
 
 export function LanguageToggleClient() {

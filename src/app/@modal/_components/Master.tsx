@@ -41,22 +41,6 @@ export default function Modal({ children, nextPath, previousPath, imageUrl, name
             <Overlay isVisible={true} />
             <div className="fixed inset-0 pointer-events-none z-[130]">
                 <div className="relative w-full h-full">
-                    {imageUrl && (
-                        <div className="relative w-full h-full">
-                            <Image
-                                src={imageUrl}
-                                alt={name}
-                                fill
-                                priority
-                                sizes="(max-width: 768px) 100vw, 80vw"
-                                className="object-contain transition-opacity duration-300"
-                                quality={90}
-                                loading="eager"
-                                placeholder="blur"
-                                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQrJyEwPENDPzE2O0FBNjpLPS1yWEk6T3ZxWW1eYWtpa2RkQW1vZW1xcXL/2wBDARUXFx4aHR4eHXJuJSNycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnL/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-                            />
-                        </div>
-                    )}
                     <div className="
                         absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                         w-[80%] max-w-[30rem] h-[80vh] texture-bg rounded-md
