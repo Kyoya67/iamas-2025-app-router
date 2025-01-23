@@ -75,7 +75,7 @@ export function StudentContent({
                         <LocalizedTextClient
                             ja={workTitleJapanese}
                             en={workTitleEnglish}
-                            className="text-fluid-base mb-2 text-[#000f9f]"
+                            className="text-sm sm:text-fluid-base mb-2 text-[#000f9f]"
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image
