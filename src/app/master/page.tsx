@@ -22,11 +22,11 @@ export default async function Master() {
                 mt-5 md:mt-0 
             ">
                 <div className="
-                    hidden lg:block
                     absolute left-[20vw] top-[20vh]
-                    w-[41vw]
-                    -rotate-[1.5deg]
+                    w-[41vw] -rotate-[1.5deg]
                     transition-opacity duration-300
+                    lg:opacity-100 lg:pointer-events-auto
+                    opacity-0 pointer-events-none   
                 ">
                     <WorkImage />
                 </div>
