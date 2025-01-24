@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import { Overlay } from './Overlay';
+import { useCallback, useEffect } from 'react';
 import { NavigationArrows } from './NavigationArrows';
+import { Overlay } from './Overlay';
 
 interface ModalProps {
     children: React.ReactNode;
@@ -42,7 +42,7 @@ export default function Modal({ children, nextPath, previousPath }: ModalProps) 
                 <div className="relative w-full h-full">
                     <div className="
                         absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                        w-[80%] max-w-[40rem] h-[85vh] sm:h-[90vh] texture-bg rounded-md
+                        w-[80%] max-w-[40rem] h-[80vh] sm:h-[90vh] texture-bg rounded-md
                         text-left
                         p-8
                         pointer-events-auto

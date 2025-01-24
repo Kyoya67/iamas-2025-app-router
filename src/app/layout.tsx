@@ -1,15 +1,14 @@
-import * as React from 'react'
 import Image from "next/image";
 import "./globals.css";
-import MobileMenu from "./_components/MobileMenu";
+import type { Metadata } from 'next';
+import DisableZoom from './_components/DisableZoom';
+import IconAndMenu from "./_components/IconAndMenu";
 import MobileIcon from "./_components/MobileIcon";
+import MobileMenu from "./_components/MobileMenu";
 import PageTransition from "./_components/PageTransition";
-import { Metadata } from 'next';
+import TypekitLoader from './_components/TypekitLoader'
 import DesktopBase from "./_components/base/DesktopBase";
 import MobileBase from "./_components/base/MobileBase";
-import IconAndMenu from "./_components/IconAndMenu";
-import TypekitLoader from './_components/TypekitLoader'
-import DisableZoom from './_components/DisableZoom';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),

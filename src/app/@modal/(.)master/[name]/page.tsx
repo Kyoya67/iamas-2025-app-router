@@ -1,9 +1,9 @@
-import { notFound } from "next/navigation";
-import { Metadata } from "next";
-import Modal from "../../_components/Master";
 import { StudentContent } from "@/app/_components/master/StudentContent";
-import { getStudentByName } from "../../../_lib/api";
 import { STUDENT_NAMES } from "@/app/_lib/constants";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getStudentByName } from "../../../_lib/api";
+import Modal from "../../_components/Master";
 
 interface Props {
     params: Promise<{
