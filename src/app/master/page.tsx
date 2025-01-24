@@ -16,17 +16,27 @@ export default async function Master() {
 
     return (
         <div className="
-            absolute inset-0 flex justify-center md:justify-end md:mr-[10vw]
-            mt-5 md:mt-0
+            absolute inset-0 flex justify-center lg:justify-end lg:mr-[10vw]
+            mt-5 md:mt-0 
         ">
             <div className="
-                hidden md:block
+                hidden lg:block
                 absolute left-[20vw] top-[20vh]
-                w-[40vw] h-[50vh]
+                w-[41vw]
+                -rotate-[1.5deg]
             ">
-                <div className="relative w-full h-full ml-6">
+                <div className="relative w-full aspect-[16/9] ml-6">
+                    <div className="absolute top-0 w-full h-full">
+                        <Image
+                            src={`/work/AzumiShima.webp`}
+                            alt={`AzumiShimaの作品`}
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
                     <div className="
-                                absolute -translate-x-1/4 -translate-y-1/4
+                                absolute left-[-5%] top-[-15%]
                                 w-[20%] aspect-square
                                 z-10
                             ">
@@ -38,7 +48,7 @@ export default async function Master() {
                         />
                     </div>
                     <div className="
-                                absolute right-0 -translate-x-[-25%] -translate-y-1/4
+                                absolute right-[-5%] top-[-15%]
                                 w-[20%] aspect-square
                                 z-10
                             ">
@@ -49,25 +59,19 @@ export default async function Master() {
                             className="object-contain"
                         />
                     </div>
-                    <Image
-                        src={`/work/AzumiShima.webp`}
-                        alt={`AzumiShimaの作品`}
-                        fill
-                        className="object-contain"
-                    />
                 </div>
             </div>
             <ScrollMaskContent className="
                 h-[60vh] sm:h-[55vh]
-                mt-[15vh]
-                ml-6
+                mt-[15vh] lg:mt-[20vh]
+                ml-6 
             ">
                 <div className="
                     grid grid-cols-2 
-                    gap-x-[3rem] sm:gap-x-[6rem] md:gap-x-[1rem] 
+                    gap-x-[3rem] sm:gap-x-[6rem] lg:gap-x-[1rem] 
                     pr-6
                 ">
-                    <div className="flex flex-col gap-y-fluid-lg md:gap-y-[0.6rem]">
+                    <div className="flex flex-col gap-y-fluid-lg lg:gap-y-[0.6rem]">
                         {leftColumn.map((item) => (
                             <div
                                 key={`left-${item.authorEnglishName}`}
@@ -87,7 +91,7 @@ export default async function Master() {
                             </div>
                         ))}
                     </div>
-                    <div className="flex flex-col gap-y-fluid-lg md:gap-y-[0.5rem]">
+                    <div className="flex flex-col gap-y-fluid-lg lg:gap-y-[0.5rem]">
                         {rightColumn.map((item, i) => (
                             <div
                                 key={`right-${item.authorEnglishName}`}

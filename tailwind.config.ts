@@ -39,6 +39,7 @@ const config: Config = {
         'xs': '390px',
         'sm': '500px',
         'md': '768px',
+        'lg': '1024px',
       },
       gridAutoFlow: {
         'col': 'column',
