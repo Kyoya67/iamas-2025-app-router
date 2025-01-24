@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
 import { STUDENT_NAMES } from "@/app/_lib/constants";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
+import { WorkImage } from "@/app/_components/master/WorkImage";
+import { StudentLink } from "@/app/_components/master/StudentLink";
 
 export const metadata: Metadata = {
     title: "IAMAS 2025 修士研究発表会",
@@ -25,41 +25,7 @@ export default async function Master() {
                 w-[41vw]
                 -rotate-[1.5deg]
             ">
-                <div className="relative w-full aspect-[16/9] ml-6">
-                    <div className="absolute top-0 w-full h-full">
-                        <Image
-                            src={`/work/AzumiShima.webp`}
-                            alt={`AzumiShimaの作品`}
-                            fill
-                            className="object-contain"
-                            priority
-                        />
-                    </div>
-                    <div className="
-                                absolute left-[-5%] top-[-15%]
-                                w-[20%] aspect-square
-                                z-10
-                            ">
-                        <Image
-                            src={`/desktop/leftTape.webp`}
-                            alt={"左のテープ"}
-                            fill
-                            className="object-contain"
-                        />
-                    </div>
-                    <div className="
-                                absolute right-[-5%] top-[-15%]
-                                w-[20%] aspect-square
-                                z-10
-                            ">
-                        <Image
-                            src={`/desktop/rightTape.webp`}
-                            alt={"右のテープ"}
-                            fill
-                            className="object-contain"
-                        />
-                    </div>
-                </div>
+                <WorkImage />
             </div>
             <ScrollMaskContent className="
                 h-[60vh] sm:h-[55vh]
@@ -77,17 +43,16 @@ export default async function Master() {
                                 key={`left-${item.authorEnglishName}`}
                                 className="px-fluid-padding-xs flex justify-center items-center"
                             >
-                                <Link
+                                <StudentLink
                                     href={`/master/${item.authorEnglishName.split(' ').join('')}`}
                                     className="
                                         peer
                                         text-[#000f9f] text-fluid-base text-center 
                                         hover:opacity-70 transition-opacity ten-mincho
                                     "
-                                    prefetch={false}
-                                >
-                                    {item.authorJapaneseName}
-                                </Link>
+                                    name={item.authorJapaneseName}
+                                    englishName={item.authorEnglishName}
+                                />
                             </div>
                         ))}
                     </div>
@@ -97,19 +62,18 @@ export default async function Master() {
                                 key={`right-${item.authorEnglishName}`}
                                 className="px-fluid-padding-xs flex justify-center items-center group/name"
                             >
-                                <Link
+                                <StudentLink
                                     href={`/master/${item.authorEnglishName.split(' ').join('')}`}
                                     className={`
                                         text-[#000f9f] text-fluid-base text-center hover:opacity-70 transition-opacity
                                         ${(i === 1 || i === 5 || i === 9) ? 'ovo' : 'ten-mincho'}
                                     `}
-                                    prefetch={false}
-                                >
-                                    {(i === 1 || i === 5 || i === 9)
+                                    name={(i === 1 || i === 5 || i === 9)
                                         ? item.authorEnglishName
                                         : item.authorJapaneseName
                                     }
-                                </Link>
+                                    englishName={item.authorEnglishName}
+                                />
                             </div>
                         ))}
                     </div>
