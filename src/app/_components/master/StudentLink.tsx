@@ -1,5 +1,6 @@
 'use client'
 
+import { useWork } from "@/app/_contexts/WorkContext"
 import Link from "next/link"
 
 interface StudentLinkProps {
@@ -10,23 +11,18 @@ interface StudentLinkProps {
 }
 
 export const StudentLink = ({ href, className, name, englishName }: StudentLinkProps) => {
-    const handleMouseEnter = () => {
-        window.dispatchEvent(new CustomEvent('workHover', {
-            detail: englishName.split(' ').join('')
-        }))
-    }
+    const { setCurrentWork } = useWork()
 
-    const handleMouseLeave = () => {
-        window.dispatchEvent(new CustomEvent('workLeave'))
+    const handleMouseEnter = () => {
+        setCurrentWork(englishName.split(' ').join(''))
     }
 
     return (
         <Link
             href={href}
             className={className}
-            prefetch={false}
+            prefetch={true}
             onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
         >
             {name}
         </Link>
