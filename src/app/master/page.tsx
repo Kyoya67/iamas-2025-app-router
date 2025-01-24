@@ -26,6 +26,7 @@ export default async function Master() {
                     absolute left-[20vw] top-[20vh]
                     w-[41vw]
                     -rotate-[1.5deg]
+                    transition-opacity duration-300
                 ">
                     <WorkImage />
                 </div>

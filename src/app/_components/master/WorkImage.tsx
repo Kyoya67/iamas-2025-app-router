@@ -1,6 +1,7 @@
 'use client'
 
 import { useWork } from "@/app/_contexts/WorkContext"
+import { AnimatePresence, motion } from "framer-motion"
 import Image from "next/image"
 
 export const WorkImage = () => {
@@ -8,17 +9,26 @@ export const WorkImage = () => {
 
     return (
         <div className="relative w-full aspect-[16/9] ml-6">
-            <div className="absolute top-0 w-full h-full">
-                <Image
-                    src={`/work/${currentWork}.webp`}
-                    alt={`${currentWork}の作品`}
-                    fill
-                    className="object-contain"
-                    priority
-                />
-            </div>
+            <AnimatePresence mode="wait">
+                <motion.div
+                    key={currentWork}
+                    className="absolute top-0 w-full h-full"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                >
+                    <Image
+                        src={`/work/${currentWork}.webp`}
+                        alt={`${currentWork}の作品`}
+                        fill
+                        className="object-contains border-[0.2px] border-[#777]"
+                        priority
+                    />
+                </motion.div>
+            </AnimatePresence>
             <div className="
-                        absolute left-[-5%] top-[-15%]
+                        absolute left-[-8%] top-[-17%]
                         w-[20%] aspect-square
                         z-10
                     ">
@@ -30,7 +40,7 @@ export const WorkImage = () => {
                 />
             </div>
             <div className="
-                        absolute right-[-5%] top-[-15%]
+                        absolute right-[-7%] top-[-17%]
                         w-[20%] aspect-square
                         z-10
                     ">
