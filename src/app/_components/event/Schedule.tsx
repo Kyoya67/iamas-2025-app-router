@@ -15,24 +15,39 @@ type Event = {
 export const Schedule = () => {
     const { selectedDay } = useEvent();
     const [events, setEvents] = useState<Event[]>([]);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchEvents = async () => {
             try {
                 const response = await fetch('/api/events');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
                 const data = await response.json();
-                setEvents(data);
+                if (Array.isArray(data)) {
+                    setEvents(data);
+                } else if (data.error) {
+                    setError(data.error);
+                } else {
+                    setError('Invalid data format');
+                }
             } catch (error) {
                 console.error('Failed to fetch events:', error);
+                setError('Failed to fetch events');
             }
         };
 
         fetchEvents();
     }, []);
 
-    const filteredEvents = events.filter(event =>
-        event.day === selectedDay && event.eventName !== ""
-    );
+    const filteredEvents = Array.isArray(events)
+        ? events.filter(event => event.day === selectedDay && event.eventName !== "")
+        : [];
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
 
     return (
         <ScrollMaskContent className="h-[50vh]">
