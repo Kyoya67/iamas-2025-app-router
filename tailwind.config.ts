@@ -40,6 +40,7 @@ const config: Config = {
         'sm': '500px',
         'md': '768px',
         'lg': '1024px',
+        'xl': '1280px',
       },
       gridAutoFlow: {
         'col': 'column',
