@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect } from 'react';
-import { NavigationArrows } from './NavigationArrows';
+import { NavigationArrows } from '../../_components/NavigationArrows';
 import { Overlay } from './Overlay';
 
 interface ModalProps {
