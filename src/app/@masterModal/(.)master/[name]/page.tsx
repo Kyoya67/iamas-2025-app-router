@@ -10,14 +10,16 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const name = params.name;
     return {
-        title: `IAMAS 2025 - ${params.name}`,
+        title: `IAMAS 2025 - ${name}`,
     };
 }
 
-export default function MasterModal({ params }: Props) {
+export default async function MasterModal({ params }: Props) {
+    const name = params.name;
     const currentIndex = STUDENT_NAMES.findIndex(
-        s => s.authorEnglishName.split(' ').join('') === params.name
+        s => s.authorEnglishName.split(' ').join('') === name
     );
 
     const nextPath = currentIndex < STUDENT_NAMES.length - 1
@@ -29,8 +31,8 @@ export default function MasterModal({ params }: Props) {
         : null;
 
     return (
-        <Modal nextPath={nextPath} previousPath={previousPath} name={params.name}>
-            <StudentContent name={params.name} />
+        <Modal nextPath={nextPath} previousPath={previousPath} name={name}>
+            <StudentContent name={name} />
         </Modal>
     );
 }
