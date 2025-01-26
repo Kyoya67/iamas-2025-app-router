@@ -26,6 +26,7 @@ export default function Event() {
                 flex flex-col items-center
                 sm:ml-[0.5rem]
                 text-[#000f9f]
+                overflow-x-hidden
             ">
                 <div className="
                     w-[70vw] sm:w-[56vw] xl:w-[29rem]
@@ -33,6 +34,7 @@ export default function Event() {
                     mt-[15vh]
                     relative
                     xl:ml-[40vw]
+                    max-w-full
                 ">
                     <div className="
                         absolute left-[-45vw] top-[5vh]

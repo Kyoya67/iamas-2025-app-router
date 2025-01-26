@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { BiLinkExternal } from "react-icons/bi";
@@ -5,30 +7,15 @@ import { LocalizedTextClient } from './LocalizedTextClient';
 import { LanguageProvider } from '@/app/_contexts/LanguageContext';
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { LanguageToggle } from "./LanguageToggle";
+import { useStudentByName } from '@/app/_lib/api-client';
 
-interface StudentContentProps {
-    japaneseName: string;
-    englishName: string;
-    profileJapanese: string;
-    profileEnglish: string;
-    X_URL?: string;
-    instagram_URL?: string;
-    other_URL?: string;
-    workTitleJapanese: string;
-    workTitleEnglish: string;
-    workDescriptionJapanese: string;
-    workDescriptionEnglish: string;
-    nextPath?: string | null;
-    previousPath?: string | null;
-}
+export const StudentContent = ({ name }: { name: string }) => {
+    const { student, error, isLoading } = useStudentByName(name);
 
-export function StudentContent({
-    japaneseName, englishName,
-    profileJapanese, profileEnglish,
-    X_URL, instagram_URL, other_URL,
-    workTitleJapanese, workTitleEnglish,
-    workDescriptionJapanese, workDescriptionEnglish,
-}: StudentContentProps) {
+    if (error) return <div>Failed to load student data</div>;
+    if (isLoading) return <div>Loading...</div>;
+    if (!student) return <div>Student not found</div>;
+
     return (
         <div className="text-black relative h-full text-justify ten-mincho">
             <div className="relative z-10 h-full flex flex-col">
@@ -49,8 +36,8 @@ export function StudentContent({
                         <div className="flex">
                             <div className="relative bg-black w-[4rem] h-[4rem] mr-1 sm:mr-3 flex-shrink-0">
                                 <Image
-                                    src={`/profile/${englishName.split(' ').join('')}.webp`}
-                                    alt={englishName}
+                                    src={`/profile/${student.authorEnglishName.split(' ').join('')}.webp`}
+                                    alt={student.authorEnglishName}
                                     layout="fill"
                                     objectFit="contain"
                                     className="mr-3"
@@ -58,43 +45,43 @@ export function StudentContent({
                             </div>
                             <div className="flex flex-col justify-start mt-[-0.2rem]">
                                 <h1 className="text-fluid-lg leading-tight">
-                                    {japaneseName}
+                                    {student.authorJapaneseName}
                                 </h1>
                                 <h2 className="text-[#000f9f] text-fluid-sm sm:text-fluid-base mt-[-0.2rem]">
-                                    {englishName}
+                                    {student.authorEnglishName}
                                 </h2>
                             </div>
                         </div>
                         <LocalizedTextClient
-                            ja={profileJapanese}
-                            en={profileEnglish}
+                            ja={student.profileJapanese}
+                            en={student.profileEnglish}
                             className="text-fluid-xs mt-1"
                         />
                     </div>
                     <ScrollMaskContent className="mb-4 pr-3 pb-4 flex-1 overflow-y-auto">
                         <LocalizedTextClient
-                            ja={workTitleJapanese}
-                            en={workTitleEnglish}
+                            ja={student.workTitleJapanese}
+                            en={student.workTitleEnglish}
                             className="text-sm sm:text-fluid-base mb-2 text-[#000f9f]"
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image
-                                src={`/work/${englishName.split(' ').join('')}.webp`}
-                                alt={workTitleEnglish}
+                                src={`/work/${student.authorEnglishName.split(' ').join('')}.webp`}
+                                alt={student.workTitleEnglish}
                                 layout="fill"
                                 objectFit="contain"
                                 className="mix-blend-normal"
                             />
                         </div>
                         <LocalizedTextClient
-                            ja={workDescriptionJapanese}
-                            en={workDescriptionEnglish}
+                            ja={student.workDescriptionJapanese}
+                            en={student.workDescriptionEnglish}
                             className="text-fluid-sm mb-2"
                         />
                         <div className="flex flex-row gap-4">
-                            {X_URL && (
+                            {student.X_URL && (
                                 <a
-                                    href={X_URL}
+                                    href={student.X_URL}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-[#000f9f] hover:opacity-70 transition-opacity"
@@ -102,9 +89,9 @@ export function StudentContent({
                                     <FaXTwitter size={20} />
                                 </a>
                             )}
-                            {instagram_URL && (
+                            {student.instagram_URL && (
                                 <a
-                                    href={instagram_URL}
+                                    href={student.instagram_URL}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-[#000f9f] hover:opacity-70 transition-opacity"
@@ -112,9 +99,9 @@ export function StudentContent({
                                     <FaInstagram size={20} />
                                 </a>
                             )}
-                            {other_URL && (
+                            {student.other_URL && (
                                 <a
-                                    href={other_URL}
+                                    href={student.other_URL}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-[#000f9f] hover:opacity-70 transition-opacity"

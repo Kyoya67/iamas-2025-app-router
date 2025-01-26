@@ -2,7 +2,7 @@
 
 import { useEvent } from "@/app/_contexts/EventContext";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
-import { useEffect, useState } from "react";
+import useSWR from 'swr';
 
 type Event = {
     eventName: string;
@@ -12,46 +12,29 @@ type Event = {
     content: string;
 }
 
+const fetcher = (url: string) => fetch(url).then(res => res.json());
+
 export const Schedule = () => {
     const { selectedDay } = useEvent();
-    const [events, setEvents] = useState<Event[]>([]);
-    const [error, setError] = useState<string | null>(null);
+    const { data: events = [], error } = useSWR<Event[]>('/api/events', fetcher, {
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+        dedupingInterval: 3600000,
+        fallbackData: [],
+        suspense: true,
+    })
 
-    useEffect(() => {
-        const fetchEvents = async () => {
-            try {
-                const response = await fetch('/api/events');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                if (Array.isArray(data)) {
-                    setEvents(data);
-                } else if (data.error) {
-                    setError(data.error);
-                } else {
-                    setError('Invalid data format');
-                }
-            } catch (error) {
-                console.error('Failed to fetch events:', error);
-                setError('Failed to fetch events');
-            }
-        };
-
-        fetchEvents();
-    }, []);
-
-    const filteredEvents = Array.isArray(events)
-        ? events.filter(event => event.day === selectedDay && event.eventName !== "")
-        : [];
+    const filteredEvents = events.filter(
+        event => event.day === selectedDay && event.eventName !== ""
+    );
 
     if (error) {
-        return <div>Error: {error}</div>;
+        return <div>Error: {error.message}</div>;
     }
 
     return (
         <ScrollMaskContent className="h-[50vh]">
-            <div className="space-y-6">
+            <div className="space-y-6 overflow-x-hidden">
                 {filteredEvents.map((event, index) => (
                     <div key={index} className="flex justify-between border-b-[0.08rem] border-[#000f9f] pb-2">
                         <div className="text-base font-medium">{event.time}</div>
