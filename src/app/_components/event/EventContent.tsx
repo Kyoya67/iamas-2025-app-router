@@ -12,13 +12,13 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
     if (!event) return <div>Event not found</div>;
 
     if (event.day === "Friday") {
-        day = "2/21" + " " + event.day;
+        day = "2/21（金）";
     } else if (event.day === "Saturday") {
-        day = "2/22" + " " + event.day;
+        day = "2/22（土）";
     } else if (event.day === "Sunday") {
-        day = "2/23" + " " + event.day;
+        day = "2/23（日）";
     } else {
-        day = "2/24" + " " + event.day;
+        day = "2/24（月）";
     }
 
     const renderParticipant = (index: number) => {
@@ -31,7 +31,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
 
         return (
             <div key={index}>
-                <div className="flex items-end mb-5">
+                <div className="flex items-end mb-2">
                     <Image
                         src={`/event/profile/${name}.webp`}
                         alt={name}
@@ -73,7 +73,6 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                 {[1, 2, 3, 4, 5, 6].map(index => renderParticipant(index))}
                 {[1, 2, 3].map(index => renderStudent(index))}
             </ScrollMaskContent>
-            {/* <div className="h-[2rem] border-2 border-black"></div> */}
         </div>
     );
 }; 
