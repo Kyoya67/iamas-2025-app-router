@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { EVENTS } from "@/app/_lib/eventInfo";

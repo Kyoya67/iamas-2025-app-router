@@ -19,7 +19,7 @@ export default async function EventModal({ params }: Props) {
     }
 
     return (
-        <Modal>
+        <Modal >
             <EventContent day={day} time={time} />
         </Modal>
     );
