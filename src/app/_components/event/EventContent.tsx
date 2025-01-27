@@ -26,21 +26,20 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
         const profileKey = `participant${index}_profile` as keyof typeof event;
         const name = event[nameKey] as string;
         const profile = event[profileKey] as string;
-        console.log(name);
 
         if (!name) return null;
 
         return (
             <div key={index}>
                 <div className="flex items-end mb-2">
-                    <Image
+                    {/* <Image
                         src={`/event/profile/${name}.webp`}
                         alt={name}
                         width={100}
                         height={100}
                         className="object-contain mr-4"
-                    />
-                    <div className="text-base sm:text-xl text-black">{name}</div>s
+                    /> */}
+                    <div className="text-base sm:text-xl text-black">{name}</div>
                 </div>
                 <div className="text-xs sm:text-sm text-black mb-4">{profile}</div>
             </div>
