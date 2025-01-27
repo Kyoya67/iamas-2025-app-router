@@ -15,7 +15,7 @@ export const Schedule = () => {
 
     return (
         <ScrollMaskContent className="h-[50vh]">
-            <div className="space-y-6 overflow-x-hidden">
+            <div className="space-y-6 overflow-x-hidden pr-3">
                 {filteredEvents.map((event, index) => {
                     const cleanTime = event.time.replace(/-$/, '');
                     return (
