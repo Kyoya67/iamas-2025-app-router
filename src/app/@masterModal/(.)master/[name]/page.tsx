@@ -1,23 +1,15 @@
 import { StudentContent } from "@/app/_components/master/StudentContent";
 import { MASTER_INFO } from "@/app/_lib/masterInfo";
-import type { Metadata } from "next";
 import Modal from "../../_components/Modal";
 
 interface Props {
-    params: {
+    params: Promise<{
         name: string;
-    };
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const name = params.name;
-    return {
-        title: `IAMAS 2025 - ${name}`,
-    };
+    }>;
 }
 
 export default async function MasterModal({ params }: Props) {
-    const name = params.name;
+    const { name } = await params;
     const currentIndex = MASTER_INFO.findIndex(
         s => s.authorEnglishName.split(' ').join('') === name
     );
