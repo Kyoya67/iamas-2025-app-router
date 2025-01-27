@@ -26,6 +26,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
         const profileKey = `participant${index}_profile` as keyof typeof event;
         const name = event[nameKey] as string;
         const profile = event[profileKey] as string;
+        console.log(name);
 
         if (!name) return null;
 
@@ -39,9 +40,9 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         height={100}
                         className="object-contain mr-4"
                     />
-                    <div className="text-xl text-black">{name}</div>
+                    <div className="text-base sm:text-xl text-black">{name}</div>s
                 </div>
-                <div className="text-sm text-black mb-4">{profile}</div>
+                <div className="text-xs sm:text-sm text-black mb-4">{profile}</div>
             </div>
         );
     };
@@ -61,15 +62,17 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
             <ScrollMaskContent
                 className="h-[80%] mb-4 pr-5 pb-4 flex-1 overflow-y-auto"
             >
-                <div className="relative w-full aspect-[16/9] mb-4 border-[0.08px] border-black">
-                    <Image
-                        src={'/event/NxPC.webp'}
-                        alt={event.eventName}
-                        fill
-                        className="object-contain"
-                    />
-                </div>
-                <div className="text-base text-black mb-4">{event.content}</div>
+                {event.image && (
+                    <div className="relative w-full aspect-[16/9] mb-4 border-[0.08px] border-black">
+                        <Image
+                            src={`/event/${event.image}`}
+                            alt={event.eventName}
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                )}
+                <div className="text-sm sm:text-base text-black mb-4">{event.content}</div>
                 {[1, 2, 3, 4, 5, 6].map(index => renderParticipant(index))}
                 {[1, 2, 3].map(index => renderStudent(index))}
             </ScrollMaskContent>

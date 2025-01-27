@@ -19,7 +19,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -41,7 +42,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -63,7 +65,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -85,7 +88,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -107,7 +111,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか",
@@ -129,7 +134,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -151,7 +157,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -173,7 +180,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "IAMASでジェンダーの話をしてみる",
@@ -195,7 +203,8 @@ export const EVENTS = [
         "participant5_name": "髙岸航平",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -217,7 +226,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -239,7 +249,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "NxPC.Live vol.72 唵楽と影像",
@@ -261,7 +272,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "クリティカルサイクリング　ー寒中ライドー",
@@ -283,7 +295,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -305,7 +318,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -327,7 +341,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -349,7 +364,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "ポスト記述言語学：言語の新しい保存方法を探る",
@@ -371,7 +387,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -393,7 +410,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "レセプション",
@@ -415,7 +433,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -437,7 +456,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -459,7 +479,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -481,7 +502,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -503,7 +525,8 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     },
     {
         "eventName": "",
@@ -525,8 +548,30 @@ export const EVENTS = [
         "participant5_name": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_profile": ""
+        "participant6_profile": "",
+        "image": ""
     }
 ] as const;
 
-export type Event = typeof EVENTS[number];
+export type Event = {
+    day: string;
+    time: string;
+    eventName: string;
+    content: string;
+    image?: string;
+    participant1_name?: string;
+    participant1_profile?: string;
+    participant2_name?: string;
+    participant2_profile?: string;
+    participant3_name?: string;
+    participant3_profile?: string;
+    participant4_name?: string;
+    participant4_profile?: string;
+    participant5_name?: string;
+    participant5_profile?: string;
+    participant6_name?: string;
+    participant6_profile?: string;
+    student1?: string;
+    student2?: string;
+    student3?: string;
+};

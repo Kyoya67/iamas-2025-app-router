@@ -19,12 +19,12 @@ export const StudentSection = ({ name }: { name: string }) => {
                     height={100}
                     className="object-contain mr-4"
                 />
-                <div className="flex flex-col text-xl text-black">
-                    <div>IAMAS修士2年</div>
+                <div className="flex flex-col text-base sm:text-xl text-black">
+                    <div>修士2年</div>
                     <div>{student.authorJapaneseName}</div>
                 </div>
             </div>
-            <div className="text-sm text-black">{student.profileJapanese}</div>
+            <div className="text-xs sm:text-sm text-black">{student.profileJapanese}</div>
         </div>
     );
 }; 
