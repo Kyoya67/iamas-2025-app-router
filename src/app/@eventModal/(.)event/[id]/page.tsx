@@ -8,13 +8,15 @@ interface Props {
 }
 
 export default async function EventModal({ params }: Props) {
-    const id = await params.id;
-    const [encodedDay, encodedTime] = id.split('-');
+    const parameters = await params;
+    const [encodedDay, ...rest] = parameters.id.split('-');
+    const encodedTime = rest.join('-');
     const day = decodeURIComponent(encodedDay);
-    const time = decodeURIComponent(encodedTime) + '-';
-    console.log(day, time);
+    let time = decodeURIComponent(encodedTime);
 
-    console.log('Decoded:', { day, time });
+    if (!time.includes('-')) {
+        time = `${time}-`;
+    }
 
     return (
         <Modal>

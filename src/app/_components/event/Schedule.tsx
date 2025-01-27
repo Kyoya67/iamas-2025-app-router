@@ -2,18 +2,12 @@
 
 import { useEvent } from "@/app/_contexts/EventContext";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
-import { useEventData } from "@/app/_lib/api-client";
 import { EVENTS } from "@/app/_lib/constants";
 import Link from "next/link";
 
 export const Schedule = () => {
     const { selectedDay } = useEvent();
-    // const { data: events, error } = useEventData();
     const events = EVENTS;
-
-    if (!events || !Array.isArray(events)) {
-        return <div>Loading...</div>;
-    }
 
     const filteredEvents = events.filter(
         event => event.day === selectedDay && event.eventName !== ""

@@ -11,6 +11,7 @@ import { useStudentByName } from '@/app/_lib/api-client';
 
 export const StudentContent = ({ name }: { name: string }) => {
     const { student, error, isLoading } = useStudentByName(name);
+    console.log("StudentContent", name);
 
     if (error) return <div>Failed to load student data</div>;
     if (isLoading) return <div>Loading...</div>;
@@ -58,7 +59,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                             className="text-fluid-xs mt-1"
                         />
                     </div>
-                    <ScrollMaskContent className="mb-4 pr-3 pb-4 flex-1 overflow-y-auto">
+                    <ScrollMaskContent className="mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
                         <LocalizedTextClient
                             ja={student.workTitleJapanese}
                             en={student.workTitleEnglish}
