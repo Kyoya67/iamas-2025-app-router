@@ -7,9 +7,8 @@ interface Props {
     }
 }
 
-export default async function EventModal({ params }: Props) {
-    const parameters = await params;
-    const [encodedDay, ...rest] = parameters.id.split('-');
+export default function EventModal({ params }: Props) {
+    const [encodedDay, ...rest] = params.id.split('-');
     const encodedTime = rest.join('-');
     const day = decodeURIComponent(encodedDay);
     let time = decodeURIComponent(encodedTime);
