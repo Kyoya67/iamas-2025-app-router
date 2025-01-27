@@ -31,4 +31,19 @@ export function useEventData() {
         revalidateOnReconnect: false,
         dedupingInterval: 3600000,
     });
-} 
+}
+
+export function useEventContent(day: string, time: string) {
+    const { data, error } = useEventData();
+
+    const event = data?.find(item =>
+        item.day === day &&
+        item.time.trim() === time.trim()
+    );
+
+    return {
+        event,
+        error,
+        isLoading: !error && !data,
+    };
+}

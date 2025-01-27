@@ -1,7 +1,7 @@
 import { StudentContent } from "@/app/_components/master/StudentContent";
 import { STUDENT_NAMES } from "@/app/_lib/constants";
 import type { Metadata } from "next";
-import Modal from "../../_components/Master";
+import Modal from "../../_components/Modal";
 
 interface Props {
     params: {

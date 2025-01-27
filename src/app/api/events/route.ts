@@ -4,7 +4,6 @@ import { NextResponse } from "next/server";
 export const dynamic = 'force-static';  // ビルド時に生成
 export const revalidate = 3600;         // 1時間ごとに再検証
 
-// const GAS_API_URL = 'https://script.google.com/macros/s/AKfycbxZyk_vNV03xA7kvq-oFNtmOgGahl5cJugJoB4ZjM1pipPoCQpm65cy-UHhUI1_ConX9w/exec';
 const GAS_API_URL = 'https://script.google.com/macros/s/AKfycbx4p1hCCiJtRevb60SB430E8obp8qubHk1TyD1KLjLIZdAO592pxdAE8rQoQZTWt5FCxg/exec';
 
 export async function GET() {
