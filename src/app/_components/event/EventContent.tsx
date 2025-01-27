@@ -73,6 +73,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                 {[1, 2, 3, 4, 5, 6].map(index => renderParticipant(index))}
                 {[1, 2, 3].map(index => renderStudent(index))}
             </ScrollMaskContent>
+            {/* <div className="h-[2rem] border-2 border-black"></div> */}
         </div>
     );
 }; 
