@@ -1,8 +1,3 @@
-'use client';
-
-import { useRouter } from 'next/navigation';
-import { useCallback, useEffect } from 'react';
-import { NavigationArrows } from '../../_components/NavigationArrows';
 import { Overlay } from './Overlay';
 
 interface ModalProps {
@@ -13,27 +8,6 @@ interface ModalProps {
 }
 
 export default function Modal({ children }: ModalProps) {
-    const router = useRouter();
-
-    // const handleKeyDown = useCallback((e: KeyboardEvent) => {
-    //     switch (e.key) {
-    //         case 'ArrowRight':
-    //             if (nextPath) router.replace(nextPath);
-    //             break;
-    //         case 'ArrowLeft':
-    //             if (previousPath) router.replace(previousPath);
-    //             break;
-    //         case 'Escape':
-    //             router.back();
-    //             break;
-    //     }
-    // }, [nextPath, previousPath, router]);
-
-    // useEffect(() => {
-    //     window.addEventListener('keydown', handleKeyDown);
-    //     return () => window.removeEventListener('keydown', handleKeyDown);
-    // }, [handleKeyDown]);
-
     return (
         <>
             <Overlay isVisible={true} />
