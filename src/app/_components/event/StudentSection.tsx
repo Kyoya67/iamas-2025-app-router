@@ -1,28 +1,30 @@
-'use client';
-
-import { useStudentByName } from "@/app/_lib/api-client";
+import { MASTER_INFO } from "@/app/_lib/masterInfo";
+import Image from "next/image";
 
 export const StudentSection = ({ name }: { name: string }) => {
-    console.log("StudentSection rendering with name:", name);
+    const student = MASTER_INFO.find(
+        student => student.authorEnglishName === name ||
+            student.authorJapaneseName === name
+    );
 
-    const { student, error } = useStudentByName(name);
-
-    console.log("StudentSection data:", { student, error });
-
-    if (error) {
-        console.error("Error fetching student:", error);
-        return <div>Error loading student data</div>;
-    }
-
-    if (!student) {
-        console.log("No student data yet");
-        return <div>Loading...</div>;
-    }
+    if (!student) return null;
 
     return (
-        <div>
-            <div className="text-base text-black">{student.authorJapaneseName}</div>
-            <div className="text-base text-black">{student.authorEnglishName}</div>
+        <div className="mb-5">
+            <div className="flex items-end w-full mb-3">
+                <Image
+                    src={`/profile/${student.authorEnglishName.split(' ').join('')}.webp`}
+                    alt={student.authorEnglishName}
+                    width={100}
+                    height={100}
+                    className="object-contain mr-4"
+                />
+                <div className="flex flex-col text-xl text-black">
+                    <div>IAMAS修士2年</div>
+                    <div>{student.authorJapaneseName}</div>
+                </div>
+            </div>
+            <div className="text-sm text-black">{student.profileJapanese}</div>
         </div>
     );
 }; 

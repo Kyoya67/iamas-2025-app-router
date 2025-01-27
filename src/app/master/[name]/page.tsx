@@ -1,5 +1,5 @@
 import { StudentContent } from "@/app/_components/master/StudentContent";
-import { STUDENT_NAMES } from "@/app/_lib/constants";
+import { MASTER_INFO } from "@/app/_lib/masterInfo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function MasterPage({ params }: Props) {
-    const currentIndex = STUDENT_NAMES.findIndex(
+    const currentIndex = MASTER_INFO.findIndex(
         s => s.authorEnglishName.split(' ').join('') === params.name
     );
 

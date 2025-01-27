@@ -7,15 +7,14 @@ import { LocalizedTextClient } from './LocalizedTextClient';
 import { LanguageProvider } from '@/app/_contexts/LanguageContext';
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { LanguageToggle } from "./LanguageToggle";
-import { useStudentByName } from '@/app/_lib/api-client';
+import { MASTER_INFO } from "@/app/_lib/masterInfo";
 
 export const StudentContent = ({ name }: { name: string }) => {
-    const { student, error, isLoading } = useStudentByName(name);
-    console.log("StudentContent", name);
+    const student = MASTER_INFO.find(student =>
+        student.authorEnglishName.split(' ').join('') === name
+    );
 
-    if (error) return <div>Failed to load student data</div>;
-    if (isLoading) return <div>Loading...</div>;
-    if (!student) return <div>Student not found</div>;
+    if (!student) return null;
 
     return (
         <div className="text-black relative h-full text-justify ten-mincho">

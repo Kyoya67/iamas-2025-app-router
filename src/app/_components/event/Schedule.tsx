@@ -2,7 +2,7 @@
 
 import { useEvent } from "@/app/_contexts/EventContext";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
-import { EVENTS } from "@/app/_lib/constants";
+import { EVENTS } from "@/app/_lib/eventInfo";
 import Link from "next/link";
 
 export const Schedule = () => {

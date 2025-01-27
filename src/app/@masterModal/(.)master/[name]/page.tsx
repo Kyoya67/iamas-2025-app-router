@@ -1,5 +1,5 @@
 import { StudentContent } from "@/app/_components/master/StudentContent";
-import { STUDENT_NAMES } from "@/app/_lib/constants";
+import { MASTER_INFO } from "@/app/_lib/masterInfo";
 import type { Metadata } from "next";
 import Modal from "../../_components/Modal";
 
@@ -18,16 +18,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function MasterModal({ params }: Props) {
     const name = params.name;
-    const currentIndex = STUDENT_NAMES.findIndex(
+    const currentIndex = MASTER_INFO.findIndex(
         s => s.authorEnglishName.split(' ').join('') === name
     );
 
-    const nextPath = currentIndex < STUDENT_NAMES.length - 1
-        ? `/master/${STUDENT_NAMES[currentIndex + 1].authorEnglishName.split(' ').join('')}`
+    const nextPath = currentIndex < MASTER_INFO.length - 1
+        ? `/master/${MASTER_INFO[currentIndex + 1].authorEnglishName.split(' ').join('')}`
         : null;
 
     const previousPath = currentIndex > 0
-        ? `/master/${STUDENT_NAMES[currentIndex - 1].authorEnglishName.split(' ').join('')}`
+        ? `/master/${MASTER_INFO[currentIndex - 1].authorEnglishName.split(' ').join('')}`
         : null;
 
     return (

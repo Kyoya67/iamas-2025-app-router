@@ -2,7 +2,7 @@ import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { StudentLink } from "@/app/_components/master/StudentLink";
 import { WorkImage } from "@/app/_components/master/WorkImage";
 import { WorkProvider } from "@/app/_contexts/WorkContext"
-import { STUDENT_NAMES } from "@/app/_lib/constants";
+import { MASTER_INFO } from "@/app/_lib/masterInfo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 export default async function Master() {
-    const data = STUDENT_NAMES;
+    const data = MASTER_INFO;
     const midPoint = Math.ceil(data.length / 2);
     const leftColumn = data.slice(0, midPoint);
     const rightColumn = data.slice(midPoint);

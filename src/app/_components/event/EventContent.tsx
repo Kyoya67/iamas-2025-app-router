@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
-import { EVENTS } from "@/app/_lib/constants";
+import { EVENTS } from "@/app/_lib/eventInfo";
 import { StudentSection } from "./StudentSection";
 
 export const EventContent = ({ day, time }: { day: string, time: string }) => {
