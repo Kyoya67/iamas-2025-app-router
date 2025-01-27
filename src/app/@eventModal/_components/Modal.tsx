@@ -11,7 +11,7 @@ export default function Modal({ children }: ModalProps) {
     return (
         <>
             <Overlay isVisible={true} />
-            <div className="fixed inset-0 pointer-events-none z-[130]">
+            <div className="fixed inset-0 pointer-events-none z-[130] text-justify">
                 <div className="relative w-full h-full">
                     <div className="
                         absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
