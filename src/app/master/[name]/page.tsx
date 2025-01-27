@@ -1,23 +1,17 @@
 import { StudentContent } from "@/app/_components/master/StudentContent";
 import { MASTER_INFO } from "@/app/_lib/masterInfo";
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 interface Props {
-    params: {
+    params: Promise<{
         name: string;
-    };
+    }>;
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    return {
-        title: `IAMAS 2025 - ${params.name}`,
-    };
-}
-
-export default function MasterPage({ params }: Props) {
+export default async function MasterPage({ params }: Props) {
+    const { name } = await params;
     const currentIndex = MASTER_INFO.findIndex(
-        s => s.authorEnglishName.split(' ').join('') === params.name
+        s => s.authorEnglishName.split(' ').join('') === name
     );
 
     if (currentIndex === -1) notFound();
@@ -31,7 +25,7 @@ export default function MasterPage({ params }: Props) {
                 w-[50vw] min-w-[20rem] max-w-[35rem] 
                 h-[60vh] md:h-[65vh] 
                 mt-[18vh] xs:mt-[17vh] md:mt-[10vh] pr-6">
-                <StudentContent name={params.name} />
+                <StudentContent name={name} />
             </div>
         </div>
     );
