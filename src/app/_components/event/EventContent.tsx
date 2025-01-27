@@ -49,7 +49,6 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
     const renderStudent = (index: number) => {
         const nameKey = `student${index}` as keyof typeof event;
         const name = event[nameKey] as string;
-        console.log(name);
         if (!name) return null;
 
         return <StudentSection key={index} name={name} />;
