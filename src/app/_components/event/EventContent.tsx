@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { EVENTS } from "@/app/_lib/eventInfo";
@@ -25,15 +23,17 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
 
     const renderParticipant = (index: number) => {
         const nameKey = `participant${index}_name` as keyof typeof event;
+        const statusKey = `participant${index}_status` as keyof typeof event;
         const profileKey = `participant${index}_profile` as keyof typeof event;
         const name = event[nameKey] as string;
+        const status = event[statusKey] as string;
         const profile = event[profileKey] as string;
 
         if (!name) return null;
 
         return (
             <div key={index}>
-                <div className="flex items-end mt-2">
+                <div className="flex items-end mt-2 mb-2">
                     <Image
                         src={`/event/profile/${name}.webp`}
                         alt={name}
@@ -41,7 +41,10 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         height={100}
                         className="object-contain mr-4"
                     />
-                    <div className="text-base sm:text-xl text-black">{name}</div>
+                    <div className="flex flex-col text-base sm:text-xl text-black">
+                        <div className="text-sm">{status}</div>
+                        <div>{name}</div>
+                    </div>
                 </div>
                 <div className="text-xs sm:text-sm text-black mb-4">{profile}</div>
             </div>
