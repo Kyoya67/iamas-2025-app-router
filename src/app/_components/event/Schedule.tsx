@@ -17,11 +17,13 @@ export const Schedule = () => {
         <ScrollMaskContent className="h-[50vh]">
             <div className="space-y-6 overflow-x-hidden pr-3">
                 {filteredEvents.map((event, index) => {
-                    const eventPath = `${selectedDay.toLowerCase()}${index}`;
+                    const eventPath = `${selectedDay.toLowerCase()}-${index}`;
 
                     return (
                         <Link
                             href={`/event/${eventPath}`}
+                            key={eventPath}
+                            prefetch={true}
                             className="
                                 flex justify-between 
                                 border-b-[0.08rem] border-[#000f9f] 
