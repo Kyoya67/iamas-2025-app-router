@@ -28,19 +28,14 @@ export default async function EventModal({ params }: Props) {
         }
 
         return (
-            <div className="fixed inset-0 pointer-events-none z-[130] text-justify">
-                <div className="relative w-full h-full">
-                    <div className="
-                        absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                        w-[80%] max-w-[40rem] h-[80vh] sm:h-[90vh] texture-bg rounded-md
-                        text-left
+            <div className="absolute inset-0">
+                <div className="
+                        w-[80%] md:w-[55%] max-w-[40rem] h-[70vh]
+                        mt-[12vh] md:mt-[10vh] mx-auto 
+                        text-justify
                         p-8
-                        pointer-events-auto
-                        overflow-hidden
-                        ten-mincho
                     ">
-                        <EventContent day={formattedDay} time={event.time} />
-                    </div>
+                    <EventContent day={formattedDay} time={event.time} />
                 </div>
             </div>
         );
