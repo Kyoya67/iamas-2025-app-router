@@ -316,13 +316,13 @@ export const EVENTS = [
         "student1": "",
         "student2": "",
         "student3": "",
-        "participant1_name": "",
-        "participant1_status": "Record Prayer",
+        "participant1_name": "Record Prayer",
+        "participant1_status": "",
         "participant1_profile": "PhoneTacte という自作楽器を演奏する。指先と足先の繊細な動きで、音と身体が融合する新感覚演奏。",
         "participant2_name": "ニチウシオーハシ",
         "participant2_status": "",
         "participant2_profile": "二人に見えて三人である。とある世界認識方法と景色分解能について。",
-        "participant3_name": "NomadSentinel",
+        "participant3_name": "Nomad Sentinel",
         "participant3_status": "",
         "participant3_profile": "Nomad Sentinel was born from a series of visual creation experiments and has gradually expanded into installation art, VR art, and interactive art.",
         "participant4_name": "hrx",
@@ -488,8 +488,8 @@ export const EVENTS = [
         "participant1_status": "映像作家、ツール開発者",
         "participant1_profile": "実験映像やハッカー文化に影響を受け、CGIからコマ撮りアニメーション、ミュージック・ビデオ、インタラクティブ作品まで、多岐に渡って個人で制作を続けてきた。さまざまな表現手法の実験の積み重ねにより、多様な視覚表象のスタイルを模索している。",
         "participant2_name": "石川将也",
-        "participant2_status": "",
-        "participant2_profile": "グラフィックデザイナー / 研究者1980年生まれ。慶應義塾大学大学院 政策・メディア研究科 修了。佐藤雅彦研究室を経て、2019年までクリエイティブグループ「ユーフラテス」に所属。20年独立。視覚表現の開発と、視覚認知の研究を基点に、グラフィックデザイン、映像、インスタレーション、科学玩具とそれを用いたワークショップの開発など、さまざま活動している。代表作に「factory of dream」「そうとしかみえない」「歩くの歌」（Eテレ2355 / 0655）「ねじねじの歌」「クッキー型の型の歌」（ピタゴラスイッチ）、「Layers Act」「光のレイヤー」「マグネタクトアニマル」「四角が行く」「開け箱」など。2024年より U-NEXT Kids オリジナルコンテンツ「ねむるま えほん」「うご工作」の監督として企画の立案から携わっている。",
+        "participant2_status": "グラフィックデザイナー / 研究者",
+        "participant2_profile": "1980年生まれ。慶應義塾大学大学院 政策・メディア研究科 修了。佐藤雅彦研究室を経て、2019年までクリエイティブグループ「ユーフラテス」に所属。20年独立。視覚表現の開発と、視覚認知の研究を基点に、グラフィックデザイン、映像、インスタレーション、科学玩具とそれを用いたワークショップの開発など、さまざま活動している。代表作に「factory of dream」「そうとしかみえない」「歩くの歌」（Eテレ2355 / 0655）「ねじねじの歌」「クッキー型の型の歌」（ピタゴラスイッチ）、「Layers Act」「光のレイヤー」「マグネタクトアニマル」「四角が行く」「開け箱」など。2024年より U-NEXT Kids オリジナルコンテンツ「ねむるま えほん」「うご工作」の監督として企画の立案から携わっている。",
         "participant3_name": "",
         "participant3_status": "",
         "participant3_profile": "",
@@ -671,4 +671,4 @@ export const EVENTS = [
         "participant6_status": "",
         "participant6_profile": ""
     }
-]
+];

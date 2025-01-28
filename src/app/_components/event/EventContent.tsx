@@ -31,11 +31,13 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
 
         if (!name) return null;
 
+        const imagePath = encodeURIComponent(name.trim().split(' ').join(''));
+
         return (
             <div key={index}>
                 <div className="flex items-end mt-2 mb-2">
                     <Image
-                        src={`/event/profile/${name}.webp`}
+                        src={`/event/profile/${imagePath}.webp`}
                         alt={name}
                         width={100}
                         height={100}
