@@ -1,22 +1,51 @@
-import { Metadata, Viewport } from 'next';
+import { EventContent } from "@/app/_components/event/EventContent";
+import { EVENTS } from "@/app/_lib/eventInfo";
 
-// metadata設定
-export const metadata: Metadata = {
-    title: 'IAMAS 2025 イベント',
-    // 他のメタデータ設定...
-};
+interface Props {
+    params: Promise<{
+        id: string;
+    }>;
+}
 
-// viewportを別途設定
-export const viewport: Viewport = {
-    width: 'device-width',
-    initialScale: 1,
-    // 他のviewport設定...
-};
+export default async function EventModal({ params }: Props) {
+    try {
+        const { id } = await params;
+        // friday0, saturday1 などの形式からdayとindexを抽出
+        const day = id.match(/[a-z]+/i)?.[0] || '';
+        const index = parseInt(id.match(/\d+/)?.[0] || '0', 10);
 
-export default function EventPage() {
-    return (
-        <div className="absolute inset-0 mx-auto w-[10vw] z-[100] cursor-pointer">
-            <h1>Event Page</h1>
-        </div>
-    );
+        // 日付を先頭大文字に変換
+        const formattedDay = day.charAt(0).toUpperCase() + day.slice(1);
+
+        const filteredEvents = EVENTS.filter(
+            event => event.day === formattedDay && event.eventName !== ""
+        );
+
+        const event = filteredEvents[index];
+        if (!event) {
+            console.error('Event not found:', { id, formattedDay, index });
+            return null;
+        }
+
+        return (
+            <div className="fixed inset-0 pointer-events-none z-[130] text-justify">
+                <div className="relative w-full h-full">
+                    <div className="
+                        absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                        w-[80%] max-w-[40rem] h-[80vh] sm:h-[90vh] texture-bg rounded-md
+                        text-left
+                        p-8
+                        pointer-events-auto
+                        overflow-hidden
+                        ten-mincho
+                    ">
+                        <EventContent day={formattedDay} time={event.time} />
+                    </div>
+                </div>
+            </div>
+        );
+    } catch (error) {
+        console.error('Error in EventModal:', error);
+        return null;
+    }
 }
