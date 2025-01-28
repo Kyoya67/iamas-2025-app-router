@@ -1,5 +1,6 @@
 import { EventContent } from "@/app/_components/event/EventContent";
 import Modal from "../../_components/Modal";
+import { EVENTS } from "@/app/_lib/eventInfo";
 
 interface Props {
     params: Promise<{
@@ -9,18 +10,22 @@ interface Props {
 
 export default async function EventModal({ params }: Props) {
     const { id } = await params;
-    const [encodedDay, ...rest] = id.split('-');
-    const encodedTime = rest.join('-');
+    const [encodedDay, indexStr] = id.split('-');
     const day = decodeURIComponent(encodedDay);
-    let time = decodeURIComponent(encodedTime);
+    const index = parseInt(indexStr, 10);
 
-    if (!time.includes('-')) {
-        time = `${time}-`;
-    }
+    // 特定の日付のイベントをフィルタリング
+    const filteredEvents = EVENTS.filter(
+        event => event.day === day && event.eventName !== ""
+    );
+
+    // インデックスでイベントを取得
+    const event = filteredEvents[index];
+    if (!event) return null;
 
     return (
-        <Modal >
-            <EventContent day={day} time={time} />
+        <Modal>
+            <EventContent day={day} time={event.time} />
         </Modal>
     );
 }

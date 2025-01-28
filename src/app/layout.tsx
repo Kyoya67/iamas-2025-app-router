@@ -105,8 +105,8 @@ export default function RootLayout({
             <PageTransition>
               {children}
             </PageTransition>
-            {eventModal}
             {masterModal}
+            {eventModal}
           </div>
         </div>
       </body>
