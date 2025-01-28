@@ -17,9 +17,11 @@ export const Schedule = () => {
         <ScrollMaskContent className="h-[50vh]">
             <div className="space-y-6 overflow-x-hidden pr-3">
                 {filteredEvents.map((event, index) => {
+                    const eventPath = `${selectedDay.toLowerCase()}${index}`;
+
                     return (
                         <Link
-                            href={`/event/${encodeURIComponent(selectedDay)}-${index}`}
+                            href={`/event/${eventPath}`}
                             key={index}
                             className="
                                 flex justify-between 
