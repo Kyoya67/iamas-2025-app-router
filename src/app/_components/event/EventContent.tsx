@@ -33,14 +33,14 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
 
         return (
             <div key={index}>
-                <div className="flex items-end mb-2">
-                    {/* <Image
+                <div className="flex items-end mt-2">
+                    <Image
                         src={`/event/profile/${name}.webp`}
                         alt={name}
                         width={100}
                         height={100}
                         className="object-contain mr-4"
-                    /> */}
+                    />
                     <div className="text-base sm:text-xl text-black">{name}</div>
                 </div>
                 <div className="text-xs sm:text-sm text-black mb-4">{profile}</div>
@@ -57,26 +57,26 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
     };
 
     return (
-        <div className="h-full">
-            <h1 className="text-2xl font-bold">{event.eventName}</h1>
-            <div className="text-xl mb-4 text-black border-b border-[#000f9f] pb-2">{day}&nbsp;{event.time}</div>
-            <ScrollMaskContent
-                className="h-[80%] mb-4 pr-5 pb-4 flex-1 overflow-y-auto"
-            >
-                {event.image && (
+        <div className="text-black relative h-full text-justify ten-mincho">
+            <div className="relative z-10 h-full flex flex-col">
+                <h1 className="text-2xl font-bold">{event.eventName}</h1>
+                <div className="text-xl mb-4 text-black border-b border-[#000f9f] pb-2">{day}&nbsp;{event.time}</div>
+                <ScrollMaskContent
+                    className="h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto"
+                >
                     <div className="relative w-full aspect-[16/9] mb-4 border-[0.08px] border-black">
                         <Image
-                            src={`/event/${event.image}`}
+                            src={`/event/NxPC.webp`}
                             alt={event.eventName}
                             fill
                             className="object-contain"
                         />
                     </div>
-                )}
-                <div className="text-sm sm:text-base text-black mb-4">{event.content}</div>
-                {[1, 2, 3, 4, 5, 6].map(index => renderParticipant(index))}
-                {[1, 2, 3].map(index => renderStudent(index))}
-            </ScrollMaskContent>
+                    <div className="text-sm sm:text-base text-black mb-4">{event.content}</div>
+                    {[1, 2, 3, 4, 5, 6].map(index => renderParticipant(index))}
+                    {[1, 2, 3].map(index => renderStudent(index))}
+                </ScrollMaskContent>
+            </div>
         </div>
     );
 }; 

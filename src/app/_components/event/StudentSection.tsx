@@ -11,7 +11,7 @@ export const StudentSection = ({ name }: { name: string }) => {
 
     return (
         <div className="mb-5">
-            <div className="flex items-end w-full mb-3">
+            <div className="flex items-end w-full mt-3">
                 <Image
                     src={`/profile/${student.authorEnglishName.split(' ').join('')}.webp`}
                     alt={student.authorEnglishName}
