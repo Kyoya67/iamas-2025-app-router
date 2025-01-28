@@ -2,13 +2,13 @@ import { EventContent } from "@/app/_components/event/EventContent";
 import Modal from "../../_components/Modal";
 
 interface Props {
-    params: {
+    params: Promise<{
         id: string;
-    };
+    }>;
 }
 
-export default function EventModal({ params }: Props) {
-    const { id } = params;  // Promiseを削除
+export default async function EventModal({ params }: Props) {
+    const { id } = await params;
     const [encodedDay, ...rest] = id.split('-');
     const encodedTime = rest.join('-');
     const day = decodeURIComponent(encodedDay);
