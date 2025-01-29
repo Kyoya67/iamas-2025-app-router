@@ -1,11 +1,9 @@
-export default function ProjectPage({ params }: { params: { name: string } }) {
+export default async function ProjectPage({ params }: { params: { name: string } }) {
+    const { name } = await params;
+
     return (
         <div>
-            <div>
-                <div>
-                    aaa
-                </div>
-            </div>
+            <h1>{name}</h1>
         </div>
     );
 } 

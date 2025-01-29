@@ -45,7 +45,7 @@ export default function Modal({
                 handleBack();
                 break;
         }
-    }, [nextPath, previousPath, handleBack]);
+    }, [nextPath, previousPath, handleBack, router]);
 
     useEffect(() => {
         window.addEventListener('keydown', handleKeyDown);
