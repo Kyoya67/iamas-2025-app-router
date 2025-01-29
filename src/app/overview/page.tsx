@@ -12,7 +12,6 @@ export default function Overview() {
             p-fluid-padding-sm sm:p-0
             relative h-full w-full
             flex flex-col items-center
-            sm:ml-[0.5rem]
             text-[#000f9f]
         ">
             <div className="
