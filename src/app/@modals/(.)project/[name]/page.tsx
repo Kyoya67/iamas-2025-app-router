@@ -1,3 +1,4 @@
+import ProjectContent from "@/app/_components/project/ProjectContent";
 import { PROJECT_INFO } from "@/app/_lib/projectInfo";
 import Modal from "@/app/_components/modalSet/Modal";
 
@@ -35,9 +36,7 @@ export default async function ProjectModal({ params }: Props) {
             backPath="/project"
             modalType="project"
         >
-            <div>
-                {project.projectName}
-            </div>
+            <ProjectContent projectName={project.projectName} />
         </Modal>
     );
 }
