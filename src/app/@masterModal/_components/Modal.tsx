@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect } from 'react';
 import { NavigationArrows } from '../../_components/NavigationArrows';
-import { Overlay } from '../../_components/Overlay';
+import { Overlay } from '../../_components/ModalSet/Overlay';
 
 interface ModalProps {
     children: React.ReactNode;

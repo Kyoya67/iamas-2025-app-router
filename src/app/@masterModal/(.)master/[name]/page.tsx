@@ -1,6 +1,6 @@
 import { StudentContent } from "@/app/_components/master/StudentContent";
 import { MASTER_INFO } from "@/app/_lib/masterInfo";
-import Modal from "../../_components/Modal";
+import Modal from "@/app/_components/ModalSet/Modal";
 
 interface Props {
     params: Promise<{
@@ -23,7 +23,12 @@ export default async function MasterModal({ params }: Props) {
         : null;
 
     return (
-        <Modal nextPath={nextPath} previousPath={previousPath} name={name}>
+        <Modal
+            nextPath={nextPath}
+            previousPath={previousPath}
+            backPath="/master"
+            modalType="master"
+        >
             <StudentContent name={name} />
         </Modal>
     );

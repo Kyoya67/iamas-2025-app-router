@@ -17,7 +17,7 @@ export default function IconAndMenu() {
     const menuItems: MenuItemProps[] = [
         { href: "/overview", text: "開催概要", image: "/desktop/hoverCircles/overview.webp", index: 0 },
         { href: "/master", text: "修士研究発表", image: "/desktop/hoverCircles/master.webp", index: 1 },
-        { href: "/exhibition", text: "プロジェクト展示", image: "/desktop/hoverCircles/exhibition.webp", index: 2 },
+        { href: "/project", text: "プロジェクト展示", image: "/desktop/hoverCircles/project.webp", index: 2 },
         { href: "/event", text: "イベント", image: "/desktop/hoverCircles/event.webp", index: 3 },
         { href: "/access", text: "交通アクセス", image: "/desktop/hoverCircles/access.webp", index: 4 },
         { href: "/contact", text: "お問い合わせ", image: "/desktop/hoverCircles/contact.webp", index: 5 }

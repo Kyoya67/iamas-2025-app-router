@@ -49,10 +49,12 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
   masterModal,
+  projectModal,
   eventModal,
 }: {
   children: React.ReactNode;
   masterModal: React.ReactNode;
+  projectModal: React.ReactNode;
   eventModal: React.ReactNode;
 }) {
   return (
@@ -108,6 +110,7 @@ export default function RootLayout({
                 {children}
               </PageTransition>
               {masterModal}
+              {projectModal}
               {eventModal}
             </div>
           </div>
