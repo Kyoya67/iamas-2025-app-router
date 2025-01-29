@@ -1,9 +1,17 @@
-export default async function ProjectPage({ params }: { params: { name: string } }) {
+import ProjectContent from "@/app/_components/project/ProjectContent";
+
+interface Props {
+    params: Promise<{
+        name: string;
+    }>;
+}
+
+export default async function ProjectPage({ params }: Props) {
     const { name } = await params;
 
     return (
         <div>
-            <h1>{name}</h1>
+            <ProjectContent projectName={name} />
         </div>
     );
 } 
