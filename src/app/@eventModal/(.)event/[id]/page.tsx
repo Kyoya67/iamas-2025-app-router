@@ -1,6 +1,6 @@
 import { EventContent } from "@/app/_components/event/EventContent";
 import { EVENTS } from "@/app/_lib/eventInfo";
-import Modal from "@/app/_components/ModalSet/Modal";
+import Modal from "@/app/_components/modalSet/Modal";
 
 interface Props {
     params: Promise<{

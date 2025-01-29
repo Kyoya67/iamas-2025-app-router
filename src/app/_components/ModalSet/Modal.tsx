@@ -12,7 +12,7 @@ interface ModalProps {
     previousPath?: string | null;
     backPath: string;
     modalType: 'event' | 'master' | 'project';
-    day?: string;  // eventModalで使用
+    day?: string;
 }
 
 export default function Modal({
@@ -52,12 +52,6 @@ export default function Modal({
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, [handleKeyDown]);
 
-    const modalClasses = {
-        event: "w-[80%] max-w-[40rem] h-[80vh] sm:h-[90vh]",
-        master: "w-[80%] max-w-[40rem] h-[80vh] sm:h-[90vh]",
-        project: "w-[90%] max-w-[50rem] h-[85vh] sm:h-[95vh]"  // プロジェクトモーダルは少し大きめ
-    }[modalType];
-
     return (
         <>
             <Overlay isVisible={true} onClick={handleBack} />
@@ -65,7 +59,7 @@ export default function Modal({
                 <div className="relative w-full h-full">
                     <div className={`
                         absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                        ${modalClasses}
+                        w-[80%] max-w-[40rem] h-[80vh] sm:h-[90vh]
                         texture-bg rounded-md
                         text-left
                         p-8

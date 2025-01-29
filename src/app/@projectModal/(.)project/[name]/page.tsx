@@ -1,5 +1,5 @@
 import { PROJECT_INFO } from "@/app/_lib/projectInfo";
-import Modal from "@/app/_components/ModalSet/Modal";
+import Modal from "@/app/_components/modalSet/Modal";
 
 interface Props {
     params: Promise<{
