@@ -47,11 +47,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  // masterModal,
+  masterModal,
   eventModal,
 }: {
   children: React.ReactNode;
-  // masterModal: React.ReactNode;
+  masterModal: React.ReactNode;
   eventModal: React.ReactNode;
 }) {
   return (
@@ -105,7 +105,7 @@ export default function RootLayout({
             <PageTransition>
               {children}
             </PageTransition>
-            {/* {masterModal} */}
+            {masterModal}
             {eventModal}
           </div>
         </div>
