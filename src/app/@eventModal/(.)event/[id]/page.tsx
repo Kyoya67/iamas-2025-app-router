@@ -3,13 +3,13 @@ import { EVENTS } from "@/app/_lib/eventInfo";
 import Modal from "../../_components/Modal";
 
 interface Props {
-    params: Promise<{
+    params: {
         id: string;
-    }>;
+    };
 }
 
-export default async function EventModal({ params }: Props) {
-    const { id } = await params;
+export default function EventModal({ params }: Props) {
+    const { id } = params;
     const day = id.match(/[a-z]+/i)?.[0] || '';
     const index = parseInt(id.match(/\d+/)?.[0] || '0', 10);
 
