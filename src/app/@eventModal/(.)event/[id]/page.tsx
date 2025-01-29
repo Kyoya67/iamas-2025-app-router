@@ -19,15 +19,12 @@ export default async function EventModal({ params }: Props) {
         event => event.day === formattedDay && event.eventName !== ""
     );
 
-    // 現在のイベントのインデックスを取得
     const currentIndex = index;
 
-    // 次のパスを計算
     const nextPath = currentIndex < filteredEvents.length - 1
         ? `/event/${day}${currentIndex + 1}`
         : null;
 
-    // 前のパスを計算
     const previousPath = currentIndex > 0
         ? `/event/${day}${currentIndex - 1}`
         : null;

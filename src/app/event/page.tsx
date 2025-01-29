@@ -24,7 +24,6 @@ export default function Event() {
                 p-fluid-padding-sm sm:p-0
                 relative h-full w-full
                 flex flex-col items-center
-                sm:ml-[0.5rem]
                 text-[#000f9f]
                 overflow-x-hidden
             ">
