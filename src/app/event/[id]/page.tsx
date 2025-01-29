@@ -10,11 +10,9 @@ interface Props {
 export default async function EventModal({ params }: Props) {
     try {
         const { id } = await params;
-        // friday0, saturday1 などの形式からdayとindexを抽出
         const day = id.match(/[a-z]+/i)?.[0] || '';
         const index = parseInt(id.match(/\d+/)?.[0] || '0', 10);
 
-        // 日付を先頭大文字に変換
         const formattedDay = day.charAt(0).toUpperCase() + day.slice(1);
 
         const filteredEvents = EVENTS.filter(

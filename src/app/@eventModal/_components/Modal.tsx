@@ -1,4 +1,4 @@
-import { Overlay } from './Overlay';
+import { Overlay } from '../../_components/Overlay';
 
 interface ModalProps {
     children: React.ReactNode;
