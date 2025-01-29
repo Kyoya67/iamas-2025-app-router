@@ -4,15 +4,24 @@ import { useRouter } from 'next/navigation';
 import { useCallback, useEffect } from 'react';
 import { NavigationArrows } from '../../_components/NavigationArrows';
 import { Overlay } from '../../_components/Overlay';
+import { useEvent } from '@/app/_contexts/EventContext';
 
 interface ModalProps {
     children: React.ReactNode;
     nextPath?: string | null;
     previousPath?: string | null;
+    day: string;
 }
 
-export default function Modal({ children, nextPath, previousPath }: ModalProps) {
+export default function Modal({ children, nextPath, previousPath, day }: ModalProps) {
     const router = useRouter();
+    const { setSelectedDay } = useEvent();
+
+    const handleBack = useCallback(() => {
+        setSelectedDay(day);
+        console.log(day);
+        router.push('/event');
+    }, [router, day, setSelectedDay]);
 
     const handleKeyDown = useCallback((e: KeyboardEvent) => {
         switch (e.key) {
@@ -23,10 +32,10 @@ export default function Modal({ children, nextPath, previousPath }: ModalProps) 
                 if (previousPath) router.replace(previousPath);
                 break;
             case 'Escape':
-                router.back();
+                handleBack();
                 break;
         }
-    }, [nextPath, previousPath, router]);
+    }, [nextPath, previousPath, handleBack]);
 
     useEffect(() => {
         window.addEventListener('keydown', handleKeyDown);
@@ -35,7 +44,7 @@ export default function Modal({ children, nextPath, previousPath }: ModalProps) 
 
     return (
         <>
-            <Overlay isVisible={true} />
+            <Overlay isVisible={true} onClick={handleBack} />
             <div className="fixed inset-0 pointer-events-none z-[130] text-justify">
                 <div className="relative w-full h-full">
                     <div className="

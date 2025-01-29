@@ -5,22 +5,26 @@ import { useRouter } from 'next/navigation';
 
 interface OverlayProps {
     isVisible: boolean;
+    onClick?: () => void;
 }
 
-export function Overlay({ isVisible }: OverlayProps) {
+export const Overlay = ({ isVisible, onClick }: OverlayProps) => {
     const overlay = useRef<HTMLDivElement>(null);
     const router = useRouter();
 
-    const onClick = (e: React.MouseEvent) => {
+    const handleClick = (e: React.MouseEvent) => {
         if (e.target === overlay.current) {
             router.back();
+        }
+        if (onClick) {
+            onClick();
         }
     };
 
     return (
         <div
             ref={overlay}
-            onClick={onClick}
+            onClick={handleClick}
             className={`
                 fixed inset-0 w-full h-screen 
                 bg-black/75
@@ -31,4 +35,4 @@ export function Overlay({ isVisible }: OverlayProps) {
             `}
         />
     );
-} 
+}; 

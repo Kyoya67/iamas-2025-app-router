@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { Accordion } from "@/app/_components/event/Accordion";
 import { EventImage } from "@/app/_components/event/EventImage";
-import { EventProvider } from "@/app/_contexts/EventContext";
 import { NonAccordion } from "@/app/_components/event/NonAccordion";
 import { Schedule } from "@/app/_components/event/Schedule";
 
@@ -18,7 +17,7 @@ export default function Event() {
     ];
 
     return (
-        <EventProvider>
+        <>
             <div className="
                 absolute inset-0 
                 p-fluid-padding-sm sm:p-0
@@ -28,9 +27,10 @@ export default function Event() {
                 overflow-x-hidden
             ">
                 <div className="
-                    w-[70vw] sm:w-[55vw] xl:w-[29rem]
+                    w-[70vw] sm:w-[58vw] xl:w-[29rem]
                     flex flex-col xl:flex-row
                     mt-[15vh]
+                    sm:pl-[2vw]
                     relative
                     xl:ml-[40vw]
                     max-w-full
@@ -52,6 +52,6 @@ export default function Event() {
                     </div>
                 </div>
             </div>
-        </EventProvider>
+        </>
     );
 }

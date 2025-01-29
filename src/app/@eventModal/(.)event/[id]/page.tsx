@@ -1,3 +1,4 @@
+import { EventProvider } from "@/app/_contexts/EventContext";
 import { EventContent } from "@/app/_components/event/EventContent";
 import { EVENTS } from "@/app/_lib/eventInfo";
 import Modal from "../../_components/Modal";
@@ -36,7 +37,7 @@ export default async function EventModal({ params }: Props) {
     }
 
     return (
-        <Modal nextPath={nextPath} previousPath={previousPath}>
+        <Modal nextPath={nextPath} previousPath={previousPath} day={formattedDay}>
             <EventContent day={formattedDay} time={event.time} />
         </Modal>
     );
