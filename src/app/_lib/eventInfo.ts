@@ -244,7 +244,7 @@ export const EVENTS = [
         "participant4_name": "早田仁知",
         "participant4_status": "修士1年",
         "participant4_profile": "IAMAS(M1)所属。2001年生まれ。東京外大言語文化学部ヒンディー語専攻卒業。学部時代には音声学を専門にし、日本語とヒンディー語のオノマトペ対照をテーマに研究。多言語社会であるインド・デリー大学への交換留学を経て、現在は言語の消滅・忘却に関する研究と制作に取り組む。学外では作詞作曲家として楽曲制作等の活動も行っている。",
-        "participant5_name": "髙岸航平",
+        "participant5_name": "高岸航平",
         "participant5_status": "修士1年",
         "participant5_profile": "IAMAS(M1)所属。学部の専門は漆工と木工。成層圏で漆造形作品を撮影する「宙漆プロジェクト」代表。現在は生成AIを通した芸術教育について研究に取り組む",
         "participant6_name": "",

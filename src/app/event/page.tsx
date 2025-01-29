@@ -28,7 +28,7 @@ export default function Event() {
                 overflow-x-hidden
             ">
                 <div className="
-                    w-[70vw] sm:w-[56vw] xl:w-[29rem]
+                    w-[70vw] sm:w-[55vw] xl:w-[29rem]
                     flex flex-col xl:flex-row
                     mt-[15vh]
                     relative
