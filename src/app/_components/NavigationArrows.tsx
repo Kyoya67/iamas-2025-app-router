@@ -32,8 +32,8 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
                         rounded-full bg-white/80 
                         transition-all
                         transition-duration-600
-                        group-hover:scale-110
-                        group-hover:bg-white
+                        sm:group-hover:scale-110
+                        sm:group-hover:bg-white
                     ">
                         <IoIosArrowBack size={18} className="text-[#000f9f]" />
                     </div>
@@ -58,8 +58,8 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
                         rounded-full bg-white/80
                         transition-all
                         transition-duration-600
-                        group-hover:scale-110
-                        group-hover:bg-white
+                        sm:group-hover:scale-110
+                        sm:group-hover:bg-white
                     ">
                         <IoIosArrowForward size={18} className="text-[#000f9f]" />
                     </div>
