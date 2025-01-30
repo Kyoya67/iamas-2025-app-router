@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useCallback, memo, useEffect } from "react";
 
-// 定数を外部化
 const MENU_LINKS = [
     { href: "/overview", label: "開催概要" },
     { href: "/master", label: "修士研究発表" },
@@ -129,24 +128,24 @@ export default function MobileMenu() {
                     </span>
                 </button>
 
-                <nav className="text-[#000f9f] text-left relative pt-20 pl-5 sm:pl-8 pb-8">
+                <nav className="text-[#000f9f] text-left relative pt-[4rem] pl-5 sm:pl-8 pb-8">
                     <div className="text-sm sm:text-lg">
                         情報科学芸術大学院大学<br></br>
                         23期生修了研究発表会・<br></br>
                         プロジェクト研究発表会<br></br>
                     </div>
 
-                    <div className="mt-5 text-sm sm:text-lg">
+                    <div className="mt-4 text-sm sm:text-lg">
                         2/21 (Fri) - 2/24 (Mon)<br></br>
                         10:00 - 17:00<br></br>
                     </div>
-                    <span className="block mt-5 text-xxs sm:text-sm">
+                    <span className="block mt-4 text-xxs sm:text-sm">
                         ソフトピアジャパン・センタービル
                     </span>
 
-                    <div className="mt-5 sm:mt-7 border-b border-[#000f9f]"></div>
+                    <div className="mt-4 sm:mt-7 border-b border-[#000f9f]"></div>
 
-                    <ul className="mt-5 sm:mt-7 text-base sm:text-lg">
+                    <ul className="mt-4 sm:mt-7 text-base sm:text-lg">
                         <div className="mb-3 mr-2">
                             <MenuLink href="/" onClick={closeMenu}>
                                 <div className="flex items-center">
@@ -162,9 +161,9 @@ export default function MobileMenu() {
                         ))}
                     </ul>
 
-                    <div className="mt-5 sm:mt-7 border-b border-[#000f9f]"></div>
+                    <div className="mt-4 sm:mt-7 border-b border-[#000f9f]"></div>
 
-                    <ul className="mt-5 sm:mt-7 text-sm sm:text-lg">
+                    <ul className="mt-4 sm:mt-7 text-sm sm:text-lg">
                         {SOCIAL_LINKS.map(({ href, label }) => (
                             <MenuLink key={href} href={href} onClick={closeMenu} external>
                                 {label}
