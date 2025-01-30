@@ -72,21 +72,26 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
             <div className="relative z-10 h-full flex flex-col">
                 <h1 className="text-[#000f9f] text-2xl font-bold">{event.eventName}</h1>
                 <div className="text-xl mb-4 border-b border-[#000f9f] pb-2">{day}&nbsp;{event.time}</div>
-                <ScrollMaskContent
-                    className="h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto"
-                >
-                    <div className="relative w-full aspect-[16/9] mb-4 border-[0.08px] border-black">
-                        <Image
-                            src={`/event/NxPC.webp`}
-                            alt={event.eventName}
-                            fill
-                            className="object-contain"
-                        />
-                    </div>
-                    <div className="text-sm sm:text-base text-black mb-4">{event.content}</div>
-                    {[1, 2, 3, 4, 5, 6].map(index => renderParticipant(index))}
-                    {[1, 2, 3].map(index => renderStudent(index))}
-                </ScrollMaskContent>
+                {(() => {
+                    const eventImagePath = event.eventName.split(' ').join('') + '.webp';
+                    return (
+                        <ScrollMaskContent
+                            className="h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto"
+                        >
+                            <div className="relative w-full aspect-[16/9] mb-4 border-[0.08px] border-black">
+                                <Image
+                                    src={`/event/${eventImagePath}`}
+                                    alt={event.eventName}
+                                    fill
+                                    className="contain"
+                                />
+                            </div>
+                            <div className="text-sm sm:text-base text-black mb-4">{event.content}</div>
+                            {[1, 2, 3, 4, 5, 6].map(index => renderParticipant(index))}
+                            {[1, 2, 3].map(index => renderStudent(index))}
+                        </ScrollMaskContent>
+                    );
+                })()}
             </div>
         </div>
     );
