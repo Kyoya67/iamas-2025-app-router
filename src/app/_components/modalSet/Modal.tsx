@@ -60,7 +60,7 @@ export default function Modal({
                     <div className={`
                         absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                         w-[80%] max-w-[40rem] h-[80vh] sm:h-[90vh]
-                        texture-bg rounded-md
+                        texture-bg rounded-sm
                         text-left
                         p-8
                         pointer-events-auto
