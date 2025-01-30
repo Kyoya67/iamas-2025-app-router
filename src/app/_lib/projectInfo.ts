@@ -1,6 +1,6 @@
 export const PROJECT_INFO = [
     {
-        "projectName": "The Art of Listenning",
+        "projectName": "The Art of Listening",
         "representative": "金山智子",
         "sharer": "吉田茂樹、松井茂",
         "assistant": "",

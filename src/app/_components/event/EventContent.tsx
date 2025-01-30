@@ -64,8 +64,8 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
     return (
         <div className="text-black relative h-full text-justify ten-mincho">
             <div className="relative z-10 h-full flex flex-col">
-                <h1 className="text-2xl font-bold">{event.eventName}</h1>
-                <div className="text-xl mb-4 text-black border-b border-[#000f9f] pb-2">{day}&nbsp;{event.time}</div>
+                <h1 className="text-[#000f9f] text-2xl font-bold">{event.eventName}</h1>
+                <div className="text-xl mb-4 border-b border-[#000f9f] pb-2">{day}&nbsp;{event.time}</div>
                 <ScrollMaskContent
                     className="h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto"
                 >

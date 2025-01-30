@@ -9,6 +9,7 @@ type MenuItemProps = {
     text: string;
     image: string;
     index: number;
+    small?: boolean;
 }
 
 export default function IconAndMenu() {
@@ -17,7 +18,7 @@ export default function IconAndMenu() {
     const menuItems: MenuItemProps[] = [
         { href: "/overview", text: "開催概要", image: "/desktop/hoverCircles/overview.webp", index: 0 },
         { href: "/master", text: "修士研究発表", image: "/desktop/hoverCircles/master.webp", index: 1 },
-        { href: "/project", text: "プロジェクト展示", image: "/desktop/hoverCircles/project.webp", index: 2 },
+        { href: "/project", text: "プロジェクト研究展示", image: "/desktop/hoverCircles/project.webp", index: 2 },
         { href: "/event", text: "イベント", image: "/desktop/hoverCircles/event.webp", index: 3 },
         { href: "/access", text: "交通アクセス", image: "/desktop/hoverCircles/access.webp", index: 4 },
         { href: "/contact", text: "お問い合わせ", image: "/desktop/hoverCircles/contact.webp", index: 5 }
@@ -43,11 +44,11 @@ export default function IconAndMenu() {
                 {menuItems.map((item) => (
                     <li
                         key={item.href}
-                        className="leading-[1.15]"
+                        className={`leading-[1.15] ${item.index === 2 ? 'text-sm' : ''}`}
                         onMouseEnter={() => setHoveredItem(item.image)}
                         onMouseLeave={() => setHoveredItem(null)}
                         style={{
-                            textShadow: '1px 1px 0 rgba(255, 255, 255, 0.8)'
+                            textShadow: '1px 1px 0 rgba(255, 255, 255)'
                         }}
                     >
                         <Link href={item.href}>
@@ -62,6 +63,7 @@ export default function IconAndMenu() {
                     path={item.image}
                     isHovered={hoveredItem === item.image}
                     index={item.index}
+                    project={item.index === 2}
                 />
             ))}
         </div>

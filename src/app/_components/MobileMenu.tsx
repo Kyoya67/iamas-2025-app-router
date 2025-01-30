@@ -8,7 +8,7 @@ import { useState, useCallback, memo, useEffect } from "react";
 const MENU_LINKS = [
     { href: "/overview", label: "開催概要" },
     { href: "/master", label: "修士研究発表" },
-    { href: "/project", label: "プロジェクト展示" },
+    { href: "/project", label: "プロジェクト研究展示" },
     { href: "/event", label: "イベント" },
     { href: "/access", label: "交通アクセス" },
     { href: "/contact", label: "お問い合わせ" },

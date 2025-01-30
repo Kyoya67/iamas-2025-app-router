@@ -4,15 +4,16 @@ type Props = {
     path: string;
     isHovered: boolean;
     index: number;
+    project: boolean;
 }
 
-export default function HoverImage({ path, isHovered, index }: Props) {
+export default function HoverImage({ path, isHovered, index, project }: Props) {
     return (
         <Image
             src={path}
             alt="hover image"
-            width={80}
-            height={80}
+            width={project ? 140 : 80}
+            height={project ? 140 : 80}
             style={{
                 position: 'fixed',
                 top: `calc(10.2rem + ${index * 1.13}rem)`,
