@@ -9,6 +9,7 @@ const MENU_LINKS = [
     { href: "/overview", label: "開催概要" },
     { href: "/master", label: "修士研究発表" },
     { href: "/project", label: "プロジェクト研究展示" },
+    { href: "/related", label: "関連展示" },
     { href: "/event", label: "イベント" },
     { href: "/access", label: "交通アクセス" },
     { href: "/contact", label: "お問い合わせ" },
@@ -22,7 +23,6 @@ const SOCIAL_LINKS = [
     { href: "https://www.facebook.com/IAMAS.GraduationExhibition/", label: "Facebook" },
 ] as const;
 
-// メモ化されたリンクコンポーネント
 const MenuLink = memo(function MenuLink({
     href,
     children,

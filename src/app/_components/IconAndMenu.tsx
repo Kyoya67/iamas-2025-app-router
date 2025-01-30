@@ -19,9 +19,10 @@ export default function IconAndMenu() {
         { href: "/overview", text: "開催概要", image: "/desktop/hoverCircles/overview.webp", index: 0 },
         { href: "/master", text: "修士研究発表", image: "/desktop/hoverCircles/master.webp", index: 1 },
         { href: "/project", text: "プロジェクト研究展示", image: "/desktop/hoverCircles/project.webp", index: 2 },
-        { href: "/event", text: "イベント", image: "/desktop/hoverCircles/event.webp", index: 3 },
-        { href: "/access", text: "交通アクセス", image: "/desktop/hoverCircles/access.webp", index: 4 },
-        { href: "/contact", text: "お問い合わせ", image: "/desktop/hoverCircles/contact.webp", index: 5 }
+        { href: "/related", text: "関連展示", image: "/desktop/hoverCircles/related.webp", index: 3 },
+        { href: "/event", text: "イベント", image: "/desktop/hoverCircles/event.webp", index: 4 },
+        { href: "/access", text: "交通アクセス", image: "/desktop/hoverCircles/access.webp", index: 5 },
+        { href: "/contact", text: "お問い合わせ", image: "/desktop/hoverCircles/contact.webp", index: 6 }
     ];
 
     return (
@@ -33,14 +34,11 @@ export default function IconAndMenu() {
                 <Image
                     src="/desktop/iconAndMenu.webp"
                     alt="アイコンとメニュー"
-                    width={300}
+                    width={180}
                     height={400}
-                    style={{
-                        width: 'clamp(170px, 5vw, 200px)'
-                    }}
                 />
             </Link>
-            <ul className="fixed top-[10.2rem] left-3 text-[#000f9f]">
+            <ul className="fixed top-[10.85rem] left-[0.75rem] text-[#000f9f]">
                 {menuItems.map((item) => (
                     <li
                         key={item.href}
@@ -48,7 +46,7 @@ export default function IconAndMenu() {
                         onMouseEnter={() => setHoveredItem(item.image)}
                         onMouseLeave={() => setHoveredItem(null)}
                         style={{
-                            textShadow: '1px 1px 0 rgba(255, 255, 255)'
+                            textShadow: '0.3px 0.3px 0 #E8EEFA'
                         }}
                     >
                         <Link href={item.href}>
@@ -63,7 +61,6 @@ export default function IconAndMenu() {
                     path={item.image}
                     isHovered={hoveredItem === item.image}
                     index={item.index}
-                    project={item.index === 2}
                 />
             ))}
         </div>
