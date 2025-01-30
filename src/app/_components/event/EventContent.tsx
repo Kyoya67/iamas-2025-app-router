@@ -25,13 +25,19 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
         const nameKey = `participant${index}_name` as keyof typeof event;
         const statusKey = `participant${index}_status` as keyof typeof event;
         const profileKey = `participant${index}_profile` as keyof typeof event;
-        const name = event[nameKey] as string;
-        const status = event[statusKey] as string;
         const profile = event[profileKey] as string;
+        let status = event[statusKey] as string;
+        let name = event[nameKey] as string;
 
         if (!name) return null;
 
-        const imagePath = encodeURIComponent(name.trim().split(' ').join(''));
+        let image = name;
+        if (image.includes('(')) {
+            status = image.split('(')[1].replace(')', '');
+            image = image.split('(')[0];
+            name = image;
+        }
+        const imagePath = encodeURIComponent(image.trim().split(' ').join(''));
 
         return (
             <div key={index}>
