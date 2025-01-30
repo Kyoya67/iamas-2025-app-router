@@ -4,6 +4,7 @@ export const EVENTS = [
         "exhibitors": "成瀬陽太・徳保晴人・松井美緒",
         "day": "Friday",
         "time": "14:00-14:45",
+        "place": "",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Santa NARUSE",
         "student2": "Tokubo Haruto",
@@ -24,14 +25,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
         "exhibitors": "橋本正隆・上田麟太朗",
         "day": "Friday",
         "time": "15:00-15:45",
+        "place": "",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Masataka Hashimoto",
         "student2": "Rintaro UEDA",
@@ -52,14 +53,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
         "exhibitors": "嶋晏澄・竹本誠・宮崎那奈子",
         "day": "Friday",
         "time": "16:00-16:45",
+        "place": "",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Azumi Shima",
         "student2": "Makoto Takemoto",
@@ -80,14 +81,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
         "exhibitors": "三波蒼菜・後藤朋美・BAK SOMIN",
         "day": "Friday",
         "time": "17:00-17:45",
+        "place": "",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "aona minami",
         "student2": "Tomomi Goto",
@@ -108,14 +109,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "クリティカルサイクリング　ー寒中ライドー",
         "exhibitors": "クリティカル・サイクリング",
         "day": "Saturday",
         "time": "8:00-10:30",
+        "place": "ソフトピア・ジャパン・センタービル 北玄関前",
         "content": "来る2月22日にクリティカル・サイクリングと運動体設計の共催による早朝耐寒ライドを行います。これはIAMASの卒展イベントとして行われ、どなたでもご参加いただけます。今年度はIAMAS周辺のゴミを拾いながらサイクリングをします。",
         "student1": "",
         "student2": "",
@@ -136,14 +137,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "プロジェクト口頭発表",
         "exhibitors": "",
         "day": "Saturday",
         "time": "11:00-12:00",
+        "place": "",
         "content": "",
         "student1": "",
         "student2": "",
@@ -164,14 +165,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか：トーク",
         "exhibitors": "志村翔太・坂根大悟・赤松正行",
         "day": "Saturday",
         "time": "12:00-13:00",
+        "place": "",
         "content": "梶原岐阜県知事時代の箱物行政政策によって誕生したセンタービルをはじめとする建築群と、運動体設計プロジェクト内で昨年実施したIAMAS旧校舎や門入集落へのリサーチ、荒川修作に関する調査、さらに2024年10月に訪問した磯崎新による奈義町美術館（「建築と作品が一体化した公共建築」）と養老天命反転地の比較を関連付け、「エッジ」の視点から考察を行います。ゲストとして東京藝術大学メディア映像M1の坂根大悟さんをお迎えし、彼の専門である鉄道史の視点から大垣と箱物について話題提供をいただきます。午後には自転車に乗って実際に養老へ向かい、養老天命反転地を訪問しつつ、センタービルが街の外れから見える境界（エッジ）を探ります。",
         "student1": "Shota Shimura",
         "student2": "",
@@ -192,14 +193,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "ガムラン演奏",
         "exhibitors": "IAMASガムラン部",
         "day": "Sunday",
         "time": "12:30-13:00",
+        "place": "",
         "content": "今回のIAMAS2025での演奏は、IAMASの有志学生のみならず、学外の方にも参加していただくIAMASガムラン部の今年度の集大成となる演奏です。ガムランが織りなす高次倍音を豊富に含んだ音色と、一人一人のシンプルなパートが重なり合い生み出される豊かなリズム&メロディ、流動的で開かれた時間、空間をじっくりとお楽しみください。",
         "student1": "",
         "student2": "",
@@ -220,14 +221,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "プロジェクト展示コアタイム",
         "exhibitors": "",
         "day": "Saturday",
         "time": "13:00-14:00",
+        "place": "",
         "content": "",
         "student1": "",
         "student2": "",
@@ -248,14 +249,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "ジェンダーじゃない話をしよう！",
         "exhibitors": "菅実花・松井茂・小林史佳・早田仁知\n・髙岸航平(ファシリテーター)",
         "day": "Saturday",
         "time": "14:00-16:30",
+        "place": "",
         "content": "これまでIAMASでジェンダーに関する議論はあまり行われてきませんでした。男性名詞や女性名詞がある言語って、どんなふうに世界を捉えているのかな？男らしさ・女らしさの意識に影響するのかな？そんな疑問から出発した勉強会の特別編として、IAMASでジェンダーの議論をすることについて考えます。",
         "student1": "",
         "student2": "",
@@ -276,14 +277,14 @@ export const EVENTS = [
         "participant5_status": "IAMAS修士1年",
         "participant5_profile": "IAMAS(M1)所属。学部の専門は漆工と木工。成層圏で漆造形作品を撮影する「宙漆プロジェクト」代表。現在は生成AIを通した芸術教育について研究に取り組む。",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
         "exhibitors": "山口結子・JUNG JIEYUN・菊田佳恵",
         "day": "Saturday",
         "time": "16:00-16:45",
+        "place": "",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Yuiko Yamaguchi",
         "student2": "JUNG Jieyun",
@@ -304,14 +305,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "NxPC.Live vol.72 唵楽と影像",
         "exhibitors": "Record Prayer・\nニチウシ・\nNomad Sentinel・\nhitsujikai・\nhrx",
         "day": "Saturday",
         "time": "18:00-",
+        "place": "",
         "content": "NxPC.Labは、クラブやライブにおけるアーティストと観客の相互作用によってもたらされる場の臨場感を拡大し、ネットへも拡散させるためのメディアテクノロジーの実現を目指した研究機関です。",
         "student1": "",
         "student2": "",
@@ -332,14 +333,14 @@ export const EVENTS = [
         "participant5_status": "乱数発生器は観客に反応するのか？乱数発生器が観客の情動に反応するというアイデアを実証するための実験的パフォーマンス",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか ：サイクリングツアー",
         "exhibitors": "志村翔太・坂根大悟・赤松正行",
         "day": "Sunday",
         "time": "7:00-10:30",
+        "place": "ソフトピア・ジャパン・センタービル 北玄関前",
         "content": "梶原岐阜県知事時代の箱物行政政策によって誕生したセンタービルをはじめとする建築群と、運動体設計プロジェクト内で昨年実施したIAMAS旧校舎や門入集落へのリサーチ、荒川修作に関する調査、さらに2024年10月に訪問した磯崎新による奈義町美術館（「建築と作品が一体化した公共建築」）と養老天命反転地の比較を関連付け、「エッジ」の視点から考察を行います。ゲストとして東京藝術大学メディア映像M1の坂根大悟さんをお迎えし、彼の専門である鉄道史の視点から大垣と箱物について話題提供をいただきます。午後には自転車に乗って実際に養老へ向かい、養老天命反転地を訪問しつつ、センタービルが街の外れから見える境界（エッジ）を探ります。",
         "student1": "Shota Shimura",
         "student2": "",
@@ -360,14 +361,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "プロジェクト口頭発表",
         "exhibitors": "",
         "day": "Sunday",
         "time": "11:00-12:00",
+        "place": "",
         "content": "",
         "student1": "",
         "student2": "",
@@ -388,14 +389,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
         "exhibitors": "對中優・カワイタケシ・猪崎康世",
         "day": "Sunday",
         "time": "12:00-",
+        "place": "",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Masaru Tainaka",
         "student2": "Takeshi Kawai",
@@ -416,14 +417,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "プロジェクト展示コアタイム",
         "exhibitors": "",
         "day": "Sunday",
         "time": "13:00-",
+        "place": "",
         "content": "",
         "student1": "",
         "student2": "",
@@ -444,14 +445,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "ポスト言語学：「言葉とは何か」とは何か",
         "exhibitors": "早田仁知・伊藤雄馬・マユンキキ・髙岸航平",
         "day": "Sunday",
         "time": "14:00-16:00",
+        "place": "",
         "content": "「言語の消滅は喪失しか起こさないのか？」「そもそも言語は本当に消滅するものなのか？」「私たちの言語は『構造』に還元されるしかないのか？」「言語学における言語とは何か？それは昔と同じままでいいだろうか？」現代の言語学の限界と可能性を探り、新しい言語学を切り拓きます。",
         "student1": "",
         "student2": "",
@@ -472,14 +473,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "技術/手法の実験の積み重ねから生まれる視覚表現を紐解く",
         "exhibitors": "成瀬陽太・橋本麦・石川将也",
         "day": "Sunday",
         "time": "16:00-18:00",
+        "place": "",
         "content": "視覚表現は、幅広い領域の技術/手法を実験的に取り入れながら発展し、新たな形が探索されています。本イベントでは、映像表現、インスタレーション作品、視覚認知の研究など、領域を横断しながら視覚表現を探索するグラフィックデザイナー/研究者の石川将也氏と映像作家/ツール開発者の橋本麦氏をお招きし、IAMASにて視覚認知に関する視覚表現について研究する成瀬陽太の3人で「実験の積み重ねから生まれる視覚表現」についてトークを行います。",
         "student1": "Santa NARUSE",
         "student2": "",
@@ -500,14 +501,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "レセプション",
         "exhibitors": "",
         "day": "Sunday",
         "time": "18:00-",
+        "place": "",
         "content": "",
         "student1": "",
         "student2": "",
@@ -528,14 +529,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "レセプション",
         "exhibitors": "",
         "day": "Sunday",
         "time": "18:00-",
+        "place": "",
         "content": "",
         "student1": "",
         "student2": "",
@@ -556,14 +557,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "",
         "exhibitors": "",
         "day": "Monday",
         "time": "10:00-12:00",
+        "place": "",
         "content": "",
         "student1": "",
         "student2": "",
@@ -584,14 +585,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "IAMAS JUNCTION",
         "exhibitors": "璃月ゆあ・浅井睦",
         "day": "Monday",
         "time": "12:00-",
+        "place": "",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Yua Riduki",
         "student2": "Mutsushi Asai",
@@ -612,14 +613,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "プロジェクト展示コアタイム",
         "exhibitors": "",
         "day": "Monday",
         "time": "13:00-",
+        "place": "",
         "content": "",
         "student1": "",
         "student2": "",
@@ -640,14 +641,14 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     },
     {
         "eventName": "",
         "exhibitors": "",
         "day": "Monday",
         "time": "16:00-18:00",
+        "place": "",
         "content": "",
         "student1": "",
         "student2": "",
@@ -668,7 +669,6 @@ export const EVENTS = [
         "participant5_status": "",
         "participant5_profile": "",
         "participant6_name": "",
-        "participant6_status": "",
-        "participant6_profile": ""
+        "participant6_status": ""
     }
 ];

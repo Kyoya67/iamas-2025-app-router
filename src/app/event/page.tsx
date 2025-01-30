@@ -29,7 +29,7 @@ export default function Event() {
                 <div className="
                     w-[70vw] sm:w-[58vw] xl:w-[29rem]
                     flex flex-col xl:flex-row
-                    mt-[15vh]
+                    mt-[13vh] md:mt-[20vh] md:ml-[8vw]
                     sm:pl-[2vw]
                     relative
                     xl:ml-[40vw]
