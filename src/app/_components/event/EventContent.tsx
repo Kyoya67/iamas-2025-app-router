@@ -41,7 +41,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
 
         return (
             <div key={index}>
-                <div className="flex items-end mt-2 mb-2">
+                <div className="flex items-end mt-2 mb-2 relative">
                     <Image
                         src={`/event/profile/${imagePath}.webp`}
                         alt={name}
@@ -49,7 +49,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         height={100}
                         className="object-contain mr-4"
                     />
-                    <div className="flex flex-col text-base sm:text-xl text-black">
+                    <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] ml-[7rem]">
                         <div className="text-sm">{status}</div>
                         <div>{name}</div>
                     </div>

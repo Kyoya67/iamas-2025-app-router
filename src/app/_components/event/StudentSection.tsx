@@ -11,7 +11,7 @@ export const StudentSection = ({ name }: { name: string }) => {
 
     return (
         <div className="mb-5">
-            <div className="flex items-end w-full mt-3 mb-2">
+            <div className="flex items-end w-full mt-3 mb-2 relative">
                 <Image
                     src={`/profile/${student.authorEnglishName.split(' ').join('')}.webp`}
                     alt={student.authorEnglishName}
@@ -19,7 +19,7 @@ export const StudentSection = ({ name }: { name: string }) => {
                     height={100}
                     className="object-contain mr-4"
                 />
-                <div className="flex flex-col text-base sm:text-xl text-black">
+                <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] ml-[7rem]">
                     <div className="text-sm">IAMAS修士2年</div>
                     <div>{student.authorJapaneseName}</div>
                 </div>
