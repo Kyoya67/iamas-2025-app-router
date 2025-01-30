@@ -58,6 +58,7 @@ export default function RootLayout({
       <head>
         <TypekitLoader />
         <DisableZoom />
+        <meta name="format-detection" content="telephone=no,email=no,address=no" />
       </head>
       <body className="text-[#000f9f] ten-mincho">
         <EventProvider>

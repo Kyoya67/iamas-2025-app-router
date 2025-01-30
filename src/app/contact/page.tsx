@@ -27,11 +27,11 @@ export default function Contact() {
                             <span className="ml-[3em]">ソフトピアジャパン・センタービル</span>
                         </div>
                     </li>
-                    <li><span>TEL：</span><span className="ovo">0584-75-6600</span></li>
-                    <li><span>FAX：</span><span className="ovo">0584-75-6637</span></li>
+                    <li><span>TEL：</span><span className="ovo prevent-link">0584-75-6600</span></li>
+                    <li><span>FAX：</span><span className="ovo prevent-link">0584-75-6637</span></li>
                     <li>
                         <span>Mail：</span>
-                        <span className="ovo">iamas25@ml.iamas.ac.jp</span>
+                        <span className="ovo prevent-link">iamas25@ml.iamas.ac.jp</span>
                     </li>
                     <li>
                         <span>WEB：</span>
