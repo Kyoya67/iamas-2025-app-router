@@ -5,5 +5,9 @@ export default function EventLayout({
 }: {
     children: React.ReactNode;
 }) {
-    return <EventProvider>{children}</EventProvider>;
+    return (
+        <EventProvider initialDay="Friday">
+            {children}
+        </EventProvider>
+    );
 }

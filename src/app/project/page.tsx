@@ -1,48 +1,47 @@
 import { PROJECT_INFO } from "@/app/_lib/projectInfo";
-import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
+import OneColumDisplay from "@/app/_components/project/OneColumDisplay";
+import TwoColumDisplay from "@/app/_components/project/TwoColumDisplay";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { ProjectImage } from "@/app/_components/project/ProjectImage";
 
 export const metadata: Metadata = {
-    title: "IAMAS 2025 修士研究発表会",
+    title: "IAMAS 2025 プロジェクト研究展示",
 }
 
 export default function Exhibition() {
     const data = PROJECT_INFO;
-    const formattedData = data.map(item => ({
+    const directories = [
+        'TheArtOfListening',
+        'TechnologyHermeneutics',
+        'WelfareTechnology',
+        'CollaborativeDesignResearchProject',
+        'ExperienceExtension',
+        'ExtremeBiologies'
+    ];
+
+    const formattedData = data.map((item, index) => ({
         ...item,
         urlName: item.projectName.split(' ').join(''),
+        directory: directories[index],
         displayName: item.projectName
     }));
+
     return (
         <div className="
-            absolute inset-0 flex justify-center lg:justify-end lg:mr-[10vw]
-            mt-5 md:mt-0 
+            w-[100vw] h-[100vh]
+            relative
         ">
-            <ScrollMaskContent className="
-                h-[60vh] sm:h-[55vh]
-                w-[65vw] lg:w-[25vw]
-                md:ml-20
-                mt-[15vh]
-            ">
-                <div className="flex flex-col gap-y-fluid-lg lg:gap-y-10 ten-mincho">
-                    {formattedData.map((item) => (
-                        <div
-                            key={`${item.urlName}`}
-                            className="
-                                px-fluid-padding-xs flex 
-                                justify-left 
-                            "
-                        >
-                            <Link
-                                href={`/project/${item.urlName}`}
-                            >
-                                {item.displayName}
-                            </Link>
-                        </div>
-                    ))}
-                </div>
-            </ScrollMaskContent>
-        </div>
+            <div className="
+                lg:opacity-100 lg:pointer-events-auto
+                absolute ml-[10rem] top-[20vh]
+                w-[40vw] -rotate-[1.5deg]
+                transition-opacity duration-300
+                opacity-0 pointer-events-none   
+                ">
+                <ProjectImage />
+            </div>
+            <OneColumDisplay formattedData={formattedData} />
+            <TwoColumDisplay formattedData={formattedData} />
+        </div >
     );
 }

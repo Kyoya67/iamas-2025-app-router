@@ -9,7 +9,6 @@ export const EventImage = () => {
         <div className="relative w-[80%] aspect-[16/9] ml-[8vw]">
             <AnimatePresence mode="wait">
                 <motion.div
-                    // key={currentWork}
                     className="absolute top-0 w-full h-full"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

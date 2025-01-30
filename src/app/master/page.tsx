@@ -32,15 +32,15 @@ export default async function Master() {
                 </div>
                 <ScrollMaskContent className="
                     h-[60vh] sm:h-[55vh]
-                    mt-[15vh] lg:mt-[20vh]
+                    mt-[15vh] lg:mt-[15vh]
                     ml-6 
                 ">
                     <div className="
                         grid grid-cols-2 
                         gap-x-[3rem] sm:gap-x-[6rem] lg:gap-x-[1rem] 
-                        pr-3 sm:pr-6
-                    ">
-                        <div className="flex flex-col gap-y-fluid-lg lg:gap-y-[0.6rem]">
+                        pr-[0rem] 
+                        ">
+                        <div className="flex flex-col gap-y-fluid-lg lg:gap-y-[0.75rem] mr-[1vw]">
                             {leftColumn.map((item) => (
                                 <div
                                     key={`left-${item.authorEnglishName}`}
@@ -59,7 +59,7 @@ export default async function Master() {
                                 </div>
                             ))}
                         </div>
-                        <div className="flex flex-col gap-y-fluid-lg lg:gap-y-[0.5rem]">
+                        <div className="flex flex-col gap-y-fluid-lg lg:gap-y-[0.75rem]">
                             {rightColumn.map((item, i) => (
                                 <div
                                     key={`right-${item.authorEnglishName}`}
