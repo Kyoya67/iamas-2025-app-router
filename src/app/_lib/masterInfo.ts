@@ -1,6 +1,6 @@
 export const MASTER_INFO = [
     {
-        "authorJapaneseName": "嶋 晏澄",
+        "authorJapaneseName": "嶋晏澄",
         "authorEnglishName": "Azumi Shima",
         "profileJapanese": "岐阜生まれ岐阜育ち。",
         "profileEnglish": "Native of Gifu.",

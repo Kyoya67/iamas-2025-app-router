@@ -1,9 +1,4 @@
 import Image from "next/image";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "IAMAS 2025",
-};
 
 export default async function Home() {
   return (
