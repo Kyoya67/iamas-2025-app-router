@@ -85,7 +85,7 @@ export const EVENTS = [
     },
     {
         "eventName": "IAMAS JUNCTION",
-        "exhibitors": "小南菜子・後藤朋美・BAK SOMIN",
+        "exhibitors": "三波蒼菜・後藤朋美・BAK SOMIN",
         "day": "Friday",
         "time": "17:00-17:45",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
@@ -272,9 +272,9 @@ export const EVENTS = [
         "participant4_name": "早田仁知",
         "participant4_status": "IAMAS修士1年",
         "participant4_profile": "IAMAS(M1)所属。2001年生まれ。東京外大言語文化学部ヒンディー語専攻卒業。学部時代には音声学を専門にし、日本語とヒンディー語のオノマトペ対照をテーマに研究。多言語社会であるインド・デリー大学への交換留学を経て、現在は言語の消滅・忘却に関する研究と制作に取り組む。学外では作詞作曲家として楽曲制作等の活動も行っている。",
-        "participant5_name": "IAMAS修士1年",
-        "participant5_status": "",
-        "participant5_profile": "",
+        "participant5_name": "髙岸航平",
+        "participant5_status": "IAMAS修士1年",
+        "participant5_profile": "IAMAS(M1)所属。学部の専門は漆工と木工。成層圏で漆造形作品を撮影する「宙漆プロジェクト」代表。現在は生成AIを通した芸術教育について研究に取り組む。",
         "participant6_name": "",
         "participant6_status": "",
         "participant6_profile": ""
@@ -336,7 +336,7 @@ export const EVENTS = [
         "participant6_profile": ""
     },
     {
-        "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか：サイクリングツアー",
+        "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか ：サイクリングツアー",
         "exhibitors": "志村翔太・坂根大悟・赤松正行",
         "day": "Sunday",
         "time": "7:00-10:30",
@@ -589,11 +589,11 @@ export const EVENTS = [
     },
     {
         "eventName": "IAMAS JUNCTION",
-        "exhibitors": "岡本悠里・浅井睦",
+        "exhibitors": "璃月ゆあ・浅井睦",
         "day": "Monday",
         "time": "12:00-",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
-        "student1": "Yuri Okamoto",
+        "student1": "Yua Riduki",
         "student2": "Mutsushi Asai",
         "student3": "",
         "participant1_name": "",
@@ -671,4 +671,4 @@ export const EVENTS = [
         "participant6_status": "",
         "participant6_profile": ""
     }
-]
+];
