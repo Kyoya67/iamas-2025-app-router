@@ -38,7 +38,7 @@ export default async function Master() {
                     <div className="
                         grid grid-cols-2 
                         gap-x-[3rem] sm:gap-x-[6rem] lg:gap-x-[1rem] 
-                        pr-6
+                        pr-3 sm:pr-6
                     ">
                         <div className="flex flex-col gap-y-fluid-lg lg:gap-y-[0.6rem]">
                             {leftColumn.map((item) => (
