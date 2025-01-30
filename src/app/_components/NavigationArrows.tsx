@@ -22,15 +22,18 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
                         cursor-pointer
                         pointer-events-auto
                         z-[140]
+                        group
                     "
                     onClick={() => router.replace(previousPath)}
                 >
                     <div className="
-                        w-8 h-8 md:w-10 md:h-10
+                        w-8 h-8 
                         flex items-center justify-center
                         rounded-full bg-white/80 
                         transition-all
-                        hover:bg-white hover:scale-110
+                        transition-duration-600
+                        group-hover:scale-110
+                        group-hover:bg-white
                     ">
                         <IoIosArrowBack size={18} className="text-[#000f9f]" />
                     </div>
@@ -45,15 +48,18 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
                         cursor-pointer
                         pointer-events-auto
                         z-[140]
+                        group
                     "
                     onClick={() => router.replace(nextPath)}
                 >
                     <div className="
-                        w-8 h-8 md:w-10 md:h-10
+                        w-8 h-8
                         flex items-center justify-center
                         rounded-full bg-white/80
                         transition-all
-                        hover:bg-white hover:scale-110
+                        transition-duration-600
+                        group-hover:scale-110
+                        group-hover:bg-white
                     ">
                         <IoIosArrowForward size={18} className="text-[#000f9f]" />
                     </div>
