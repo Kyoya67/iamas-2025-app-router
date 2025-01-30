@@ -136,3 +136,22 @@ html, body {
   overscroll-behavior: none;
 }
 
+/* 既存のスタイルに追加 */
+a, a:link, a:visited {
+  text-decoration: none;  /* 下線を削除 */
+}
+
+/* 点線の装飾を削除 */
+* {
+  -webkit-tap-highlight-color: transparent;  /* タップ時のハイライトを削除 */
+}
+
+/* 電話番号などの自動リンク化による装飾を削除 */
+a[href^="tel:"],
+a[href^="mailto:"],
+a[href^="http://"],
+a[href^="https://"] {
+  text-decoration: none;
+  -webkit-text-decoration: none;
+}
+
