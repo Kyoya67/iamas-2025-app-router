@@ -10,11 +10,11 @@ export default function MobileIcon() {
                 width={110}
                 height={100}
                 className="
-                    absolute top-3 left-3 object-cover
+                    absolute top-2 left-2 object-cover
                     w-[110px]
                     sm:w-[120px]
+                    z-[110]
                 "
-                style={{ zIndex: 2 }}
             />
         </Link>
     );

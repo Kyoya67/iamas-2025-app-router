@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ConceptMovie from "../ConceptMovie";
+import ConceptMovie from "../desktop/ConceptMovie";
 export default function DesktopBase() {
     return (
         <div className="relative z-0">
@@ -31,14 +31,7 @@ export default function DesktopBase() {
                 <Image
                     src="/desktop/base/leftBottom.webp"
                     alt="左下"
-                    width={150}
-                    height={100}
-                    className="object-contain"
-                />
-                <Image
-                    src="/desktop/base/mixed.webp"
-                    alt="ミックス"
-                    width={500}
+                    width={600}
                     height={100}
                     className="object-contain"
                 />

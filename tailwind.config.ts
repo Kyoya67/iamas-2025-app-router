@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
+        'xxs': '0.67rem',
         'fluid-xs': 'clamp(0.6rem, 2.7vw, 0.8rem)',   // 12px -> 14px
         'fluid-sm': 'clamp(0.7rem, 0.6vw + 0.6rem, 1rem)',      // 14px -> 16px
         'fluid-base': 'clamp(1rem, 0.9vw + 0.8rem, 1.125rem)',    // 16px -> 18px

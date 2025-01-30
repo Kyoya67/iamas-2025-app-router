@@ -2,9 +2,9 @@ import Image from "next/image";
 import "./globals.css";
 import type { Metadata } from 'next';
 import DisableZoom from './_components/DisableZoom';
-import IconAndMenu from "./_components/IconAndMenu";
-import MobileIcon from "./_components/MobileIcon";
-import MobileMenu from "./_components/MobileMenu";
+import IconAndMenu from "./_components/desktop/IconAndMenu";
+import MobileIcon from "./_components/mobile/MobileIcon";
+import MobileMenu from "./_components/mobile/MobileMenu";
 import PageTransition from "./_components/PageTransition";
 import TypekitLoader from './_components/TypekitLoader'
 import DesktopBase from "./_components/base/DesktopBase";
@@ -84,22 +84,22 @@ export default function RootLayout({
                   priority
                   loading="eager"
                   className="
-                  md:hidden 
-                  absolute top-0 right-0 
-                  h-screen w-full 
-                  object-cover object-right
-                  pointer-events-none"
+                    md:hidden 
+                    absolute top-0 right-0 
+                    h-screen w-full 
+                    object-cover object-right
+                    pointer-events-none"
                 />
                 <Image
                   src="/desktop/scan.webp"
                   alt="スキャン"
                   fill
                   className="
-                  hidden md:block 
-                  absolute top-0 right-0 
-                  h-screen w-full 
-                  object-cover object-right
-                  pointer-events-none"
+                    hidden md:block 
+                    absolute top-0 right-0 
+                    h-screen w-full 
+                    object-cover object-right
+                    pointer-events-none"
                 />
               </div>
               <PageTransition>

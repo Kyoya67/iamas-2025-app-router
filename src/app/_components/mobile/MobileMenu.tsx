@@ -23,6 +23,11 @@ const SOCIAL_LINKS = [
     { href: "https://www.facebook.com/IAMAS.GraduationExhibition/", label: "Facebook" },
 ] as const;
 
+const MOBILE_ICON_STYLE = {
+    width: "clamp(2rem, 1.545rem + 5vw, 5rem)",
+    objectFit: "cover" as const
+} as const;
+
 const MenuLink = memo(function MenuLink({
     href,
     children,
@@ -69,17 +74,14 @@ export default function MobileMenu() {
                 onClick={toggleMenu}
                 aria-label="メニューを開く"
                 aria-expanded={isOpen}
-                className="absolute top-0 right-0 mt-4 mr-3 z-[110]"
+                className="absolute top-0 right-0 mt-2 mr-2 z-[110]"
             >
                 <Image
                     src="/mobile/menu.webp"
                     alt=""
                     width={100}
                     height={100}
-                    style={{
-                        width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)",
-                        objectFit: "cover"
-                    }}
+                    style={MOBILE_ICON_STYLE}
                 />
             </button>
             <div
@@ -118,10 +120,7 @@ export default function MobileMenu() {
                         alt=""
                         width={100}
                         height={100}
-                        style={{
-                            width: "clamp(3rem, 1.545rem + 7.27vw, 7rem)",
-                            objectFit: "cover"
-                        }}
+                        style={MOBILE_ICON_STYLE}
                     />
                     <span className="
                         absolute right-1 
@@ -141,13 +140,13 @@ export default function MobileMenu() {
                         2/21 (Fri) - 2/24 (Mon)<br></br>
                         10:00 - 17:00<br></br>
                     </div>
-                    <span className="block mt-5 text-xs sm:text-sm">
+                    <span className="block mt-5 text-xxs sm:text-sm">
                         ソフトピアジャパン・センタービル
                     </span>
 
                     <div className="mt-5 sm:mt-7 border-b border-[#000f9f]"></div>
 
-                    <ul className="mt-5 sm:mt-7 text-sm sm:text-lg">
+                    <ul className="mt-5 sm:mt-7 text-base sm:text-lg">
                         <div className="mb-3 mr-2">
                             <MenuLink href="/" onClick={closeMenu}>
                                 <div className="flex items-center">
