@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 type EventContextType = {
     selectedDay: string;
@@ -10,7 +10,16 @@ type EventContextType = {
 const EventContext = createContext<EventContextType | undefined>(undefined);
 
 export function EventProvider({ children }: { children: React.ReactNode }) {
-    const [selectedDay, setSelectedDay] = useState("Friday");
+    const [selectedDay, setSelectedDay] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('selectedDay') || "Friday";
+        }
+        return "Friday";
+    });
+
+    useEffect(() => {
+        localStorage.setItem('selectedDay', selectedDay);
+    }, [selectedDay]);
 
     return (
         <EventContext.Provider value={{ selectedDay, setSelectedDay }}>

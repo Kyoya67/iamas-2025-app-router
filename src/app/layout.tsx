@@ -9,7 +9,6 @@ import PageTransition from "./_components/PageTransition";
 import TypekitLoader from './_components/TypekitLoader'
 import DesktopBase from "./_components/base/DesktopBase";
 import MobileBase from "./_components/base/MobileBase";
-import { EventProvider } from "@/app/_contexts/EventContext";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
@@ -61,55 +60,53 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=no,email=no,address=no" />
       </head>
       <body className="text-[#000f9f] ten-mincho">
-        <EventProvider>
-          <div className="scroll-container">
-            <div className="relative w-full h-screen">
-              <div className="md:hidden z-10">
-                <MobileIcon />
-                <MobileMenu />
-              </div>
-              <div className="hidden md:block z-10">
-                <IconAndMenu />
-              </div>
-              <div className="sm:hidden z-0">
-                <MobileBase />
-              </div>
-              <div className="hidden sm:block z-0">
-                <DesktopBase />
-              </div>
-              <div className='z-10'>
-                <Image
-                  src="/mobile/iPadScan.webp"
-                  alt="スキャン"
-                  fill
-                  priority
-                  loading="eager"
-                  className="
+        <div className="scroll-container">
+          <div className="relative w-full h-screen">
+            <div className="md:hidden z-10">
+              <MobileIcon />
+              <MobileMenu />
+            </div>
+            <div className="hidden md:block z-10">
+              <IconAndMenu />
+            </div>
+            <div className="sm:hidden z-0">
+              <MobileBase />
+            </div>
+            <div className="hidden sm:block z-0">
+              <DesktopBase />
+            </div>
+            <div className='z-10'>
+              <Image
+                src="/mobile/iPadScan.webp"
+                alt="スキャン"
+                fill
+                priority
+                loading="eager"
+                className="
                     md:hidden 
                     absolute top-0 right-0 
                     h-screen w-full 
                     object-cover object-right
                     pointer-events-none"
-                />
-                <Image
-                  src="/desktop/scan.webp"
-                  alt="スキャン"
-                  fill
-                  className="
+              />
+              <Image
+                src="/desktop/scan.webp"
+                alt="スキャン"
+                fill
+                className="
                     hidden md:block 
                     absolute top-0 right-0 
                     h-screen w-full 
                     object-cover object-right
                     pointer-events-none"
-                />
-              </div>
-              <PageTransition>
-                {children}
-              </PageTransition>
-              {modals}
+              />
             </div>
+            <PageTransition>
+              {children}
+            </PageTransition>
+            {modals}
           </div>
-        </EventProvider>
+        </div>
       </body>
     </html>
   );

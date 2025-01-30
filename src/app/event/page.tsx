@@ -17,41 +17,39 @@ export default function Event() {
     ];
 
     return (
-        <>
+        <div className="
+            absolute inset-0 
+            p-fluid-padding-sm sm:p-0
+            relative h-full w-full
+            flex flex-col items-center
+            text-[#000f9f]
+            overflow-x-hidden
+        ">
             <div className="
-                absolute inset-0 
-                p-fluid-padding-sm sm:p-0
-                relative h-full w-full
-                flex flex-col items-center
-                text-[#000f9f]
-                overflow-x-hidden
+                w-[70vw] sm:w-[58vw] xl:w-[29rem]
+                flex flex-col xl:flex-row
+                mt-[13vh] md:mt-[20vh] md:ml-[8vw]
+                sm:pl-[2vw]
+                relative
+                xl:ml-[40vw]
+                max-w-full
             ">
                 <div className="
-                    w-[70vw] sm:w-[58vw] xl:w-[29rem]
-                    flex flex-col xl:flex-row
-                    mt-[13vh] md:mt-[20vh] md:ml-[8vw]
-                    sm:pl-[2vw]
-                    relative
-                    xl:ml-[40vw]
-                    max-w-full
+                    absolute left-[-45vw] top-[5vh]
+                    w-[41vw] -rotate-[1.5deg]
+                    transition-opacity duration-300
+                    xl:opacity-100 xl:pointer-events-auto
+                    opacity-0 pointer-events-none   
                 ">
-                    <div className="
-                        absolute left-[-45vw] top-[5vh]
-                        w-[41vw] -rotate-[1.5deg]
-                        transition-opacity duration-300
-                        xl:opacity-100 xl:pointer-events-auto
-                        opacity-0 pointer-events-none   
-                    ">
-                        <EventImage />
-                    </div>
+                    <EventImage />
+                </div>
 
-                    <div className="w-full px-4">
-                        <Accordion days={days} />
-                        <NonAccordion days={days} />
-                        <Schedule />
-                    </div>
+                <div className="w-full px-4">
+                    <Accordion days={days} />
+                    <NonAccordion days={days} />
+                    <Schedule />
                 </div>
             </div>
-        </>
+        </div>
     );
 }
