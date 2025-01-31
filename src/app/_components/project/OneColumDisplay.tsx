@@ -27,14 +27,14 @@ export default function OneColumDisplay({ formattedData }: ProjectDisplayProps) 
                             >
                                 <Image
                                     src={`/project/${item.directory}/0.webp`}
-                                    alt={item.displayName}
+                                    alt={item.projectName}
                                     width={500}
                                     height={169}
                                     className="object-cover aspect-[16/9] w-full rounded-[0.25rem]"
                                     quality={100}
                                 />
                                 <div className="text-left text-base sm:text-xl">
-                                    {item.displayName}
+                                    {item.projectName}
                                 </div>
                             </Link>
                         </div>

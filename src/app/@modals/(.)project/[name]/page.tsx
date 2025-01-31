@@ -10,10 +10,24 @@ interface Props {
 
 export default async function ProjectModal({ params }: Props) {
     const { name } = await params;
+    const modalProjectData = [
+        { directory: 'TheArtOfListening', pictureNum: 5 },
+        { directory: 'TechnologyHermeneutics', pictureNum: 4 },
+        { directory: 'WelfareTechnology', pictureNum: 5 },
+        { directory: 'CollaborativeDesignResearchProject', pictureNum: 5 },
+        { directory: 'ExperienceExtension', pictureNum: 5 },
+        { directory: 'ExtremeBiologies', pictureNum: 5 }
+    ];
 
     const currentIndex = PROJECT_INFO.findIndex(
         s => s.projectName.split(' ').join('') === decodeURI(name)
     );
+
+    const project = PROJECT_INFO[currentIndex];
+    if (!project) {
+        console.error('Project not found:', { name });
+        return null;
+    }
 
     const nextPath = currentIndex < PROJECT_INFO.length - 1
         ? `/project/${PROJECT_INFO[currentIndex + 1].projectName.split(' ').join('')}`
@@ -23,12 +37,6 @@ export default async function ProjectModal({ params }: Props) {
         ? `/project/${PROJECT_INFO[currentIndex - 1].projectName.split(' ').join('')}`
         : null;
 
-    const project = PROJECT_INFO[currentIndex];
-    if (!project) {
-        console.error('Project not found:', { name });
-        return null;
-    }
-
     return (
         <Modal
             nextPath={nextPath}
@@ -36,7 +44,11 @@ export default async function ProjectModal({ params }: Props) {
             backPath="/project"
             modalType="project"
         >
-            <ProjectContent projectName={project.projectName} />
+            <ProjectContent
+                projectName={project.projectName}
+                directoryName={modalProjectData[currentIndex].directory}
+                pictureNum={modalProjectData[currentIndex].pictureNum}
+            />
         </Modal>
     );
 }

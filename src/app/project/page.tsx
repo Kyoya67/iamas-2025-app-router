@@ -23,7 +23,6 @@ export default function Exhibition() {
         ...item,
         urlName: item.projectName.split(' ').join(''),
         directory: directories[index],
-        displayName: item.projectName
     }));
 
     return (

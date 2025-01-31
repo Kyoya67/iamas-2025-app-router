@@ -24,7 +24,7 @@ export default function TwoColumDisplay({ formattedData }: ProjectDisplayProps) 
                         "
                         onMouseEnter={() => setHoveredProject(item.directory)}
                     >
-                        {item.displayName}
+                        {item.projectName}
                     </Link>
                 ))}
             </div>

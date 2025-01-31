@@ -4,7 +4,7 @@ export const PROJECT_INFO = [
         "representative": "金山智子",
         "sharer": "吉田茂樹、松井茂",
         "assistant": "",
-        "projectConcept": "「きくこと」は人が生きていく上での基本的な行為であり、また人と関係する上での土台でもあります。そして「きくこと」は研究や表現活動にとっても重要です。リサーチャー、フィールドワーカー、アーティスト、アーキヴィスト、エンジニアなど多様な人たちが多様な「きくこと」を実践しています。「語り」は、語り手と聞き手の相互行為による共同生成ですが、「語り」に多くの注目が集まり、「きくこと」はあまり議論されてきませんでした。多くの人たちにとって「きくこと」は受動的行為と思われているのかもしれませんし、「きくこと」は過去や現在に関わる行為であり、未来へつながるとはあまり考えられていないのかもしれません。本プロジェクトでは、「きくこと」を表現技法として位置づけ、その方法論や実践、哲学的意義にアプローチすることを通じて、自発的で創造的な行為として考えていきます。(374字)",
+        "projectConcept": "「きくこと」は人が生きていく上での基本的な行為であり、また人と関係する上での土台でもあります。そして「きくこと」は研究や表現活動にとっても重要です。リサーチャー、フィールドワーカー、アーティスト、アーキヴィスト、エンジニアなど多様な人たちが多様な「きくこと」を実践しています。「語り」は、語り手と聞き手の相互行為による共同生成ですが、「語り」に多くの注目が集まり、「きくこと」はあまり議論されてきませんでした。多くの人たちにとって「きくこと」は受動的行為と思われているのかもしれませんし、「きくこと」は過去や現在に関わる行為であり、未来へつながるとはあまり考えられていないのかもしれません。本プロジェクトでは、「きくこと」を表現技法として位置づけ、その方法論や実践、哲学的意義にアプローチすることを通じて、自発的で創造的な行為として考えていきます。",
         "wholeActivityContent1": "2024年度前期は、ネットやSNSによるコミュニケーションに慣れ、人と直接話をする機会が少ない若い世代の履修生たちと会話を重ねながら、「きくこととは何か」を問うことから始めました。特に、知らない人と話すことに慣れていない履修生たちは、7月のオープンハウスでは、現在使用されなくなった公衆電話によるコミュニケーションをテーマにした「顔なしふぉん問答」を企画、面識のない人とのコミュニケーションから「きくこと」の難しさや面白さなどを体験しました。 後期は、メンバーの関心や研究に紐づけながら、以下のようなさまざまな活動を通して「きくこと」を実践し、考察を深めました。\n",
         "wholeActivityContent2": "1. 大地の芸術際越後妻有アートトリエンナーレ　津南エリア（展示鑑賞と秋山地区フィールドワーク)\n2. シンポジウム「世界の中の秋山郷」ティム・インゴルド氏講演会\n3. 「IAMAS顔なしフォン問答」（Ogaki Mini Maker Fair 2024）\n4. 「日々の痕跡としてみるToDoリスト」 ワークショップ (メディアコスモス)\n5. 能登地震被災地視察＆復興ボランティア （石川県珠洲市／能登町）\n6. トークイベント 伊藤雄馬（言語学者）＆マユンキキ（美術家）  (IAMAS2025)\n7. 公開インタビュー　弓指寛治（芸術家）\n",
         "wholeActivityContent3": "古いメディアでのやりとり、地域芸術祭での住民や関係者とのやりとり、能登の被災者たちと　のやりとりといった多様な実践を通して、自分の知覚や感性と、能動的なきくという行為ついて、各自考える機会となりました。また、社会人類学者、美術家、言語学者などの専門家たちの話をきき、他者に伝えていく行為についても、「きくこと」の連関として捉える機会になりました。企画されたワークショップでは、一般的に個人的記録であるTo Do List をもとに語り合うことで、語ることと聴くことの関係性についても再考することになりました。2024年度最後の活動として、これまでのプロジェクト活動を通してつながった美術家や研究者に話をきくトークとインタビューを予定しています。",
@@ -28,11 +28,11 @@ export const PROJECT_INFO = [
         "activityContent9": "",
         "activityName10": "",
         "activityContent10": "",
+        "caption0": "",
         "caption1": "",
         "caption2": "",
         "caption3": "",
-        "caption4": "",
-        "caption5": ""
+        "caption4": ""
     },
     {
         "projectName": "テクノロジーの〈解釈学〉",
@@ -63,11 +63,11 @@ export const PROJECT_INFO = [
         "activityContent9": "",
         "activityName10": "",
         "activityContent10": "",
-        "caption1": "芸術祭「底に触れる 現代美術 in 瀬戸」視察の様子",
-        "caption2": "2024年7月に開催したシンポジウムの様子",
+        "caption0": "2024年7月に開催したシンポジウムの様子",
+        "caption1": "シンポジウムの記録動画",
+        "caption2": "芸術祭「底に触れる 現代美術 in 瀬戸」視察の様子",
         "caption3": "2024年5月に瑞雲庵（京都市）での展覧会視察後に行ったプロジェクト説明会の様子",
-        "caption4": "",
-        "caption5": ""
+        "caption4": ""
     },
     {
         "projectName": "福祉の技術プロジェクト",
@@ -98,11 +98,11 @@ export const PROJECT_INFO = [
         "activityContent9": "",
         "activityName10": "",
         "activityContent10": "",
-        "caption1": "花火が打ち上がり表情筋を鍛えることを目指したアプリ",
-        "caption2": "教室での会話の様子",
-        "caption3": "causal SW組込み教具の授業実施記録例「もう鬼なんて怖くない」",
-        "caption4": "目でバネに触れる体験をするアプリのアイデアスケッチ",
-        "caption5": "教室での給食時の様子"
+        "caption0": "花火が打ち上がり表情筋を鍛えることを目指したアプリ",
+        "caption1": "教室での会話の様子",
+        "caption2": "causal SW組込み教具の授業実施記録例「もう鬼なんて怖くない」",
+        "caption3": "目でバネに触れる体験をするアプリのアイデアスケッチ",
+        "caption4": "教室での給食時の様子"
     },
     {
         "projectName": "Collaborative Design Research Project",
@@ -133,11 +133,11 @@ export const PROJECT_INFO = [
         "activityContent9": "",
         "activityName10": "",
         "activityContent10": "",
+        "caption0": "",
         "caption1": "",
         "caption2": "",
         "caption3": "",
-        "caption4": "",
-        "caption5": ""
+        "caption4": ""
     },
     {
         "projectName": "体験拡張表現プロジェクト",
@@ -151,7 +151,7 @@ export const PROJECT_INFO = [
         "activityName1": "IAMASオープンハウスプロジェクト展示\n\n\n",
         "activityContent1": "各々の拡張したい体験を考え修作の展示を行った。マルチカラースイッチングアニメーション、数学xXR、体験型リズムゲーム、生成AIによるドキュメンタリー映像、VR呑み会、自主規制監視体験作品などの展示が行われました。",
         "activityName2": "学会発表\n\n\n",
-        "activityContent2": "-情報処理学会エンターテインメントコンピューティングシンポジウム(EC2024)\n舞台照明器具を用いたマルチカラースイッチングアニメーションの提案と実験\n鶴目佳蓮（IAMAS）、天野憲樹（ノートルダム清心女子大学）、 平林真実（IAMAS）\nスイッチングアニメーション（赤青アニメ）のマルチカラー化の手法に関する研究のデモ発表を行いました。\n-情報処理学会インタラクション2025(3月実施予定）\n生体情報と Avatar を用いた MR 空間における 音楽セッション体験の提案\n伏田昌弘 (株式会社マーブル)、平林真実 (IAMAS)\n共同研究で実施しているXRによるマルチユーザ音楽セッションシステム「AvaPro」についての発表を行います。\n-先端音楽創作学会インターカレッジ・ソニックアーツ・フェスティバルに2名の学生が参加し、パフォーマンスと展示を行います。",
+        "activityContent2": "情報処理学会エンターテインメントコンピューティングシンポジウム(EC2024)\n舞台照明器具を用いたマルチカラースイッチングアニメーションの提案と実験\n鶴目佳蓮（IAMAS）、天野憲樹（ノートルダム清心女子大学）、 平林真実（IAMAS）\nスイッチングアニメーション（赤青アニメ）のマルチカラー化の手法に関する研究のデモ発表を行いました。\n情報処理学会インタラクション2025(3月実施予定）\n生体情報と Avatar を用いた MR 空間における 音楽セッション体験の提案\n伏田昌弘 (株式会社マーブル)、平林真実 (IAMAS)\n共同研究で実施しているXRによるマルチユーザ音楽セッションシステム「AvaPro」についての発表を行います。\n先端音楽創作学会インターカレッジ・ソニックアーツ・フェスティバルに2名の学生が参加し、パフォーマンスと展示を行います。",
         "activityName3": "NxPC.Labの活動 (https://nxpclab.info)\n",
         "activityContent3": "プロジェクトと連携し、音楽、映像、演出等の発表および実験の場として音楽イベント「NxPC.Live」を実施しています。本年度においては、６月の新入生イベント「NxPC.Live\nvol.69 ウィ」、7月のオープンハウスでのイベント「NxPC.Live vol.70\n交通の要所、爆音にて」、本修了制作展におけるイベント「NxPC.Live vol.72\n唵楽と影像」の他、8月には大垣市民プールでの演出への参加、Ogaki Mini Maker Fairと連携したイベント「NxPC.Live\nvol.71 Large Kid Maker」の実施、さらに3月に渋谷Circus Tokyoにてイベントを行う予定になっています。",
         "activityName4": "",
@@ -168,18 +168,18 @@ export const PROJECT_INFO = [
         "activityContent9": "",
         "activityName10": "",
         "activityContent10": "",
-        "caption1": "",
-        "caption2": "",
-        "caption3": "",
-        "caption4": "",
-        "caption5": ""
+        "caption0": "EEEExhibition（ IAMAS OPENHOUSE 2024 ホールA）",
+        "caption1": "音楽ゲームのインタラクションで詩を読む作品",
+        "caption2": "飲みコミュニケーションに着目したVR作品",
+        "caption3": "色分解したグラフィックとスポットライトによるスイッチング・アニメーション",
+        "caption4": "生成AIによるムービー作品"
     },
     {
         "projectName": "Extreme Biologies",
         "representative": "Juan Manuel Castro",
         "sharer": "Akitsugu Maebayashi, Mika Kan",
         "assistant": "",
-        "projectConcept": "We find ourselves in an era marked by the convergence of biotechnological advances and human culture, a convergence that propels us into uncharted territories. The familiar Darwinian narrative, with its emphasis on biological evolution as the primary driver of change, now gives way to a narrative shaped by the currents of cultural values. We are navigating a “post-Darwinian era,” a landscape where the evolution of life is steered not only by the forces of biology but by the intricate interplay of ideas, beliefs, and human agency. In the wake of this paradigmatic shift towards a “post-Darwinian era”, this project explores the role of media art in relation to questions of evolution, ecology, global warming, pollution, co-existence, biotechnology and the presence of what we might term “extreme biologies.”",
+        "projectConcept": "We find ourselves in an era marked by the convergence of biotechnological advances and human culture, a convergence that propels us into uncharted territories. The familiar Darwinian narrative, with its emphasis on biological evolution as the primary driver of change, now gives way to a narrative shaped by the currents of cultural values. We are navigating a “postDarwinian era,” a landscape where the evolution of life is steered not only by the forces of biology but by the intricate interplay of ideas, beliefs, and human agency. In the wake of this paradigmatic shift towards a “postDarwinian era”, this project explores the role of media art in relation to questions of evolution, ecology, global warming, pollution, coexistence, biotechnology and the presence of what we might term “extreme biologies.”",
         "wholeActivityContent1": "",
         "wholeActivityContent2": "",
         "wholeActivityContent3": "",
@@ -203,10 +203,10 @@ export const PROJECT_INFO = [
         "activityContent9": "",
         "activityName10": " Oral presentation and exhibition of artworks showing the progress achieved during the first year at IAMAS  (January)",
         "activityContent10": "",
+        "caption0": "",
         "caption1": "",
         "caption2": "",
         "caption3": "",
-        "caption4": "",
-        "caption5": ""
+        "caption4": ""
     }
 ];
