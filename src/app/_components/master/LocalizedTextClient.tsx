@@ -12,7 +12,10 @@ export function LocalizedTextClient({ ja, en, className = "" }: LocalizedTextPro
     const { language } = useLanguage();
 
     return (
-        <p className={className}>
+        <p className={`
+            ${className}
+            ${language === 'ja' ? 'text-justify' : 'text-left'}
+        `}>
             {language === 'ja' ? ja : en}
         </p>
     );

@@ -59,10 +59,10 @@ export default function Modal({
                 <div className="relative w-full h-full">
                     <div className={`
                         absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                        w-[80%] max-w-[40rem] h-[80vh] sm:h-[90vh]
+                        w-[75%] max-w-[50rem] h-[90vh] sm:h-[92vh]
                         texture-bg rounded-sm
                         text-left
-                        p-8
+                        p-4
                         pointer-events-auto
                         overflow-hidden
                         ten-mincho
