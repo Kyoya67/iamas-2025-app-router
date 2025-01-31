@@ -21,7 +21,7 @@ export default function Access() {
                 ml-[1rem] md:ml-[3rem]
             ">
                 <div className="pr-6">
-                    <h1 className="text-[#000f9f] text-2xl">
+                    <h1 className="text-[#000f9f] text-2xl ten-mincho">
                         ACCESS
                     </h1>
                     <Image
@@ -34,10 +34,10 @@ export default function Access() {
                         className="mt-4 border-[0.1rem] border-[#000f9f] w-[90%] mx-auto"
                     />
                     <div className="mt-4">
-                        <div className="text-[#000f9f] text-xl">
+                        <div className="text-[#000f9f] text-xl ten-mincho">
                             大垣駅より
                         </div>
-                        <div className="mt-2 text-fluid-xs sm:text-fluid-sm">
+                        <div className="mt-2 text-fluid-xs sm:text-fluid-sm ten-mincho">
                             <div>
                                 タクシー：JR大垣駅南口より約5分
                             </div>

@@ -79,7 +79,8 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
         const match = name.match(urlRegex);
 
         if (match) {
-            const [beforeUrl, url, afterUrl] = match;
+            //eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const [_, beforeUrl, url, afterUrl] = match;
             return (
                 <div className="font-bold text-base mb-2">
                     {beforeUrl}
@@ -102,16 +103,16 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
     return (
         <div className="text-black relative h-full text-justify ten-mincho select-text">
             <div className="relative z-10 h-full flex flex-col">
-                <div className="text-2xl mb-1 text-[#000f9f]">{project.projectName}</div>
+                <div className="text-2xl mb-1 text-[#000f9f] ten-mincho">{project.projectName}</div>
                 <div className="flex items-end border-b border-[#000f9f] mb-3 pb-1">
-                    <div className="relative bottom-[-0.05rem] text-base mr-2">{project.representative}</div>
-                    <div className="text-sm">{sharerText}</div>
+                    <div className="relative bottom-[-0.05rem] text-base mr-2 ten-mincho">{project.representative}</div>
+                    <div className="text-sm ten-mincho">{sharerText}</div>
                 </div>
                 <ScrollMaskContent className="text-black text-sm mb-4 h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
                     <div className="relative mb-4">
                         {renderMedia()}
                         {captions[currentImageIndex] && (
-                            <p className="text-sm text-center text-[#000f9f] mt-4 mb-2">
+                            <p className="text-sm text-center text-[#000f9f] mt-4 mb-2 ten-mincho">
                                 {captions[currentImageIndex]}
                             </p>
                         )}
@@ -130,12 +131,12 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
                         </div>
                     </div>
 
-                    <div className="font-bold text-xl mb-2">研究概要</div>
-                    <div className="text-black text-sm mb-4 whitespace-pre-wrap text-justify">{project.projectConcept}</div>
+                    <div className="font-bold text-xl mb-2 ten-mincho">研究概要</div>
+                    <div className="text-black text-sm mb-4 whitespace-pre-wrap text-justify ten-mincho">{project.projectConcept}</div>
 
-                    <div className="font-bold text-xl  mb-2">本年度の活動内容</div>
+                    <div className="font-bold text-xl mb-2 ten-mincho">本年度の活動内容</div>
                     {project.wholeActivityContent1 && (
-                        <div>
+                        <div className="ten-mincho">
                             <div className="mb-3 text-justify whitespace-pre-wrap">{project.wholeActivityContent1}</div>
                             {project.wholeActivityContent2 && <div className="mb-3 text-justify whitespace-pre-wrap">{project.wholeActivityContent2}</div>}
                             {project.wholeActivityContent3 && <div className="mb-3 text-justify whitespace-pre-wrap">{project.wholeActivityContent3}</div>}
@@ -143,7 +144,7 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
                     )}
 
                     {activities.length > 0 && (
-                        <div>
+                        <div className="ten-mincho">
                             {activities.map((activity, index) => (
                                 <div key={index} className="mb-4">
                                     {activity.name && renderActivityName(activity.name)}

@@ -49,12 +49,12 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         height={100}
                         className="object-contain mr-4"
                     />
-                    <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] ml-[7rem]">
+                    <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] ml-[7rem] ten-mincho">
                         <div className="text-sm">{status}</div>
                         <div>{name}</div>
                     </div>
                 </div>
-                <div className="text-xs sm:text-sm text-black mb-4">{profile}</div>
+                <div className="text-xs sm:text-sm text-black mb-4 ten-mincho">{profile}</div>
             </div>
         );
     };
@@ -86,9 +86,17 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                                     className="contain"
                                 />
                             </div>
-                            <div className="text-sm sm:text-base text-black mb-4">{event.content}</div>
-                            {[1, 2, 3, 4, 5, 6].map(index => renderParticipant(index))}
-                            {[1, 2, 3].map(index => renderStudent(index))}
+                            <div className="text-sm sm:text-base text-black mb-4 ten-mincho">{event.content}</div>
+                            {[1, 2, 3, 4, 5, 6].map(index => (
+                                <div key={index} className="ten-mincho">
+                                    {renderParticipant(index)}
+                                </div>
+                            ))}
+                            {[1, 2, 3].map(index => (
+                                <div key={index} className="ten-mincho">
+                                    {renderStudent(index)}
+                                </div>
+                            ))}
                         </ScrollMaskContent>
                     );
                 })()}

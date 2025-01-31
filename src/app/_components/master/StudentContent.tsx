@@ -21,14 +21,14 @@ export const StudentContent = ({ name }: { name: string }) => {
             <div className="relative z-10 h-full flex flex-col">
                 <LanguageProvider>
                     <div className="absolute top-0 right-0 flex flex-col gap-y-1">
-                        <div className="text-[#000f9f] cursor-pointer hover:opacity-70 px-4 border-[0.08rem] border-[#000f9f]">作品</div>
-                        <div className="text-black cursor-pointer hover:opacity-70 px-4 border-[0.08rem] border-black">研究</div>
+                        <div className="text-[#000f9f] cursor-pointer hover:opacity-70 px-4 border-[0.08rem] border-[#000f9f] ten-mincho">作品</div>
+                        <div className="text-black cursor-pointer hover:opacity-70 px-4 border-[0.08rem] border-black ten-mincho">研究</div>
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center">
                         <div className="ml-[-0.5rem] mb-[-1.3rem]">
                             <LanguageToggle />
                         </div>
-                        <div className="text-[#000f9f] mb-[-1.3rem]">
+                        <div className="text-[#000f9f] mb-[-1.3rem] ten-mincho">
                             センタービル4F会議室
                         </div>
                     </div>
@@ -44,10 +44,10 @@ export const StudentContent = ({ name }: { name: string }) => {
                                 />
                             </div>
                             <div className="flex flex-col justify-start mt-[-0.2rem]">
-                                <h1 className="text-fluid-lg leading-tight">
+                                <h1 className="text-fluid-lg leading-tight ten-mincho">
                                     {student.authorJapaneseName}
                                 </h1>
-                                <h2 className="text-[#000f9f] text-fluid-sm sm:text-fluid-base mt-[-0.2rem]">
+                                <h2 className="text-[#000f9f] text-fluid-sm sm:text-fluid-base mt-[-0.2rem] ten-mincho">
                                     {student.authorEnglishName}
                                 </h2>
                             </div>
@@ -55,14 +55,14 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <LocalizedTextClient
                             ja={student.profileJapanese}
                             en={student.profileEnglish}
-                            className="text-fluid-xs mt-1"
+                            className="text-fluid-xs mt-1 ten-mincho"
                         />
                     </div>
                     <ScrollMaskContent className="mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
                         <LocalizedTextClient
                             ja={student.workTitleJapanese}
                             en={student.workTitleEnglish}
-                            className="text-sm sm:text-fluid-base mb-2 text-[#000f9f]"
+                            className="text-sm sm:text-fluid-base mb-2 text-[#000f9f] ten-mincho"
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image
@@ -76,7 +76,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <LocalizedTextClient
                             ja={student.workDescriptionJapanese}
                             en={student.workDescriptionEnglish}
-                            className="text-fluid-sm mb-2"
+                            className="text-fluid-sm mb-2 ten-mincho"
                         />
                         <div className="flex flex-row gap-4">
                             {student.X_URL && (

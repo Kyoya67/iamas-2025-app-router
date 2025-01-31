@@ -260,7 +260,7 @@ export const MASTER_INFO = [
         "workDescriptionEnglish": "Animation That Encourages Discovery in Communication. Creating a space that allows the observation of interactions with others through gestures, movements, and the spaces in between."
     },
     {
-        "authorJapaneseName": "ジョアンナ　リュ",
+        "authorJapaneseName": "ジョアンナ リュ",
         "authorEnglishName": "Joanna LYU",
         "profileJapanese": "人々が人間と公共空間、そして社会的な問いとのつながりを探求するインタラクティブな作品の制作に取り組んでいます。",
         "profileEnglish": "Multimedia artist with a background in game dev. Her practice spans across CGI, audiovisual live performances, installations and urban games. She is interested in making interactive works which invite the public to explore the connections between humans, public spaces, and societal questions. ",
