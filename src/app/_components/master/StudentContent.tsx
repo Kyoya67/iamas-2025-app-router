@@ -42,7 +42,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center">
                         <LanguageToggle />
-                        <div className="text-[#000f9f] ten-mincho">
+                        <div className="text-[#000f9f] ten-mincho mr-5">
                             センタービル4F会議室
                         </div>
                     </div>
@@ -75,14 +75,14 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <LocalizedTextClient
                             ja={student.profileJapanese}
                             en={student.profileEnglish}
-                            className="text-xs sm:text-fluid-xs mt-1 ten-mincho"
+                            className="text-xs sm:text-base mt-1 ten-mincho"
                         />
                     </div>
                     <ScrollMaskContent className="mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
                         <LocalizedTextClient
                             ja={student.workTitleJapanese}
                             en={student.workTitleEnglish}
-                            className="text-xs sm:text-sm mb-2 text-[#000f9f] ten-mincho text-left"
+                            className="text-xs sm:text-lg mb-2 text-[#000f9f] ten-mincho text-left"
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image
@@ -96,7 +96,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <LocalizedTextClient
                             ja={student.workDescriptionJapanese}
                             en={student.workDescriptionEnglish}
-                            className="text-xs sm:text-fluid-sm mb-2 ten-mincho"
+                            className="text-xs sm:text-base mb-2 ten-mincho"
                         />
                         <div className="flex flex-row gap-4">
                             {student.X_URL && (

@@ -6,11 +6,11 @@ export function LanguageToggle() {
     const { language, setLanguage } = useLanguage();
 
     return (
-        <>
+        <div className="flex gap-1 sm:gap-2">
             <button
                 onClick={() => setLanguage('ja')}
                 className={`
-                    px-2 py-1 text-fluid-sm
+                    text-sm sm:text-base
                     ${language === 'ja'
                         ? 'text-[#000f9f] border-b border-[#000f9f]'
                         : 'text-gray-400'
@@ -19,10 +19,11 @@ export function LanguageToggle() {
             >
                 JP
             </button>
+            <span className="text-gray-400 text-fluid-sm">&nbsp;</span>
             <button
                 onClick={() => setLanguage('en')}
                 className={`
-                    px-2 py-1 text-fluid-sm
+                    text-sm sm:text-base
                     ${language === 'en'
                         ? 'text-[#000f9f] border-b border-[#000f9f]'
                         : 'text-gray-400'
@@ -31,6 +32,6 @@ export function LanguageToggle() {
             >
                 EN
             </button>
-        </>
+        </div>
     );
 } 
