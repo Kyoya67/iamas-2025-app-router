@@ -75,6 +75,32 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
         { name: project.activityName10, content: project.activityContent10 },
     ].filter(activity => activity.name || activity.content);
 
+    const renderActivityName = (name: string) => {
+        // URLを含む文字列を検出する正規表現
+        const urlRegex = /(.*?)\((https?:\/\/[^\s)]+)\)(.*)/;
+        const match = name.match(urlRegex);
+
+        if (match) {
+            const [_, beforeUrl, url, afterUrl] = match;
+            return (
+                <div className="font-bold text-base mb-2">
+                    {beforeUrl}
+                    <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#000f9f] hover:opacity-70"
+                    >
+                        ({url})
+                    </a>
+                    {afterUrl}
+                </div>
+            );
+        }
+
+        return <div className="font-bold text-base mb-2">{name}</div>;
+    };
+
     return (
         <div className="text-black relative h-full text-justify ten-mincho select-text">
             <div className="relative z-10 h-full flex flex-col">
@@ -122,11 +148,9 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
                         <div>
                             {activities.map((activity, index) => (
                                 <div key={index} className="mb-4">
-                                    {activity.name && (
-                                        <div className="font-bold text-base mb-2">{activity.name}</div>
-                                    )}
+                                    {activity.name && renderActivityName(activity.name)}
                                     {activity.content && (
-                                        <div className=" text-justify">{activity.content}</div>
+                                        <div className="text-justify">{activity.content}</div>
                                     )}
                                 </div>
                             ))}
