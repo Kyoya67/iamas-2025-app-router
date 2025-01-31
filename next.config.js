@@ -3,9 +3,7 @@ const nextConfig = {
     images: {
         domains: ['images.microcms-assets.io', 'img.youtube.com'],
     },
-    experimental: {
-        optimizeFonts: false
-    }
+    optimizeFonts: false
 }
 
 module.exports = nextConfig 

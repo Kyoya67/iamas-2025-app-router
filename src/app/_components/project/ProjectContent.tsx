@@ -61,7 +61,6 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
         );
     };
 
-    // 活動内容を配列にまとめる
     const activities = [
         { name: project.activityName1, content: project.activityContent1 },
         { name: project.activityName2, content: project.activityContent2 },
@@ -76,7 +75,6 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
     ].filter(activity => activity.name || activity.content);
 
     const renderActivityName = (name: string) => {
-        // URLを含む文字列を検出する正規表現
         const urlRegex = /(.*?)\((https?:\/\/[^\s)]+)\)(.*)/;
         const match = name.match(urlRegex);
 
