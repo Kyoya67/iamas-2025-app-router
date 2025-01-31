@@ -30,7 +30,7 @@ export default function OneColumDisplay({ formattedData }: ProjectDisplayProps) 
                                     alt={item.projectName}
                                     width={500}
                                     height={169}
-                                    className="object-cover aspect-[16/9] w-full rounded-[0.25rem]"
+                                    className="object-cover aspect-[16/9] w-full"
                                     quality={100}
                                 />
                                 <div className="text-left text-base sm:text-xl">
