@@ -81,7 +81,7 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
         const match = name.match(urlRegex);
 
         if (match) {
-            const [_, beforeUrl, url, afterUrl] = match;
+            const [beforeUrl, url, afterUrl] = match;
             return (
                 <div className="font-bold text-base mb-2">
                     {beforeUrl}
@@ -135,9 +135,9 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
                     <div className="font-bold text-xl mb-2">研究概要</div>
                     <div className="text-black text-sm mb-4 whitespace-pre-wrap text-justify">{project.projectConcept}</div>
 
+                    <div className="font-bold text-xl  mb-2">本年度の活動内容</div>
                     {project.wholeActivityContent1 && (
                         <div>
-                            <div className="font-bold text-xl  mb-2">本年度の活動内容</div>
                             <div className="mb-3 text-justify whitespace-pre-wrap">{project.wholeActivityContent1}</div>
                             {project.wholeActivityContent2 && <div className="mb-3 text-justify whitespace-pre-wrap">{project.wholeActivityContent2}</div>}
                             {project.wholeActivityContent3 && <div className="mb-3 text-justify whitespace-pre-wrap">{project.wholeActivityContent3}</div>}
