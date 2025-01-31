@@ -30,12 +30,13 @@ export const Schedule = () => {
                                 pb-2
                                 hover:opacity-70
                                 transition-opacity
+                                ten-mincho
                             "
                         >
-                            <div className="text-base font-medium">{event.time}</div>
+                            <div className="text-base font-medium ten-mincho">{event.time}</div>
                             <div className="grid grid-cols gap-2 mt-1 text-right">
-                                <div className="text-sm">{event.eventName}</div>
-                                <div className="text-xs">{event.exhibitors}</div>
+                                <div className="text-sm ten-mincho">{event.eventName}</div>
+                                <div className="text-xs ten-mincho">{event.exhibitors}</div>
                             </div>
                         </Link>
                     );
