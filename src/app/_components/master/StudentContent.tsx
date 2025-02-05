@@ -78,7 +78,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                             className="text-xs sm:text-base mt-1 ten-mincho"
                         />
                     </div>
-                    <ScrollMaskContent className="mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
+                    <ScrollMaskContent className="mb-4 pr-5 pb-4 flex-1 overflow-y-auto h-[70vh]">
                         <LocalizedTextClient
                             ja={student.workTitleJapanese}
                             en={student.workTitleEnglish}

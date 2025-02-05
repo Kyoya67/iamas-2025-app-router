@@ -62,7 +62,7 @@ export default function Modal({
                         w-[75%] max-w-[50rem] h-[80vh] sm:h-[92vh]
                         texture-bg rounded-sm
                         text-left
-                        p-4
+                        p-4 sm:p-6
                         pointer-events-auto
                         overflow-hidden
                         ten-mincho

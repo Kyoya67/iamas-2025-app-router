@@ -27,7 +27,7 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
     ];
 
     const renderMedia = () => {
-        if (directoryName === 'TechnologyHermeneutics' && currentImageIndex === 1) {
+        if (directoryName === 'TechnologyHermeneutics' && currentImageIndex === 2) {
             return (
                 <a href="https://www.youtube.com/watch?v=EYPqyaAdxVg"
                     target="_blank"

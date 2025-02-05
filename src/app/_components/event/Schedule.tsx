@@ -15,7 +15,7 @@ export const Schedule = () => {
 
     return (
         <ScrollMaskContent className="h-[50vh]">
-            <div className="space-y-6 overflow-x-hidden pr-3">
+            <div className="space-y-6 overflow-x-hidden pr-3 ten-mincho">
                 {filteredEvents.map((event, index) => {
                     const eventPath = `${selectedDay.toLowerCase()}-${index}`;
 

@@ -63,10 +63,10 @@ export const PROJECT_INFO = [
         "activityContent9": "",
         "activityName10": "",
         "activityContent10": "",
-        "caption0": "2024年7月に開催したシンポジウムの様子",
-        "caption1": "シンポジウムの記録動画",
-        "caption2": "芸術祭「底に触れる 現代美術 in 瀬戸」視察の様子",
-        "caption3": "2024年5月に瑞雲庵（京都市）での展覧会視察後に行ったプロジェクト説明会の様子",
+        "caption0": "2024年5月に瑞雲庵（京都市）での展覧会視察後に行ったプロジェクト説明会の様子",
+        "caption1": "2024年7月に開催したシンポジウムの様子",
+        "caption2": "シンポジウムの記録動画",
+        "caption3": "芸術祭「底に触れる 現代美術 in 瀬戸」視察の様子",
         "caption4": ""
     },
     {
