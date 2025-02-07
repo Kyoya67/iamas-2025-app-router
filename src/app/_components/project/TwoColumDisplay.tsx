@@ -11,7 +11,9 @@ export default function TwoColumDisplay({ formattedData }: ProjectDisplayProps) 
         <div className="
             hidden lg:block
             absolute right-[-1.5rem]
-            mt-[18vh] mx-[10vw]
+            mx-[10vw]
+            top-[45vh]
+            translate-y-[-50%]
         ">
             <div className="w-[25vw] flex flex-col gap-y-6">
                 {formattedData.map((item) => (

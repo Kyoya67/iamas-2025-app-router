@@ -22,7 +22,8 @@ export default async function Master() {
                 mt-5 md:mt-0 
             ">
                 <div className="
-                    absolute left-[20vw] top-[20vh]
+                    absolute left-[20vw] top-[45vh]
+                    translate-y-[-50%]
                     w-[41vw] -rotate-[1.5deg]
                     transition-opacity duration-300
                     lg:opacity-100 lg:pointer-events-auto
@@ -32,8 +33,9 @@ export default async function Master() {
                 </div>
                 <ScrollMaskContent className="
                     h-[60vh] sm:h-[55vh]
-                    mt-[15vh] lg:mt-[15vh]
-                    ml-6 
+                    mt-[15vh] lg:mt-0
+                    lg:absolute lg:top-[48vh]
+                    lg:translate-y-[-50%] 
                 ">
                     <div className="
                         grid grid-cols-2 

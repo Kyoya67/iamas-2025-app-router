@@ -35,7 +35,7 @@ export default function Event() {
                 max-w-full
             ">
                 <div className="
-                    absolute left-[-45vw] top-[5vh]
+                    absolute left-[-45vw] top-[8vh]
                     w-[41vw] -rotate-[1.5deg]
                     transition-opacity duration-300
                     xl:opacity-100 xl:pointer-events-auto

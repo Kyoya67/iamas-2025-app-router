@@ -16,8 +16,8 @@ export default function Access() {
             ten-mincho
         ">
             <ScrollMaskContent className="
-                h-[62vh]
-                mt-[15vh] md:mt-[10vh]
+                h-[70vh]
+                mt-[15vh] md:mt-[13vh] 
                 ml-[1rem] md:ml-[3rem]
             ">
                 <div className="pr-6">

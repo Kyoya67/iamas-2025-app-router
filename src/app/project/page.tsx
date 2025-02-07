@@ -32,7 +32,8 @@ export default function Exhibition() {
         ">
             <div className="
                 lg:opacity-100 lg:pointer-events-auto
-                absolute ml-[10rem] top-[20vh]
+                absolute ml-[10rem] top-[45vh]
+                translate-y-[-50%]
                 w-[40vw] -rotate-[1.5deg]
                 transition-opacity duration-300
                 opacity-0 pointer-events-none   

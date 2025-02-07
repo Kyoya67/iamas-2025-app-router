@@ -25,23 +25,19 @@ export default function IconAndMenu() {
         { href: "/contact", text: "お問い合わせ", image: "/desktop/hoverCircles/contact.webp", index: 6 }
     ];
 
-    const handlePDFOpen = () => {
-        window.open('/pdf/document.pdf', '_blank');
-    };
-
     return (
         <div className="fixed top-3 left-3"
             style={{
                 zIndex: 2,
             }}>
-            <button onClick={handlePDFOpen} className="hover:opacity-70 transition-opacity">
+            <Link href="/">
                 <Image
                     src="/desktop/iconAndMenu.webp"
                     alt="アイコンとメニュー"
                     width={180}
                     height={400}
                 />
-            </button>
+            </Link>
             <ul className="fixed top-[10.85rem] left-[0.75rem] text-[#000f9f]">
                 {menuItems.map((item) => (
                     <li
