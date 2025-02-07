@@ -34,8 +34,8 @@ export default async function Master() {
                 <ScrollMaskContent className="
                     h-[60vh] sm:h-[55vh]
                     mt-[15vh] lg:mt-0
-                    lg:absolute lg:top-[48vh]
-                    lg:translate-y-[-50%] 
+                    lg:absolute lg:top-[50vh]
+                    lg:translate-y-[-55%] 
                 ">
                     <div className="
                         grid grid-cols-2 
