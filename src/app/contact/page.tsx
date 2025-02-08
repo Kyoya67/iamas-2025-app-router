@@ -41,7 +41,7 @@ export default function Contact() {
                             rel="noopener noreferrer"
                             className="
                                 ovo
-                                hover:opacity-20 
+                                hover:opacity-40 
                                 transition-opacity 
                                 duration-200
                                 inline-flex 
@@ -49,6 +49,23 @@ export default function Contact() {
                             "
                         >
                             <span>https://www.iamas.ac.jp/</span>
+                        </a>
+                    </li>
+                    <li className="ten-mincho">
+                        <a
+                            href="/press.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+                                ovo
+                                hover:opacity-40 
+                                transition-opacity 
+                                duration-200
+                                inline-flex 
+                                items-center
+                            "
+                        >
+                            <span className="ten-mincho">プレスリリースはこちら</span>
                         </a>
                     </li>
                 </ul>
