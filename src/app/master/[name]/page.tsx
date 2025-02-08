@@ -22,7 +22,7 @@ export default async function MasterPage({ params }: Props) {
             max-w-2xl mx-auto
         ">
             <div className="
-                w-[50vw] min-w-[20rem] max-w-[35rem] 
+                w-[50vw] min-w-[20rem] max-w-[80rem] 
                 h-[60vh] md:h-[65vh] 
                 mt-[18vh] xs:mt-[17vh] md:mt-[10vh] pr-6">
                 <StudentContent name={name} />

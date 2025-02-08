@@ -16,7 +16,7 @@ export default function Access() {
             ten-mincho
         ">
             <ScrollMaskContent className="
-                h-[70vh]
+                h-[60vh]
                 mt-[15vh] md:mt-[13vh] 
                 ml-[1rem] md:ml-[3rem]
             ">
@@ -31,7 +31,7 @@ export default function Access() {
                         width={100}
                         height={200}
                         objectFit="cover"
-                        className="mt-4 border-[0.1rem] border-[#000f9f] w-[90%] mx-auto"
+                        className="mt-4 border-[0.1rem] border-[#000f9f] mx-auto"
                     />
                     <div className="mt-4">
                         <div className="text-[#000f9f] text-xl ten-mincho">
