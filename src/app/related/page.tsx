@@ -26,8 +26,10 @@ export default function Related() {
                     text-left
                     mb-2
                     text-2xl
+                    md:flex md:flex-row
                 ">
-                        Kioskを用いた展示型IAMAS広報
+                        <div>Kioskを用いた展示型</div>
+                        <div className="md:ml-1">IAMAS広報</div>
                     </div>
                     <Image
                         className="w-full"
@@ -132,7 +134,16 @@ export default function Related() {
                         </div>
                     </div>
                     <div className="mt-2 text-sm ten-mincho">
-                        問い合わせ先：情報科学芸術大学院大学 事務局教務課
+                        問い合わせ先：
+                    </div>
+                    <div className="text-xs ten-mincho">
+                        情報科学芸術大学院大学 事務局教務課
+                    </div>
+                    <div className="mt-2 text-sm ten-mincho">
+                        TEL：0584-75-6641
+                    </div>
+                    <div className="mt-2 text-sm ten-mincho">
+                        Mail：jimukyoku@ml.iamas.ac.jp
                     </div>
                 </div>
             </ScrollMaskContent>
