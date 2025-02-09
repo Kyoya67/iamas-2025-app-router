@@ -99,54 +99,56 @@ export function ProjectDetails({
                     </div>
                 </div>
             </div>
-            <ScrollMaskContent className="text-black text-sm mb-4 h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto ten-mincho">
-                <ProjectSlider
-                    directoryName={directoryName}
-                    currentImageIndex={currentImageIndex}
-                    setCurrentImageIndex={setCurrentImageIndex}
-                    totalImages={pictureNum}
-                    projectName={project.projectName}
-                    captions={captions}
-                />
-                <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">研究概要</div>
-                <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
-                    {project.projectConcept}
-                </div>
+            <div className="ten-mincho">
+                <ScrollMaskContent className="text-black text-sm mb-4 h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
+                    <ProjectSlider
+                        directoryName={directoryName}
+                        currentImageIndex={currentImageIndex}
+                        setCurrentImageIndex={setCurrentImageIndex}
+                        totalImages={pictureNum}
+                        projectName={project.projectName}
+                        captions={captions}
+                    />
+                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">研究概要</div>
+                    <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                        {project.projectConcept}
+                    </div>
 
-                <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">本年度の活動内容</div>
-                {project.wholeActivityContent1 && (
-                    <div>
-                        <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
-                            {project.wholeActivityContent1}
+                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">本年度の活動内容</div>
+                    {project.wholeActivityContent1 && (
+                        <div>
+                            <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                {project.wholeActivityContent1}
+                            </div>
+                            {project.wholeActivityContent2 &&
+                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                    {project.wholeActivityContent2}
+                                </div>
+                            }
+                            {project.wholeActivityContent3 &&
+                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                    {project.wholeActivityContent3}
+                                </div>
+                            }
                         </div>
-                        {project.wholeActivityContent2 &&
-                            <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
-                                {project.wholeActivityContent2}
-                            </div>
-                        }
-                        {project.wholeActivityContent3 &&
-                            <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
-                                {project.wholeActivityContent3}
-                            </div>
-                        }
-                    </div>
-                )}
+                    )}
 
-                {activities.length > 0 && (
-                    <div>
-                        {activities.map((activity, index) => (
-                            <div key={index} className="mb-4">
-                                {activity.name && renderActivityName(activity.name, activity.subtitle || '')}
-                                {activity.content && (
-                                    <div className={`text-xs sm:text-sm ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
-                                        {activity.content}
-                                    </div>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                )}
-            </ScrollMaskContent>
+                    {activities.length > 0 && (
+                        <div>
+                            {activities.map((activity, index) => (
+                                <div key={index} className="mb-4">
+                                    {activity.name && renderActivityName(activity.name, activity.subtitle || '')}
+                                    {activity.content && (
+                                        <div className={`text-xs sm:text-sm ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                            {activity.content}
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </ScrollMaskContent>
+            </div>
         </>
     );
 } 
