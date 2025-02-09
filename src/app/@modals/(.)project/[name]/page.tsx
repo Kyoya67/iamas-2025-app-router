@@ -48,6 +48,7 @@ export default async function ProjectModal({ params }: Props) {
                 projectName={project.projectName}
                 directoryName={modalProjectData[currentIndex].directory}
                 pictureNum={modalProjectData[currentIndex].pictureNum}
+                isModal={true}
             />
         </Modal>
     );

@@ -3,8 +3,8 @@ import { ScrollMaskContent } from "../_components/ScrollMaskContent";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "IAMAS 2025 修士研究発表会",
-    description: "IAMAS 2025 修士研究発表会",
+    title: "IAMAS 2025 関連展示",
+    description: "IAMAS 2025 関連展示",
 };
 
 export default function Related() {

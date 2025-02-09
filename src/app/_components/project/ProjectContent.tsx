@@ -3,15 +3,19 @@ import { PROJECT_INFO } from "@/app/_lib/projectInfo";
 import { useState } from "react";
 import { ProjectDetails } from "./ProjectDetails";
 
+type ProjectContentProps = {
+    projectName: string;
+    directoryName: string;
+    pictureNum: number;
+    isModal?: boolean;
+};
+
 export default function ProjectContent({
     projectName,
     directoryName,
-    pictureNum
-}: {
-    projectName: string,
-    directoryName: string,
-    pictureNum: number
-}) {
+    pictureNum,
+    isModal = false
+}: ProjectContentProps) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const project = PROJECT_INFO.find(project => project.projectName === projectName);
 
@@ -32,6 +36,7 @@ export default function ProjectContent({
                     currentImageIndex={currentImageIndex}
                     setCurrentImageIndex={setCurrentImageIndex}
                     pictureNum={pictureNum}
+                    isModal={isModal}
                 />
             </div>
         </div>

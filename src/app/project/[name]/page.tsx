@@ -32,7 +32,7 @@ export default async function ProjectPage({ params }: Props) {
             max-w-3xl mx-auto
         ">
             <div className="
-                max-w-[28rem] lg:max-w-[45rem] h-[70vh]
+                max-w-[28rem] lg:max-w-[45rem]
                 mt-[12vh] md:mt-[10vh] mx-auto 
                 text-justify
                 p-8">
@@ -40,6 +40,7 @@ export default async function ProjectPage({ params }: Props) {
                     projectName={PROJECT_INFO[currentIndex].projectName}
                     directoryName={projectData[currentIndex].directory}
                     pictureNum={projectData[currentIndex].pictureNum}
+                    isModal={false}
                 />
             </div>
         </div>
