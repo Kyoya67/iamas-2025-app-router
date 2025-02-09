@@ -31,7 +31,7 @@ export default function Overview() {
             </div>
 
             <ScrollMaskContent className="
-                h-[60vh] xs:h-[66vh] sm:h-[55vh]
+                h-[60vh] xs:h-[60vh] sm:h-[55vh]
                 mt-2
                 w-[clamp(18rem,60vw,23rem)]
                 md:w-[clamp(24rem,50vw,40rem)]
