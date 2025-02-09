@@ -4,9 +4,11 @@ import { useEvent } from "@/app/_contexts/EventContext";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { EVENTS } from "@/app/_lib/eventInfo";
 import Link from "next/link";
+import { useEventImage } from "@/app/_contexts/EventImageContext";
 
 export const Schedule = () => {
     const { selectedDay } = useEvent();
+    const { setHoveredEventImage } = useEventImage();
     const events = EVENTS;
 
     const filteredEvents = events.filter(
@@ -32,6 +34,7 @@ export const Schedule = () => {
                                 transition-opacity
                                 ten-mincho
                             "
+                            onMouseEnter={() => setHoveredEventImage('/event/' + event.eventName?.split(' ').join('') + '.webp')}
                         >
                             <div className="text-base font-medium ten-mincho">{event.time}</div>
                             <div className="grid grid-cols gap-2 mt-1 text-right">
