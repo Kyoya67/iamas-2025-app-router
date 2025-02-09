@@ -99,7 +99,7 @@ export function ProjectDetails({
                     </div>
                 </div>
             </div>
-            <ScrollMaskContent className="text-black text-sm mb-4 h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
+            <ScrollMaskContent className="text-black text-sm mb-4 h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto ten-mincho">
                 <ProjectSlider
                     directoryName={directoryName}
                     currentImageIndex={currentImageIndex}
@@ -109,13 +109,13 @@ export function ProjectDetails({
                     captions={captions}
                 />
                 <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">研究概要</div>
-                <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'} ten-mincho`}>
+                <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                     {project.projectConcept}
                 </div>
 
                 <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">本年度の活動内容</div>
                 {project.wholeActivityContent1 && (
-                    <div className="ten-mincho">
+                    <div>
                         <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                             {project.wholeActivityContent1}
                         </div>
@@ -133,7 +133,7 @@ export function ProjectDetails({
                 )}
 
                 {activities.length > 0 && (
-                    <div className="ten-mincho">
+                    <div>
                         {activities.map((activity, index) => (
                             <div key={index} className="mb-4">
                                 {activity.name && renderActivityName(activity.name, activity.subtitle || '')}
