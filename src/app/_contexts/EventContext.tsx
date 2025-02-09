@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 type EventContextType = {
     selectedDay: string;
@@ -14,6 +14,19 @@ export function EventProvider({ children, initialDay = 'Friday' }: {
     initialDay?: string;
 }) {
     const [selectedDay, setSelectedDay] = useState(initialDay);
+
+    // クライアントサイドでのみlocalStorageを使用
+    useEffect(() => {
+        const savedDay = localStorage.getItem('selectedDay');
+        if (savedDay) {
+            setSelectedDay(savedDay);
+        }
+    }, []);
+
+    // 選択された日付を保存
+    useEffect(() => {
+        localStorage.setItem('selectedDay', selectedDay);
+    }, [selectedDay]);
 
     return (
         <EventContext.Provider value={{ selectedDay, setSelectedDay }}>

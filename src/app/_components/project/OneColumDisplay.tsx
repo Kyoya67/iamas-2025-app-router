@@ -12,6 +12,7 @@ export default function OneColumDisplay({ formattedData }: ProjectDisplayProps) 
             <ScrollMaskContent className="
                 h-[60vh] sm:h-[55vh]
                 mt-[15vh] md:ml-[6rem]
+                scroll-x-hidden
             ">
                 <div className="flex flex-col gap-y-fluid-lg ten-mincho">
                     {formattedData.map((item) => (

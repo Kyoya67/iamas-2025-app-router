@@ -29,6 +29,7 @@ export default function Exhibition() {
         <div className="
             w-[100vw] h-[100vh]
             relative
+            overflow-x-hidden
         ">
             <div className="
                 lg:opacity-100 lg:pointer-events-auto
