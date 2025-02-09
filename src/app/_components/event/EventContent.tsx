@@ -7,7 +7,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
     const event = EVENTS.find(
         item => item.day === day &&
             item.time === time &&
-            item.eventName !== ""
+            item.eventName !== undefined
     );
     if (!event) return <div>Event not found</div>;
 
@@ -73,7 +73,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                 <h1 className="text-[#000f9f] text-2xl font-bold">{event.eventName}</h1>
                 <div className="text-xl mb-4 border-b border-[#000f9f] pb-2">{day}&nbsp;{event.time}</div>
                 {(() => {
-                    const eventImagePath = event.eventName.split(' ').join('') + '.webp';
+                    const eventImagePath = event.eventName?.split(' ').join('') + '.webp';
                     return (
                         <ScrollMaskContent
                             className="h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto"
@@ -81,7 +81,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                             <div className="relative w-full aspect-[16/9] mb-4 border-[0.08px] border-black">
                                 <Image
                                     src={`/event/${eventImagePath}`}
-                                    alt={event.eventName}
+                                    alt={event.eventName ?? ''}
                                     fill
                                     className="contain"
                                 />
