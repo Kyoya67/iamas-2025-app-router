@@ -11,7 +11,7 @@ export default function Related() {
     return (
         <div className="
             absolute inset-0
-            mt-[17vh] lg:mt-[10vh]
+            mt-[18vh] lg:mt-[10vh]
             ten-mincho
         ">
             <ScrollMaskContent className="
@@ -81,7 +81,7 @@ export default function Related() {
 
 
 
-                <div className="mb-[5rem] border-t border-[#000f9f]">
+                <div className="mb-[2rem] border-t border-[#000f9f]">
                     <div className="
                     ten-mincho
                     mt-8
@@ -91,7 +91,7 @@ export default function Related() {
                         進学相談会
                     </div>
                     <Image
-                        className="w-full border-[0.2rem] border-grey"
+                        className="w-full border-[0.15rem] border-grey"
                         src="/related/CourseConsultation.webp"
                         alt="Kiosk"
                         width={500}
