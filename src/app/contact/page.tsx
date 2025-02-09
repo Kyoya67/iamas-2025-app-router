@@ -51,7 +51,7 @@ export default function Contact() {
                             <span>https://www.iamas.ac.jp/</span>
                         </a>
                     </li>
-                    <li className="ten-mincho">
+                    <li>
                         <a
                             href="/press.pdf"
                             target="_blank"

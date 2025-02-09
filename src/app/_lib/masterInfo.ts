@@ -12,8 +12,8 @@ export const MASTER_INFO = [
         "workTitleEnglish": "A Study on Changes in Perception of Each Aspect of Linear Algebra and the Dissemination of Shader\nTechnology through Shader-Based Workshops",
         "workDescriptionJapanese": "プログラミング教育の普及に伴い、プログラミングで線形代数を利用するShaderを活用した3つのワークショップを企画・実施。Shader独自のアプローチやレイマーチングの習得を通じ、参加者の年齢やスキルに応じた三段階の目標設定で継続利用を促進。Shaderの継続利用による線形代数各要素の理解度の変化を計測した。展示では各ワークショップの設計資料や開発したアプリケーションの展示を行う。",
         "workDescriptionEnglish": "In response to the growing popularity of programming education, I designed and implemented workshop programs focusing on Shaders that enable the practical application of linear algebra through programming. We set three distinct learning goals based on varying age groups and skill levels, from understanding Shader-specific concepts to mastering ray marching techniques. We measured changes in participants' understanding of various linear algebra elements through their continued use of Shaders. The exhibition showcases the design documentation from each workshop and displays the developed applications",
-        "place1": "",
-        "place2": ""
+        "place1": "センタービル12F",
+        "place2": "作業室 C1202"
     },
     {
         "studentId": 21112,
@@ -76,8 +76,8 @@ export const MASTER_INFO = [
         "workTitleEnglish": "Superposition machine/Vibes watcher",
         "workDescriptionJapanese": "Superposition machine は、音と形が出力される多人数参加型ヴィジュアルシンセサイザーです。本装置を複数人で操作すると無目的であるにも関わらず発生する一体感のような感覚がグループに発生し、この現象をVibesと定義しました。Vibes現象を観測するための観測装置Vibes Watcherはリアルタイムに感覚の測定を通じて現象の観察を行うことができます。",
         "workDescriptionEnglish": "Superposition Machine is a multi-user visual synthesizer that outputs sound and form. When operated by multiple participants, it generates a shared sense of unity despite lacking a clear purpose. This phenomenon is defined as \"Vibes.\" To observe this phenomenon, the Vibes Watcher, a device designed for real-time sensory measurement, enables the observation and analysis of these occurrences.",
-        "place1": "",
-        "place2": ""
+        "place1": "センタービル12F",
+        "place2": "作業室 C1202"
     },
     {
         "studentId": 23103,
@@ -124,8 +124,8 @@ export const MASTER_INFO = [
         "workTitleEnglish": "Regarding the formation of peer company communities and the possibility of development in the printing industry\n- Using Introduction of the company through interview analysis as a catalyst for the workshop -",
         "workDescriptionJapanese": "印刷産業に携わる中小企業に焦点を当て、印刷産業が活性化するための企業連携の可能性について考察する。複数の印刷会社経営者へのインタビューをもとにワークショップを構成。複数の企業の経営者が参加するワークショップを用いてコミュニティの形成を試みる。これは印刷業界に提言する新たな取り組みである。",
         "workDescriptionEnglish": "Focusing on small and medium-sized enterprises in the printing industry, this study explores the potential for business collaboration to revitalize the sector. Based on interviews with multiple printing company executives, a workshop was designed to foster discussions. By bringing together executives from various companies, the workshop aims to build a community. This represents a novel initiative offering recommendations to the printing industry.",
-        "place1": "",
-        "place2": ""
+        "place1": "センタービル12F",
+        "place2": "作業室 C1202"
     },
     {
         "studentId": 23106,
@@ -172,8 +172,8 @@ export const MASTER_INFO = [
         "workTitleEnglish": "Research on posture support products for children with coordination difficulties. - Through the case study of a student who has difficulty eating due to coordination difficulties. –",
         "workDescriptionJapanese": "身体的不器用さがある子どもは、椅子に座って学習や食事等の作業をする際に姿勢を保つことが難しい場合があります。本研究では一人の生徒との実践を通して、デジタルファブリケーション機器を用いて製作した給食時の姿勢を補助する椅子を提案しました。姿勢を保つための筋力の向上や食事量の増加などの効果を期待し、生徒本人が生活しやすくなることを目指しています。",
         "workDescriptionEnglish": "Children with physical clumsiness may have difficulty maintaining posture when sitting in a chair to learn, eat, or perform other tasks. Through practice with one student, this study proposed a chair that assists with posture during mealtime, which was fabricated using digital fabrication equipment. I expect the chair to improve muscle strength for maintaining posture and increase the amount of food eaten, thereby making life easier for the student him/herself.",
-        "place1": "",
-        "place2": ""
+        "place1": "センタービル12F",
+        "place2": "作業室 C1202"
     },
     {
         "studentId": 23110,
@@ -284,8 +284,8 @@ export const MASTER_INFO = [
         "workTitleEnglish": "Media Literacy Education through Metacognition and Mutual Understanding Based on Students' Experiences",
         "workDescriptionJapanese": "高等学校におけるメディアリテラシー教育の授業デザインと開発した教材を作品として提示する。メディアリテラシーを「メディアを通して⼈や社会と関わる際の、⾃⾝の評価軸を持つ能力」と捉え、当事者性と包括性を両⽴し社会と接続した授業の実現を志向する。自身のメディア体験の振り返り、クラスメイトのメディア体験への理解、メディアと自身との関係の考察、グループによる創作活動を通したメディアリテラシー教育を提案する。",
         "workDescriptionEnglish": "This work presents a curriculum design and educational materials for media literacy education in high schools. This research defines media literacy as \"the ability to maintain one's own standards of evaluation when engaging with people and society through media.\" The curriculum aims to bridge individual experience with comprehensive understanding while maintaining connections to society. The proposed approach encompasses four elements: self-reflection on personal media experiences, understanding peers' media interactions, analysis of media-self relationships, and collaborative creative projects",
-        "place1": "",
-        "place2": ""
+        "place1": "センタービル12F",
+        "place2": "作業室 C1202"
     },
     {
         "studentId": 23118,
@@ -332,7 +332,7 @@ export const MASTER_INFO = [
         "workTitleEnglish": "if… were a song",
         "workDescriptionJapanese": "「もし…が歌だったら」は、言葉を使って音楽を当てるゲーム。プレイヤーはヒントを受け取り、自分の音楽ライブラリからそのヒントを表現する曲を見つけ出さなければならない。",
         "workDescriptionEnglish": "“If… were a song” is a word-guessing music game.Players receive clues and have to use their own music library to find songs that represents those clues. ",
-        "place1": "",
-        "place2": ""
+        "place1": "センタービル12F",
+        "place2": "作業室 C1202"
     }
 ];

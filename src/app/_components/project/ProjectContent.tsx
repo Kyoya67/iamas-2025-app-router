@@ -61,20 +61,14 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
         );
     };
 
-    const activities = [
-        { name: project.activityName1, content: project.activityContent1 },
-        { name: project.activityName2, content: project.activityContent2 },
-        { name: project.activityName3, content: project.activityContent3 },
-        { name: project.activityName4, content: project.activityContent4 },
-        { name: project.activityName5, content: project.activityContent5 },
-        { name: project.activityName6, content: project.activityContent6 },
-        { name: project.activityName7, content: project.activityContent7 },
-        { name: project.activityName8, content: project.activityContent8 },
-        { name: project.activityName9, content: project.activityContent9 },
-        { name: project.activityName10, content: project.activityContent10 },
-    ].filter(activity => activity.name || activity.content);
+    const activities = Array.from({ length: 10 }, (_, i) => i + 1)
+        .map(i => ({
+            name: project[`activityName${i}` as keyof typeof project],
+            subtitle: project[`activityName${i}Subtitle` as keyof typeof project],
+            content: project[`activityContent${i}` as keyof typeof project]
+        }));
 
-    const renderActivityName = (name: string) => {
+    const renderActivityName = (name: string, subtitle: string) => {
         const urlRegex = /(.*?)\((https?:\/\/[^\s)]+)\)(.*)/;
         const match = name.match(urlRegex);
 
@@ -82,7 +76,7 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
             //eslint-disable-next-line @typescript-eslint/no-unused-vars
             const [_, beforeUrl, url, afterUrl] = match;
             return (
-                <div className="font-bold text-base mb-2 text-left">
+                <div className="font-bold text-[0.75rem] sm:text-base mb-2 text-left">
                     {beforeUrl}
                     <a
                         href={url}
@@ -97,7 +91,23 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
             );
         }
 
-        return <div className="font-bold text-base mb-2 text-left">{name}</div>;
+        return (
+            <div className="
+                mb-2
+                font-bold
+                text-[0.75rem] sm:text-base text-left
+                whitespace-pre-wrap
+                sm:whitespace-normal
+                leading-tight
+                ">
+                <div>
+                    {name}
+                </div>
+                <span>
+                    {subtitle}
+                </span>
+            </div>
+        );
     };
 
     return (
@@ -107,27 +117,44 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
             ten-mincho select-text
         `}>
             <div className="relative z-10 h-full flex flex-col">
-                <div className="text-lg sm:text-2xl mb-1 text-[#000f9f] ten-mincho">{project.projectName}</div>
-                <div className="flex items-end border-b border-[#000f9f] mb-3 pb-1">
-                    <div className="relative bottom-[-0.05rem] text-sm sm:text-base mr-2 ten-mincho">{project.representative}</div>
-                    <div className="text-xs sm:text-sm ten-mincho">{sharerText}</div>
+                <div className="text-lg sm:text-2xl mb-1 text-[#000f9f] ten-mincho text-left">{project.projectName}</div>
+                <div className="md:flex justify-between border-b border-[#000f9f] mb-3 pb-1">
+                    <div className={`
+                        ${directoryName === 'ExtremeBiologies' ? 'sm:flex' : 'flex'} 
+                        items-end w-[3/4]
+                        ${directoryName === 'ExtremeBiologies' ? 'flex-col gap-y-1' : ''}
+                    `}>
+                        <div className="relative bottom-[-0.05rem] text-sm sm:text-base mr-2 ten-mincho">{project.representative}</div>
+                        <div className="text-xs sm:text-sm ten-mincho">{sharerText}</div>
+                    </div>
+                    <div className="relative">
+                        <div className="flex text-[#000f9f] text-xs sm:text-sm">
+                            <div className="mr-2">センタービル12F</div>
+                            <div>レセプションルーム</div>
+                        </div>
+                    </div>
                 </div>
                 <ScrollMaskContent className="text-black text-sm mb-4 h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
                     <div className="relative mb-4">
                         {renderMedia()}
                         {captions[currentImageIndex] && (
-                            <p className="text-xs sm:text-sm text-center text-[#000f9f] mt-4 mb-2 ten-mincho">
+                            <p className="
+                                text-xs sm:text-base text-center text-[#000f9f] 
+                                mt-3 mb-2 ten-mincho
+                                whitespace-pre-wrap
+                                md:whitespace-normal 
+                                leading-tight">
                                 {captions[currentImageIndex]}
                             </p>
                         )}
-                        <div className="flex flex-col items-center gap-2">
-                            <div className={`flex justify-center gap-2 mb-2 sm:gap-3 sm:mb-3 ${captions[currentImageIndex] ? 'mt-0' : 'mt-4'
+                        <div className="flex flex-col items-center">
+                            <div className={`flex gap-4 mb-2 sm:gap-5 sm:mb-3 ${captions[currentImageIndex] ? 'mt-0' : 'mt-4'
                                 }`}>
                                 {[...Array(totalImages)].map((_, index) => (
                                     <button
                                         key={index}
                                         onClick={() => setCurrentImageIndex(index)}
-                                        className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full ${currentImageIndex === index ? 'bg-[#000f9f]' : 'bg-[#000f9f]/30'
+                                        className={`w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full ${currentImageIndex === index ? 'bg-[#000f9f]' : 'bg-[#000f9f]/30'
                                             }`}
                                     />
                                 ))}
@@ -135,12 +162,12 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
                         </div>
                     </div>
 
-                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho">研究概要</div>
+                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">研究概要</div>
                     <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'} ten-mincho`}>
                         {project.projectConcept}
                     </div>
 
-                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho">本年度の活動内容</div>
+                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">本年度の活動内容</div>
                     {project.wholeActivityContent1 && (
                         <div className="ten-mincho">
                             <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
@@ -163,7 +190,7 @@ export default function ProjectContent({ projectName, directoryName, pictureNum 
                         <div className="ten-mincho">
                             {activities.map((activity, index) => (
                                 <div key={index} className="mb-4">
-                                    {activity.name && renderActivityName(activity.name)}
+                                    {activity.name && renderActivityName(activity.name, activity.subtitle || '')}
                                     {activity.content && (
                                         <div className={`text-xs sm:text-sm ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                                             {activity.content}
