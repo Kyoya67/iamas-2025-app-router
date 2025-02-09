@@ -1,6 +1,7 @@
 'use client'
 
 import { createContext, useContext, useState, useEffect } from "react";
+import { usePathname } from 'next/navigation';
 
 type EventContextType = {
     selectedDay: string;
@@ -14,6 +15,7 @@ export function EventProvider({ children, initialDay = 'Friday' }: {
     initialDay?: string;
 }) {
     const [selectedDay, setSelectedDay] = useState(initialDay);
+    const pathname = usePathname();
 
     // クライアントサイドでのみlocalStorageを使用
     useEffect(() => {
@@ -23,10 +25,20 @@ export function EventProvider({ children, initialDay = 'Friday' }: {
         }
     }, []);
 
+    // イベントページ以外では金曜日に戻す
+    useEffect(() => {
+        if (!pathname.startsWith('/event')) {
+            setSelectedDay('Friday');
+            localStorage.removeItem('selectedDay');
+        }
+    }, [pathname]);
+
     // 選択された日付を保存
     useEffect(() => {
-        localStorage.setItem('selectedDay', selectedDay);
-    }, [selectedDay]);
+        if (pathname.startsWith('/event')) {
+            localStorage.setItem('selectedDay', selectedDay);
+        }
+    }, [selectedDay, pathname]);
 
     return (
         <EventContext.Provider value={{ selectedDay, setSelectedDay }}>
