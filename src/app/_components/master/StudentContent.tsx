@@ -40,7 +40,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                             研究
                         </div>
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 flex justify-between items-end">
+                    <div className="absolute bottom-[-0.5rem] sm:bottom-0 left-0 right-0 flex justify-between items-end">
                         <LanguageToggle />
                         <div className="text-[#000f9f] ten-mincho mr-5 sm:flex text-xs sm:text-sm">
                             <div className="mr-2">{student.place1}</div>
@@ -76,7 +76,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <LocalizedTextClient
                             ja={student.profileJapanese}
                             en={student.profileEnglish}
-                            className="text-xs sm:text-sm mt-1 ten-mincho"
+                            className="text-xxs sm:text-sm mt-1 ten-mincho"
                         />
                     </div>
                     <ScrollMaskContent className="mb-4 pr-5 pb-4 flex-1 overflow-y-auto h-[70vh]">
