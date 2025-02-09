@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Overview() {
     return (
         <div className="
-            absolute inset-0 
+            absolute inset-0 left-[-0.7rem]
             p-fluid-padding-sm sm:p-0
             relative h-full w-full
             flex flex-col items-center
@@ -16,6 +16,7 @@ export default function Overview() {
         ">
             <div className="
                 w-[clamp(18rem,60vw,23rem)]
+                sm:w-[80vw]
                 md:w-[clamp(24rem,50vw,40rem)]
                 px-8 pr-6
             ">
@@ -32,14 +33,15 @@ export default function Overview() {
 
             <ScrollMaskContent className="
                 h-[60vh] xs:h-[60vh] sm:h-[55vh]
-                mt-2
+                mt-2 pb-[2rem]
                 w-[clamp(18rem,60vw,23rem)]
+                sm:w-[80vw]
                 md:w-[clamp(24rem,50vw,40rem)]
             ">
                 <div className="
                     px-8 pr-6
+                    text-sm
                     sm:text-base
-                    text-xs
                     tracking-[-0.25px]
                     leading-[17px]
                     sm:leading-[1.8]

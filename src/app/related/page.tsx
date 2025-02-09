@@ -18,7 +18,7 @@ export default function Related() {
                 mx-auto
                 w-[70vw] md:w-[50vw]
                 h-[60vh] lg:h-[70vh]
-                pr-4
+                pr-4 pb-[2rem]
                 ">
                 <div className="pb-[2rem]">
                     <div className="
@@ -81,7 +81,7 @@ export default function Related() {
 
 
 
-                <div className="mb-[2rem] border-t border-[#000f9f]">
+                <div className="border-t border-[#000f9f]">
                     <div className="
                     ten-mincho
                     mt-8
