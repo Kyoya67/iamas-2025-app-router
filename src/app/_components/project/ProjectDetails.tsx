@@ -8,6 +8,7 @@ type ProjectDetailsProps = {
     currentImageIndex: number;
     setCurrentImageIndex: (index: number) => void;
     pictureNum: number;
+    isModal: boolean;
 };
 
 export function ProjectDetails({
@@ -15,7 +16,8 @@ export function ProjectDetails({
     directoryName,
     currentImageIndex,
     setCurrentImageIndex,
-    pictureNum
+    pictureNum,
+    isModal
 }: ProjectDetailsProps) {
     const sharerText = project.assistant
         ? `${project.sharer}、${project.assistant}`
@@ -100,7 +102,7 @@ export function ProjectDetails({
                 </div>
             </div>
             <div className="ten-mincho">
-                <ScrollMaskContent className="text-black text-sm mb-4 h-[72vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
+                <ScrollMaskContent className={`text-black text-sm mb-4 ${isModal ? 'h-[72vh]' : 'h-[50vh]'} mb-4 pr-5 pb-4 flex-1 overflow-y-auto`}>
                     <ProjectSlider
                         directoryName={directoryName}
                         currentImageIndex={currentImageIndex}
