@@ -8,7 +8,6 @@ type ProjectDetailsProps = {
     currentImageIndex: number;
     setCurrentImageIndex: (index: number) => void;
     pictureNum: number;
-    isModal?: boolean;
 };
 
 export function ProjectDetails({
@@ -16,8 +15,7 @@ export function ProjectDetails({
     directoryName,
     currentImageIndex,
     setCurrentImageIndex,
-    pictureNum,
-    isModal = false
+    pictureNum
 }: ProjectDetailsProps) {
     const sharerText = project.assistant
         ? `${project.sharer}、${project.assistant}`
@@ -46,7 +44,7 @@ export function ProjectDetails({
             //eslint-disable-next-line @typescript-eslint/no-unused-vars
             const [_, beforeUrl, url, afterUrl] = match;
             return (
-                <div className="font-bold text-[0.75rem] sm:text-base mb-2 text-left">
+                <div className="font-bold text-[0.75rem] sm:text-base mb-2 text-left ten-mincho">
                     {beforeUrl}
                     <a
                         href={url}
@@ -64,7 +62,7 @@ export function ProjectDetails({
         return (
             <div className="
                 mb-2
-                font-bold
+                font-bold ten-mincho
                 text-[0.75rem] sm:text-base text-left
                 whitespace-pre-wrap
                 sm:whitespace-normal
@@ -102,7 +100,7 @@ export function ProjectDetails({
                 </div>
             </div>
             <div className="ten-mincho">
-                <ScrollMaskContent className={`text-black text-sm mb-4 ${isModal ? 'h-[72vh]' : 'h-[50vh]'} mb-4 pr-5 pb-4 flex-1 overflow-y-auto`}>
+                <ScrollMaskContent className="text-black text-sm mb-4 h-[72vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
                     <ProjectSlider
                         directoryName={directoryName}
                         currentImageIndex={currentImageIndex}
@@ -112,23 +110,23 @@ export function ProjectDetails({
                         captions={captions}
                     />
                     <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">研究概要</div>
-                    <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                    <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                         {project.projectConcept}
                     </div>
 
                     <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">本年度の活動内容</div>
                     {project.wholeActivityContent1 && (
                         <div>
-                            <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                            <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                                 {project.wholeActivityContent1}
                             </div>
                             {project.wholeActivityContent2 &&
-                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                                     {project.wholeActivityContent2}
                                 </div>
                             }
                             {project.wholeActivityContent3 &&
-                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                                     {project.wholeActivityContent3}
                                 </div>
                             }
@@ -141,7 +139,7 @@ export function ProjectDetails({
                                 <div key={index} className="mb-4">
                                     {activity.name && renderActivityName(activity.name, activity.subtitle || '')}
                                     {activity.content && (
-                                        <div className={`text-xs sm:text-sm ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                        <div className={`text-xs sm:text-sm ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                                             {activity.content}
                                         </div>
                                     )}
