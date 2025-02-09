@@ -82,11 +82,11 @@ export function ProjectDetails({
         <>
             <div className="text-lg sm:text-2xl mb-1 text-[#000f9f] ten-mincho text-left">{project.projectName}</div>
             <div className={`
-                ${directoryName === 'ExtremeBiologies' ? 'mmd:flex' : 'md:flex'}
+                lg:flex
                 justify-between border-b border-[#000f9f] mb-3 pb-1
             `}>
                 <div className={`
-                    ${directoryName === 'ExtremeBiologies' ? 'md:flex' : 'flex'} 
+                    flex
                     items-end w-[3/4]
                 `}>
                     <div className="relative bottom-[-0.05rem] text-sm sm:text-base mr-3 ten-mincho">{project.representative}</div>
