@@ -71,7 +71,10 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
         <div className="text-black relative h-full text-justify ten-mincho">
             <div className="relative z-10 h-full flex flex-col">
                 <h1 className="text-[#000f9f] text-2xl font-bold">{event.eventName}</h1>
-                <div className="text-xl mb-4 border-b border-[#000f9f] pb-2">{day}&nbsp;{event.time}</div>
+                <div className="mmd:flex justify-between text-xl border-b border-[#000f9f] pb-2 mb-4">
+                    <div className="mmd:w-1/2">{day}&nbsp;{event.time}</div>
+                    <div className="text-sm relative mmd:bottom-[-0.5rem] mb-2 text-[#000f9f]">{event.place ? event.place : "aaaaa"}</div>
+                </div>
                 {(() => {
                     const eventImagePath = event.eventName?.split(' ').join('') + '.webp';
                     return (

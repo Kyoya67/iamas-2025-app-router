@@ -20,7 +20,7 @@ export const EventImage = () => {
                 >
                     <Image
                         src={hoveredEventImage || `/event/NxPC.webp`}
-                        alt={hoveredEventImage?.split(' ').join('') || ''}
+                        alt={hoveredEventImage?.split(' ').join('') || `/event/NxPC.webp`}
                         fill
                         className="object-contains border-[0.2px] border-[#777]"
                         priority

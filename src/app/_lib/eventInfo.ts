@@ -39,7 +39,7 @@ export const EVENTS = [
         "student3": "BAK Somin"
     },
     {
-        "eventName": "クリティカルサイクリング　―寒中ライド―",
+        "eventName": "クリティカルサイクリング ―寒中ライド―",
         "exhibitors": "クリティカル・サイクリング",
         "day": "Saturday",
         "time": "8:00-10:30",
