@@ -50,7 +50,7 @@ export default function Related() {
                             センタービル
                         </div>
                         <div>
-                            1F 信長広場
+                            1F 受付奥
                         </div>
                     </div>
                     <div className="
@@ -106,10 +106,10 @@ export default function Related() {
                     mb-4
                 ">
                         <div>
-                            ワークショップ24
+                            センタービル
                         </div>
                         <div>
-                            5F リフレッシュルーム
+                            5F 休憩室
                         </div>
                     </div>
                     <div className="
