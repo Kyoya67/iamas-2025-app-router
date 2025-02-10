@@ -16,6 +16,11 @@ export const StudentContent = ({ name }: { name: string }) => {
 
     if (!student) return null;
 
+    // YuaRidukiの場合のデフォルト画像パスを設定
+    const workImagePath = student.authorEnglishName.split(' ').join('') === 'YuaRiduki'
+        ? '/defaultIAMAS.webp'
+        : `/master/work/${student.authorEnglishName.split(' ').join('')}.webp`;
+
     return (
         <div className="text-black relative h-full text-justify ten-mincho">
             <div className="relative z-10 h-full flex flex-col">
@@ -91,7 +96,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image
-                                src={`/master/work/${student.authorEnglishName.split(' ').join('')}.webp`}
+                                src={workImagePath}
                                 alt={student.workTitleEnglish}
                                 layout="fill"
                                 objectFit="contain"

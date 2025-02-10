@@ -88,8 +88,12 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         .split(' ')
                         .join('') + '.webp'
 
+                    // 開会式とレセプション・パーティーの場合はデフォルト画像を使用
+                    if (event.eventName === "開会式" || event.eventName === "レセプション・パーティー") {
+                        eventImagePath = '../defaultIAMAS.webp'
+                    }
                     // クリティカルサイクリングの場合は特別処理
-                    if (event.eventName.includes('クリティカルサイクリング')) {
+                    else if (event.eventName.includes('クリティカルサイクリング')) {
                         eventImagePath = 'クリティカルサイクリング.webp'
                     }
                     // IAMAS JUNCTIONの場合は番号付きの画像を参照

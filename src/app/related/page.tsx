@@ -92,7 +92,7 @@ export default function Related() {
                     </div>
                     <Image
                         className="w-full border-[0.15rem] border-grey"
-                        src="/related/CourseConsultation.webp"
+                        src="/defaultIAMAS.webp"
                         alt="Kiosk"
                         width={2000}
                         height={2000}
@@ -120,7 +120,7 @@ export default function Related() {
                     <div className="flex items-end">
                         <Image
                             className="mt-5 w-20 h-20 border-[0.1rem] border-grey"
-                            src="/related/CourseConsultation.webp"
+                            src="/defaultIAMAS.webp"
                             alt="Kiosk"
                             width={500}
                             height={500}

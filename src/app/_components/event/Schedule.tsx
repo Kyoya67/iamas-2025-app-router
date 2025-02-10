@@ -65,6 +65,12 @@ export const Schedule = () => {
                                     .split(' ')
                                     .join('')
 
+                                // 開会式とレセプション・パーティーの場合はデフォルト画像を使用
+                                if (event.eventName === "開会式" || event.eventName === "レセプション・パーティー") {
+                                    setHoveredEventImage('/defaultIAMAS.webp')
+                                    return
+                                }
+
                                 // クリティカルサイクリングの場合は特別処理
                                 if (event.eventName?.includes('クリティカルサイクリング')) {
                                     imagePath = 'クリティカルサイクリング'

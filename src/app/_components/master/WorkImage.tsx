@@ -7,6 +7,11 @@ import Image from "next/image"
 export const WorkImage = () => {
     const { currentWork } = useWork()
 
+    // YuaRidukiの場合のデフォルト画像パスを設定
+    const workImagePath = currentWork === 'YuaRiduki'
+        ? '/defaultIAMAS.webp'
+        : `/master/work/${currentWork}.webp`
+
     return (
         <div className="relative w-full aspect-[16/9] ml-6">
             <AnimatePresence mode="wait">
@@ -19,7 +24,7 @@ export const WorkImage = () => {
                     transition={{ duration: 0.3 }}
                 >
                     <Image
-                        src={`/master/work/${currentWork}.webp`}
+                        src={workImagePath}
                         alt={`${currentWork}の作品`}
                         fill
                         className="object-contains border-[0.2px] border-[#777]"
