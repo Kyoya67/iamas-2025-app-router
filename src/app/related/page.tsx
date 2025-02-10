@@ -35,8 +35,8 @@ export default function Related() {
                         className="w-full"
                         src="/related/RCIC.webp"
                         alt="Kiosk"
-                        width={500}
-                        height={500}
+                        width={1000}
+                        height={1000}
                     />
                     <div className="
                     flex flex-col
