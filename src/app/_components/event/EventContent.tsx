@@ -94,11 +94,22 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                     }
                     // IAMAS JUNCTIONの場合は番号付きの画像を参照
                     else if (event.eventName === 'IAMAS JUNCTION') {
-                        const junctionEvents = EVENTS.filter(e =>
-                            e.day === event.day &&
+                        // 全日程のIAMAS JUNCTIONイベントを取得
+                        const allJunctionEvents = EVENTS.filter(e =>
                             e.eventName === 'IAMAS JUNCTION'
                         )
-                        const junctionIndex = junctionEvents.findIndex(e => e.time === event.time)
+                        // 時間でソート
+                        const sortedJunctionEvents = allJunctionEvents.sort((a, b) => {
+                            if (a.day !== b.day) {
+                                const days = ['Friday', 'Saturday', 'Sunday', 'Monday']
+                                return days.indexOf(a.day) - days.indexOf(b.day)
+                            }
+                            return a.time.localeCompare(b.time)
+                        })
+                        // 現在のイベントのインデックスを取得
+                        const junctionIndex = sortedJunctionEvents.findIndex(e =>
+                            e.day === event.day && e.time === event.time
+                        )
                         eventImagePath = `IAMASJUNCTION${junctionIndex}.webp`
                     }
                     // スラッシュを含むイベント名の場合は特別処理
