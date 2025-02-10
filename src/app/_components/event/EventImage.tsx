@@ -19,8 +19,8 @@ export const EventImage = () => {
                     transition={{ duration: 0.3 }}
                 >
                     <Image
-                        src={hoveredEventImage?.split(' ').join('') || `/event/開会式.webp`}
-                        alt={hoveredEventImage?.split(' ').join('') || `/event/開会式.webp`}
+                        src={hoveredEventImage?.split(' ').join('') || `/event/defaultIAMAS.webp`}
+                        alt={hoveredEventImage?.split(' ').join('') || `/event/defaultIAMAS.webp`}
                         fill
                         className="object-contains border-[0.2px] border-[#777]"
                         priority
