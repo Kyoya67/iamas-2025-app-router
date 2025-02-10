@@ -19,7 +19,7 @@ export const WorkImage = () => {
                     transition={{ duration: 0.3 }}
                 >
                     <Image
-                        src={`/work/${currentWork}.webp`}
+                        src={`/master/work/${currentWork}.webp`}
                         alt={`${currentWork}の作品`}
                         fill
                         className="object-contains border-[0.2px] border-[#777]"

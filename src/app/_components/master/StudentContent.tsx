@@ -55,7 +55,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <div className="flex">
                             <div className="relative bg-black w-[4rem] h-[4rem] mr-1 sm:mr-3 flex-shrink-0">
                                 <Image
-                                    src={`/profile/${student.authorEnglishName.split(' ').join('')}.webp`}
+                                    src={`/master/profile/${student.authorEnglishName.split(' ').join('')}.webp`}
                                     alt={student.authorEnglishName}
                                     layout="fill"
                                     objectFit="contain"
@@ -91,7 +91,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image
-                                src={`/work/${student.authorEnglishName.split(' ').join('')}.webp`}
+                                src={`/master/work/${student.authorEnglishName.split(' ').join('')}.webp`}
                                 alt={student.workTitleEnglish}
                                 layout="fill"
                                 objectFit="contain"
