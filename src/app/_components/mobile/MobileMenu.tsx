@@ -137,7 +137,7 @@ export default function MobileMenu() {
 
                     <div className="mt-4 text-sm sm:text-lg">
                         2/21 (Fri) - 2/24 (Mon)<br></br>
-                        10:00 - 17:00<br></br>
+                        10:00 - 17:00<span className="ml-2 text-xxs sm:text-sm">(初日のみ13:00-)</span><br></br>
                     </div>
                     <span className="block mt-4 text-xxs sm:text-sm">
                         ソフトピアジャパン・センタービル
