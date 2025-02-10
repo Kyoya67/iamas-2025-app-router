@@ -18,7 +18,7 @@ export const StudentContent = ({ name }: { name: string }) => {
 
     // YuaRidukiの場合のデフォルト画像パスを設定
     const workImagePath = student.authorEnglishName.split(' ').join('') === 'YuaRiduki'
-        ? '/defaultIAMAS.webp'
+        ? '/event/defaultIAMAS.webp'
         : `/master/work/${student.authorEnglishName.split(' ').join('')}.webp`;
 
     return (

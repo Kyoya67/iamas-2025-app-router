@@ -90,7 +90,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
 
                     // 開会式とレセプション・パーティーの場合はデフォルト画像を使用
                     if (event.eventName === "開会式" || event.eventName === "レセプション・パーティー") {
-                        eventImagePath = '../defaultIAMAS.webp'
+                        eventImagePath = 'defaultIAMAS.webp'  // /event/ディレクトリ内で参照
                     }
                     // クリティカルサイクリングの場合は特別処理
                     else if (event.eventName.includes('クリティカルサイクリング')) {

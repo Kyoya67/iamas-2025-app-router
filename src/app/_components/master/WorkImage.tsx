@@ -9,7 +9,7 @@ export const WorkImage = () => {
 
     // YuaRidukiの場合のデフォルト画像パスを設定
     const workImagePath = currentWork === 'YuaRiduki'
-        ? '/defaultIAMAS.webp'
+        ? '/event/defaultIAMAS.webp'
         : `/master/work/${currentWork}.webp`
 
     return (
