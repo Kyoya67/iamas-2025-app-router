@@ -6,7 +6,7 @@ import IconAndMenu from "./_components/desktop/IconAndMenu";
 import MobileIcon from "./_components/mobile/MobileIcon";
 import MobileMenu from "./_components/mobile/MobileMenu";
 import PageTransition from "./_components/PageTransition";
-import TypekitLoader from './_components/TypekitLoader'
+import TypekitScript from './_components/TypekitScript'
 import DesktopBase from "./_components/base/DesktopBase";
 import MobileBase from "./_components/base/MobileBase";
 import { EventProvider } from "@/app/_contexts/EventContext";
@@ -56,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-        <TypekitLoader />
+        <TypekitScript />
         <DisableZoom />
         <meta name="format-detection" content="telephone=no,email=no,address=no" />
       </head>

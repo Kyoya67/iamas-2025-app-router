@@ -3,6 +3,12 @@ import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { EVENTS } from "@/app/_lib/eventInfo";
 import { StudentSection } from "./StudentSection";
 
+const contentStyle = {
+    fontFamily: '"ten-mincho-text", serif',
+    fontWeight: 400,
+    fontStyle: 'normal'
+}
+
 export const EventContent = ({ day, time }: { day: string, time: string }) => {
     const event = EVENTS.find(
         item => item.day === day &&

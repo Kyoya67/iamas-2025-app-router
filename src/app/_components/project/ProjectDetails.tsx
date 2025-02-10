@@ -82,7 +82,7 @@ export function ProjectDetails({
 
     return (
         <>
-            <div className="text-lg sm:text-2xl mb-1 text-[#000f9f] ten-mincho text-left">{project.projectName}</div>
+            <div className="text-lg sm:text-2xl mb-1 text-[#000f9f] ten-mincho-texttext-left">{project.projectName}</div>
             <div className={`
                 lg:flex
                 justify-between border-b border-[#000f9f] mb-3 pb-1
@@ -111,24 +111,24 @@ export function ProjectDetails({
                         projectName={project.projectName}
                         captions={captions}
                     />
-                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">研究概要</div>
-                    <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho-texttext-[#000f9f]">研究概要</div>
+                    <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ten-mincho-text${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                         {project.projectConcept}
                     </div>
 
-                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho text-[#000f9f]">本年度の活動内容</div>
+                    <div className="font-bold text-base sm:text-xl mb-2 ten-mincho-texttext-[#000f9f]">本年度の活動内容</div>
                     {project.wholeActivityContent1 && (
                         <div>
-                            <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                            <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ten-mincho-text${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                                 {project.wholeActivityContent1}
                             </div>
                             {project.wholeActivityContent2 &&
-                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ten-mincho-text${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                                     {project.wholeActivityContent2}
                                 </div>
                             }
                             {project.wholeActivityContent3 &&
-                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                <div className={`text-xs sm:text-sm mb-3 whitespace-pre-wrap ten-mincho-text${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                                     {project.wholeActivityContent3}
                                 </div>
                             }
@@ -141,7 +141,7 @@ export function ProjectDetails({
                                 <div key={index} className="mb-4">
                                     {activity.name && renderActivityName(activity.name, activity.subtitle || '')}
                                     {activity.content && (
-                                        <div className={`text-xs sm:text-sm ten-mincho ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
+                                        <div className={`text-xs sm:text-sm ten-mincho-text${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>
                                             {activity.content}
                                         </div>
                                     )}

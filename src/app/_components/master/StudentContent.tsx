@@ -51,7 +51,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                     </div>
                     <div className="absolute bottom-[-0.5rem] sm:bottom-0 left-0 right-0 flex justify-between items-end">
                         <LanguageToggle />
-                        <div className="text-[#000f9f] ten-mincho mr-5 sm:flex text-xs sm:text-sm">
+                        <div className="text-[#000f9f] ten-mincho-textmr-5 sm:flex text-xs sm:text-sm">
                             <div className="mr-2">{student.place1}</div>
                             <div>{student.place2}</div>
                         </div>
@@ -92,7 +92,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <LocalizedTextClient
                             ja={student.workTitleJapanese}
                             en={student.workTitleEnglish}
-                            className="text-xs sm:text-lg mb-2 text-[#000f9f] ten-mincho text-left"
+                            className="text-xs sm:text-lg mb-2 text-[#000f9f] ten-mincho-texttext-left"
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image
