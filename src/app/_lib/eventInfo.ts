@@ -175,7 +175,7 @@ export const EVENTS = [
         "place": "メインステージ(4F)",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Masaru Tainaka",
-        "student2": "Takeshi Kawai",
+        "student2": "KAWAI Takeshi",
         "student3": "Kosei Izaki"
     },
     {
