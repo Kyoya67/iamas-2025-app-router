@@ -53,7 +53,7 @@ export default function IconAndMenu() {
                     height={400}
                 />
             </Link>
-            <ul className="fixed top-[10.85rem] left-[0.75rem] text-[#000f9f]">
+            <ul className="fixed top-[10.65rem] left-[0.75rem] text-[#000f9f]">
                 {menuItems.map((item) => (
                     <li
                         key={item.href}
