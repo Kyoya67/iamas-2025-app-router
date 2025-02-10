@@ -94,8 +94,12 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         .split(' ')
                         .join('') + '.webp'
 
-                    // 開会式とレセプション・パーティーの場合はデフォルト画像を使用
-                    if (event.eventName === "開会式" || event.eventName === "レセプション・パーティー") {
+                    // 開会式、レセプション・パーティー、プロジェクト関連イベントの場合はデフォルト画像を使用
+                    if (event.eventName === "開会式" ||
+                        event.eventName === "レセプション・パーティー" ||
+                        event.eventName === "プロジェクト展示コアタイム" ||
+                        event.eventName === "プロジェクト口頭発表"
+                    ) {
                         eventImagePath = 'defaultIAMAS.webp'  // /event/ディレクトリ内で参照
                     }
                     // クリティカルサイクリングの場合は特別処理

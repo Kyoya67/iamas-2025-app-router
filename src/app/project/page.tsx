@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { ProjectImage } from "@/app/_components/project/ProjectImage";
 
 export const metadata: Metadata = {
-    title: "IAMAS 2025 プロジェクト研究展示",
+    title: "IAMAS 2025 プロジェクト研究発表",
 }
 
 export default function Exhibition() {

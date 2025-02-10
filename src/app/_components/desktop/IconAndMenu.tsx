@@ -6,7 +6,7 @@ import HoverImage from "./HoverImage";
 
 type MenuItemProps = {
     href: string;
-    text: string;
+    text: string | React.ReactNode;
     image: string;
     index: number;
     small?: boolean;
@@ -18,7 +18,22 @@ export default function IconAndMenu() {
     const menuItems: MenuItemProps[] = [
         { href: "/overview", text: "開催概要", image: "/desktop/hoverCircles/overview.webp", index: 0 },
         { href: "/master", text: "修士研究発表", image: "/desktop/hoverCircles/master.webp", index: 1 },
-        { href: "/project", text: "プロジェクト研究展示", image: "/desktop/hoverCircles/project.webp", index: 2 },
+        {
+            href: "/project",
+            text: (
+                <div className="-ml-[0.1rem]">
+                    <span>プ</span>
+                    <span className="-ml-[1.5px]">ロ</span>
+                    <span className="-ml-[2.8px]">ジ</span>
+                    <span className="-ml-[3px]">ェ</span>
+                    <span className="-ml-[3px]">ク</span>
+                    <span className="-ml-[5px]">ト</span>
+                    <span className="-ml-[0.15em]">研究発表</span>
+                </div>
+            ),
+            image: "/desktop/hoverCircles/project.webp",
+            index: 2
+        },
         { href: "/related", text: "関連展示", image: "/desktop/hoverCircles/related.webp", index: 3 },
         { href: "/event", text: "イベント", image: "/desktop/hoverCircles/event.webp", index: 4 },
         { href: "/access", text: "交通アクセス", image: "/desktop/hoverCircles/access.webp", index: 5 },
@@ -42,7 +57,7 @@ export default function IconAndMenu() {
                 {menuItems.map((item) => (
                     <li
                         key={item.href}
-                        className={`leading-[1.15] ${item.index === 2 ? 'text-sm' : ''}`}
+                        className="leading-[1.15]"
                         onMouseEnter={() => setHoveredItem(item.image)}
                         onMouseLeave={() => setHoveredItem(null)}
                         style={{

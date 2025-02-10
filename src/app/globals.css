@@ -205,3 +205,7 @@ a[href^="mailto"] {
   user-select: none !important;
 }
 
+.tracking-extra-tight {
+    letter-spacing: -0.1em;
+}
+

@@ -13,7 +13,7 @@ export default function Access() {
             sm:w-full sm:max-w-[40rem]
             md:w-[70%] md:max-w-[40rem]
             mx-auto
-            ten-mincho
+            ten-mincho-text
         ">
             <ScrollMaskContent className="
                 h-[60vh]
@@ -36,7 +36,7 @@ export default function Access() {
                         />
                     </a>
                     <div className="mt-4">
-                        <div className="mt-2 text-fluid-xs sm:text-fluid-sm ten-mincho">
+                        <div className="mt-2 text-fluid-xs sm:text-fluid-sm ten-mincho-text">
                             <div>
                                 タクシー：JR大垣駅南口より約5分
                             </div>
