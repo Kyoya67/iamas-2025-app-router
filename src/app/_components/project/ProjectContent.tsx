@@ -27,7 +27,7 @@ export default function ProjectContent({
         <div className={`
             text-black relative h-full 
             ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'} 
-            ten-mincho select-text
+            ten-mincho
         `}>
             <div className="relative z-10 h-full flex flex-col">
                 <ProjectDetails

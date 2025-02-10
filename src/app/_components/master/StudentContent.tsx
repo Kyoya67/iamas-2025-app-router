@@ -21,17 +21,21 @@ export const StudentContent = ({ name }: { name: string }) => {
             <div className="relative z-10 h-full flex flex-col">
                 <LanguageProvider>
                     <div className="absolute top-0 right-0 flex flex-col gap-y-1">
-                        <div className="
-                            text-[#000f9f] cursor-pointer hover:opacity-70 
+                        <div className={`
+                            text-[#000f9f]
                             px-2 sm:px-4 
                             text-sm sm:text-base
                             border-[0.08rem] border-[#000f9f] 
                             ten-mincho
-                        ">
+                            ${student.authorEnglishName.split(' ').join('') === 'YuaRiduki'
+                                ? 'hidden'
+                                : ''
+                            }
+                            `}>
                             作品
                         </div>
                         <div className="
-                            text-black cursor-pointer hover:opacity-70 
+                            text-black
                             px-2 sm:px-4
                             text-sm sm:text-base
                             border-[0.08rem] border-black 
