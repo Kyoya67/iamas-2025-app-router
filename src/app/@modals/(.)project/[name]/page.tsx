@@ -14,7 +14,7 @@ export default async function ProjectModal({ params }: Props) {
         { directory: 'TheArtOfListening', pictureNum: 5 },
         { directory: 'TechnologyHermeneutics', pictureNum: 4 },
         { directory: 'WelfareTechnology', pictureNum: 3 },
-        { directory: 'CollaborativeDesignResearchProject', pictureNum: 5 },
+        { directory: 'CollaborativeDesignResearchProject', pictureNum: 4 },
         { directory: 'ExperienceExtension', pictureNum: 5 },
         { directory: 'ExtremeBiologies', pictureNum: 5 }
     ];
