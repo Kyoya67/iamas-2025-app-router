@@ -16,7 +16,7 @@ export default function Related() {
         ">
             <ScrollMaskContent className="
                 mx-auto
-                w-[70vw] md:w-[50vw]
+                w-[70vw] md:w-[45vw]
                 h-[60vh] lg:h-[70vh]
                 pr-4 pb-[2rem]
                 ">
@@ -94,8 +94,8 @@ export default function Related() {
                         className="w-full border-[0.15rem] border-grey"
                         src="/related/CourseConsultation.webp"
                         alt="Kiosk"
-                        width={500}
-                        height={500}
+                        width={2000}
+                        height={2000}
                     />
                     <div className="
                     flex flex-col
