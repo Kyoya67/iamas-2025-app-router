@@ -295,7 +295,7 @@ export const MASTER_INFO = [
         "profileEnglish": "Born in 2000. Graduated from Keio Univ(SFC). I'm fascinated by sound.",
         "X_URL": "https://x.com/mio427m",
         "instagram_URL": "https://www.instagram.com/mio.mti/",
-        "other_URL": "https://miomatsui.notion.site",
+        "other_URL": "https://miomiomi.org/",
         "workTitleJapanese": "残波",
         "workTitleEnglish": "Echoing waves",
         "workDescriptionJapanese": "「ししおどし」を中心とした、暗闇で鑑賞する7分間の作品。\n複製技術時代以降において、W・ベンヤミンは芸術作品の真正性に関わる「アウラの喪失」を指摘した。しかし、現代の情報化/消費化社会の中で「アウラ」は本当に失われたのだろうか？\n複製物のようなまがいものに対しても、受容者の欲望の力によって再びアウラを生み出すことはできないか？\n本作品では、「ししおどし」をトリガーとして、音響の力によって一回きりの「いま、ここ」の体験を提示する。今や和の雰囲気を醸し出す「記号」として固定された「ししおどしのイメージ」の転換を試みる。",

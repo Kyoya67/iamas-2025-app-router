@@ -72,7 +72,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
             <div className="relative z-10 h-full flex flex-col">
                 <div className={`
                     text-[#000f9f] text-[1.15rem] sm:text-2xl font-bold leading-tight
-                    whitespace-pre-wrap ${event.eventName?.includes('ツアー') ? '' : 'md:whitespace-normal'}`}>{event.eventName}</div>
+                    whitespace-pre-wrap ${event.eventName.includes('ツアー') ? '' : 'md:whitespace-normal'}`}>{event.eventName}</div>
                 <div className="mmd:flex justify-between text-base sm:text-xl border-b border-[#000f9f] pb-2 mb-4">
                     <div className="mmd:w-1/2">{day}&nbsp;{event.time}</div>
                     <div className="
@@ -82,7 +82,30 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         text-[#000f9f]">{event.place ? event.place : "aaaaa"}</div>
                 </div>
                 {(() => {
-                    const eventImagePath = event.eventName?.split(' ').join('') + '.webp';
+                    let eventImagePath = event.eventName
+                        .replace(/\n/g, ' ')
+                        .trim()
+                        .split(' ')
+                        .join('') + '.webp'
+
+                    // クリティカルサイクリングの場合は特別処理
+                    if (event.eventName.includes('クリティカルサイクリング')) {
+                        eventImagePath = 'クリティカルサイクリング.webp'
+                    }
+                    // IAMAS JUNCTIONの場合は番号付きの画像を参照
+                    else if (event.eventName === 'IAMAS JUNCTION') {
+                        const junctionEvents = EVENTS.filter(e =>
+                            e.day === event.day &&
+                            e.eventName === 'IAMAS JUNCTION'
+                        )
+                        const junctionIndex = junctionEvents.findIndex(e => e.time === event.time)
+                        eventImagePath = `IAMASJUNCTION${junctionIndex}.webp`
+                    }
+                    // スラッシュを含むイベント名の場合は特別処理
+                    else if (event.eventName.includes('/')) {
+                        eventImagePath = event.eventName.replace(/\//g, '') + '.webp'
+                    }
+
                     return (
                         <ScrollMaskContent
                             className="h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto"

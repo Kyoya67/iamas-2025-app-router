@@ -24,19 +24,18 @@ export default function Access() {
                     <h1 className="text-[#000f9f] text-2xl ten-mincho">
                         ACCESS
                     </h1>
-                    <Image
-                        src="/access.webp"
-                        alt="アクセス"
-                        layout="responsive"
-                        width={100}
-                        height={200}
-                        objectFit="cover"
-                        className="mt-4 border-[0.1rem] border-[#000f9f] mx-auto"
-                    />
+                    <a href="https://maps.app.goo.gl/EGepxgaumVZwXdD18" target="_blank">
+                        <Image
+                            src="/access.webp"
+                            alt="アクセス"
+                            layout="responsive"
+                            width={100}
+                            height={200}
+                            objectFit="cover"
+                            className="mt-4 border-[0.1rem] border-[#000f9f] mx-auto"
+                        />
+                    </a>
                     <div className="mt-4">
-                        <div className="text-[#000f9f] text-xl ten-mincho">
-                            大垣駅より
-                        </div>
                         <div className="mt-2 text-fluid-xs sm:text-fluid-sm ten-mincho">
                             <div>
                                 タクシー：JR大垣駅南口より約5分

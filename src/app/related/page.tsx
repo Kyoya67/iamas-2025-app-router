@@ -47,10 +47,10 @@ export default function Related() {
                     mb-4
                 ">
                         <div>
-                            ワークショップ24
+                            センタービル
                         </div>
                         <div>
-                            5F Rcafe W501
+                            1F 信長広場
                         </div>
                     </div>
                     <div className="
@@ -109,7 +109,7 @@ export default function Related() {
                             ワークショップ24
                         </div>
                         <div>
-                            5F Rcafe W501
+                            5F リフレッシュルーム
                         </div>
                     </div>
                     <div className="

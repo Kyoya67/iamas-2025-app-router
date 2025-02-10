@@ -19,6 +19,11 @@ export default async function EventModal({ params }: Props) {
         event => event.day === formattedDay && event.eventName !== ""
     );
 
+    const event = filteredEvents[index];
+    if (!event || event.eventName === "開会式") {
+        return null;
+    }
+
     const currentIndex = index;
 
     const nextPath = currentIndex < filteredEvents.length - 1
@@ -28,12 +33,6 @@ export default async function EventModal({ params }: Props) {
     const previousPath = currentIndex > 0
         ? `/event/${day}${currentIndex - 1}`
         : null;
-
-    const event = filteredEvents[index];
-    if (!event) {
-        console.error('Event not found:', { id, formattedDay, index });
-        return null;
-    }
 
     return (
         <Modal
