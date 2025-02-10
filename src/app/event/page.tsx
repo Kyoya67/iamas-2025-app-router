@@ -14,7 +14,7 @@ export default function Event() {
         { id: "Friday", label: "2/21（金）" },
         { id: "Saturday", label: "2/22（土）" },
         { id: "Sunday", label: "2/23（日）" },
-        { id: "Monday", label: "2/24（月 | 振休）" },
+        { id: "Monday", label: "2/24（月）" },
     ];
 
     return (
