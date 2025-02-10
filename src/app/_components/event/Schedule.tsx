@@ -33,7 +33,7 @@ export const Schedule = () => {
                                     transition-opacity
                                     ten-mincho
                                 "
-                                onMouseEnter={() => setHoveredEventImage('/event/開会式.webp')}
+                                onMouseEnter={() => setHoveredEventImage('/event/defaultIAMAS.webp')}
                             >
                                 <div className="text-base font-medium ten-mincho">{event.time}</div>
                                 <div className="grid grid-cols gap-2 mt-1 text-right">
