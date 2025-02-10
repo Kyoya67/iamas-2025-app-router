@@ -3,12 +3,6 @@ import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { EVENTS } from "@/app/_lib/eventInfo";
 import { StudentSection } from "./StudentSection";
 
-const contentStyle = {
-    fontFamily: '"ten-mincho-text", serif',
-    fontWeight: 400,
-    fontStyle: 'normal'
-}
-
 export const EventContent = ({ day, time }: { day: string, time: string }) => {
     const event = EVENTS.find(
         item => item.day === day &&
@@ -143,7 +137,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                                     className="contain"
                                 />
                             </div>
-                            <div className="text-sm sm:text-base text-black mb-4 ten-mincho">{event.content}</div>
+                            <div className="text-sm sm:text-base text-black mb-4 ten-mincho whitespace-pre-wrap">{event.content}</div>
                             {[1, 2, 3, 4, 5, 6].map(index => (
                                 <div key={index} className="ten-mincho">
                                     {renderParticipant(index)}

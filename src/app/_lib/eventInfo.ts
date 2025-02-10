@@ -53,7 +53,7 @@ export const EVENTS = [
         "exhibitors": "クリティカル・サイクリング",
         "day": "Saturday",
         "time": "8:00-10:30",
-        "place": "ソフトピア・ジャパン・センタービル 北玄関前　\n35° 22' 4.0919\" N 136° 38' 20.4706\" E",
+        "place": "ソフトピア・ジャパン・センタービル 北玄関前　\n",
         "content": "来る2月22日にクリティカル・サイクリングと運動体設計の共催による早朝耐寒ライドを行います。これはIAMASの卒展イベントとして行われ、どなたでもご参加いただけます。今年度はIAMAS周辺のゴミを拾いながらサイクリングをします。",
         "participant1_name": "クリティカル・サイクリング",
         "participant1_profile": "クリティカル・サイクリング（Critical Cycling）は、サイクリングを楽しみ、その批評性を探求する任意グループです。岐阜県大垣市にあるIAMAS（情報科学芸術大学院大学）を中心に2016年4月より活動をしています。"
@@ -62,7 +62,8 @@ export const EVENTS = [
         "eventName": "プロジェクト口頭発表",
         "day": "Saturday",
         "time": "11:00-12:00",
-        "place": "レセプションルーム大特設ステージ"
+        "place": "レセプションルーム大特設ステージ",
+        "content": "発表15分　質疑5分\n10:40〜11:00 体験拡張表現プロジェクト\n11:00〜11:20 Collaborative Design Research Project\n11:20〜11:40 場所・感覚・メディア\n11:40〜12:00 テクノロジーの〈解釈学〉"
     },
     {
         "eventName": "なぜ私たちは自らの校舎を\nディストピアと呼ぶのか\n：トーク",
@@ -163,7 +164,8 @@ export const EVENTS = [
         "eventName": "プロジェクト口頭発表",
         "day": "Sunday",
         "time": "11:00-12:00",
-        "place": "レセプションルーム大特設ステージ"
+        "place": "レセプションルーム大特設ステージ",
+        "content": "発表15分　質疑5分\n11:00〜11:20 運動体設計\n11:20〜11:40 The Art of Listening\n11:40〜12:00 Extreme Biologies"
     },
     {
         "eventName": "IAMAS JUNCTION",
