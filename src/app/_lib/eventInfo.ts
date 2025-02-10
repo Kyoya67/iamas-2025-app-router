@@ -232,13 +232,20 @@ export const EVENTS = [
         "time": "12:00-",
         "place": "メインステージ(4F)",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
-        "student1": "Yua Riduki",
-        "student2": "Mutsushi Asai"
+        "student1": "Mutsushi Asai",
+        "student2": "Yua Riduki"
     },
     {
         "eventName": "プロジェクト展示コアタイム",
         "day": "Monday",
         "time": "13:00-",
         "place": "レセプションルーム大"
+    },
+    {
+        "eventName": "IAMASONIC 2025 - pit in",
+        "day": "Monday",
+        "time": "18:00以降",
+        "place": "水上ステージ（雨天時セミナーホール）",
+        "content": "IAMASONIC 2025-pit inは、IAMAS卒業生が次のステージへと飛躍するための「補給」となる場です。卒業制作展のテーマ「苦悩と誠実」が示すように、ものづくりは生涯続くレースのようなもの。本イベントでは、その過程における「pit-in」として、より良いパフォーマンスを維持し、新たな挑戦へと進むための機会を提供します。IAMASに関わるクリエイターたちが、ここでエネルギーを蓄え、再び走り出すことを願っています。\n"
     }
 ];
