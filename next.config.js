@@ -7,6 +7,7 @@ const nextConfig = {
     // 本番環境でのみ適用される設定
     ...(process.env.NODE_ENV === 'production' ? {
         output: 'export',
+        trailingSlash: true,
         basePath: '/exhibit25',
         assetPrefix: '/exhibit25',
     } : {})
