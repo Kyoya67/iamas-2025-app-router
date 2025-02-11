@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import { getImagePath } from '@/app/_lib/imagePath';
 
 type ProjectSliderProps = {
     directoryName: string;
@@ -45,7 +46,7 @@ export function ProjectSlider({
 
         return (
             <Image
-                src={`/project/${directoryName}/${currentImageIndex}.webp`}
+                src={getImagePath(`/project/${directoryName}/${currentImageIndex}.webp`)}
                 alt={projectName}
                 width={500}
                 height={300}

@@ -1,5 +1,6 @@
 import { MASTER_INFO } from "@/app/_lib/masterInfo";
 import Image from "next/image";
+import { getImagePath } from '@/app/_lib/imagePath';
 
 export const StudentSection = ({ name }: { name: string }) => {
     const student = MASTER_INFO.find(
@@ -13,7 +14,7 @@ export const StudentSection = ({ name }: { name: string }) => {
         <div className="mb-5">
             <div className="flex items-end w-full mt-3 mb-2 relative">
                 <Image
-                    src={`/master/profile/${student.authorEnglishName.split(' ').join('')}.webp`}
+                    src={getImagePath(`/master/profile/${student.authorEnglishName.split(' ').join('')}.webp`)}
                     alt={student.authorEnglishName}
                     width={100}
                     height={100}

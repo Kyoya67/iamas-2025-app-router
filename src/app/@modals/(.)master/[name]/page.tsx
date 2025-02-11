@@ -2,6 +2,12 @@ import { StudentContent } from "@/app/_components/master/StudentContent";
 import { MASTER_INFO } from "@/app/_lib/masterInfo";
 import Modal from "@/app/_components/modalSet/Modal";
 
+export function generateStaticParams() {
+    return MASTER_INFO.map((student) => ({
+        name: student.authorEnglishName.split(' ').join('')
+    }))
+}
+
 interface Props {
     params: Promise<{
         name: string;

@@ -2,6 +2,7 @@ import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectDisplayProps } from "@/app/_types/project";
+import { getImagePath } from '@/app/_lib/imagePath';
 
 export default function OneColumDisplay({ formattedData }: ProjectDisplayProps) {
     return (
@@ -27,7 +28,7 @@ export default function OneColumDisplay({ formattedData }: ProjectDisplayProps) 
                                 href={`/project/${item.urlName}`}
                             >
                                 <Image
-                                    src={`/project/${item.directory}/0.webp`}
+                                    src={getImagePath(`/project/${item.directory}/0.webp`)}
                                     alt={item.projectName}
                                     width={500}
                                     height={169}

@@ -8,6 +8,12 @@ interface Props {
     }>;
 }
 
+export function generateStaticParams() {
+    return MASTER_INFO.map((student) => ({
+        name: student.authorEnglishName.split(' ').join('')
+    }))
+}
+
 export default async function MasterPage({ params }: Props) {
     const { name } = await params;
     const currentIndex = MASTER_INFO.findIndex(

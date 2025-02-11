@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ScrollMaskContent } from "../_components/ScrollMaskContent";
 import { Metadata } from "next";
+import { getImagePath } from '@/app/_lib/imagePath';
 
 export const metadata: Metadata = {
     title: "IAMAS 2025 関連展示",
@@ -33,7 +34,7 @@ export default function Related() {
                     </div>
                     <Image
                         className="w-full"
-                        src="/related/RCIC.webp"
+                        src={getImagePath("/related/RCIC.webp")}
                         alt="Kiosk"
                         width={1000}
                         height={1000}
@@ -61,7 +62,7 @@ export default function Related() {
                     <div className="flex items-end">
                         <Image
                             className="mt-5 w-20 h-20 border-[0.1rem] border-grey"
-                            src="/related/RcicIcon.webp"
+                            src={getImagePath("/related/RcicIcon.webp")}
                             alt="Kiosk"
                             width={500}
                             height={500}
@@ -92,7 +93,7 @@ export default function Related() {
                     </div>
                     <Image
                         className="w-full border-[0.15rem] border-grey"
-                        src="/defaultIAMAS.webp"
+                        src={getImagePath("/defaultIAMAS.webp")}
                         alt="Kiosk"
                         width={2000}
                         height={2000}
@@ -120,7 +121,7 @@ export default function Related() {
                     <div className="flex items-end">
                         <Image
                             className="mt-5 w-20 h-20 border-[0.1rem] border-grey"
-                            src="/defaultIAMAS.webp"
+                            src={getImagePath("/defaultIAMAS.webp")}
                             alt="Kiosk"
                             width={500}
                             height={500}

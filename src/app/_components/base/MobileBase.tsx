@@ -1,10 +1,13 @@
+'use client';
 import Image from "next/image";
+import { getClientImagePath } from '@/app/_lib/imagePath';
+
 export default function MobileBase() {
     return (
         <div className="relative z-0">
             <Image
-                src="/mobile/base/rightMiddle.webp"
-                alt="右中"
+                src={getClientImagePath("/mobile/base/circle.webp")}
+                alt="サークル"
                 width={35}
                 height={70}
                 className="
@@ -12,7 +15,7 @@ export default function MobileBase() {
                     fixed bottom-12 right-0 w-fit h-fit"
             />
             <Image
-                src="/mobile/base/rightBottom.webp"
+                src={getClientImagePath("/mobile/base/rightBottom.webp")}
                 alt="右下"
                 width={192.5}
                 height={100}
@@ -23,7 +26,7 @@ export default function MobileBase() {
                 }}
             />
             <Image
-                src="/mobile/base/leftBottom.webp"
+                src={getClientImagePath("/mobile/base/leftBottom.webp")}
                 alt="左下"
                 width={120}
                 height={100}

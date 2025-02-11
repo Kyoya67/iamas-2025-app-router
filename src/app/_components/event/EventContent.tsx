@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { EVENTS } from "@/app/_lib/eventInfo";
 import { StudentSection } from "./StudentSection";
+import { getImagePath } from '@/app/_lib/imagePath';
 
 export const EventContent = ({ day, time }: { day: string, time: string }) => {
     const event = EVENTS.find(
@@ -43,7 +44,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
             <div key={index}>
                 <div className="flex items-end mt-2 mb-2 relative">
                     <Image
-                        src={`/event/profile/${imagePath}.webp`}
+                        src={getImagePath(`/event/profile/${imagePath}.webp`)}
                         alt={name}
                         width={100}
                         height={100}
@@ -88,25 +89,24 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         .split(' ')
                         .join('') + '.webp'
 
-                    // 開会式、レセプション・パーティー、プロジェクト関連イベントの場合はデフォルト画像を使用
                     if (event.eventName === "開会式" ||
                         event.eventName === "レセプション・パーティー" ||
                         event.eventName === "プロジェクト展示コアタイム" ||
                         event.eventName === "プロジェクト口頭発表"
                     ) {
-                        eventImagePath = 'defaultIAMAS.webp'  // /event/ディレクトリ内で参照
+
                     }
-                    // クリティカルサイクリングの場合は特別処理
+
                     else if (event.eventName.includes('クリティカルサイクリング')) {
                         eventImagePath = 'クリティカルサイクリング.webp'
                     }
-                    // IAMAS JUNCTIONの場合は番号付きの画像を参照
+
                     else if (event.eventName === 'IAMAS JUNCTION') {
-                        // 全日程のIAMAS JUNCTIONイベントを取得
+
                         const allJunctionEvents = EVENTS.filter(e =>
                             e.eventName === 'IAMAS JUNCTION'
                         )
-                        // 時間でソート
+
                         const sortedJunctionEvents = allJunctionEvents.sort((a, b) => {
                             if (a.day !== b.day) {
                                 const days = ['Friday', 'Saturday', 'Sunday', 'Monday']
@@ -131,7 +131,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         >
                             <div className="relative w-full aspect-[16/9] mb-4 border-[0.08px] border-black">
                                 <Image
-                                    src={`/event/${eventImagePath}`}
+                                    src={getImagePath(`/event/${eventImagePath}`)}
                                     alt={event.eventName ?? ''}
                                     fill
                                     className="contain"

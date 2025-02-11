@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion"
 import Image from "next/image"
 import { useEventImage } from "@/app/_contexts/EventImageContext"
+import { getClientImagePath } from '@/app/_lib/imagePath'
 
 export const EventImage = () => {
     const { hoveredEventImage } = useEventImage();
@@ -19,8 +20,8 @@ export const EventImage = () => {
                     transition={{ duration: 0.3 }}
                 >
                     <Image
-                        src={hoveredEventImage?.split(' ').join('') || `/event/開会式.webp`}
-                        alt={hoveredEventImage?.split(' ').join('') || `/event/開会式.webp`}
+                        src={getClientImagePath(hoveredEventImage?.split(' ').join('') || `/event/開会式.webp`)}
+                        alt={hoveredEventImage?.split(' ').join('') || "開会式"}
                         fill
                         className="object-contains border-[0.2px] border-[#777]"
                         priority
@@ -33,7 +34,7 @@ export const EventImage = () => {
                         z-10
                     ">
                 <Image
-                    src="/desktop/leftTape.webp"
+                    src={getClientImagePath("/desktop/leftTape.webp")}
                     alt="左のテープ"
                     fill
                     className="object-contain"
@@ -45,7 +46,7 @@ export const EventImage = () => {
                         z-10
                     ">
                 <Image
-                    src="/desktop/rightTape.webp"
+                    src={getClientImagePath("/desktop/rightTape.webp")}
                     alt="右のテープ"
                     fill
                     className="object-contain"

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useCallback, memo, useEffect } from "react";
+import { getClientImagePath } from "@/app/_lib/imagePath";
 
 const MENU_LINKS = [
     { href: "/overview", label: "開催概要" },
@@ -76,7 +77,7 @@ export default function MobileMenu() {
                 className="absolute top-0 right-0 mt-2 mr-2 z-[110]"
             >
                 <Image
-                    src="/mobile/menu.webp"
+                    src={getClientImagePath("/mobile/menu.webp")}
                     alt=""
                     width={100}
                     height={100}
@@ -115,7 +116,7 @@ export default function MobileMenu() {
                     aria-label="メニューを閉じる"
                 >
                     <Image
-                        src="/mobile/close.webp"
+                        src={getClientImagePath("/mobile/close.webp")}
                         alt=""
                         width={100}
                         height={100}

@@ -2,6 +2,24 @@ import { EventContent } from "@/app/_components/event/EventContent";
 import { EVENTS } from "@/app/_lib/eventInfo";
 import Modal from "@/app/_components/modalSet/Modal";
 
+export function generateStaticParams() {
+    const paths: { id: string }[] = [];
+
+    ['Friday', 'Saturday', 'Sunday'].forEach((day) => {
+        const dayEvents = EVENTS.filter(
+            event => event.day === day && event.eventName !== ""
+        );
+
+        dayEvents.forEach((_, index) => {
+            paths.push({
+                id: day.toLowerCase() + index
+            });
+        });
+    });
+
+    return paths;
+}
+
 interface Props {
     params: Promise<{
         id: string;

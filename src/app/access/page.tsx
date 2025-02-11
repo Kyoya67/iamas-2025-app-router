@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
+import { getImagePath } from '@/app/_lib/imagePath';
+
 export const metadata: Metadata = {
     title: "IAMAS 2025 アクセス",
 }
@@ -26,7 +28,7 @@ export default function Access() {
                     </h1>
                     <a href="https://maps.app.goo.gl/EGepxgaumVZwXdD18" target="_blank">
                         <Image
-                            src="/access.webp"
+                            src={getImagePath("/access.webp")}
                             alt="アクセス"
                             layout="responsive"
                             width={100}

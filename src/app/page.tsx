@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { getImagePath } from '@/app/_lib/imagePath';
 
 export default async function Home() {
   return (
     <div className="isolate">
       <Image
-        src="/mobile/circle.webp"
+        src={getImagePath("/mobile/circle.webp")}
         alt="円"
         fill
         className="
@@ -15,7 +16,7 @@ export default async function Home() {
                 mix-blend-darken z-10"
       />
       <Image
-        src="/desktop/iPadCircle.webp"
+        src={getImagePath("/desktop/iPadCircle.webp")}
         alt="円"
         fill
         className="
@@ -26,7 +27,7 @@ export default async function Home() {
                 pointer-events-none"
       />
       <Image
-        src="/desktop/circle.webp"
+        src={getImagePath("/desktop/circle.webp")}
         alt="円"
         fill
         className="

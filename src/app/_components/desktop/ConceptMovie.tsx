@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import { getClientImagePath } from '@/app/_lib/imagePath';
 
 export default function ConceptMovie() {
     return (
@@ -11,8 +12,8 @@ export default function ConceptMovie() {
             className="hidden md:block fixed top-[-50px] right-0 cursor-pointer z-20"
         >
             <Image
-                src="/desktop/conceptMovie.webp"
-                alt="コンセプト"
+                src={getClientImagePath("/desktop/conceptMovie.webp")}
+                alt="コンセプトムービー"
                 width={1000}
                 height={1000}
                 className="object-contain"
