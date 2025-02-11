@@ -10,7 +10,7 @@ interface Props {
 export function generateStaticParams() {
     const paths: { id: string }[] = [];
 
-    ['Friday', 'Saturday', 'Sunday'].forEach((day) => {
+    ['Friday', 'Saturday', 'Sunday', 'Monday'].forEach((day) => {
         const dayEvents = EVENTS.filter(
             event => event.day === day && event.eventName !== ""
         );

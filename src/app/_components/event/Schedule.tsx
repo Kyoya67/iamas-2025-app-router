@@ -19,7 +19,7 @@ export const Schedule = () => {
         <ScrollMaskContent className="h-[50vh]">
             <div className="space-y-6 overflow-x-hidden pr-3 ten-mincho">
                 {filteredEvents.map((event, index) => {
-                    const eventPath = `${selectedDay.toLowerCase()}-${index}`;
+                    const eventPath = `${selectedDay.toLowerCase()}${index}`;
 
                     if (event.eventName === "開会式") {
                         return (
