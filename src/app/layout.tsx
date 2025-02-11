@@ -26,17 +26,17 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: getImagePath("/OGP.webp"),
+        url: 'https://www.iamas.ac.jp/exhibit25/ogp.webp',
         width: 1200,
         height: 630,
-        alt: "OGP画像説明",
+        alt: "IAMAS 2025 OGP画像",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
-    images: [getImagePath("/OGP.webp")],
+    images: ['https://www.iamas.ac.jp/exhibit25/ogp.webp'],
   },
   viewport: {
     width: 'device-width',
