@@ -109,6 +109,20 @@ export const StudentContent = ({ name }: { name: string }) => {
                             en={student.workDescriptionEnglish}
                             className="text-xs min-[500px]:text-base mb-2 ten-mincho"
                         />
+                        <div className="mb-4">
+                            {student.interviewLink && (
+                                <a
+                                    href={student.interviewLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#000f9f] hover:opacity-70 transition-opacity"
+                                >
+                                    <div>
+                                        インタビュー動画へ
+                                    </div>
+                                </a>
+                            )}
+                        </div>
                         <div className="flex flex-row gap-4">
                             {student.X_URL && (
                                 <a

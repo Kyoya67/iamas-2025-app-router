@@ -13,7 +13,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "プログラミング教育の普及に伴い、プログラミングで線形代数を利用するShaderを活用した3つのワークショップを企画・実施。Shader独自のアプローチやレイマーチングの習得を通じ、参加者の年齢やスキルに応じた三段階の目標設定で継続利用を促進。Shaderの継続利用による線形代数各要素の理解度の変化を計測した。展示では各ワークショップの設計資料や開発したアプリケーションの展示を行う。",
         "workDescriptionEnglish": "In response to the growing popularity of programming education, I designed and implemented workshop programs focusing on Shaders that enable the practical application of linear algebra through programming. We set three distinct learning goals based on varying age groups and skill levels, from understanding Shader-specific concepts to mastering ray marching techniques. We measured changes in participants' understanding of various linear algebra elements through their continued use of Shaders. The exhibition showcases the design documentation from each workshop and displays the developed applications",
         "place1": "センタービル12F",
-        "place2": "作業室 C1202"
+        "place2": "作業室 C1202",
+        "interviewLink": ""
     },
     {
         "studentId": 21112,
@@ -29,7 +30,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "ARを使った参加型挙式",
         "workDescriptionEnglish": "Interactive weddings with AR",
         "place1": "センタービル 3F",
-        "place2": "ギャラリー1 C311"
+        "place2": "ギャラリー1 C311",
+        "interviewLink": ""
     },
     {
         "studentId": 21119,
@@ -45,7 +47,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "2部構成の短編映像作品。前半は撮影時に気づかなかった映像内の要素にアフレコで言及し、撮影者の主観的な視覚とカメラの客観的な視覚の違いを意識化させた。後半は50秒のモノクロ・サイレント映像で、リュミエール映画を彷彿とさせる視覚世界を提示した。本作は、観賞者の能動的な鑑賞によって新たな視覚体験の発見を促すことを目標に制作した。",
         "workDescriptionEnglish": "This work is a short video piece split into two parts.\nIn the first half of the film, the recording referenced elements in the video that were not noticed during the shooting, making the viewer aware of the difference between the subjective vision of the filmer and the objective vision of the camera.\nThe second half was a 50-second black-and-white silent film that presented a visual world reminiscent of a Lumière film.\nThis work was created with the goal of encouraging the discovery of new visual experiences through active viewing by the viewer.\n",
         "place1": "センタービル 3F",
-        "place2": "シアター C314"
+        "place2": "シアター C314",
+        "interviewLink": ""
     },
     {
         "studentId": 22106,
@@ -58,10 +61,11 @@ export const MASTER_INFO = [
         "other_URL": "https://www.tomomigoto.com/tomomi_goto.html",
         "workTitleJapanese": "Trust Thy Scars（あなたの傷を信頼して）",
         "workTitleEnglish": "Trust Thy Scars",
-        "workDescriptionJapanese": "氷・土といった変容する物質を用いた本作品は、展示中も刻々と変化し続けます。氷の手が水となり溶けて揮発していくと同時に、水は素焼きの土器に受け止められ、やがて大気へと変化していきます。癒えていく過程のようにも見えるその様相を通して、本質的な治癒とは何かを問い続けます。同時に、自然の一部としての身体が大きな生命の循環の中にあり、地球の諸問題とも深く繋がっていることを示唆しています。",
+        "workDescriptionJapanese": "氷、土といった変容する物質を用いた本作品は、展示中も刻々と変化し続けます。氷の手は水となり蒸発し、やがて大気へと変化します。癒えていく過程のようにも見えるその様相を通して、本質的な治癒とは何かを問い続けます。また、自然の一部としての身体が大きな生命の循環の中にあり、地球の⽣命活動の深淵に深く繋がっていることが暗示されます。",
         "workDescriptionEnglish": "This artwork uses materials such as ice and earth which transform, and whilst being exhibited they continue to change moment by moment. The hands of ice become water, melt, and at the same time as the volatilization the water is caught by the unglazed earthenware. Before long, it transforms into the atmosphere. Through this condition which appears to be like a process of healing, we continue to question what healing is intrinsically. At the same time, it is implied that the body as a part of nature is included in the great cycle of life, and it is deeply connected with many global problems.",
         "place1": "センタービル 4F",
-        "place2": "作業室 C415"
+        "place2": "作業室 C415",
+        "interviewLink": ""
     },
     {
         "studentId": 23101,
@@ -77,7 +81,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "Superposition machine は、音と形が出力される多人数参加型ヴィジュアルシンセサイザーです。本装置を複数人で操作すると無目的であるにも関わらず発生する一体感のような感覚がグループに発生し、この現象をVibesと定義しました。Vibes現象を観測するための観測装置Vibes Watcherはリアルタイムに感覚の測定を通じて現象の観察を行うことができます。",
         "workDescriptionEnglish": "Superposition Machine is a multi-user visual synthesizer that outputs sound and form. When operated by multiple participants, it generates a shared sense of unity despite lacking a clear purpose. This phenomenon is defined as \"Vibes.\" To observe this phenomenon, the Vibes Watcher, a device designed for real-time sensory measurement, enables the observation and analysis of these occurrences.",
         "place1": "センタービル12F",
-        "place2": "作業室 C1202"
+        "place2": "作業室 C1202",
+        "interviewLink": "https://youtu.be/ahG8gL69nck?si=utuFtP7_tlt4dfDB"
     },
     {
         "studentId": 23103,
@@ -93,7 +98,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "『虫・あなたのチューブ』は、複数のタッチディスプレイとそれらを接続するチューブ、接触する鑑賞者の身体の間を移動する「虫」から構成されている。「虫」は、文字として表現されながら、その在り処を変えていく。「虫」はタッチディスプレイに接触した指の下で文字としての形を失うことで、触れた身体の中に「虫」が移ることを想像させる。また、接触した指の下に文字が出現することでタッチディスプレイに「虫」が移ることを想像させる。作品によって、「虫」の在り処としての身体、「虫」が出入する通路としての身体を見出していく。",
         "workDescriptionEnglish": "\"mushi / your tube\" consists of multiple touch displays with tubes connecting them, and \"mushi\" that move between the bodies of viewers who come into contact with them. The \"mushi\" changes its whereabouts while being expressed as text. The \"mushi\" loses its form as text beneath the finger that touches the touch display, leading one to imagine that the \"mushi\" moves into the body it touches. Additionally, the appearance of text under the finger on contact leads one to imagine that the \"mushi\" moves out onto the touch display. Through this work, the whereabouts of the \"mushi\" and it's passage for entry and exit as a body are discovered.",
         "place1": "センタービル 3F",
-        "place2": "ギャラリー1 C311"
+        "place2": "ギャラリー1 C311",
+        "interviewLink": "https://youtu.be/fkeYPOEYyzc?si=JBvkdfmUVfw9msr2"
     },
     {
         "studentId": 23104,
@@ -109,7 +115,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "ライブ配信のコミュニケーションは対面のそれと違うようで似ている。\n実際に顔を合わせる訳ではないのに人はコミュニケーションをとる。\n思い出話をするように、噂話をするように、画面の向こうを知りたがる。\nコメント欄は部屋のようだ。\nこの部屋にはたくさんの人間が言葉を発したり、リアクションをとったりする。\nもちろん身体はないのだが。そして配信が終われば、皆出ていく。",
         "workDescriptionEnglish": "Live streaming communication is and similar to face-to-face communication.\nPeople communicate even though they don't actually meet face to face.\nThey want to know what's on the other side of the screen, like talking about memories or gossiping.\nThe comment section is like a room.\nThere are many people in this room speaking and reacting.\nOf course they don't have a body. And once the broadcast is over, everyone leaves.",
         "place1": "センタービル 2F",
-        "place2": "男子仮眠室 C211"
+        "place2": "男子仮眠室 C211",
+        "interviewLink": "https://youtu.be/Gwp54uHzud0?si=4xGgtAn2bd-wNh3D"
     },
     {
         "studentId": 23105,
@@ -125,7 +132,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "印刷産業に携わる中小企業に焦点を当て、印刷産業が活性化するための企業連携の可能性について考察する。複数の印刷会社経営者へのインタビューをもとにワークショップを構成。複数の企業の経営者が参加するワークショップを用いてコミュニティの形成を試みる。これは印刷業界に提言する新たな取り組みである。",
         "workDescriptionEnglish": "Focusing on small and medium-sized enterprises in the printing industry, this study explores the potential for business collaboration to revitalize the sector. Based on interviews with multiple printing company executives, a workshop was designed to foster discussions. By bringing together executives from various companies, the workshop aims to build a community. This represents a novel initiative offering recommendations to the printing industry.",
         "place1": "センタービル12F",
-        "place2": "作業室 C1202"
+        "place2": "作業室 C1202",
+        "interviewLink": ""
     },
     {
         "studentId": 23106,
@@ -141,7 +149,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "「わかりあえなさ」という不条理を、可能性として捉え直すための実践。",
         "workDescriptionEnglish": "A work to recapture the absurdity of “I can't understand (you).” as a possibility.",
         "place1": "センタービル 3F",
-        "place2": " ビジュアルスタジオ C305"
+        "place2": " ビジュアルスタジオ C305",
+        "interviewLink": ""
     },
     {
         "studentId": 23107,
@@ -157,7 +166,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "本作品は、「あるテーマに基づき自身で納得のいくネイルをデザインした後、他者と会話を行い、もう一度同じテーマでネイルをデザインする。」という手法を繰り返し行った作品群です。今回は16テーマ分の会話前のネイル・会話の内容(音声と文字起こし)・会話後のネイルを展示します。\n自己が他者と触れ合い、干渉することで変容していく心情や思想の道のりを、他者との会話とネイルデザインの変化を用いて表現していきます。",
         "workDescriptionEnglish": "This work is a group of works that repeatedly employs the technique of \"designing nails that I'm satisfied with based on a certain theme, then talking to someone else, and then designing nails again on the same theme.\" This time, for 16 themes, the nails before the conversation, the conversation (audio and transcript), and the nails after the conversation will be exhibited.\nThe journey of emotions and thoughts is expressed through the conversations with somebody and the changes in nail design.",
         "place1": "センタービル 3F",
-        "place2": "ギャラリー1 C311"
+        "place2": "ギャラリー1 C311",
+        "interviewLink": "https://youtu.be/G1IIEjIDhoQ?si=evdc44fl3TvrjVF6"
     },
     {
         "studentId": 23109,
@@ -173,7 +183,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "身体的不器用さがある子どもは、椅子に座って学習や食事等の作業をする際に姿勢を保つことが難しい場合があります。本研究では一人の生徒との実践を通して、デジタルファブリケーション機器を用いて製作した給食時の姿勢を補助する椅子を提案しました。姿勢を保つための筋力の向上や食事量の増加などの効果を期待し、生徒本人が生活しやすくなることを目指しています。",
         "workDescriptionEnglish": "Children with physical clumsiness may have difficulty maintaining posture when sitting in a chair to learn, eat, or perform other tasks. Through practice with one student, this study proposed a chair that assists with posture during mealtime, which was fabricated using digital fabrication equipment. I expect the chair to improve muscle strength for maintaining posture and increase the amount of food eaten, thereby making life easier for the student him/herself.",
         "place1": "センタービル12F",
-        "place2": "作業室 C1202"
+        "place2": "作業室 C1202",
+        "interviewLink": "https://youtu.be/6lctif412bM?si=iFYV5QuQV2ao6HRO"
     },
     {
         "studentId": 23110,
@@ -189,7 +200,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "「モビル文学」は自転車を使った移動並びにモバイルテクノロジーを文学表現と融合させることを目指し、自転車と装置を用いて各街をテーマにした小説をキャンバスとしての都市に描き出す連作です。",
         "workDescriptionEnglish": "\"Mobile Literature\" is a series of works that aim to fuse mobility using bicycles and mobile technology with literary expression. Using bicycles and devices, it portrays novels themed around various cities, painting them onto the urban canvas.",
         "place1": "センタービル 4F",
-        "place2": "講義室2 C414"
+        "place2": "講義室2 C414",
+        "interviewLink": ""
     },
     {
         "studentId": 23111,
@@ -205,7 +217,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "「ただよう」とは、ゆらゆらとさまようさま。ある雰囲気やけはいが、静かにその場に満ちていくさま。\n何となく感じられ、はっきりとは掴めないけれど、確かに存在していること。\nこの不安定さや落ち着きのなさ、そして、特定の形や目的を持たずに漂う感覚。\n\n羊の頭を被り、川に浸かりながら自作の文章を朗読する。\nパフォーマンスはライブ配信形式で行い、観客はその様子を鑑賞する。\n言葉が消える中で、コミュニケーションの限界や他者との理解の不確実さに向き合おう。",
         "workDescriptionEnglish": "\"ただよう - drift\" refers to swaying gently, wandering without a clear direction. It is the way an atmosphere or aura quietly fills a space. Something that is faintly perceptible, elusive yet undeniably present. This instability, this unease—an unanchored sense of floating without a defined shape or purpose.\n\nWearing a sheep’s head, immersed in a river, reading aloud one’s own words.  \nThe performance unfolds as a live stream, where the audience witnesses the scene.  \nAs words dissolve into silence, we confront the limits of communication and the uncertainty of understanding others.  ",
         "place1": "センタービル 3F",
-        "place2": "ギャラリー3 C313"
+        "place2": "ギャラリー3 C313",
+        "interviewLink": "https://youtu.be/pSvpJFarJn8?si=XfkXqDQb8475GvO8"
     },
     {
         "studentId": 23113,
@@ -221,7 +234,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "私たちがゲームをしている時、身体は二つの空間に存在し、意識は二つの空間を漂うように行き来する。こういった空間の二重性に着目し、バーチャルな空間と現実空間の双方をパファーマンスとインターネット的 (SNS、VRSNS、オンラインゲーム ) な通信のメタファー（壁と紙飛行機）を活用して展示空間に切り出す。",
         "workDescriptionEnglish": "When we play games, our bodies exist in two spaces, and our consciousness drifts back and forth between the two. Focusing on the duality of these spaces, the exhibition space utilizes the metaphors of performance and Internet-like communication (SNS, VRSNS, online games) to create both virtual and real spaces (walls and paper airplanes).",
         "place1": "センタービル 4F",
-        "place2": "ホール C404"
+        "place2": "ホール C404",
+        "interviewLink": "https://youtu.be/-yxQbJjgSpw?si=BWEhEgNoFQOgeAWZ"
     },
     {
         "studentId": 23114,
@@ -237,7 +251,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "これは、自動ドアにA4サイズの白紙を貼ることでセンサーの誤作動を意図的に誘発し、バグの現象を再解釈する試みである。偶然に観察したバグを再現していく中で、技術的エラーが持つ滑稽さや偶発性の中に、社会との対話を生み出した。単なる不具合として排除されがちなバグが、装置の構造や社会的文脈との関係性の中でいかに意味を持つかを探求する。公共空間での実践を通じて制作された映像は、見過ごされる現象がいかに新たな視点をもたらすかを問うものである。",
         "workDescriptionEnglish": "This was an attempt to reinterpret the phenomenon of bugs by intentionally inducing sensor malfunctions by placing A4-sized blank sheets of paper on automatic doors. In reproducing bugs observed by chance, the project created a dialogue with society in the ridiculousness and contingency of technical errors. The work explores how bugs, which are often dismissed as mere glitches, take on meaning in relation to the structure of the device and its social context. The video, produced through practice in public spaces, questions how overlooked phenomena can bring about new perspectives.",
         "place1": "センタービル 3F",
-        "place2": "ギャラリー2 C312"
+        "place2": "ギャラリー2 C312",
+        "interviewLink": "https://youtu.be/OpZXnvPwS7s?si=XepL3PudEpAkMN_C"
     },
     {
         "studentId": 23115,
@@ -253,7 +268,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "Sight / Insightは、人間の、光を見る意識の変容を試みるインタラクティブ・インスタレーション作品である。 \n暗い部屋に入ると、複数の小さなLEDの光点が動いている。光点に近づいたり遠ざかったり探索しながら観察してみると、光の集合から「何か」が見えてくる。\n光の観察を経て実空間に戻ると、夜の路上を見るときに「何か」を見ようと探索するように意識が変容しているかもしれない。",
         "workDescriptionEnglish": "*Sight / Insight* is an interactive installation that seeks to transform the way humans perceive light.\n\nWhen you enter a dark room, you see multiple small LED lights moving about. As you approach and retreat from these points of light—actively exploring while observing—something begins to emerge from the cluster.\n\nAfter experiencing this act of observing light, when you return to ordinary space, you may find that your awareness has shifted. Looking at the streets at night, you might now find yourself searching for that elusive “something.”",
         "place1": "センタービル 3F",
-        "place2": "サウンドスタジオ前廊下 C302   "
+        "place2": "サウンドスタジオ前廊下 C302   ",
+        "interviewLink": "https://youtu.be/6gnVly-H7iw?si=JzOvF-gVOA2b5eQ1"
     },
     {
         "studentId": 23116,
@@ -269,7 +285,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "「恥を知る滅び方について」という言葉を基に、現代の恥について考えた3つの作品を同じ空間に展示し連続的に観られるようにした。各作品は絵画、映像を使用した彫刻、体験型インスタレーションなどそれぞれ違う形をしている。作者の恥についての考えを作品という形で連続的に鑑賞することから、鑑賞者に作家の考察に触れ現代の恥について考えられる呪術的な空間を構成した。",
         "workDescriptionEnglish": "Based on the phrase \"For the Shame on the Destruction,\" three artworks exploring the contemporary concept of shame are exhibited in the same space, allowing for a consecutive viewing experience. Each work takes a different form, including a painting, a sculpture using video, and an interactive installation.\nThe artist's reflections on shame unfold continuously through these artworks, creating a shamanic space that invites the viewers to engage with the artist's reflections and reflect on the contemporary understanding of shame.",
         "place1": "センタービル 3F",
-        "place2": "ギャラリー2 C312"
+        "place2": "ギャラリー2 C312",
+        "interviewLink": "https://youtu.be/bAi_hhJHt58?si=roFVfdvbaJ19E28A"
     },
     {
         "studentId": 23117,
@@ -285,7 +302,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "高等学校におけるメディアリテラシー教育の授業デザインと開発した教材を作品として提示する。メディアリテラシーを「メディアを通して⼈や社会と関わる際の、⾃⾝の評価軸を持つ能力」と捉え、当事者性と包括性を両⽴し社会と接続した授業の実現を志向する。自身のメディア体験の振り返り、クラスメイトのメディア体験への理解、メディアと自身との関係の考察、グループによる創作活動を通したメディアリテラシー教育を提案する。",
         "workDescriptionEnglish": "This work presents a curriculum design and educational materials for media literacy education in high schools. This research defines media literacy as \"the ability to maintain one's own standards of evaluation when engaging with people and society through media.\" The curriculum aims to bridge individual experience with comprehensive understanding while maintaining connections to society. The proposed approach encompasses four elements: self-reflection on personal media experiences, understanding peers' media interactions, analysis of media-self relationships, and collaborative creative projects",
         "place1": "センタービル12F",
-        "place2": "作業室 C1202"
+        "place2": "作業室 C1202",
+        "interviewLink": "https://youtu.be/1cZOVBxr2pA?si=n-h5O6UfbQ6lfpD6"
     },
     {
         "studentId": 23118,
@@ -301,7 +319,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "「ししおどし」を中心とした、暗闇で鑑賞する7分間の作品。\n複製技術時代以降において、W・ベンヤミンは芸術作品の真正性に関わる「アウラの喪失」を指摘した。しかし、現代の情報化/消費化社会の中で「アウラ」は本当に失われたのだろうか？\n複製物のようなまがいものに対しても、受容者の欲望の力によって再びアウラを生み出すことはできないか？\n本作品では、「ししおどし」をトリガーとして、音響の力によって一回きりの「いま、ここ」の体験を提示する。今や和の雰囲気を醸し出す「記号」として固定された「ししおどしのイメージ」の転換を試みる。",
         "workDescriptionEnglish": "This work is a 7-minute piece centered around a \"shishi-odoshi,\" experienced in the dark. In the age of mechanical reproduction, Walter Benjamin pointed out the \"loss of aura\" in artworks related to their authenticity. However, in today's information-driven and consumerist society, has the \"aura\" truly been lost?\nCould the power of the recipient's desires re-create an aura, even for imitations or reproductions?\nThis work takes the \"shishi-odoshi\" as a trigger, presenting a one-time-only experience of \"here and now\" through the power of sound. It seeks to transform the fixed \"image of the shishi-odoshi,\" now established as a \"sign\" evoking a Japanese atmosphere.",
         "place1": "センタービル 4F",
-        "place2": "コンピュータ室 C403"
+        "place2": "コンピュータ室 C403",
+        "interviewLink": ""
     },
     {
         "studentId": 23120,
@@ -317,7 +336,8 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "コミュニケーションの気づきをもたらすアニメーション。他者との関わりを身振り手振り、そして間から観察させる空間を創出する。",
         "workDescriptionEnglish": "Animation That Encourages Discovery in Communication. Creating a space that allows the observation of interactions with others through gestures, movements, and the spaces in between.",
         "place1": "センタービル 4F",
-        "place2": "講義室1 C411"
+        "place2": "講義室1 C411",
+        "interviewLink": "https://youtu.be/rqiNDyGpCTI?si=YPiPqeH7QETeU8FK"
     },
     {
         "studentId": 23121,
@@ -333,6 +353,7 @@ export const MASTER_INFO = [
         "workDescriptionJapanese": "「もし…が歌だったら」は、言葉を使って音楽を当てるゲーム。プレイヤーはヒントを受け取り、自分の音楽ライブラリからそのヒントを表現する曲を見つけ出さなければならない。",
         "workDescriptionEnglish": "“If… were a song” is a word-guessing music game.Players receive clues and have to use their own music library to find songs that represents those clues. ",
         "place1": "センタービル12F",
-        "place2": "作業室 C1202"
+        "place2": "作業室 C1202",
+        "interviewLink": ""
     }
 ];
