@@ -12,7 +12,7 @@ export default function Access() {
         <div className="
             absolute inset-0 w-full min-h-screen p-8
             xs:max-w-[30rem]
-            sm:w-full sm:max-w-[40rem]
+            min-[500px]:w-full min-[500px]:max-w-[40rem]
             md:w-[70%] md:max-w-[40rem]
             mx-auto
             ten-mincho-text
@@ -38,7 +38,7 @@ export default function Access() {
                         />
                     </a>
                     <div className="mt-4">
-                        <div className="mt-2 text-fluid-xs sm:text-fluid-sm ten-mincho-text">
+                        <div className="mt-2 text-fluid-xs min-[500px]:text-fluid-sm ten-mincho-text">
                             <div>
                                 タクシー：JR大垣駅南口より約5分
                             </div>

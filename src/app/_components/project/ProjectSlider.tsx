@@ -60,7 +60,7 @@ export function ProjectSlider({
             {renderMedia()}
             {captions[currentImageIndex] && (
                 <p className="
-                    text-xs sm:text-base text-center text-[#000f9f] 
+                    text-xs min-[500px]:text-base text-center text-[#000f9f] 
                     mt-3 mb-2 ten-mincho
                     whitespace-pre-wrap
                     md:whitespace-normal 
@@ -69,12 +69,16 @@ export function ProjectSlider({
                 </p>
             )}
             <div className="flex flex-col items-center">
-                <div className={`flex gap-4 mb-2 sm:gap-5 sm:mb-3 ${captions[currentImageIndex] ? 'mt-0' : 'mt-4'}`}>
+                <div className={`
+                    flex gap-4 mb-2 
+                    min-[500px]:gap-5 min-[500px]:mb-3 
+                    ${captions[currentImageIndex] ? 'mt-0' : 'mt-4'}
+                `}>
                     {[...Array(totalImages)].map((_, index) => (
                         <button
                             key={index}
                             onClick={() => setCurrentImageIndex(index)}
-                            className={`w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full ${currentImageIndex === index ? 'bg-[#000f9f]' : 'bg-[#000f9f]/30'}`}
+                            className={`w-3.5 h-3.5 min-[500px]:w-4 min-[500px]:h-4 rounded-full ${currentImageIndex === index ? 'bg-[#000f9f]' : 'bg-[#000f9f]/30'}`}
                         />
                     ))}
                 </div>

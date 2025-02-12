@@ -28,6 +28,7 @@ export default function ProjectContent({
             text-black relative h-full 
             ${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'} 
             ten-mincho
+            max-[500px]:px-4
         `}>
             <div className="relative z-10 h-full flex flex-col">
                 <ProjectDetails

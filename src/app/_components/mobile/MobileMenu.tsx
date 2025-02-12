@@ -24,7 +24,7 @@ const SOCIAL_LINKS = [
 ] as const;
 
 const MOBILE_ICON_STYLE = {
-    width: "clamp(2rem, 1.545rem + 5vw, 5rem)",
+    width: "clamp(2rem, 1.545rem + 7vw, 5rem)",
     objectFit: "cover" as const
 } as const;
 
@@ -78,9 +78,9 @@ export default function MobileMenu() {
             >
                 <Image
                     src={getClientImagePath("/mobile/menu.webp")}
-                    alt=""
-                    width={100}
-                    height={100}
+                    alt="メニュー"
+                    width={130}
+                    height={130}
                     style={MOBILE_ICON_STYLE}
                 />
             </button>
@@ -129,24 +129,24 @@ export default function MobileMenu() {
                     </span>
                 </button>
 
-                <nav className="text-[#000f9f] text-left relative pt-[4rem] pl-5 sm:pl-8 pb-8">
-                    <div className="text-sm sm:text-lg">
+                <nav className="text-[#000f9f] text-left relative pt-[4rem] pl-5 min-[500px]:pl-8 pb-8">
+                    <div className="text-sm min-[500px]:text-lg">
                         情報科学芸術大学院大学<br></br>
                         23期生修了研究発表会・<br></br>
                         プロジェクト研究発表会<br></br>
                     </div>
 
-                    <div className="mt-4 text-sm sm:text-lg">
+                    <div className="mt-4 text-sm min-[500px]:text-lg">
                         2/21 (Fri) - 2/24 (Mon)<br></br>
-                        10:00 - 17:00<span className="ml-2 text-xxs sm:text-sm">(初日のみ13:00-)</span><br></br>
+                        10:00 - 17:00<span className="ml-2 text-xxs min-[500px]:text-sm">(初日のみ13:00-)</span><br></br>
                     </div>
-                    <span className="block mt-4 text-xxs sm:text-sm">
+                    <span className="block mt-4 text-xxs min-[500px]:text-sm">
                         ソフトピアジャパン・センタービル
                     </span>
 
-                    <div className="mt-4 sm:mt-7 border-b border-[#000f9f]"></div>
+                    <div className="mt-4 min-[500px]:mt-7 border-b border-[#000f9f]"></div>
 
-                    <ul className="mt-4 sm:mt-7 text-base sm:text-lg">
+                    <ul className="mt-4 min-[500px]:mt-7 text-base min-[500px]:text-lg">
                         <div className="mb-3 mr-2">
                             <MenuLink href="/" onClick={closeMenu}>
                                 <div className="flex items-center">
@@ -162,9 +162,9 @@ export default function MobileMenu() {
                         ))}
                     </ul>
 
-                    <div className="mt-4 sm:mt-7 border-b border-[#000f9f]"></div>
+                    <div className="mt-4 min-[500px]:mt-7 border-b border-[#000f9f]"></div>
 
-                    <ul className="mt-4 sm:mt-7 text-sm sm:text-lg">
+                    <ul className="mt-4 min-[500px]:mt-7 text-sm min-[500px]:text-lg">
                         {SOCIAL_LINKS.map(({ href, label }) => (
                             <MenuLink key={href} href={href} onClick={closeMenu} external>
                                 {label}

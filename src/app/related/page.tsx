@@ -68,7 +68,7 @@ export default function Related() {
                             height={500}
                         />
                         <div className="
-                        text-sm sm:text-base
+                        text-sm min-[500px]:text-base
                         ml-3
                         ten-mincho
                         ">
@@ -127,7 +127,7 @@ export default function Related() {
                             height={500}
                         />
                         <div className="
-                        text-sm sm:text-base
+                        text-sm min-[500px]:text-base
                         ml-3
                         ten-mincho
                         ">

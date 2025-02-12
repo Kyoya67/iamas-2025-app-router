@@ -6,24 +6,20 @@ export default function MobileBase() {
     return (
         <div className="relative z-0">
             <Image
-                src={getClientImagePath("/mobile/base/circle.webp")}
-                alt="サークル"
-                width={35}
-                height={70}
+                src={getClientImagePath("/mobile/base/rightMiddle.webp")}
+                alt="右中"
+                width={80}
+                height={100}
                 className="
-                    object-contain 
-                    fixed bottom-12 right-0 w-fit h-fit"
+                    fixed bottom-[5rem] right-0"
             />
             <Image
                 src={getClientImagePath("/mobile/base/rightBottom.webp")}
                 alt="右下"
-                width={192.5}
+                width={350}
                 height={100}
                 className=" 
-                    fixed bottom-0 right-0 w-fit h-fit"
-                style={{
-                    width: 'clamp(200px, 500vw, 250px)'
-                }}
+                    fixed bottom-0 right-0"
             />
             <Image
                 src={getClientImagePath("/mobile/base/leftBottom.webp")}

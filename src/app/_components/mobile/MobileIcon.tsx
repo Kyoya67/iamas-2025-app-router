@@ -13,8 +13,7 @@ export default function MobileIcon() {
                 height={100}
                 className="
                     absolute top-2 left-2 object-cover
-                    w-[110px]
-                    sm:w-[120px]
+                    w-[130px]
                     z-[110]
                 "
             />

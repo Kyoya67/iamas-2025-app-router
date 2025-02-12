@@ -29,8 +29,8 @@ export const StudentContent = ({ name }: { name: string }) => {
                     <div className="absolute top-0 right-0 flex flex-col gap-y-1">
                         <div className={`
                             text-[#000f9f]
-                            px-2 sm:px-4 
-                            text-sm sm:text-base
+                            px-2 min-[500px]:px-4 
+                            text-sm min-[500px]:text-base
                             border-[0.08rem] border-[#000f9f] 
                             ten-mincho
                             ${student.authorEnglishName.split(' ').join('') === 'YuaRiduki'
@@ -42,24 +42,24 @@ export const StudentContent = ({ name }: { name: string }) => {
                         </div>
                         <div className="
                             text-black
-                            px-2 sm:px-4
-                            text-sm sm:text-base
+                            px-2 min-[500px]:px-4
+                            text-sm min-[500px]:text-base
                             border-[0.08rem] border-black 
                             ten-mincho
                         ">
                             研究
                         </div>
                     </div>
-                    <div className="absolute bottom-[-0.5rem] sm:bottom-0 left-0 right-0 flex justify-between items-end">
+                    <div className="absolute bottom-[-0.5rem] min-[500px]:bottom-0 left-0 right-0 flex justify-between items-end">
                         <LanguageToggle />
-                        <div className="text-[#000f9f] ten-mincho-textmr-5 sm:flex text-xs sm:text-sm">
+                        <div className="text-[#000f9f] ten-mincho-textmr-5 min-[500px]:flex text-xs min-[500px]:text-sm">
                             <div className="mr-2">{student.place1}</div>
                             <div>{student.place2}</div>
                         </div>
                     </div>
                     <div className="mb-2 border-b border-[#000f9f] pb-4">
                         <div className="flex">
-                            <div className="relative bg-black w-[4rem] h-[4rem] mr-1 sm:mr-3 flex-shrink-0">
+                            <div className="relative bg-black w-[4rem] h-[4rem] mr-1 min-[500px]:mr-3 flex-shrink-0">
                                 <Image
                                     src={getClientImagePath(`/master/profile/${student.authorEnglishName.split(' ').join('')}.webp`)}
                                     alt={student.authorEnglishName}
@@ -72,13 +72,13 @@ export const StudentContent = ({ name }: { name: string }) => {
                                 <h1 className={`
                                     leading-tight ten-mincho
                                     ${student.authorEnglishName.split(' ').join('') === 'JoannaLYU'
-                                        ? 'text-base sm:text-fluid-lg'
+                                        ? 'text-base min-[500px]:text-fluid-lg'
                                         : 'text-fluid-lg'
                                     }
                                 `}>
                                     {student.authorJapaneseName}
                                 </h1>
-                                <h2 className="text-[#000f9f] text-fluid-sm sm:text-fluid-base mt-[-0.2rem] ten-mincho">
+                                <h2 className="text-[#000f9f] text-fluid-sm min-[500px]:text-fluid-base mt-[-0.2rem] ten-mincho">
                                     {student.authorEnglishName}
                                 </h2>
                             </div>
@@ -86,14 +86,14 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <LocalizedTextClient
                             ja={student.profileJapanese}
                             en={student.profileEnglish}
-                            className="text-xxs sm:text-sm mt-1 ten-mincho"
+                            className="text-xxs min-[500px]:text-sm mt-1 ten-mincho"
                         />
                     </div>
                     <ScrollMaskContent className="mb-4 pr-5 pb-4 flex-1 overflow-y-auto h-[70vh]">
                         <LocalizedTextClient
                             ja={student.workTitleJapanese}
                             en={student.workTitleEnglish}
-                            className="text-xs sm:text-lg mb-2 text-[#000f9f] ten-mincho-texttext-left"
+                            className="text-xs min-[500px]:text-lg mb-2 text-[#000f9f] ten-mincho-texttext-left"
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image
@@ -107,7 +107,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <LocalizedTextClient
                             ja={student.workDescriptionJapanese}
                             en={student.workDescriptionEnglish}
-                            className="text-xs sm:text-base mb-2 ten-mincho"
+                            className="text-xs min-[500px]:text-base mb-2 ten-mincho"
                         />
                         <div className="flex flex-row gap-4">
                             {student.X_URL && (

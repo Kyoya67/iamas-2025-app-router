@@ -21,7 +21,7 @@ export default function Event() {
         <EventImageProvider>
             <div className="
                 absolute inset-0 
-                p-fluid-padding-sm sm:p-0
+                p-fluid-padding-sm min-[500px]:p-0
                 relative h-full w-full
                 flex flex-col items-center
                 text-[#000f9f]
@@ -31,7 +31,7 @@ export default function Event() {
                     w-[80vw] md:w-[58vw] xl:w-[29rem]
                     flex flex-col xl:flex-row
                     mt-[13vh] md:mt-[20vh] md:ml-[8vw]
-                    sm:pl-[2vw]
+                    min-[500px]:pl-[2vw]
                     relative
                     xl:ml-[40vw]
                     max-w-full
