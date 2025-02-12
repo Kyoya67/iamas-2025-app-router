@@ -2090,8 +2090,8 @@ a[href^="mailto"] {
     width: 1rem;
   }
 
-  .min-\[500px\]\:w-\[25rem\] {
-    width: 25rem;
+  .min-\[500px\]\:w-\[45vw\] {
+    width: 45vw;
   }
 
   .min-\[500px\]\:w-\[80vw\] {
@@ -2100,6 +2100,10 @@ a[href^="mailto"] {
 
   .min-\[500px\]\:w-full {
     width: 100%;
+  }
+
+  .min-\[500px\]\:min-w-\[23rem\] {
+    min-width: 23rem;
   }
 
   .min-\[500px\]\:max-w-\[40rem\] {
@@ -2248,10 +2252,6 @@ a[href^="mailto"] {
 
   .md\:h-\[65vh\] {
     height: 65vh;
-  }
-
-  .md\:w-\[45vw\] {
-    width: 45vw;
   }
 
   .md\:w-\[50vw\] {
