@@ -20,7 +20,7 @@ export const EventImage = () => {
                     transition={{ duration: 0.3 }}
                 >
                     <Image
-                        src={getClientImagePath(hoveredEventImage?.split(' ').join('') || `/event/開会式.webp`)}
+                        src={getClientImagePath(hoveredEventImage?.split(' ').join('') || `/event/defaultIAMAS.webp`)}
                         alt={hoveredEventImage?.split(' ').join('') || "開会式"}
                         fill
                         className="object-contains border-[0.2px] border-[#777]"

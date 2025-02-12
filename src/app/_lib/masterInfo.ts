@@ -143,7 +143,7 @@ export const MASTER_INFO = [
         "profileEnglish": "He creates works of art using video and performances based on the theme of “The absurdity of not understanding (you).”",
         "X_URL": "https://x.com/kawai_takec",
         "instagram_URL": "https://www.instagram.com/kawai_takec/",
-        "other_URL": "https://x.gd/kawai_takec",
+        "other_URL": "https://drive.google.com/file/d/110i4LBYKbp0VR23zfVs_HnZowD3UofDT/view",
         "workTitleJapanese": "息をしている(Breathing with (you).)",
         "workTitleEnglish": "Breathing with (you).",
         "workDescriptionJapanese": "「わかりあえなさ」という不条理を、可能性として捉え直すための実践。",

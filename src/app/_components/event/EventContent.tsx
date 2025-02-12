@@ -94,7 +94,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         event.eventName === "プロジェクト展示コアタイム" ||
                         event.eventName === "プロジェクト口頭発表"
                     ) {
-
+                        eventImagePath = 'defaultIAMAS.webp'
                     }
 
                     else if (event.eventName.includes('クリティカルサイクリング')) {

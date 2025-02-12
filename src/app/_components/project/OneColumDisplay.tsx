@@ -13,23 +13,13 @@ export default function OneColumDisplay({ formattedData }: ProjectDisplayProps) 
             <ScrollMaskContent className="
                 h-[60vh] min-[500px]:h-[55vh]
                 mt-[15vh] md:ml-[6rem]
-                scroll-x-hidden
             ">
-                <div className="
-                    w-full 
-                    max-[500px]:px-4 
-                    min-[500px]:w-[80%] 
-                    mx-auto 
-                    mt-[5vh]
-                ">
-                    <div className="flex flex-col gap-y-fluid-lg ten-mincho">
+                <div className="mx-auto pr-3 min-[500px]:pr-6 min-[500px]:ml-6">
+                    <div className="flex flex-col gap-y-[1.5rem] ten-mincho">
                         {formattedData.map((item) => (
                             <div
                                 key={`${item.urlName}`}
-                                className="
-                                    w-[73vw] max-w-[28rem]
-                                    pr-5
-                                "
+                                className="w-[73vw] max-w-[28rem]"
                             >
                                 <Link
                                     href={`/project/${item.urlName}`}

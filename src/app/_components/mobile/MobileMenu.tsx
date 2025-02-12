@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useCallback, memo, useEffect } from "react";
 import { getClientImagePath } from "@/app/_lib/imagePath";
+import { SOCIAL_LINKS } from "@/app/_lib/socialLinks";
 
 const MENU_LINKS = [
     { href: "/overview", label: "開催概要" },
@@ -13,14 +14,6 @@ const MENU_LINKS = [
     { href: "/event", label: "イベント" },
     { href: "/access", label: "交通アクセス" },
     { href: "/contact", label: "お問い合わせ" },
-] as const;
-
-const SOCIAL_LINKS = [
-    { href: "https://x.com/iamas_exhibit", label: "X (旧Twitter)" },
-    { href: "https://www.youtube.com/@iamas-exhibit", label: "YouTube" },
-    { href: "https://note.com/iamas_exhibit", label: "note" },
-    { href: "https://www.instagram.com/iamas_exhibit/", label: "Instagram" },
-    { href: "https://www.facebook.com/IAMAS.GraduationExhibition/", label: "Facebook" },
 ] as const;
 
 const MOBILE_ICON_STYLE = {

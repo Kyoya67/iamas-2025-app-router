@@ -9,7 +9,7 @@ export function MasterContent({
 }) {
     return (
         <div className="grid grid-cols-2 gap-x-[3rem] min-[500px]:gap-x-[6rem] lg:gap-x-[1rem] pr-6">
-            <div className="flex flex-col gap-y-fluid-lg lg:gap-y-[0.6rem]">
+            <div className="flex flex-col gap-y-[1.5rem] lg:gap-y-[0.6rem]">
                 {leftColumn.map((item) => (
                     <div
                         key={`left-${item.authorEnglishName}`}
@@ -28,7 +28,7 @@ export function MasterContent({
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col gap-y-fluid-lg lg:gap-y-[0.5rem]">
+            <div className="flex flex-col gap-y-[1.5rem] lg:gap-y-[0.5rem]">
                 {rightColumn.map((item, i) => (
                     <div
                         key={`right-${item.authorEnglishName}`}
