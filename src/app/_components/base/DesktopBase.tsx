@@ -5,7 +5,10 @@ import { getClientImagePath } from '@/app/_lib/imagePath';
 
 export default function DesktopBase() {
     return (
-        <div className="relative z-0">
+        <div className="
+            absolute inset-0 
+            z-0
+        ">
             <Image
                 src={getClientImagePath("/desktop/base/rightTop.webp")}
                 alt="右上"
