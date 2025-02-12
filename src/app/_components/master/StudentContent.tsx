@@ -17,7 +17,6 @@ export const StudentContent = ({ name }: { name: string }) => {
 
     if (!student) return null;
 
-    // YuaRidukiの場合のデフォルト画像パスを設定
     const workImagePath = student.authorEnglishName.split(' ').join('') === 'YuaRiduki'
         ? getClientImagePath('/event/defaultIAMAS.webp')
         : getClientImagePath(`/master/work/${student.authorEnglishName.split(' ').join('')}.webp`);
@@ -86,14 +85,14 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <LocalizedTextClient
                             ja={student.profileJapanese}
                             en={student.profileEnglish}
-                            className="text-xxs min-[500px]:text-sm mt-1 ten-mincho"
+                            className="text-[0.65rem] min-[500px]:text-sm mt-1 ten-mincho"
                         />
                     </div>
                     <ScrollMaskContent className="mb-4 pr-5 pb-4 flex-1 overflow-y-auto h-[70vh]">
                         <LocalizedTextClient
                             ja={student.workTitleJapanese}
                             en={student.workTitleEnglish}
-                            className="text-xs min-[500px]:text-lg mb-2 text-[#000f9f] ten-mincho-texttext-left"
+                            className="text-sm min-[500px]:text-lg mb-2 text-[#000f9f] ten-mincho-texttext-left"
                         />
                         <div className="mb-4 relative aspect-video w-full">
                             <Image

@@ -10,7 +10,7 @@ export default function Overview() {
         <div className="
             absolute inset-0 left-[-0.7rem]
             p-fluid-padding-sm min-[500px]:p-0
-            relative h-full w-full
+            relative h-fit w-fit mx-auto
             flex flex-col items-center
             text-[#000f9f]
         ">

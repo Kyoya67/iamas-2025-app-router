@@ -750,6 +750,10 @@ video {
   z-index: 140;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-\[10vw\] {
   margin-left: 10vw;
   margin-right: 10vw;
@@ -814,6 +818,10 @@ video {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .ml-6 {
@@ -1053,8 +1061,8 @@ video {
   width: 100vw;
 }
 
-.w-\[130px\] {
-  width: 130px;
+.w-\[115px\] {
+  width: 115px;
 }
 
 .w-\[18vh\] {
@@ -1071,10 +1079,6 @@ video {
 
 .w-\[3\/4\] {
   width: 3/4;
-}
-
-.w-\[30vw\] {
-  width: 30vw;
 }
 
 .w-\[40vw\] {
@@ -1295,8 +1299,8 @@ video {
   row-gap: 1.5rem;
 }
 
-.gap-y-\[1rem\] {
-  row-gap: 1rem;
+.gap-y-\[2rem\] {
+  row-gap: 2rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1562,10 +1566,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.pr-\[0rem\] {
-  padding-right: 0rem;
-}
-
 .pt-\[4rem\] {
   padding-top: 4rem;
 }
@@ -1589,6 +1589,10 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-\[0\.65rem\] {
+  font-size: 0.65rem;
 }
 
 .text-\[0\.75rem\] {
@@ -1995,6 +1999,10 @@ a[href^="mailto"] {
   opacity: 0.4;
 }
 
+.hover\:opacity-50:hover {
+  opacity: 0.5;
+}
+
 .hover\:opacity-70:hover {
   opacity: 0.7;
 }
@@ -2080,6 +2088,10 @@ a[href^="mailto"] {
 
   .min-\[500px\]\:w-4 {
     width: 1rem;
+  }
+
+  .min-\[500px\]\:w-\[25rem\] {
+    width: 25rem;
   }
 
   .min-\[500px\]\:w-\[80vw\] {
@@ -2222,6 +2234,10 @@ a[href^="mailto"] {
     display: flex;
   }
 
+  .md\:inline-flex {
+    display: inline-flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -2236,6 +2252,10 @@ a[href^="mailto"] {
 
   .md\:w-\[45vw\] {
     width: 45vw;
+  }
+
+  .md\:w-\[50vw\] {
+    width: 50vw;
   }
 
   .md\:w-\[55\%\] {
@@ -2254,6 +2274,10 @@ a[href^="mailto"] {
     width: clamp(24rem,50vw,40rem);
   }
 
+  .md\:max-w-\[35rem\] {
+    max-width: 35rem;
+  }
+
   .md\:max-w-\[40rem\] {
     max-width: 40rem;
   }
@@ -2269,6 +2293,10 @@ a[href^="mailto"] {
 
   .md\:whitespace-normal {
     white-space: normal;
+  }
+
+  .md\:border-b {
+    border-bottom-width: 1px;
   }
 
   .md\:opacity-100 {
@@ -2343,8 +2371,8 @@ a[href^="mailto"] {
     row-gap: 0.6rem;
   }
 
-  .lg\:gap-y-\[0\.75rem\] {
-    row-gap: 0.75rem;
+  .lg\:gap-y-\[1rem\] {
+    row-gap: 1rem;
   }
 
   .lg\:text-xl {

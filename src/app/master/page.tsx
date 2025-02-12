@@ -34,16 +34,17 @@ export default async function Master() {
                 </div>
                 <ScrollMaskContent className="
                     h-[60vh] min-[500px]:h-[55vh]
-                    mt-[15vh] pb-[3rem] lg:mt-0
+                    mt-[15vh] pb-[3rem] lg:mt-0 
+                    ml-3 pr-3 min-[500px]:ml-6 min-[500px]:pr-6 
                     lg:absolute lg:top-[50vh]
                     lg:translate-y-[-55%] 
                 ">
                     <div className="
                         grid grid-cols-2 
                         gap-x-[3rem] min-[500px]:gap-x-[6rem] lg:gap-x-[1rem] 
-                        pr-[0rem] 
+                        text-base min-[500px]:text-xl
                         ">
-                        <div className="flex flex-col gap-y-[1rem] lg:gap-y-[0.75rem] mr-[1vw]">
+                        <div className="flex flex-col gap-y-[2rem] lg:gap-y-[1rem] mr-[1vw]">
                             {leftColumn.map((item) => (
                                 <div
                                     key={`left-${item.authorEnglishName}`}
@@ -62,7 +63,7 @@ export default async function Master() {
                                 </div>
                             ))}
                         </div>
-                        <div className="flex flex-col gap-y-[1rem] lg:gap-y-[0.75rem]">
+                        <div className="flex flex-col gap-y-[2rem] lg:gap-y-[1rem]">
                             {rightColumn.map((item, i) => (
                                 <div
                                     key={`right-${item.authorEnglishName}`}

@@ -29,7 +29,6 @@ export const Schedule = () => {
                                     flex justify-between 
                                     border-b-[0.08rem] border-[#000f9f] 
                                     pb-2
-                                    hover:opacity-70
                                     transition-opacity
                                     ten-mincho
                                 "
@@ -54,7 +53,7 @@ export const Schedule = () => {
                                 flex justify-between 
                                 border-b-[0.08rem] border-[#000f9f] 
                                 pb-2
-                                hover:opacity-70
+                                hover:opacity-50
                                 transition-opacity
                                 ten-mincho
                             "

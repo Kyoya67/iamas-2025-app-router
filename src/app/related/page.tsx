@@ -14,12 +14,14 @@ export default function Related() {
             absolute inset-0
             mt-[18vh] lg:mt-[10vh]
             ten-mincho
+            w-fit h-fit
+            mx-auto
         ">
             <ScrollMaskContent className="
                 mx-auto
-                w-[70vw] md:w-[45vw]
+                w-[70vw] md:w-[50vw]
                 h-[60vh] lg:h-[70vh]
-                pr-4 pb-[2rem]
+                ml-4 pr-4 min-[500px]:pr-6 min-[500px]:ml-6 pb-[2rem]
                 ">
                 <div className="pb-[2rem]">
                     <div className="

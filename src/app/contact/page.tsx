@@ -13,13 +13,13 @@ const getIcon = (iconName: string) => {
         case 'x':
             return <FaXTwitter size={25} />;
         case 'instagram':
-            return <FaInstagram size={25} />;
+            return <FaInstagram size={28} />;
         case 'youtube':
-            return <FaYoutube size={25} />;
+            return <FaYoutube size={32} />;
         case 'note':
             return <Image src={getImagePath("/note.svg")} alt="note" width={25} height={25} />;
         case 'facebook':
-            return <FaFacebook size={25} />;
+            return <FaFacebook size={28} />;
         default:
             return null;
     }
@@ -28,8 +28,8 @@ const getIcon = (iconName: string) => {
 export default function Contact() {
     return (
         <div className="
-            absolute inset-0 w-full 
-            flex justify-center items-center
+            absolute inset-0 w-fit h-fit m-auto 
+            flex justify-center items-centers
         ">
             <div className="
                 ten-mincho
@@ -39,18 +39,19 @@ export default function Contact() {
                 <Image
                     src={getImagePath("/iamas-official-logo.webp")}
                     className="
-                            w-[30vw] min-w-[20rem]
+                            min-[500px]:w-[25rem] md:w-[45vw] md:max-w-[35rem]
                         "
                     alt="IAMAS 2025 ロゴ"
                     width={300}
-                    height={100}
+                    height={300}
                 />
                 <div className="flex flex-col gap-y-2">
                     <ul className="
                         text-[#000f9f]
-                        flex flex-col gap-y-2
-                    auto-ovo ten-mincho
-                ">
+                        flex flex-col
+                        auto-ovo ten-mincho
+                        md:border-b border-[#000f9f] pb-2
+                        ">
                         <li>
                             <div className="flex flex-col gap-y-1 ten-mincho">
                                 <span>住所：岐阜県大垣市加賀野町4丁目1番地7</span>
@@ -99,7 +100,7 @@ export default function Contact() {
                             </a>
                         </li>
                     </ul>
-                    <div className="flex gap-6 mt-4">
+                    <div className="flex gap-6 mt-4 w-full items-center justify-between hidden md:inline-flex">
                         {SOCIAL_LINKS.map(({ href, label, icon }) => (
                             <a
                                 key={href}
@@ -107,11 +108,11 @@ export default function Contact() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="
-                                text-[#000f9f]
-                                hover:opacity-40 
-                                transition-opacity 
-                                duration-200
-                            "
+                                        text-[#000f9f]
+                                        hover:opacity-40 
+                                        transition-opacity 
+                                        duration-200
+                                    "
                                 aria-label={label}
                             >
                                 {getIcon(icon)}

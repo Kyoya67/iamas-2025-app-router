@@ -39,7 +39,7 @@ export default async function ProjectPage({ params }: Props) {
         ">
             <div className="
                 max-w-[28rem] lg:max-w-[45rem]
-                md:mt-[10vh] mx-auto 
+                mt-[13vh] mx-auto 
                 text-justify
                 p-8">
                 <ProjectContent
