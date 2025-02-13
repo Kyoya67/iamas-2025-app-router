@@ -2,6 +2,12 @@ import ProjectContent from "@/app/_components/project/ProjectContent";
 import { PROJECT_INFO } from "@/app/_lib/projectInfo";
 import Modal from "@/app/_components/modalSet/Modal";
 
+export function generateStaticParams() {
+    return PROJECT_INFO.map((project) => ({
+        name: project.projectName.split(' ').join('')
+    }))
+}
+
 interface Props {
     params: Promise<{
         name: string;

@@ -1,6 +1,6 @@
-"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { getImagePath } from '@/app/_lib/imagePath';
 
 export default function ConceptMovie() {
     return (
@@ -8,18 +8,27 @@ export default function ConceptMovie() {
             href="https://www.youtube.com/watch?v=joTQYufTBe0"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:block fixed top-[-50px] right-0 cursor-pointer z-20"
+            className="
+                hidden md:block 
+                fixed 
+                top-[-50px] 
+                right-0 
+                cursor-pointer 
+                z-20 
+                flex 
+                items-start
+            "
         >
-            <Image
-                src="/desktop/conceptMovie.webp"
-                alt="コンセプト"
-                width={1000}
-                height={1000}
-                className="object-contain"
-                style={{
-                    width: 'clamp(300px, 60vw, 310px)'
-                }}
-            />
+            <div className="
+                w-[18vh]
+            ">
+                <Image
+                    src={getImagePath("/desktop/conceptMovie.webp")}
+                    alt="コンセプトムービー"
+                    width={500}
+                    height={500}
+                />
+            </div>
         </Link>
     );
 }

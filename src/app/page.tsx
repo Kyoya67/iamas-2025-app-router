@@ -1,32 +1,33 @@
 import Image from "next/image";
+import { getImagePath } from '@/app/_lib/imagePath';
 
 export default async function Home() {
   return (
     <div className="isolate">
       <Image
-        src="/mobile/circle.webp"
+        src={getImagePath("/mobile/circle.webp")}
         alt="円"
         fill
         className="
-                sm:hidden 
+                max-[500px]:block hidden
                 absolute top-0 right-0 
                 h-screen w-full 
                 object-cover object-right 
                 mix-blend-darken z-10"
       />
       <Image
-        src="/desktop/iPadCircle.webp"
+        src={getImagePath("/desktop/iPadCircle.webp")}
         alt="円"
         fill
         className="
-                hidden sm:block md:hidden
+                hidden min-[500px]:block md:hidden
                 absolute top-0 right-0 
                 h-screen w-full 
                 object-cover object-right
                 pointer-events-none"
       />
       <Image
-        src="/desktop/circle.webp"
+        src={getImagePath("/desktop/circle.webp")}
         alt="円"
         fill
         className="

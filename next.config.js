@@ -2,8 +2,15 @@
 const nextConfig = {
     images: {
         domains: ['images.microcms-assets.io', 'img.youtube.com'],
+        unoptimized: true,
     },
-    optimizeFonts: false
+    // 本番環境でのみ適用される設定
+    ...(process.env.NODE_ENV === 'production' ? {
+        output: 'export',
+        trailingSlash: true,
+        basePath: '/exhibit25',
+        assetPrefix: '/exhibit25',
+    } : {})
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig

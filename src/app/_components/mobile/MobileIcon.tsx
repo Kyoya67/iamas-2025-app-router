@@ -1,18 +1,19 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
+import { getClientImagePath } from '@/app/_lib/imagePath';
 
 export default function MobileIcon() {
     return (
         <Link href="/">
             <Image
-                src="/mobile/icon.webp"
-                alt="アイコン"
+                src={getClientImagePath("/mobile/icon.webp")}
+                alt="モバイルアイコン"
                 width={110}
                 height={100}
                 className="
                     absolute top-2 left-2 object-cover
-                    w-[110px]
-                    sm:w-[120px]
+                    w-[115px]
                     z-[110]
                 "
             />

@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useProject } from "@/app/_contexts/ProjectContext"
 import Image from "next/image"
+import { getClientImagePath } from '@/app/_lib/imagePath'
 
 export const ProjectImage = () => {
     const { hoveredProject } = useProject();
@@ -19,7 +20,7 @@ export const ProjectImage = () => {
                     transition={{ duration: 0.3 }}
                 >
                     <Image
-                        src={`/project/${hoveredProject}/0.webp`}
+                        src={getClientImagePath(`/project/${hoveredProject}/0.webp`)}
                         alt={hoveredProject}
                         fill
                         className="object-cover border-[0.2px] border-[#777]"
@@ -33,7 +34,7 @@ export const ProjectImage = () => {
                 z-10
             ">
                 <Image
-                    src="/desktop/leftTape.webp"
+                    src={getClientImagePath("/desktop/leftTape.webp")}
                     alt="左のテープ"
                     fill
                     className="object-contain"
@@ -45,7 +46,7 @@ export const ProjectImage = () => {
                 z-10
             ">
                 <Image
-                    src="/desktop/rightTape.webp"
+                    src={getClientImagePath("/desktop/rightTape.webp")}
                     alt="右のテープ"
                     fill
                     className="object-contain"

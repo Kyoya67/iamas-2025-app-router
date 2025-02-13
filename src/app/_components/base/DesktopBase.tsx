@@ -1,10 +1,16 @@
+'use client';
 import Image from "next/image";
 import ConceptMovie from "../desktop/ConceptMovie";
+import { getClientImagePath } from '@/app/_lib/imagePath';
+
 export default function DesktopBase() {
     return (
-        <div className="relative z-0">
+        <div className="
+            absolute inset-0 
+            z-0
+        ">
             <Image
-                src="/desktop/base/rightTop.webp"
+                src={getClientImagePath("/desktop/base/rightTop.webp")}
                 alt="右上"
                 width={70}
                 height={20}
@@ -14,7 +20,7 @@ export default function DesktopBase() {
                 }}
             />
             <Image
-                src="/desktop/base/rightBottom.webp"
+                src={getClientImagePath("/desktop/base/rightBottom.webp")}
                 alt="右下"
                 width={600}
                 height={300}
@@ -29,7 +35,7 @@ export default function DesktopBase() {
             <ConceptMovie />
             <div className="fixed bottom-0 left-0 flex items-end gap-0">
                 <Image
-                    src="/desktop/base/leftBottom.webp"
+                    src={getClientImagePath("/desktop/base/leftBottom.webp")}
                     alt="左下"
                     width={600}
                     height={100}

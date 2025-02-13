@@ -2,6 +2,12 @@ import ProjectContent from "@/app/_components/project/ProjectContent";
 import { PROJECT_INFO } from "@/app/_lib/projectInfo";
 import { notFound } from "next/navigation";
 
+export function generateStaticParams() {
+    return PROJECT_INFO.map((project) => ({
+        name: project.projectName.split(' ').join('')
+    }))
+}
+
 interface Props {
     params: Promise<{
         name: string;
@@ -14,8 +20,8 @@ export default async function ProjectPage({ params }: Props) {
     const projectData = [
         { directory: 'TheArtOfListening', pictureNum: 5 },
         { directory: 'TechnologyHermeneutics', pictureNum: 4 },
-        { directory: 'WelfareTechnology', pictureNum: 5 },
-        { directory: 'CollaborativeDesignResearchProject', pictureNum: 5 },
+        { directory: 'WelfareTechnology', pictureNum: 3 },
+        { directory: 'CollaborativeDesignResearchProject', pictureNum: 4 },
         { directory: 'ExperienceExtension', pictureNum: 5 },
         { directory: 'ExtremeBiologies', pictureNum: 5 }
     ];
@@ -33,7 +39,7 @@ export default async function ProjectPage({ params }: Props) {
         ">
             <div className="
                 max-w-[28rem] lg:max-w-[45rem]
-                mt-[12vh] md:mt-[10vh] mx-auto 
+                mt-[13vh] mx-auto 
                 text-justify
                 p-8">
                 <ProjectContent

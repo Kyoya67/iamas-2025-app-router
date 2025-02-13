@@ -5,8 +5,18 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'xxs': '375px',
+      'xs': '390px',
+      'sm': '500px',
+      'md': '768px',
+      'mmd': '875px',
+      'lg': '1024px',
+      'xl': '1280px',
+    },
     extend: {
       fontSize: {
         'xxs': '0.67rem',
@@ -34,15 +44,6 @@ const config: Config = {
         'fluid-padding-base': 'clamp(0.75rem, 0.75vw + 0.375rem, 1.5rem)',
         'fluid-padding-lg': 'clamp(1rem, 1vw + 0.5rem, 2rem)',
         'scroll-padding': 'clamp(0.5rem, 0.5vw + 0.25rem, 1rem)',
-      },
-      screens: {
-        'xxs': '375px',
-        'xs': '390px',
-        'sm': '500px',
-        'md': '768px',
-        'mmd': '875px',
-        'lg': '1024px',
-        'xl': '1280px',
       },
       gridAutoFlow: {
         'col': 'column',

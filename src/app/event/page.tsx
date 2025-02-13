@@ -20,18 +20,17 @@ export default function Event() {
     return (
         <EventImageProvider>
             <div className="
-                absolute inset-0 
-                p-fluid-padding-sm sm:p-0
-                relative h-full w-full
                 flex flex-col items-center
                 text-[#000f9f]
-                overflow-x-hidden
+                m-auto
+                w-fit h-fit
             ">
                 <div className="
                     w-[80vw] md:w-[58vw] xl:w-[29rem]
                     flex flex-col xl:flex-row
-                    mt-[13vh] md:mt-[20vh] md:ml-[8vw]
-                    sm:pl-[2vw]
+                    md:ml-[8vw] 
+                    mt-[12vh] md:mt-[20vh]
+                    min-[500px]:pl-[2vw]
                     relative
                     xl:ml-[40vw]
                     max-w-full
@@ -41,7 +40,7 @@ export default function Event() {
                         w-[41vw] -rotate-[1.5deg]
                         transition-opacity duration-300
                         xl:opacity-100 xl:pointer-events-auto
-                        opacity-0 pointer-events-none   
+                        opacity-0 pointer-events-none             
                     ">
                         <EventImage />
                     </div>

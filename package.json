@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "tailwindcss build ./src/app/globals.css -o ./public/styles.css && next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix"

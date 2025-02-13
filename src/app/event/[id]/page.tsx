@@ -7,6 +7,24 @@ interface Props {
     }>;
 }
 
+export function generateStaticParams() {
+    const paths: { id: string }[] = [];
+
+    ['Friday', 'Saturday', 'Sunday', 'Monday'].forEach((day) => {
+        const dayEvents = EVENTS.filter(
+            event => event.day === day && event.eventName !== ""
+        );
+
+        dayEvents.forEach((_, index) => {
+            paths.push({
+                id: day.toLowerCase() + index
+            });
+        });
+    });
+
+    return paths;
+}
+
 export default async function EventModal({ params }: Props) {
     try {
         const { id } = await params;
