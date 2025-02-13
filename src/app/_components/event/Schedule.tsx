@@ -67,8 +67,8 @@ export const Schedule = () => {
                                 // 開会式、レセプション・パーティー、プロジェクト関連イベントの場合はデフォルト画像を使用
                                 if (event.eventName === "開会式" ||
                                     event.eventName === "レセプション・パーティー" ||
-                                    event.eventName === "プロジェクト展示コアタイム" ||
-                                    event.eventName === "プロジェクト口頭発表"
+                                    event.eventName === "プロジェクト研究：展示コアタイム" ||
+                                    event.eventName === "プロジェクト研究：口頭発表"
                                 ) {
                                     setHoveredEventImage('/event/defaultIAMAS.webp')
                                     return

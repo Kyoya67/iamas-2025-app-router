@@ -240,7 +240,7 @@ export const MASTER_INFO = [
     {
         "studentId": 23114,
         "authorJapaneseName": "徳保晴人",
-        "authorEnglishName": "Tokubo Haruto",
+        "authorEnglishName": "Haruto Tokubo",
         "profileJapanese": "2000年愛知県名古屋市生まれ。多摩美術大学情報デザイン学科を卒業後にIAMAS入学。収集する癖があり、バグるという現象を表現とするため制作をおこなっている。映像やグラフィックなどデザインをする。",
         "profileEnglish": "\"Born in Nagoya, Aichi, Japan in 2000. Entered IAMAS after graduating from the Department of Information Design, Tama Art University. He has a habit of collecting bugs. He creates his works in order to express the phenomenon of bugs. He works with video and graphic design.\"",
         "X_URL": "https://x.com/harutotogaku",
@@ -257,7 +257,7 @@ export const MASTER_INFO = [
     {
         "studentId": 23115,
         "authorJapaneseName": "成瀬陽太",
-        "authorEnglishName": "Santa NARUSE",
+        "authorEnglishName": "Santa Naruse",
         "profileJapanese": "大阪出身、長野育ち。慶應義塾大学環境情報学部を卒業後にIAMASに入学。\n「探索的行為が伴うインタラクティブな鑑賞体験から現実空間の見え方、見る意識を変えること」をテーマに領域横断的な研究・作品制作を行っている。",
         "profileEnglish": "Born in Osaka in 2000 and raised in Nagano. After graduating from Keio University (SFC), he entered the Institute of Advanced Media Arts and Sciences (IAMAS) in 2023. His interdisciplinary research and creative work focuses on 'changing the perception and awareness of real space through interactive viewing experiences accompanied by exploratory actions.\n",
         "X_URL": "https://twitter.com/_s4nt4",

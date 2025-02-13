@@ -12,8 +12,8 @@ export const EVENTS = [
         "time": "14:00-14:45",
         "place": "メインステージ(4F)",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
-        "student1": "Santa NARUSE",
-        "student2": "Tokubo Haruto",
+        "student1": "Santa Naruse",
+        "student2": "Haruto Tokubo",
         "student3": "Mio Matsui"
     },
     {
@@ -59,9 +59,9 @@ export const EVENTS = [
         "participant1_profile": "クリティカル・サイクリング（Critical Cycling）は、サイクリングを楽しみ、その批評性を探求する任意グループです。岐阜県大垣市にあるIAMAS（情報科学芸術大学院大学）を中心に2016年4月より活動をしています。"
     },
     {
-        "eventName": "プロジェクト研究発：口頭発表",
+        "eventName": "プロジェクト研究：口頭発表",
         "day": "Saturday",
-        "time": "11:00-12:00",
+        "time": "10:40-12:00",
         "place": "レセプションルーム大特設ステージ",
         "content": "発表15分　質疑5分\n10:40〜11:00 体験拡張表現プロジェクト\n11:00〜11:20 Collaborative Design Research Project\n11:20〜11:40 場所・感覚・メディア\n11:40〜12:00 テクノロジーの〈解釈学〉"
     },
@@ -99,7 +99,7 @@ export const EVENTS = [
         "eventName": "ジェンダーじゃない話をしよう！",
         "exhibitors": "菅実花・松井茂・小林史佳・早田仁知\n・髙岸航平",
         "day": "Saturday",
-        "time": "14:00-15:30",
+        "time": "14:00-16:30",
         "place": "メインステージ(4F)",
         "content": "授業後の立ち話から始まった定期お茶会。週に一度お茶を飲みながらゆるく「ジェンダーじゃない話」をしています。昔見た映画やドラマの話や、言語の不思議なルールについてだったり…。今回も「ジェンダーじゃない話」を、いつもよりは少し丁寧にします。",
         "participant1_name": "菅実花",
@@ -133,7 +133,7 @@ export const EVENTS = [
         "eventName": "NxPC.Live vol.72 唵楽と影像",
         "exhibitors": "Record Prayer・\nニチウシ・\nNomad Sentinel・\nhitsujikai・\nhrx",
         "day": "Saturday",
-        "time": "18:00-",
+        "time": "17:00-20:00",
         "place": "セミナーホール",
         "content": "NxPC.Labは、クラブやライブにおけるアーティストと観客の相互作用によってもたらされる場の臨場感を拡大し、ネットへも拡散させるためのメディアテクノロジーの実現を目指した研究機関です。",
         "participant1_name": "Record PrayerPXL(葊-iori / 松井光久)",
@@ -142,7 +142,7 @@ export const EVENTS = [
         "participant2_profile": "二人に見えて三人である。とある世界認識方法と景色分解能について。",
         "participant3_name": "Nomad Sentinel(KOUSEI / 葊 - iori)",
         "participant3_profile": "Nomad Sentinel was born from a series of visual creation experiments and has gradually expanded into installation art, VR art, and interactive art.",
-        "participant4_name": "hitsujikai(JUNG JIEYUN / TOKUBO HARUTO)",
+        "participant4_name": "hitsujikai(JUNG JIEYUN / Haruto Tokubo)",
         "participant5_name": "hrx",
         "participant5_profile": "乱数発生器は観客に反応するのか？乱数発生器が観客の情動に反応するというアイデアを実証するための実験的パフォーマンス"
     },
@@ -171,7 +171,7 @@ export const EVENTS = [
         "eventName": "IAMAS JUNCTION",
         "exhibitors": "對中優・カワイタケシ・猪崎康世",
         "day": "Sunday",
-        "time": "12:00-",
+        "time": "12:00-12:45",
         "place": "メインステージ(4F)",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Masaru Tainaka",
@@ -179,7 +179,7 @@ export const EVENTS = [
         "student3": "Kosei Izaki"
     },
     {
-        "eventName": "プロジェクト展示コアタイム",
+        "eventName": "プロジェクト研究：展示コアタイム",
         "day": "Sunday",
         "time": "13:00-",
         "place": "レセプションルーム大"
@@ -210,7 +210,7 @@ export const EVENTS = [
         "time": "16:00-18:00",
         "place": "メインステージ(4F)",
         "content": "視覚表現は、幅広い領域の技術/手法を実験的に取り入れながら発展し、新たな形が探索されています。本イベントでは、映像表現、インスタレーション作品、視覚認知の研究など、領域を横断しながら視覚表現を探索するグラフィックデザイナー/研究者の石川将也氏と映像作家/ツール開発者の橋本麦氏をお招きし、IAMASにて視覚認知に関する視覚表現について研究する成瀬陽太の3人で「実験の積み重ねから生まれる視覚表現」についてトークを行います。",
-        "student1": "Santa NARUSE",
+        "student1": "Santa Naruse",
         "participant1_name": "橋本麦",
         "participant1_status": "映像作家、ツール開発者",
         "participant1_profile": "実験映像やハッカー文化に影響を受け、CGIからコマ撮りアニメーション、ミュージック・ビデオ、インタラクティブ作品まで、多岐に渡って個人で制作を続けてきた。さまざまな表現手法の実験の積み重ねにより、多様な視覚表象のスタイルを模索している。",
@@ -229,14 +229,14 @@ export const EVENTS = [
         "eventName": "IAMAS JUNCTION",
         "exhibitors": "璃月ゆあ・浅井睦",
         "day": "Monday",
-        "time": "12:00-",
+        "time": "12:00-12:45",
         "place": "メインステージ(4F)",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Mutsushi Asai",
         "student2": "Yua Riduki"
     },
     {
-        "eventName": "プロジェクト展示コアタイム",
+        "eventName": "プロジェクト研究：展示コアタイム",
         "day": "Monday",
         "time": "13:00-",
         "place": "レセプションルーム大"
@@ -244,7 +244,7 @@ export const EVENTS = [
     {
         "eventName": "IAMASONIC 2025 - pit in",
         "day": "Monday",
-        "time": "18:00以降",
+        "time": "19:00-",
         "place": "水上ステージ（雨天時セミナーホール）",
         "content": "IAMASONIC 2025-pit inは、IAMAS卒業生が次のステージへと飛躍するための「補給」となる場です。卒業制作展のテーマ「苦悩と誠実」が示すように、ものづくりは生涯続くレースのようなもの。本イベントでは、その過程における「pit-in」として、より良いパフォーマンスを維持し、新たな挑戦へと進むための機会を提供します。IAMASに関わるクリエイターたちが、ここでエネルギーを蓄え、再び走り出すことを願っています。\n"
     }

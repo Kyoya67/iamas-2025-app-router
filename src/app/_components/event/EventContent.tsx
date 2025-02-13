@@ -91,8 +91,8 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
 
                     if (event.eventName === "開会式" ||
                         event.eventName === "レセプション・パーティー" ||
-                        event.eventName === "プロジェクト展示コアタイム" ||
-                        event.eventName === "プロジェクト口頭発表"
+                        event.eventName === "プロジェクト研究：展示コアタイム" ||
+                        event.eventName === "プロジェクト研究：口頭発表"
                     ) {
                         eventImagePath = 'defaultIAMAS.webp'
                     }
