@@ -12,6 +12,8 @@ import MobileBase from "./_components/base/MobileBase";
 import { EventProvider } from "@/app/_contexts/EventContext";
 import { getImagePath } from '@/app/_lib/imagePath';
 
+console.log(getImagePath("/mobile/iPadScan.webp"));
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iamas.ac.jp/exhibit25/'),
   title: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
