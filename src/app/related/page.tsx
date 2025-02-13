@@ -21,7 +21,7 @@ export default function Related() {
                 mx-auto
                 w-[70vw] md:w-[50vw]
                 h-[60vh] lg:h-[70vh]
-                ml-4 pr-4 min-[500px]:pr-6 min-[500px]:ml-6 pb-[2rem]
+                ml-4 pr-4 sm:pr-6 sm:ml-6 pb-[2rem]
                 ">
                 <div className="pb-[2rem]">
                     <div className="
@@ -70,7 +70,7 @@ export default function Related() {
                             height={500}
                         />
                         <div className="
-                        text-sm min-[500px]:text-base
+                        text-sm sm:text-base
                         ml-3
                         ten-mincho
                         ">
@@ -129,7 +129,7 @@ export default function Related() {
                             height={500}
                         />
                         <div className="
-                        text-sm min-[500px]:text-base
+                        text-sm sm:text-base
                         ml-3
                         ten-mincho
                         ">

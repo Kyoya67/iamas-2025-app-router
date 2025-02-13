@@ -16,7 +16,7 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
             {previousPath && (
                 <div
                     className="
-                        absolute left-1 min-[500px]:left-3 top-1/2 -translate-y-1/2
+                        absolute left-1 sm:left-3 top-1/2 -translate-y-1/2
                         w-8 h-[8rem] md:h-[60vh]
                         flex items-center justify-center
                         cursor-pointer
@@ -32,8 +32,8 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
                         rounded-full bg-white/80 
                         transition-all
                         transition-duration-600
-                        min-[500px]:group-hover:scale-110
-                        min-[500px]:group-hover:bg-white
+                        sm:group-hover:scale-110
+                        sm:group-hover:bg-white
                     ">
                         <IoIosArrowBack size={18} className="text-[#000f9f]" />
                     </div>
@@ -42,7 +42,7 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
             {nextPath && (
                 <div
                     className="
-                        absolute right-1 min-[500px]:right-3 top-1/2 -translate-y-1/2
+                        absolute right-1 sm:right-3 top-1/2 -translate-y-1/2
                         w-8 h-[8rem] md:h-[60vh]
                         flex items-center justify-center
                         cursor-pointer
@@ -58,8 +58,8 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
                         rounded-full bg-white/80
                         transition-all
                         transition-duration-600
-                        min-[500px]:group-hover:scale-110
-                        min-[500px]:group-hover:bg-white
+                        sm:group-hover:scale-110
+                        sm:group-hover:bg-white
                     ">
                         <IoIosArrowForward size={18} className="text-[#000f9f]" />
                     </div>

@@ -33,16 +33,16 @@ export default async function Master() {
                     <WorkImage />
                 </div>
                 <ScrollMaskContent className="
-                    h-[60vh] min-[500px]:h-[55vh]
+                    h-[60vh] sm:h-[55vh]
                     mt-[15vh] pb-[3rem] lg:mt-0 
-                    ml-3 pr-3 min-[500px]:ml-6 min-[500px]:pr-6 
+                    ml-3 pr-3 sm:ml-6 sm:pr-6 
                     lg:absolute lg:top-[50vh]
                     lg:translate-y-[-55%] 
                 ">
                     <div className="
                         grid grid-cols-2 
-                        gap-x-[3rem] min-[500px]:gap-x-[6rem] lg:gap-x-[1rem] 
-                        text-base min-[500px]:text-xl
+                        gap-x-[3rem] sm:gap-x-[6rem] lg:gap-x-[1rem] 
+                        text-base sm:text-xl
                         ">
                         <div className="flex flex-col gap-y-[2rem] lg:gap-y-[1rem] mr-[1vw]">
                             {leftColumn.map((item) => (

@@ -9,21 +9,21 @@ export default function Overview() {
     return (
         <div className="
             absolute inset-0 left-[-0.7rem]
-            p-fluid-padding-sm min-[500px]:p-0
+            p-fluid-padding-sm sm:p-0
             relative h-fit w-fit mx-auto
             flex flex-col items-center
             text-[#000f9f]
         ">
             <div className="
                 w-[clamp(18rem,60vw,23rem)]
-                min-[500px]:w-[80vw]
+                sm:w-[80vw]
                 md:w-[clamp(24rem,50vw,40rem)]
                 px-8 pr-6
             ">
                 <div className="
                     relative
                     mt-[17vh] 
-                    text-xl min-[500px]:text-2xl 
+                    text-xl sm:text-2xl 
                     text-black
                     border-b-[0.1rem] border-black
                 ">
@@ -32,19 +32,19 @@ export default function Overview() {
             </div>
 
             <ScrollMaskContent className="
-                h-[60vh] xs:h-[60vh] min-[500px]:h-[55vh]
+                h-[60vh] xs:h-[60vh] sm:h-[55vh]
                 mt-2 pb-[2rem]
                 w-[clamp(18rem,60vw,23rem)]
-                min-[500px]:w-[80vw]
+                sm:w-[80vw]
                 md:w-[clamp(24rem,50vw,40rem)]
             ">
                 <div className="
                     px-8 pr-6
                     text-sm
-                    min-[500px]:text-base
+                    sm:text-base
                     tracking-[-0.25px]
                     leading-[17px]
-                    min-[500px]:leading-[1.8]
+                    sm:leading-[1.8]
                     text-justify
                     ten-mincho-text
                 ">

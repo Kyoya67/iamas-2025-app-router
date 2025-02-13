@@ -30,13 +30,13 @@ export default function Event() {
                     flex flex-col xl:flex-row
                     md:ml-[8vw] 
                     mt-[12vh] md:mt-[20vh]
-                    min-[500px]:pl-[2vw]
+                    sm:pl-[2vw]
                     relative
                     xl:ml-[40vw]
                     max-w-full
                 ">
                     <div className="
-                        absolute left-[-45vw] top-[8vh]
+                        absolute left-[-44vw] top-[8vh]
                         w-[41vw] -rotate-[1.5deg]
                         transition-opacity duration-300
                         xl:opacity-100 xl:pointer-events-auto

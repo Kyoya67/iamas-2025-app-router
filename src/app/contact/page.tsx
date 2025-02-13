@@ -40,7 +40,7 @@ export default function Contact() {
                 <Image
                     src={getImagePath("/iamas-official-logo.webp")}
                     className="
-                            min-[500px]:min-w-[23rem] min-[500px]:w-[45vw] md:max-w-[35rem]
+                            sm:min-w-[23rem] sm:w-[45vw] md:max-w-[35rem]
                         "
                     alt="IAMAS 2025 ロゴ"
                     width={300}

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import "./globals.css";
+import Image from "next/image";
 import type { Metadata } from 'next';
 import DisableZoom from './_components/DisableZoom';
 import IconAndMenu from "./_components/desktop/IconAndMenu";
@@ -83,7 +83,7 @@ export default function RootLayout({
               <div className="max-[500px]:block hidden z-0">
                 <MobileBase />
               </div>
-              <div className="min-[500px]:block hidden z-0">
+              <div className="sm:block hidden z-0">
                 <DesktopBase />
               </div>
               <div className='z-10'>

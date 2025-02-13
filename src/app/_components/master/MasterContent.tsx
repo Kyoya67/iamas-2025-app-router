@@ -8,7 +8,7 @@ export function MasterContent({
     rightColumn: { authorJapaneseName: string, authorEnglishName: string }[]
 }) {
     return (
-        <div className="grid grid-cols-2 gap-x-[3rem] min-[500px]:gap-x-[6rem] lg:gap-x-[1rem] pr-6">
+        <div className="grid grid-cols-2 gap-x-[3rem] sm:gap-x-[6rem] lg:gap-x-[1rem] pr-6">
             <div className="flex flex-col gap-y-[1.5rem] lg:gap-y-[0.6rem]">
                 {leftColumn.map((item) => (
                     <div

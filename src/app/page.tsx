@@ -20,7 +20,7 @@ export default async function Home() {
         alt="円"
         fill
         className="
-                hidden min-[500px]:block md:hidden
+                hidden sm:block md:hidden
                 absolute top-0 right-0 
                 h-screen w-full 
                 object-cover object-right
