@@ -16,11 +16,11 @@ export const StudentSection = ({ name }: { name: string }) => {
                 <Image
                     src={getImagePath(`/master/profile/${student.authorEnglishName.split(' ').join('')}.webp`)}
                     alt={student.authorEnglishName}
-                    width={100}
-                    height={100}
-                    className="object-contain mr-4"
+                    width={85}
+                    height={85}
+                    className="object-contain sm:w-[100px] sm:h-[100px]"
                 />
-                <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] ml-[7rem]">
+                <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] ml-[6rem] sm:ml-[7rem]">
                     <div className="text-sm">IAMAS修士2年</div>
                     <div>{student.authorJapaneseName}</div>
                 </div>
