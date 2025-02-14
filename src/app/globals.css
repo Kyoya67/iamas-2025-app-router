@@ -33,7 +33,7 @@ body {
 }
 
 .texture-bg {
-  background-image: url('/modalTexture.webp');
+  background-image: url('https://d3jxpylbfj8spt.cloudfront.net/modalTexture.webp');
   background-repeat: repeat;
   background-size: 500px;
 }

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://www.iamas.ac.jp/exhibit25/ogp.webp',
+        url: getImagePath("/ogp.webp"),
         width: 1200,
         height: 630,
         alt: "IAMAS 2025 ogp画像",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     site: "@IAMAS_JP",
     creator: "@IAMAS_JP",
     images: {
-      url: 'https://www.iamas.ac.jp/exhibit25/ogp.webp',
+      url: getImagePath("/ogp.webp"),
       alt: "IAMAS 2025 ogp画像",
       width: 1200,
       height: 630,
@@ -57,10 +57,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  modals,
 }: {
   children: React.ReactNode;
-  modals: React.ReactNode;
 }) {
   return (
     <html lang="ja">
@@ -115,7 +113,6 @@ export default function RootLayout({
               <PageTransition>
                 {children}
               </PageTransition>
-              {modals}
             </div>
           </div>
         </EventProvider>

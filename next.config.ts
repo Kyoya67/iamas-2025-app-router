@@ -4,10 +4,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: false,
   optimizeFonts: false,
   images: {
-    domains: ['images.microcms-assets.io', 'img.youtube.com'],
     unoptimized: true,
   },
-  // 本番環境でのみ適用される設定
+  // 本番環境でのみ全ての設定を適用
   ...(process.env.NODE_ENV === 'production' ? {
     output: 'export',
     trailingSlash: true,

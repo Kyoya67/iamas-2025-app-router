@@ -82,7 +82,7 @@ export function ProjectDetails({
 
     return (
         <>
-            <div className="text-lg sm:text-2xl mb-1 text-[#000f9f] ten-mincho-texttext-left">{project.projectName}</div>
+            <div className={`text-lg sm:text-2xl mb-1 text-[#000f9f] ten-mincho-text ${directoryName === 'CollaborativeDesignResearchProject' ? 'text-left' : 'text-justify'}`}>{project.projectName}</div>
             <div className={`
                 lg:flex
                 justify-between border-b border-[#000f9f] mb-3 pb-1
@@ -91,8 +91,8 @@ export function ProjectDetails({
                     flex
                     items-end w-[3/4]
                 `}>
-                    <div className="relative bottom-[-0.05rem] text-sm sm:text-base mr-3 ten-mincho">{project.representative}</div>
-                    <div className="text-xs sm:text-sm ten-mincho">{sharerText}</div>
+                    <div className={`relative bottom-[-0.05rem] ${directoryName === 'ExtremeBiologies' ? 'text-xs' : 'text-sm'} sm:text-base mr-3 ten-mincho`}>{project.representative}</div>
+                    <div className={`${directoryName === 'ExtremeBiologies' ? 'text-xxs' : 'text-xs'} sm:text-sm ten-mincho`}>{sharerText}</div>
                 </div>
                 <div className="relative bottom-[-0.24rem]">
                     <div className="flex text-[#000f9f] text-xs sm:text-sm">

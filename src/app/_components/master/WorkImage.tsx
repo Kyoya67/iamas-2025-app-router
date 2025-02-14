@@ -3,15 +3,15 @@
 import { useWork } from "@/app/_contexts/WorkContext"
 import { AnimatePresence, motion } from "framer-motion"
 import Image from "next/image"
-import { getClientImagePath } from '@/app/_lib/imagePath'
+import { getImagePath } from '@/app/_lib/imagePath'
 
 export const WorkImage = () => {
     const { currentWork } = useWork()
 
     // YuaRidukiの場合のデフォルト画像パスを設定
     const workImagePath = currentWork === 'YuaRiduki'
-        ? getClientImagePath('/event/defaultIAMAS.webp')
-        : getClientImagePath(`/master/work/${currentWork}.webp`)
+        ? getImagePath('/event/defaultIAMAS.webp')
+        : getImagePath(`/master/work/${currentWork}.webp`)
 
     return (
         <div className="relative w-full aspect-[16/9] ml-6">
@@ -39,7 +39,7 @@ export const WorkImage = () => {
                         z-10
                     ">
                 <Image
-                    src={getClientImagePath("/desktop/leftTape.webp")}
+                    src={getImagePath("/desktop/leftTape.webp")}
                     alt="左のテープ"
                     fill
                     className="object-contain"
@@ -51,7 +51,7 @@ export const WorkImage = () => {
                         z-10
                     ">
                 <Image
-                    src={getClientImagePath("/desktop/rightTape.webp")}
+                    src={getImagePath("/desktop/rightTape.webp")}
                     alt="右のテープ"
                     fill
                     className="object-contain"

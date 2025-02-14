@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useCallback, memo, useEffect } from "react";
-import { getClientImagePath } from "@/app/_lib/imagePath";
+import { getImagePath } from '@/app/_lib/imagePath';
 import { SOCIAL_LINKS } from "@/app/_lib/socialLinks";
 
 const MENU_LINKS = [
@@ -70,7 +70,7 @@ export default function MobileMenu() {
                 className="absolute top-0 right-0 mt-2 mr-2 z-[110]"
             >
                 <Image
-                    src={getClientImagePath("/mobile/menu.webp")}
+                    src={getImagePath("/mobile/menu.webp")}
                     alt="メニュー"
                     width={130}
                     height={130}
@@ -109,7 +109,7 @@ export default function MobileMenu() {
                     aria-label="メニューを閉じる"
                 >
                     <Image
-                        src={getClientImagePath("/mobile/close.webp")}
+                        src={getImagePath("/mobile/close.webp")}
                         alt=""
                         width={100}
                         height={100}
