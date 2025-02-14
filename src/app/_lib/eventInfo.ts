@@ -2,7 +2,7 @@ export const EVENTS = [
     {
         "eventName": "開会式",
         "day": "Friday",
-        "time": "13:00-",
+        "time": "13:00-13:30",
         "place": "メインステージ(4F)"
     },
     {
@@ -39,7 +39,7 @@ export const EVENTS = [
     },
     {
         "eventName": "IAMAS JUNCTION",
-        "exhibitors": "三波蒼菜・後藤朋美・BAK SOMIN",
+        "exhibitors": "小南菜子・後藤朋美・BAK SOMIN",
         "day": "Friday",
         "time": "17:00-17:45",
         "place": "メインステージ(4F)",
@@ -53,17 +53,26 @@ export const EVENTS = [
         "exhibitors": "クリティカル・サイクリング",
         "day": "Saturday",
         "time": "8:00-10:30",
-        "place": "ソフトピア・ジャパン・センタービル 北玄関前　\n",
+        "place": "ソフトピア・ジャパン・センタービル 北玄関前　\n(1F)",
         "content": "来る2月22日にクリティカル・サイクリングと運動体設計の共催による早朝耐寒ライドを行います。これはIAMASの卒展イベントとして行われ、どなたでもご参加いただけます。今年度はIAMAS周辺のゴミを拾いながらサイクリングをします。",
         "participant1_name": "クリティカル・サイクリング",
         "participant1_profile": "クリティカル・サイクリング（Critical Cycling）は、サイクリングを楽しみ、その批評性を探求する任意グループです。岐阜県大垣市にあるIAMAS（情報科学芸術大学院大学）を中心に2016年4月より活動をしています。"
     },
     {
         "eventName": "プロジェクト研究：口頭発表",
+        "exhibitors": "体験拡張表現プロジェクト・Collaborative Design Research Project・場所・感覚・メディア・テクノロジーの〈解釈学〉",
         "day": "Saturday",
-        "time": "10:40-12:00",
-        "place": "レセプションルーム大特設ステージ",
-        "content": "発表15分　質疑5分\n10:40〜11:00 体験拡張表現プロジェクト\n11:00〜11:20 Collaborative Design Research Project\n11:20〜11:40 場所・感覚・メディア\n11:40〜12:00 テクノロジーの〈解釈学〉"
+        "time": "11:00-12:00",
+        "place": "レセプションルーム大特設ステージ(12F)",
+        "content": "プロジェクト研究はIAMASにおいて修士研究を行うための枠組みとしての役割を果たす重要な科目として位置付けられています。メディア表現の社会的な意味をはかり、社会へ向けた成果の発信や外部との連携を強く意識し、領域横断的に運営されます。本イベントでは今年度の各プロジェクト研究における成果について口頭で発表します。",
+        "participant1_name": "体験拡張表現プロジェクト",
+        "participant1_profile": "https://www.iamas.ac.jp/master_projects/enhanced-experience-expression/",
+        "participant2_name": "Collaborative Design Research Project",
+        "participant2_profile": "https://www.iamas.ac.jp/master_projects/collaborative-design-research/",
+        "participant3_name": "場所・感覚・メディア",
+        "participant3_profile": "https://www.iamas.ac.jp/master_projects/place-sense-media/",
+        "participant4_name": "テクノロジーの〈解釈学〉",
+        "participant4_profile": "https://www.iamas.ac.jp/master_projects/interpretive-practices-of-technology/"
     },
     {
         "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか：トーク",
@@ -84,24 +93,38 @@ export const EVENTS = [
         "exhibitors": "IAMASガムラン部",
         "day": "Saturday",
         "time": "12:30-13:00",
-        "place": "信長広場",
+        "place": "信長広場(1F)",
         "content": "今回のIAMAS2025での演奏は、IAMASの有志学生のみならず、学外の方にも参加していただくIAMASガムラン部の今年度の集大成となる演奏です。ガムランが織りなす高次倍音を豊富に含んだ音色と、一人一人のシンプルなパートが重なり合い生み出される豊かなリズム&メロディ、流動的で開かれた時間、空間をじっくりとお楽しみください。",
         "participant1_name": "IAMASガムラン部",
         "participant1_profile": "IAMASガムラン部は、岡戸香里先生のご指導のもと、IAMASの有志学生のみならず、岐阜県内外の方も含めたメンバーで構成されています。IAMAS外部の方の参加を心よりお待ちしております。ガムランに興味のある方は是非お声がけください。"
     },
     {
         "eventName": "プロジェクト研究：展示コアタイム",
+        "exhibitors": "体験拡張表現プロジェクト・福祉の技術プロジェクト3・The Art of Listening・Extreme Biologies・Collaborative Design Research Project・テクノロジーの〈解釈学〉",
         "day": "Saturday",
         "time": "13:00-14:00",
-        "place": "レセプションルーム大"
+        "place": "レセプションルーム大(12F)",
+        "content": "プロジェクト研究はIAMASにおいて修士研究を行うための枠組みとしての役割を果たす重要な科目として位置付けられています。メディア表現の社会的な意味をはかり、社会へ向けた成果の発信や外部との連携を強く意識し、領域横断的に運営されます。本イベントでは今年度の各プロジェクト研究における成果について展示します。",
+        "participant1_name": "体験拡張表現プロジェクト",
+        "participant1_profile": "https://www.iamas.ac.jp/master_projects/enhanced-experience-expression/",
+        "participant2_name": "福祉の技術プロジェクト",
+        "participant2_profile": "https://www.iamas.ac.jp/master_projects/collaborative-design-research/",
+        "participant3_name": "The Art of Listening",
+        "participant3_profile": "https://www.iamas.ac.jp/master_projects/the-art-of-listening/",
+        "participant4_name": "Extreme Biologies",
+        "participant4_profile": "https://www.iamas.ac.jp/master_projects/extreme-biologies/",
+        "participant5_name": "Collaborative Design Research Project",
+        "participant5_profile": "https://www.iamas.ac.jp/master_projects/collaborative-design-research/",
+        "participant6_name": "テクノロジーの〈解釈学〉",
+        "participant6_profile": "https://www.iamas.ac.jp/master_projects/interpretive-practices-of-technology/"
     },
     {
         "eventName": "ジェンダーじゃない話をしよう！",
-        "exhibitors": "菅実花・松井茂・小林史佳・早田仁知\n・髙岸航平",
+        "exhibitors": "菅実花・松井茂・小林史佳・早田仁知\n・髙岸航平(ファシリテーター)",
         "day": "Saturday",
         "time": "14:00-16:30",
         "place": "メインステージ(4F)",
-        "content": "授業後の立ち話から始まった定期お茶会。週に一度お茶を飲みながらゆるく「ジェンダーじゃない話」をしています。昔見た映画やドラマの話や、言語の不思議なルールについてだったり…。今回も「ジェンダーじゃない話」を、いつもよりは少し丁寧にします。",
+        "content": "これまでIAMASでジェンダーに関する議論はあまり行われてきませんでした。男性名詞や女性名詞がある言語って、どんなふうに世界を捉えているのかな？男らしさ・女らしさの意識に影響するのかな？そんな疑問から出発した勉強会の特別編として、IAMASでジェンダーの議論をすることについて考えます。",
         "participant1_name": "菅実花",
         "participant1_status": "IAMAS准教授",
         "participant1_profile": "美術作家。情報科学芸術大学院大学准教授および京都芸術大学大学院(通信教育)写真映像領域特任准教授。大衆的な写真文化と、人形の文脈を交錯させた写真・映像作品を手がけ「人間と非人間の境界」を問う。共著に2018年『〈妊婦〉アート論』(青弓社)。VOCA展2020奨励賞受賞。",
@@ -131,10 +154,9 @@ export const EVENTS = [
     },
     {
         "eventName": "NxPC.Live vol.72 唵楽と影像",
-        "exhibitors": "Record Prayer・\nニチウシ・\nNomad Sentinel・\nhitsujikai・\nhrx",
         "day": "Saturday",
         "time": "17:00-20:00",
-        "place": "セミナーホール",
+        "place": "セミナーホール(1F)",
         "content": "NxPC.Labは、クラブやライブにおけるアーティストと観客の相互作用によってもたらされる場の臨場感を拡大し、ネットへも拡散させるためのメディアテクノロジーの実現を目指した研究機関です。",
         "participant1_name": "Record PrayerPXL(葊-iori / 松井光久)",
         "participant1_profile": "PhoneTacte という自作楽器を演奏する。指先と足先の繊細な動きで、音と身体が融合する新感覚演奏。",
@@ -142,16 +164,15 @@ export const EVENTS = [
         "participant2_profile": "二人に見えて三人である。とある世界認識方法と景色分解能について。",
         "participant3_name": "Nomad Sentinel(KOUSEI / 葊 - iori)",
         "participant3_profile": "Nomad Sentinel was born from a series of visual creation experiments and has gradually expanded into installation art, VR art, and interactive art.",
-        "participant4_name": "hitsujikai(JUNG JIEYUN / Haruto Tokubo)",
-        "participant5_name": "hrx",
-        "participant5_profile": "乱数発生器は観客に反応するのか？乱数発生器が観客の情動に反応するというアイデアを実証するための実験的パフォーマンス"
+        "participant4_name": "hrx",
+        "participant4_profile": "乱数発生器は観客に反応するのか？乱数発生器が観客の情動に反応するというアイデアを実証するための実験的パフォーマンス"
     },
     {
-        "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか：サイクリングツアー",
+        "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか ：サイクリングツアー",
         "exhibitors": "志村翔太・坂根大悟・赤松正行",
         "day": "Sunday",
         "time": "7:00-10:30",
-        "place": "ソフトピア・ジャパン・センタービル 北玄関前",
+        "place": "ソフトピア・ジャパン・センタービル 北玄関前(1F)",
         "content": "梶原岐阜県知事時代の箱物行政政策によって誕生したセンタービルをはじめとする建築群と、運動体設計プロジェクト内で昨年実施したIAMAS旧校舎や門入集落へのリサーチ、荒川修作に関する調査、さらに2024年10月に訪問した磯崎新による奈義町美術館（「建築と作品が一体化した公共建築」）と養老天命反転地の比較を関連付け、「エッジ」の視点から考察を行います。ゲストとして東京藝術大学メディア映像M1の坂根大悟さんをお迎えし、彼の専門である鉄道史の視点から大垣と箱物について話題提供をいただきます。午後には自転車に乗って実際に養老へ向かい、養老天命反転地を訪問しつつ、センタービルが街の外れから見える境界（エッジ）を探ります。",
         "student1": "Shota Shimura",
         "participant1_name": "坂根大悟",
@@ -162,10 +183,11 @@ export const EVENTS = [
     },
     {
         "eventName": "プロジェクト研究：口頭発表",
+        "exhibitors": "運動体設計・The Art of Listening・Extreme Biologies",
         "day": "Sunday",
         "time": "11:00-12:00",
-        "place": "レセプションルーム大特設ステージ",
-        "content": "発表15分　質疑5分\n11:00〜11:20 運動体設計\n11:20〜11:40 The Art of Listening\n11:40〜12:00 Extreme Biologies"
+        "place": "レセプションルーム大特設ステージ(12F)",
+        "content": "プロジェクト研究はIAMASにおいて修士研究を行うための枠組みとしての役割を果たす重要な科目として位置付けられています。メディア表現の社会的な意味をはかり、社会へ向けた成果の発信や外部との連携を強く意識し、領域横断的に運営されます。本イベントでは今年度の各プロジェクト研究における成果について口頭で発表します。"
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -180,9 +202,17 @@ export const EVENTS = [
     },
     {
         "eventName": "プロジェクト研究：展示コアタイム",
+        "exhibitors": "体験拡張表現プロジェクト・福祉の技術プロジェクト3・The Art of Listening・Extreme Biologies・Collaborative Design Research Project・テクノロジーの〈解釈学〉",
         "day": "Sunday",
         "time": "13:00-",
-        "place": "レセプションルーム大"
+        "place": "レセプションルーム大(12F)",
+        "content": "プロジェクト研究はIAMASにおいて修士研究を行うための枠組みとしての役割を果たす重要な科目として位置付けられています。メディア表現の社会的な意味をはかり、社会へ向けた成果の発信や外部との連携を強く意識し、領域横断的に運営されます。本イベントでは今年度の各プロジェクト研究における成果について展示します。",
+        "participant1_name": "運動体設計",
+        "participant1_profile": "https://www.iamas.ac.jp/master_projects/visions-in-motion/",
+        "participant2_name": "The Art of Listening",
+        "participant2_profile": "https://www.iamas.ac.jp/master_projects/the-art-of-listening/",
+        "participant3_name": "Extreme Biologies",
+        "participant3_profile": "https://www.iamas.ac.jp/master_projects/extreme-biologies/"
     },
     {
         "eventName": "ポスト言語学：「言葉とは何か」とは何か",
@@ -212,8 +242,8 @@ export const EVENTS = [
         "content": "視覚表現は、幅広い領域の技術/手法を実験的に取り入れながら発展し、新たな形が探索されています。本イベントでは、映像表現、インスタレーション作品、視覚認知の研究など、領域を横断しながら視覚表現を探索するグラフィックデザイナー/研究者の石川将也氏と映像作家/ツール開発者の橋本麦氏をお招きし、IAMASにて視覚認知に関する視覚表現について研究する成瀬陽太の3人で「実験の積み重ねから生まれる視覚表現」についてトークを行います。",
         "student1": "Santa Naruse",
         "participant1_name": "橋本麦",
-        "participant1_status": "映像作家",
-        "participant1_profile": "ツール開発者。実験映像やハッカー文化に影響を受け、CGIからコマ撮りアニメーション、ミュージック・ビデオ、インタラクティブ作品まで、多岐に渡って個人で制作を続けてきた。さまざまな表現手法の実験の積み重ねにより、多様な視覚表象のスタイルを模索している。",
+        "participant1_status": "映像作家、ツール開発者",
+        "participant1_profile": "実験映像やハッカー文化に影響を受け、CGIからコマ撮りアニメーション、ミュージック・ビデオ、インタラクティブ作品まで、多岐に渡って個人で制作を続けてきた。さまざまな表現手法の実験の積み重ねにより、多様な視覚表象のスタイルを模索している。",
         "participant2_name": "石川将也",
         "participant2_status": "グラフィックデザイナー / 研究者",
         "participant2_profile": "1980年生まれ。慶應義塾大学大学院 政策・メディア研究科 修了。佐藤雅彦研究室を経て、2019年までクリエイティブグループ「ユーフラテス」に所属。20年独立。視覚表現の開発と、視覚認知の研究を基点に、グラフィックデザイン、映像、インスタレーション、科学玩具とそれを用いたワークショップの開発など、さまざま活動している。代表作に「factory of dream」「そうとしかみえない」「歩くの歌」（Eテレ2355 / 0655）「ねじねじの歌」「クッキー型の型の歌」（ピタゴラスイッチ）、「Layers Act」「光のレイヤー」「マグネタクトアニマル」「四角が行く」「開け箱」など。2024年より U-NEXT Kids オリジナルコンテンツ「ねむるま えほん」「うご工作」の監督として企画の立案から携わっている。"
@@ -222,12 +252,11 @@ export const EVENTS = [
         "eventName": "レセプション",
         "day": "Sunday",
         "time": "18:00-",
-        "place": "1F こみゅれす 美濃味匠",
-        "content": "来場者の皆さまと学生・教職員との親睦を深めるためのパーティ。どなたでもお気軽にご参加ください。"
+        "place": "こみゅれす 美濃味匠(1F)"
     },
     {
         "eventName": "IAMAS JUNCTION",
-        "exhibitors": "璃月ゆあ・浅井睦",
+        "exhibitors": "浅井睦・岡本悠里",
         "day": "Monday",
         "time": "12:00-12:45",
         "place": "メインステージ(4F)",
@@ -238,13 +267,13 @@ export const EVENTS = [
     {
         "eventName": "プロジェクト研究：展示コアタイム",
         "day": "Monday",
-        "time": "13:00-",
-        "place": "レセプションルーム大"
+        "time": "13:00-14:00",
+        "place": "レセプションルーム大(12F)"
     },
     {
         "eventName": "IAMASONIC 2025 - pit in",
         "day": "Monday",
-        "time": "19:00-",
+        "time": "19:00-21:00",
         "place": "水上ステージ（雨天時セミナーホール）",
         "content": "IAMASONIC 2025-pit inは、IAMAS卒業生が次のステージへと飛躍するための「補給」となる場です。卒業制作展のテーマ「苦悩と誠実」が示すように、ものづくりは生涯続くレースのようなもの。本イベントでは、その過程における「pit-in」として、より良いパフォーマンスを維持し、新たな挑戦へと進むための機会を提供します。IAMASに関わるクリエイターたちが、ここでエネルギーを蓄え、再び走り出すことを願っています。\n"
     }

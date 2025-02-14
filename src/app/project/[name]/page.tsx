@@ -1,6 +1,6 @@
 import ProjectContent from "@/app/_components/project/ProjectContent";
 import { PROJECT_INFO } from "@/app/_lib/projectInfo";
-import { notFound } from "next/navigation";
+import Modal from "@/app/_components/modalSet/Modal";
 
 export function generateStaticParams() {
     return PROJECT_INFO.map((project) => ({
@@ -14,10 +14,9 @@ interface Props {
     }>;
 }
 
-export default async function ProjectPage({ params }: Props) {
+export default async function ProjectModal({ params }: Props) {
     const { name } = await params;
-
-    const projectData = [
+    const modalProjectData = [
         { directory: 'TheArtOfListening', pictureNum: 5 },
         { directory: 'TechnologyHermeneutics', pictureNum: 4 },
         { directory: 'WelfareTechnology', pictureNum: 3 },
@@ -30,25 +29,33 @@ export default async function ProjectPage({ params }: Props) {
         s => s.projectName.split(' ').join('') === decodeURI(name)
     );
 
-    if (currentIndex === -1) notFound();
+    const project = PROJECT_INFO[currentIndex];
+    if (!project) {
+        console.error('Project not found:', { name });
+        return null;
+    }
+
+    const nextPath = currentIndex < PROJECT_INFO.length - 1
+        ? `/project/${PROJECT_INFO[currentIndex + 1].projectName.split(' ').join('')}`
+        : null;
+
+    const previousPath = currentIndex > 0
+        ? `/project/${PROJECT_INFO[currentIndex - 1].projectName.split(' ').join('')}`
+        : null;
 
     return (
-        <div className="
-            absolute inset-0 flex justify-center 
-            max-w-3xl mx-auto
-        ">
-            <div className="
-                max-w-[28rem] lg:max-w-[45rem]
-                mt-[13vh] mx-auto 
-                text-justify
-                p-8">
-                <ProjectContent
-                    projectName={PROJECT_INFO[currentIndex].projectName}
-                    directoryName={projectData[currentIndex].directory}
-                    pictureNum={projectData[currentIndex].pictureNum}
-                    isModal={false}
-                />
-            </div>
-        </div>
+        <Modal
+            nextPath={nextPath}
+            previousPath={previousPath}
+            backPath="/project"
+            modalType="project"
+        >
+            <ProjectContent
+                projectName={project.projectName}
+                directoryName={modalProjectData[currentIndex].directory}
+                pictureNum={modalProjectData[currentIndex].pictureNum}
+                isModal={true}
+            />
+        </Modal>
     );
-} 
+}
