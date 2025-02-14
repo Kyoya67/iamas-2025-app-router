@@ -3,6 +3,7 @@ import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { EVENTS } from "@/app/_lib/eventInfo";
 import { StudentSection } from "./StudentSection";
 import { getImagePath } from '@/app/_lib/imagePath';
+import { getEventImagePath } from '@/app/_lib/eventUtils';
 
 export const EventContent = ({ day, time }: { day: string, time: string }) => {
     const event = EVENTS.find(
@@ -38,7 +39,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
             image = image.split('(')[0];
             name = image;
         }
-        const imagePath = encodeURIComponent(image.trim().split(' ').join(''));
+        const imagePath = image.trim().split(' ').join('');
 
         return (
             <div key={index}>
@@ -83,55 +84,11 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         text-[#000f9f]">{event.place ? event.place : "aaaaa"}</div>
                 </div>
                 {(() => {
-                    let eventImagePath = event.eventName
-                        .replace(/\n/g, ' ')
-                        .trim()
-                        .split(' ')
-                        .join('') + '.webp'
-
-                    if (event.eventName === "開会式" ||
-                        event.eventName === "レセプション" ||
-                        event.eventName === "プロジェクト研究：展示コアタイム" ||
-                        event.eventName === "プロジェクト研究：口頭発表"
-                    ) {
-                        eventImagePath = 'defaultIAMAS.webp'
-                    }
-
-                    else if (event.eventName.includes('クリティカルサイクリング')) {
-                        eventImagePath = 'クリティカルサイクリング.webp'
-                    }
-
-                    else if (event.eventName === 'IAMAS JUNCTION') {
-
-                        const allJunctionEvents = EVENTS.filter(e =>
-                            e.eventName === 'IAMAS JUNCTION'
-                        )
-
-                        const sortedJunctionEvents = allJunctionEvents.sort((a, b) => {
-                            if (a.day !== b.day) {
-                                const days = ['Friday', 'Saturday', 'Sunday', 'Monday']
-                                return days.indexOf(a.day) - days.indexOf(b.day)
-                            }
-                            return a.time.localeCompare(b.time)
-                        })
-                        // 現在のイベントのインデックスを取得
-                        const junctionIndex = sortedJunctionEvents.findIndex(e =>
-                            e.day === event.day && e.time === event.time
-                        )
-                        eventImagePath = `IAMASJUNCTION${junctionIndex}.webp`
-                    }
-                    // スラッシュを含むイベント名の場合は特別処理
-                    else if (event.eventName.includes('/')) {
-                        eventImagePath = event.eventName.replace(/\//g, '') + '.webp'
-                    }
-
                     return (
-                        <ScrollMaskContent
-                            className="h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto"
-                        >
+                        <ScrollMaskContent className="h-[70vh] mb-4 pr-5 pb-4 flex-1 overflow-y-auto">
                             <div className="relative w-full aspect-[16/9] mb-4 border-[0.08px] border-black">
                                 <Image
-                                    src={getImagePath(`/event/${eventImagePath}`)}
+                                    src={getImagePath(getEventImagePath(event))}
                                     alt={event.eventName ?? ''}
                                     fill
                                     className="contain"

@@ -17,7 +17,7 @@ export default function Access() {
             ten-mincho-text
         ">
             <h1 className="
-                mt-[17vh] md:mt-[10vh] 
+                mt-[17vh] sm:mt-[15vh] md:mt-[10vh] 
                 md:ml-[5rem]
                 pr-4
                 text-[#000f9f] text-xl sm:text-2xl ten-mincho border-b border-black">
@@ -30,19 +30,43 @@ export default function Access() {
             ">
                 <div>
                     <div className="flex flex-col">
-                        <div className="xl:flex xl:gap-4 xl:items-start">
-                            <a href="https://maps.app.goo.gl/EGepxgaumVZwXdD18" target="_blank" className="xl:w-[55%]">
-                                <Image
-                                    src={getImagePath("/access/0.webp")}
-                                    alt="アクセス0"
-                                    layout="responsive"
-                                    width={100}
-                                    height={200}
-                                    objectFit="cover"
-                                    className="mt-4"
-                                />
-                            </a>
-                            <div className="mt-2 xl:mt-4 xl:w-[45%]">
+                        <div className="lg:flex lg:gap-4 lg:items-start">
+                            <div className="mt-4 lg:w-[55%]">
+                                <a
+                                    href="https://maps.app.goo.gl/EGepxgaumVZwXdD18"
+                                    target="_blank"
+                                    className="
+                                    relative 
+                                    group
+                                    cursor-pointer
+                                "
+                                >
+                                    <Image
+                                        src={getImagePath("/access/0.webp")}
+                                        alt="アクセス0"
+                                        layout="responsive"
+                                        width={100}
+                                        height={200}
+                                        objectFit="cover"
+                                    />
+                                    <div className="
+                                    absolute inset-0 
+                                    bg-black/50 
+                                    opacity-0 
+                                    group-hover:opacity-100 
+                                    transition-opacity 
+                                    duration-300 
+                                    flex 
+                                    items-center 
+                                    justify-center
+                                ">
+                                        <p className="text-white text-sm sm:text-base">
+                                            Googleマップで見る
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="mt-2 lg:mt-4 lg:w-[45%]">
                                 <div className="flex items-center gap-2">
                                     <div className="text-[#000f9f] text-base sm:text-xl ten-mincho">
                                         大垣駅より
@@ -61,8 +85,8 @@ export default function Access() {
                                 </div>
                             </div>
                         </div>
-                        <div className="xl:flex xl:gap-4 xl:items-start mt-0 sm:mt-4">
-                            <div className="xl:w-[55%]">
+                        <div className="lg:flex lg:gap-4 lg:items-start mt-0 sm:mt-4">
+                            <div className="lg:w-[55%]">
                                 <Image
                                     src={getImagePath("/access/1.webp")}
                                     alt="アクセス1"
@@ -73,7 +97,7 @@ export default function Access() {
                                     className="mt-8"
                                 />
                             </div>
-                            <div className="mt-3 xl:mt-7 xl:w-[45%]">
+                            <div className="mt-3 lg:mt-7 lg:w-[45%]">
                                 <div className="flex items-center gap-2">
                                     <h2 className="text-[#000f9f] text-base sm:text-xl ten-mincho">
                                         東京方面より
@@ -112,8 +136,8 @@ export default function Access() {
                                 </div>
                             </div>
                         </div>
-                        <div className="xl:flex xl:gap-4 xl:items-start mt-8 sm:mt-12 mb-[3rem]">
-                            <div className="xl:w-[55%]">
+                        <div className="lg:flex lg:gap-4 lg:items-start mt-8 sm:mt-12 mb-[3rem]">
+                            <div className="lg:w-[55%]">
                                 <Image
                                     src={getImagePath("/access/2.webp")}
                                     alt="アクセス2"
@@ -124,8 +148,8 @@ export default function Access() {
                                     className="mx-auto"
                                 />
                             </div>
-                            <div className="mt-2 xl:-mt-2 text-[0.9rem] md:text-lg xl:w-[45%] xl:text-[0.95rem]">
-                                <div>
+                            <div className="mt-2 lg:-mt-2 lg:w-[45%] lg:text-[0.95rem]">
+                                <div className="text-[0.854rem] md:text-base lg:text-[0.95rem]">
                                     ソフトピアジャパンでは、<br />
                                     <span className="sm:hidden">
                                         センタービル地下に地下駐車場(有料)を<br />
@@ -135,23 +159,23 @@ export default function Access() {
                                         センタービル地下に地下駐車場(有料)をご用意しております。
                                     </span>
                                 </div>
-                                <div className="mt-2 text-black text-xs sm:text-base md:text-lg">
+                                <div className="mt-2 text-black text-xs sm:text-[0.85rem]">
                                     <div>
                                         時間：8:30~21:30
                                     </div>
-                                    <div>
-                                        料金：1台につき入庫後20分まで...無料<br />
-                                        &emsp;&emsp;&emsp;20分を越え3時間まで...110円<br />
-                                        &emsp;&emsp;&emsp;以降30分ごとに110円加算<br />
-                                        &emsp;&emsp;&emsp;ただし、7時間超え24時間以内は1,100円<br />
-                                        &emsp;&emsp;&emsp;24時間超えは以降30分ごとに110円加算<br />
+                                    <div className="mt-2">
+                                        <div>料金：1台につき入庫後20分まで...無料</div>
+                                        <div className="mt-1.5">&emsp;&emsp;&emsp;20分を越え3時間まで...110円</div>
+                                        <div className="mt-1.5">&emsp;&emsp;&emsp;以降30分ごとに110円加算</div>
+                                        <div className="mt-1.5">&emsp;&emsp;&emsp;ただし、7時間超え24時間以内は1,100円</div>
+                                        <div className="mt-1.5">&emsp;&emsp;&emsp;24時間超えは以降30分ごとに110円加算</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </ScrollMaskContent>
+            </ScrollMaskContent >
         </div >
     );
 }

@@ -20,7 +20,7 @@ export default async function Master() {
         <WorkProvider>
             <div className="
                 absolute inset-0 flex justify-center lg:justify-end lg:mr-[10vw]
-                mt-5
+                mt-5 md:mt-0
             ">
                 <div className="
                     absolute left-[20vw] top-[45vh]
@@ -41,10 +41,10 @@ export default async function Master() {
                 ">
                     <div className="
                         grid grid-cols-2 
-                        gap-x-[3rem] sm:gap-x-[6rem] lg:gap-x-[1rem] 
+                        gap-x-[2rem] sm:gap-x-[6rem] lg:gap-x-[1rem] 
                         text-base sm:text-xl
                         ">
-                        <div className="flex flex-col gap-y-[2rem] lg:gap-y-[1rem] mr-[1vw]">
+                        <div className="flex flex-col gap-y-[1.3rem] sm:gap-y-[2rem] lg:gap-y-[1rem] mr-[1vw]">
                             {leftColumn.map((item) => (
                                 <div
                                     key={`left-${item.authorEnglishName}`}
@@ -63,7 +63,7 @@ export default async function Master() {
                                 </div>
                             ))}
                         </div>
-                        <div className="flex flex-col gap-y-[2rem] lg:gap-y-[1rem]">
+                        <div className="flex flex-col gap-y-[1.3rem] sm:gap-y-[2rem] lg:gap-y-[1rem]">
                             {rightColumn.map((item, i) => (
                                 <div
                                     key={`right-${item.authorEnglishName}`}
