@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useCallback, memo, useEffect } from "react";
-import { getImagePath } from '@/app/_lib/imagePath';
+import { getImagePath } from "@/app/_lib/imagePath";
 import { SOCIAL_LINKS } from "@/app/_lib/socialLinks";
 
 const MENU_LINKS = [
