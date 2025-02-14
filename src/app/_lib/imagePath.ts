@@ -69,7 +69,7 @@ export function getImagePath(path: string): string {
     const filename = path.split('/').pop();
     if (filename && specialEncodingFiles.includes(filename)) {
         return `https://d3jxpylbfj8spt.cloudfront.net${path}`;
-    } else if (path.includes('/profile/')) {
+    } else if (path.includes('profile')) {
         return `https://d3jxpylbfj8spt.cloudfront.net${path}`;
     }
 
