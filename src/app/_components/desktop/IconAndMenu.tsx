@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import HoverImage from "./HoverImage";
-import { getClientImagePath } from '@/app/_lib/imagePath';
+import { getImagePath } from '@/app/_lib/imagePath';
 
 type MenuItemProps = {
     href: string;
@@ -17,8 +17,8 @@ export default function IconAndMenu() {
     const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
     const menuItems: MenuItemProps[] = [
-        { href: "/overview", text: "開催概要", image: getClientImagePath("/desktop/hoverCircles/overview.webp"), index: 0 },
-        { href: "/master", text: "修士研究発表", image: getClientImagePath("/desktop/hoverCircles/master.webp"), index: 1 },
+        { href: "/overview", text: "開催概要", image: getImagePath("/desktop/hoverCircles/overview.webp"), index: 0 },
+        { href: "/master", text: "修士研究発表", image: getImagePath("/desktop/hoverCircles/master.webp"), index: 1 },
         {
             href: "/project",
             text: (
@@ -32,13 +32,13 @@ export default function IconAndMenu() {
                     <span className="-ml-[0.15em]">研究発表</span>
                 </div>
             ),
-            image: getClientImagePath("/desktop/hoverCircles/project.webp"),
+            image: getImagePath("/desktop/hoverCircles/project.webp"),
             index: 2
         },
-        { href: "/related", text: "関連展示", image: getClientImagePath("/desktop/hoverCircles/related.webp"), index: 3 },
-        { href: "/event", text: "イベント", image: getClientImagePath("/desktop/hoverCircles/event.webp"), index: 4 },
-        { href: "/access", text: "交通アクセス", image: getClientImagePath("/desktop/hoverCircles/access.webp"), index: 5 },
-        { href: "/contact", text: "お問い合わせ", image: getClientImagePath("/desktop/hoverCircles/contact.webp"), index: 6 }
+        { href: "/related", text: "関連展示", image: getImagePath("/desktop/hoverCircles/related.webp"), index: 3 },
+        { href: "/event", text: "イベント", image: getImagePath("/desktop/hoverCircles/event.webp"), index: 4 },
+        { href: "/access", text: "交通アクセス", image: getImagePath("/desktop/hoverCircles/access.webp"), index: 5 },
+        { href: "/contact", text: "お問い合わせ", image: getImagePath("/desktop/hoverCircles/contact.webp"), index: 6 }
     ];
 
     return (
@@ -48,7 +48,7 @@ export default function IconAndMenu() {
             }}>
             <Link href="/">
                 <Image
-                    src={getClientImagePath("/desktop/iconAndMenu.webp")}
+                    src={getImagePath("/desktop/iconAndMenu.webp")}
                     alt="アイコンとメニュー"
                     width={180}
                     height={400}

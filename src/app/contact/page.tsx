@@ -3,7 +3,6 @@ import { getImagePath } from '@/app/_lib/imagePath';
 import Image from "next/image";
 import { SOCIAL_LINKS } from "@/app/_lib/socialLinks";
 import { FaXTwitter, FaInstagram, FaYoutube, FaFacebook } from "react-icons/fa6";
-import { getClientImagePath } from "@/app/_lib/imagePath";
 
 export const metadata: Metadata = {
     title: "IAMAS 2025 お問い合わせ",
@@ -85,7 +84,7 @@ export default function Contact() {
                         </li>
                         <li>
                             <a
-                                href={getClientImagePath("/press.pdf")}
+                                href={getImagePath("/press.pdf")}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="

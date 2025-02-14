@@ -8,7 +8,7 @@ import { LanguageProvider } from '@/app/_contexts/LanguageContext';
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { LanguageToggle } from "./LanguageToggle";
 import { MASTER_INFO } from "@/app/_lib/masterInfo";
-import { getClientImagePath } from '@/app/_lib/imagePath';
+import { getImagePath } from '@/app/_lib/imagePath';
 
 export const StudentContent = ({ name }: { name: string }) => {
     const student = MASTER_INFO.find(student =>
@@ -18,8 +18,8 @@ export const StudentContent = ({ name }: { name: string }) => {
     if (!student) return null;
 
     const workImagePath = student.authorEnglishName.split(' ').join('') === 'YuaRiduki'
-        ? getClientImagePath('/event/defaultIAMAS.webp')
-        : getClientImagePath(`/master/work/${student.authorEnglishName.split(' ').join('')}.webp`);
+        ? getImagePath('/event/defaultIAMAS.webp')
+        : getImagePath(`/master/work/${student.authorEnglishName.split(' ').join('')}.webp`);
 
     return (
         <div className="text-black relative h-full text-justify ten-mincho">
@@ -60,7 +60,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                         <div className="flex">
                             <div className="relative bg-black w-[4rem] h-[4rem] mr-1 sm:mr-3 flex-shrink-0">
                                 <Image
-                                    src={getClientImagePath(`/master/profile/${student.authorEnglishName.split(' ').join('')}.webp`)}
+                                    src={getImagePath(`/master/profile/${student.authorEnglishName.split(' ').join('')}.webp`)}
                                     alt={student.authorEnglishName}
                                     layout="fill"
                                     objectFit="contain"
