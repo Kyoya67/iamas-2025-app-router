@@ -5,11 +5,11 @@
 /* フォントの定義 */
 @font-face {
   font-family: 'Ovo';
-  src: url('/fonts/Ovo-Regular.ttf?v=1') format('truetype');
+  src: url('https://d3jxpylbfj8spt.cloudfront.net/fonts/Ovo-Regular.ttf?v=1') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} 
 
 :root {
   --font-body: "ten-mincho-text", serif;

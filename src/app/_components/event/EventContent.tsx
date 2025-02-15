@@ -41,7 +41,6 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
         }
         const imagePath = image.trim().split(' ').join('');
 
-        // プロジェクト研究の場合
         if (event.eventName.includes('プロジェクト研究')) {
             return (
                 <div key={index} className="mb-4">
@@ -74,7 +73,6 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
             );
         }
 
-        // 通常のイベントの場合（既存のレイアウト）
         return (
             <div key={index}>
                 <div className="flex items-end mt-2 mb-2 relative">
