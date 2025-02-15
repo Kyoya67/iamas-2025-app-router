@@ -60,6 +60,18 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                     )}
                 </div>
             );
+        } else if (event.eventName.includes('IAMASのはじまり')) {
+            return (
+                <div key={index}>
+                    <div className="flex items-end mt-5 relative">
+                        <div className="flex flex-col text-base sm:text-xl text-black ten-mincho">
+                            <div className="text-sm">{status}</div>
+                            <div>{name}</div>
+                        </div>
+                    </div>
+                    <div className="text-xs sm:text-sm text-black mb-4 ten-mincho">{profile}</div>
+                </div>
+            );
         }
 
         // 通常のイベントの場合（既存のレイアウト）
@@ -73,7 +85,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         height={85}
                         className="object-contain sm:w-[100px] sm:h-[100px]"
                     />
-                    <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] ml-[] sm:ml-[7rem] ten-mincho">
+                    <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] sm:ml-[7rem] ten-mincho">
                         <div className="text-sm">{status}</div>
                         <div>{name}</div>
                     </div>

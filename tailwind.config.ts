@@ -19,10 +19,6 @@ const config: Config = {
       'xl': '1280px',
     },
     extend: {
-      screens: {
-        'tall': { 'raw': '(min-height: 700px)' },
-        'taller': { 'raw': '(min-height: 800px)' },
-      },
       fontSize: {
         'xxs': '0.67rem',
         'fluid-xs': 'clamp(0.6rem, 2.7vw, 0.8rem)',

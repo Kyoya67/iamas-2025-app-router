@@ -127,7 +127,7 @@ export const MASTER_INFO = [
         "X_URL": "https://x.com/yuntexya_riduki",
         "instagram_URL": "",
         "other_URL": "",
-        "workTitleJapanese": "同業社コミュニティの形成と印刷産業発展の可能性について\n- インタビュー分析による他己紹介をワークショップの契機として -",
+        "workTitleJapanese": "同業社コミュニティの形成と印刷産業発展の可能性について\n― インタビュー分析による他己紹介をワークショップの契機として ―",
         "workTitleEnglish": "Regarding the formation of peer company communities and the possibility of development in the printing industry\n- Using Introduction of the company through interview analysis as a catalyst for the workshop -",
         "workDescriptionJapanese": "印刷産業に携わる中小企業に焦点を当て、印刷産業が活性化するための企業連携の可能性について考察する。複数の印刷会社経営者へのインタビューをもとにワークショップを構成。複数の企業の経営者が参加するワークショップを用いてコミュニティの形成を試みる。これは印刷業界に提言する新たな取り組みである。",
         "workDescriptionEnglish": "Focusing on small and medium-sized enterprises in the printing industry, this study explores the potential for business collaboration to revitalize the sector. Based on interviews with multiple printing company executives, a workshop was designed to foster discussions. By bringing together executives from various companies, the workshop aims to build a community. This represents a novel initiative offering recommendations to the printing industry.",

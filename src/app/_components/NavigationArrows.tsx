@@ -16,8 +16,8 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
             {previousPath && (
                 <div
                     className="
-                        absolute left-0 sm:left-2 -ml-2.5 sm:ml-4 top-1/2 -translate-y-1/2
-                        w-12 sm:w-16 h-[8rem] md:h-[60vh]
+                        absolute left-0 -ml-2.5 sm:ml-4 top-1/2 -translate-y-1/2
+                        w-12 sm:w-18 h-[8rem] md:h-[60vh]
                         flex items-center justify-center
                         cursor-pointer
                         pointer-events-auto
@@ -44,8 +44,8 @@ export function NavigationArrows({ nextPath, previousPath }: NavigationArrowsPro
             {nextPath && (
                 <div
                     className="
-                        absolute right-0 sm:right-2 -mr-2.5 sm:mr-4 top-1/2 -translate-y-1/2
-                        w-12 sm:w-16 h-[8rem] md:h-[60vh]
+                        absolute right-0 -mr-2.5 sm:mr-4 top-1/2 -translate-y-1/2
+                        w-12 sm:w-18 h-[8rem] md:h-[60vh]
                         flex items-center justify-center
                         cursor-pointer
                         pointer-events-auto

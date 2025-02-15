@@ -52,10 +52,6 @@ export default function Modal({
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, [handleKeyDown]);
 
-    useEffect(() => {
-        console.log('Window height:', window.innerHeight);
-    }, []);
-
     return (
         <>
             <Overlay isVisible={true} onClick={handleBack} />
@@ -63,11 +59,7 @@ export default function Modal({
                 <div className="relative w-full h-full">
                     <div className={`
                         absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                        w-[85%] sm:w-[75%] max-w-[50rem]
-                        h-[85vh]
-                        sm:h-[92vh]
-                        max-sm:tall:h-[75vh]
-                        max-sm:taller:h-[85vh]
+                        w-[85%] sm:w-[75%] max-w-[50rem] h-[80vh] sm:h-[92vh]
                         texture-bg rounded-sm
                         text-left
                         p-3 sm:p-6
@@ -75,8 +67,6 @@ export default function Modal({
                         overflow-hidden
                         ten-mincho
                     `}>
-                        <div className="hidden max-sm:tall:block">Tall viewport detected</div>
-                        <div className="hidden max-sm:taller:block">Taller viewport detected</div>
                         {children}
                     </div>
                     <NavigationArrows nextPath={nextPath} previousPath={previousPath} />

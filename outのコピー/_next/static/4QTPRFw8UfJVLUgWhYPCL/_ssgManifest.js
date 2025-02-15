@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fevent\u002F[id]","\u002Fmaster\u002F[name]","\u002Fproject\u002F[name]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

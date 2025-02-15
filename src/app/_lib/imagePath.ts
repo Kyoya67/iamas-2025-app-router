@@ -65,6 +65,7 @@ const specialEncodingFiles = [
     'なぜ私たちは自らの校舎をディストピアと呼ぶのか：トーク.webp',
     'なぜ私たちは自らの校舎をディストピアと呼ぶのか：サイクリングツアー.webp',
     'ポスト言語学：「言葉とは何か」とは何か.webp',
+    'IAMASのはじまり、坂根厳夫先生を偲んで.webp',
 ];
 
 export function getImagePath(path: string): string {
