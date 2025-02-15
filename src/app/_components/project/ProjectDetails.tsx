@@ -85,7 +85,7 @@ export function ProjectDetails({
             <div className={`text-lg sm:text-2xl mb-1 text-[#000f9f] ten-mincho-text ${directoryName === 'CollaborativeDesignResearchProject' ? 'text-left' : 'text-justify'}`}>{project.projectName}</div>
             <div className={`
                 lg:flex
-                justify-between border-b border-[#000f9f] mb-3 pb-1
+                justify-between border-b border-[#000f9f] pb-1
             `}>
                 <div className={`
                     flex
@@ -102,7 +102,7 @@ export function ProjectDetails({
                 </div>
             </div>
             <div className="ten-mincho">
-                <ScrollMaskContent className={`text-black text-sm mb-4 ${isModal ? 'h-[72vh]' : 'h-[50vh]'} mb-4 pr-5 pb-4 flex-1 overflow-y-auto`}>
+                <ScrollMaskContent className={`text-black text-sm pt-3 mb-4 ${isModal ? 'h-[72vh]' : 'h-[50vh]'} mb-4 pr-5 pb-4 flex-1 overflow-y-auto`}>
                     <ProjectSlider
                         directoryName={directoryName}
                         currentImageIndex={currentImageIndex}

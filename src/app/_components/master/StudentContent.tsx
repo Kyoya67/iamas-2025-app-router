@@ -50,7 +50,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                                 研究
                             </div>
                         </div>
-                        <div className="mb-2 border-b border-[#000f9f] pb-4">
+                        <div className="border-b border-[#000f9f] pb-2 sm:pb-4">
                             <div className="flex">
                                 <div className="relative bg-black w-[3rem] sm:w-[4rem] h-[3rem] sm:h-[4rem] mr-1 sm:mr-3 flex-shrink-0">
                                     <Image
@@ -86,13 +86,13 @@ export const StudentContent = ({ name }: { name: string }) => {
                     <ScrollMaskContent className="
                         flex-1 
                         overflow-y-auto 
-                        mb-16 
+                        mt-2 mb-16 
                         pr-5 pb-4
                     ">
                         <LocalizedTextClient
                             ja={student.workTitleJapanese}
                             en={student.workTitleEnglish}
-                            className="text-sm sm:text-lg mb-2 text-[#000f9f] ten-mincho-texttext-left"
+                            className="text-sm sm:text-lg mb-1 text-[#000f9f] ten-mincho-texttext-left"
                         />
                         <div className="mb-4 relative w-full">
                             <div className="aspect-[16/9] relative">

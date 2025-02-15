@@ -19,16 +19,16 @@ export default function Related() {
         ">
             <ScrollMaskContent className="
                 mx-auto
-                w-[70vw] md:w-[50vw]
+                w-[75vw] md:w-[50vw]
                 h-[60vh] lg:h-[70vh]
-                ml-4 pr-4 sm:pr-6 sm:ml-6 pb-[2rem]
+                pr-4 sm:pr-6 sm:ml-6 pb-[2rem]
                 ">
                 <div className="pb-[2rem]">
                     <div className="
                     ten-mincho
                     text-left
                     mb-2
-                    text-2xl
+                    text-xl sm:text-2xl
                     md:flex md:flex-row
                 ">
                         <div>Kioskを用いた展示型</div>
@@ -89,7 +89,7 @@ export default function Related() {
                     ten-mincho
                     mt-8
                     mb-2
-                    text-2xl
+                    text-xl sm:text-2xl
                 ">
                         進学相談会
                     </div>

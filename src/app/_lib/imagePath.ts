@@ -61,7 +61,10 @@ function separateDakuten(str: string): string {
 const specialEncodingFiles = [
     'クリティカルサイクリング.webp',
     'ガムラン演奏.webp',
-    'ジェンダーじゃない話をしよう！.webp'
+    'ジェンダーじゃない話をしよう！.webp',
+    'なぜ私たちは自らの校舎をディストピアと呼ぶのか：トーク.webp',
+    'なぜ私たちは自らの校舎をディストピアと呼ぶのか：サイクリングツアー.webp',
+    'ポスト言語学：「言葉とは何か」とは何か.webp',
 ];
 
 export function getImagePath(path: string): string {
