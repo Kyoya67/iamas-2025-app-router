@@ -83,7 +83,7 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                         height={85}
                         className="object-contain sm:w-[100px] sm:h-[100px]"
                     />
-                    <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] sm:ml-[7rem] ten-mincho">
+                    <div className="flex flex-col text-base sm:text-xl text-black absolute bottom-[-0.3rem] ml-[6rem] sm:ml-[7rem] ten-mincho">
                         <div className="text-sm">{status}</div>
                         <div>{name}</div>
                     </div>

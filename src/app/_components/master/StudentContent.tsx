@@ -86,7 +86,7 @@ export const StudentContent = ({ name }: { name: string }) => {
                     <ScrollMaskContent className="
                         flex-1 
                         overflow-y-auto 
-                        mt-2 mb-16 
+                        pt-2 mb-16 
                         pr-5 pb-4
                     ">
                         <LocalizedTextClient
