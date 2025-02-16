@@ -39,12 +39,14 @@ export const metadata: Metadata = {
     description: "IAMAS 2025 情報科学芸術大学院大学 第23期生修了研究発表会",
     site: "@IAMAS_JP",
     creator: "@IAMAS_JP",
-    images: {
-      url: getImagePath("/ogp.webp"),
-      alt: "IAMAS 2025 ogp画像",
-      width: 1200,
-      height: 630,
-    },
+    images: [
+      {
+        url: getImagePath("/ogp.webp"),
+        alt: "IAMAS 2025 ogp画像",
+        width: 1200,
+        height: 630,
+      }
+    ],
   },
   viewport: {
     width: 'device-width',
