@@ -33,48 +33,73 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
 
         if (!name) return null;
 
+        // イベントタイプに基づいてレンダリング方法を決定
+        if (event.eventName.includes('IAMASのはじまり')) {
+            return renderIAMASStartParticipant(name, status, profile);
+        }
+        if (event.eventName.includes('プロジェクト研究')) {
+            return renderProjectParticipant(name, profile);
+        }
+
+        // 通常のイベント参加者の処理
         let image = name;
-        if (image.includes('(')) {
+        if (event.eventName.includes('Nx') && image.includes('(')) {
             status = image.split('(')[1].replace(')', '');
             image = image.split('(')[0];
             name = image;
         }
-        const imagePath = image.trim().split(' ').join('');
 
-        if (event.eventName.includes('プロジェクト研究')) {
-            return (
-                <div key={index} className="mb-4">
-                    <div className="text-base sm:text-xl text-black">{name}</div>
-                    {profile && profile.startsWith('http') ? (
-                        <a
-                            href={profile}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs sm:text-sm text-[#000f9f] hover:opacity-70 transition-opacity"
-                        >
-                            {profile}
-                        </a>
-                    ) : (
-                        <div className="text-xs sm:text-sm text-black">{profile}</div>
-                    )}
-                </div>
-            );
-        } else if (event.eventName.includes('IAMASのはじまり')) {
-            return (
-                <div key={index}>
-                    <div className="flex items-end mt-5 relative">
-                        <div className="flex flex-col text-base sm:text-xl text-black ten-mincho">
-                            <div className="text-sm">{status}</div>
-                            <div>{name}</div>
-                        </div>
-                    </div>
-                    <div className="text-xs sm:text-sm text-black mb-4 ten-mincho">{profile}</div>
-                </div>
-            );
-        }
+        return renderDefaultParticipant(image, name, status, profile);
+    };
+
+    // IAMASのはじまりイベント用のレンダリング
+    const renderIAMASStartParticipant = (name: string, status: string, profile: string) => {
+        const [mainName, role] = name.split('\n');
+        if (!role) return null;
+
+        const withBrackets = mainName + '\n（' + role.replace(/[（）]/g, '') + '）';
+        const withoutBrackets = mainName + '\n' + role.replace(/[（）]/g, '');
 
         return (
-            <div key={index}>
+            <div>
+                <div className="flex items-end mt-5 relative">
+                    <div className="flex flex-col text-base sm:text-xl text-black ten-mincho">
+                        <div className="text-sm text-[#000f9f]">{status}</div>
+                        <div className="text-base whitespace-pre-wrap md:whitespace-normal mb-1">
+                            <span className="md:hidden">{withoutBrackets}</span>
+                            <span className="hidden md:inline">{withBrackets}</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="text-xs sm:text-sm text-black mb-4 ten-mincho">{profile}</div>
+            </div>
+        );
+    };
+
+    // プロジェクト研究イベント用のレンダリング
+    const renderProjectParticipant = (name: string, profile: string) => (
+        <div className="mb-4">
+            <div className="text-base sm:text-xl text-black">{name}</div>
+            {profile && profile.startsWith('http') ? (
+                <a
+                    href={profile}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs sm:text-sm text-[#000f9f] hover:opacity-70 transition-opacity"
+                >
+                    {profile}
+                </a>
+            ) : (
+                <div className="text-xs sm:text-sm text-black">{profile}</div>
+            )}
+        </div>
+    );
+
+    // デフォルトのイベント参加者レンダリング
+    const renderDefaultParticipant = (image: string, name: string, status: string, profile: string) => {
+        const imagePath = image.trim().split(' ').join('');
+        return (
+            <div>
                 <div className="flex items-end mt-2 mb-2 relative">
                     <Image
                         src={getImagePath(`/event/profile/${imagePath}.webp`)}
