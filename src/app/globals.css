@@ -211,3 +211,73 @@ a[href^="mailto"] {
 
 /* その他のカスタムCSS */
 
+.swiper-pagination-bullet {
+    background: #000f9f !important;
+    opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+
+/* Swiperのカスタムスタイル */
+.swiper-custom-pagination {
+    margin-top: 1rem;
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #000f9f !important;
+    opacity: 0.5 !important;
+    margin: 0 8px;
+}
+
+@media (min-width: 500px) {
+    .swiper-custom-pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        margin: 0 12px;
+    }
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+
+/* Swiperの基本スタイル */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+/* 既存のカスタムページネーションスタイルはそのまま */
+.swiper-custom-pagination {
+    margin-top: 0.5rem;
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #000f9f !important;
+    opacity: 0.5 !important;
+    margin: 0 4px;
+}
+
+@media (min-width: 500px) {
+    .swiper-custom-pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        margin: 0 6px;
+    }
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+

@@ -9,8 +9,14 @@ import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
 import { LanguageToggle } from "./LanguageToggle";
 import { MASTER_INFO } from "@/app/_lib/masterInfo";
 import { getImagePath } from '@/app/_lib/imagePath';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { useState } from 'react';
 
 export const StudentContent = ({ name }: { name: string }) => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const student = MASTER_INFO.find(student =>
         student.authorEnglishName.split(' ').join('') === name
     );
@@ -20,6 +26,8 @@ export const StudentContent = ({ name }: { name: string }) => {
     const workImagePath = student.authorEnglishName.split(' ').join('') === 'YuaRiduki'
         ? getImagePath('/event/defaultIAMAS.webp')
         : getImagePath(`/master/work/${student.authorEnglishName.split(' ').join('')}.webp`);
+
+    const thumbnailPath = getImagePath(`/master/thumbnail/${student.authorEnglishName.split(' ').join('')}.webp`);
 
     return (
         <div className="text-black relative h-full text-justify ten-mincho my-2">
@@ -95,35 +103,84 @@ export const StudentContent = ({ name }: { name: string }) => {
                             className="text-sm sm:text-lg mb-1 text-[#000f9f] ten-mincho-texttext-left"
                         />
                         <div className="mb-4 relative w-full">
-                            <div className="aspect-[16/9] relative">
-                                <Image
-                                    src={workImagePath}
-                                    alt={student.workTitleEnglish}
-                                    layout="fill"
-                                    objectFit="cover"
-                                    className="mix-blend-normal"
-                                />
-                            </div>
+                            {student.interviewLink ? (
+                                <div className="flex flex-col gap-y-2">
+                                    <Swiper
+                                        modules={[Pagination]}
+                                        pagination={{
+                                            clickable: true,
+                                            el: '.swiper-custom-pagination',
+                                        }}
+                                        className="aspect-[16/9] w-full"
+                                        onSlideChange={(swiper) => setCurrentImageIndex(swiper.activeIndex)}
+                                    >
+                                        <SwiperSlide className="w-full">
+                                            <div className="relative w-full h-full">
+                                                <Image
+                                                    src={workImagePath}
+                                                    alt={student.workTitleEnglish}
+                                                    layout="fill"
+                                                    objectFit="cover"
+                                                    className="mix-blend-normal"
+                                                />
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide className="w-full">
+                                            <a
+                                                href={student.interviewLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="relative block w-full h-full group"
+                                            >
+                                                <div className="relative w-full h-full">
+                                                    <Image
+                                                        src={thumbnailPath}
+                                                        alt={`${student.authorEnglishName} thumbnail`}
+                                                        layout="fill"
+                                                        objectFit="cover"
+                                                        className="mix-blend-normal"
+                                                    />
+                                                </div>
+                                                <div className="
+                                                    absolute inset-0 
+                                                    bg-black/50 
+                                                    opacity-0 
+                                                    group-hover:opacity-100 
+                                                    transition-opacity 
+                                                    duration-300 
+                                                    flex 
+                                                    items-center 
+                                                    justify-center
+                                                ">
+                                                    <span className="hidden sm:inline text-white text-sm sm:text-base">
+                                                        インタビュー動画へ
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </SwiperSlide>
+                                    </Swiper>
+                                    <div className="text-xs text-sm text-center text-[#000f9f] ten-mincho sm:hidden">
+                                        {currentImageIndex === 1 ? "インタビュー動画へ" : ""}
+                                    </div>
+                                    <div className="swiper-custom-pagination flex justify-center" />
+                                </div>
+                            ) : (
+                                <div className="aspect-[16/9] relative">
+                                    <Image
+                                        src={workImagePath}
+                                        alt={student.workTitleEnglish}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="mix-blend-normal"
+                                    />
+                                </div>
+                            )}
                         </div>
                         <LocalizedTextClient
                             ja={student.workDescriptionJapanese}
                             en={student.workDescriptionEnglish}
                             className="text-xs sm:text-base mb-2 ten-mincho"
                         />
-                        <div className="mb-4">
-                            {student.interviewLink && (
-                                <a
-                                    href={student.interviewLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-[#000f9f] hover:opacity-70 transition-opacity"
-                                >
-                                    <div>
-                                        インタビュー動画へ
-                                    </div>
-                                </a>
-                            )}
-                        </div>
                         <div className="flex flex-row gap-4">
                             {student.X_URL && (
                                 <a
