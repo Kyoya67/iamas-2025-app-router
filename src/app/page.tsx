@@ -9,7 +9,7 @@ export default async function Home() {
         alt="円"
         fill
         className="
-                max-[500px]:block hidden
+                sm:hidden
                 absolute top-0 right-0 
                 h-screen w-full 
                 object-cover object-right 

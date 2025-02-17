@@ -80,7 +80,7 @@ export default function RootLayout({
               <div className="hidden md:block z-10">
                 <IconAndMenu />
               </div>
-              <div className="max-[500px]:block hidden z-0">
+              <div className="sm:hidden z-0">
                 <MobileBase />
               </div>
               <div className="sm:block hidden z-0">
