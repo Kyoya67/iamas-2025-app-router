@@ -86,6 +86,24 @@ const targetImages = [
     './public/event/ジェンダーじゃない話をしよう！.webp' // 104K
 ];
 
+// thumbnailディレクトリの画像を対象に追加
+const thumbnailImages = [
+    './public/master/thumbnail/BAKSomin.webp',
+    './public/master/thumbnail/HarutoTokubo.webp',
+    './public/master/thumbnail/JUNGJieyun.webp',
+    './public/master/thumbnail/KAWAITakeshi.webp',
+    './public/master/thumbnail/KoseiIzaki.webp',
+    './public/master/thumbnail/MasaruTainaka.webp',
+    './public/master/thumbnail/MasatakaHashimoto.webp',
+    './public/master/thumbnail/MutsushiAsai.webp',
+    './public/master/thumbnail/NanakoMiyazaki.webp',
+    './public/master/thumbnail/RintaroUEDA.webp',
+    './public/master/thumbnail/SantaNARUSE.webp',
+    './public/master/thumbnail/YoshieKikuta.webp',
+    './public/master/thumbnail/YuikoYamaguchi.webp',
+    './public/master/thumbnail/aonaminami.webp'
+];
+
 // 画像の種類によって最適化設定を変える
 function getOptimizationSettings(filepath) {
     const isProfile = filepath.includes('profile');
@@ -120,6 +138,21 @@ function getOptimizationSettings(filepath) {
             fit: 'inside'
         },
         // 追加: より効果的な圧縮オプション
+        nearLossless: true,
+        reductionEffort: 6
+    };
+}
+
+// thumbnail用の最適化設定
+function getThumbnailOptimizationSettings() {
+    return {
+        quality: 50,        // 品質を50%に設定
+        effort: 6,
+        resize: {
+            width: 800,     // 幅を800pxに制限
+            withoutEnlargement: true,
+            fit: 'inside'
+        },
         nearLossless: true,
         reductionEffort: 6
     };
@@ -175,6 +208,49 @@ async function optimizeImage(inputPath) {
     }
 }
 
+async function optimizeThumbnail(inputPath) {
+    try {
+        const info = await sharp(inputPath).metadata();
+        const originalSize = fs.statSync(inputPath).size / 1024; // KBで取得
+        const tempOutputPath = inputPath + '.temp';
+
+        // 最適化を実行
+        await sharp(inputPath)
+            .webp(getThumbnailOptimizationSettings())
+            .toFile(tempOutputPath);
+
+        const newSize = fs.statSync(tempOutputPath).size / 1024;
+
+        // 目標サイズ（100KB）より大きい場合は、さらに圧縮を強める
+        if (newSize > 100) {
+            const harderSettings = {
+                ...getThumbnailOptimizationSettings(),
+                quality: 30,  // より強い圧縮
+                nearLossless: false
+            };
+
+            await sharp(inputPath)
+                .webp(harderSettings)
+                .toFile(tempOutputPath);
+        }
+
+        // 最終的なサイズをチェック
+        const finalSize = fs.statSync(tempOutputPath).size / 1024;
+
+        // ファイルを置き換え
+        fs.unlinkSync(inputPath);
+        fs.renameSync(tempOutputPath, inputPath);
+
+        console.log(`✅ ${path.basename(inputPath)}:`);
+        console.log(`   Before: ${originalSize.toFixed(2)}KB`);
+        console.log(`   After:  ${finalSize.toFixed(2)}KB`);
+        console.log(`   Saved:  ${(originalSize - finalSize).toFixed(2)}KB (${((1 - finalSize / originalSize) * 100).toFixed(1)}%)\n`);
+
+    } catch (error) {
+        console.error(`❌ Error processing ${inputPath}:`, error.message);
+    }
+}
+
 async function processAllImages() {
     console.log('🚀 Starting image optimization...\n');
 
@@ -185,4 +261,15 @@ async function processAllImages() {
     console.log('✨ Optimization complete!');
 }
 
-processAllImages().catch(console.error); 
+async function processThumbnails() {
+    console.log('🚀 Starting thumbnail optimization...\n');
+
+    for (const imagePath of thumbnailImages) {
+        await optimizeThumbnail(imagePath);
+    }
+
+    console.log('✨ Thumbnail optimization complete!');
+}
+
+processAllImages().catch(console.error);
+processThumbnails().catch(console.error); 
