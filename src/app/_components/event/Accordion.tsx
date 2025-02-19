@@ -8,10 +8,10 @@ export const Accordion = ({ days }: { days: { id: string; label: string }[] }) =
     const { selectedDay, setSelectedDay } = useEvent();
 
     return (
-        <div className="md:hidden mt-[5vh] relative">
+        <div className="md:hidden mt-[6.5vh] relative">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full text-left text-lg border-b-[0.1rem] border-[#000f9f] mb-4 pb-2 flex"
+                className="w-full text-left text-lg border-b-[0.1rem] border-[#000f9f] pb-2 flex"
             >
                 <div className="flex border-[0.1rem] border-[#000f9f] bg-white px-2">
                     <span>{days.find(day => day.id === selectedDay)?.label}</span>

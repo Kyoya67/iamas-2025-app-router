@@ -15,6 +15,21 @@ export default function TwoColumDisplay({ formattedData }: ProjectDisplayProps) 
             top-[45vh]
             translate-y-[-50%]
         ">
+            <h1 className="
+                    text-black
+                    text-base sm:text-xl lg:text-2xl
+                    ten-mincho
+                    border-b border-black
+                ">
+                プロジェクト研究展示
+            </h1>
+            <div className="
+                    text-[#000f9f]
+                    text-xs sm:text-sm lg:text-base
+                    ten-mincho mb-6
+                ">
+                22-24日 | 13:00 ~ 14:00
+            </div>
             <div className="w-[25vw] flex flex-col gap-y-6">
                 {formattedData.map((item) => (
                     <Link

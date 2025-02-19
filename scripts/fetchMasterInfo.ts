@@ -3,7 +3,7 @@ import path from 'path';
 
 async function fetchMasterInfo() {
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbyYxRT-0jIBFPaNyZR0JJnQQ5RbizAsixj5zldhpRPYZXp1jiL2q0ufZIMSSH6JMy_0OQ/exec');
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyghS8Mb6r2D_Km5ih6XVwUfpM2dOTvjyHlbDv9FuaRxE2MEtO6UYpPxs7kmWnLRPHaYg/exec');
         const data = await response.json();
 
         // 整形されたTypeScriptコードを生成

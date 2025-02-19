@@ -1,5 +1,5 @@
 import { ScrollMaskContent } from "@/app/_components/ScrollMaskContent";
-import { ProjectSlider } from "./ProjectSlider";
+import { ProjectImageSlider } from "./ProjectImageSlider";
 import { PROJECT_INFO } from "@/app/_lib/projectInfo";
 
 type ProjectDetailsProps = {
@@ -14,7 +14,6 @@ type ProjectDetailsProps = {
 export function ProjectDetails({
     project,
     directoryName,
-    currentImageIndex,
     setCurrentImageIndex,
     pictureNum,
     isModal
@@ -103,13 +102,12 @@ export function ProjectDetails({
             </div>
             <div className="ten-mincho">
                 <ScrollMaskContent className={`text-black text-sm pt-3 mb-4 ${isModal ? 'h-[72vh]' : 'h-[50vh]'} mb-4 pr-5 pb-[2rem] flex-1 overflow-y-auto`}>
-                    <ProjectSlider
+                    <ProjectImageSlider
                         directoryName={directoryName}
-                        currentImageIndex={currentImageIndex}
-                        setCurrentImageIndex={setCurrentImageIndex}
                         totalImages={pictureNum}
                         projectName={project.projectName}
                         captions={captions}
+                        onSlideChange={setCurrentImageIndex}
                     />
                     <div className="font-bold text-base sm:text-xl mb-2 ten-mincho-texttext-[#000f9f]">研究概要</div>
                     <div className={`text-xs sm:text-sm mb-4 whitespace-pre-wrap ten-mincho-text${directoryName === 'ExtremeBiologies' ? 'text-left' : 'text-justify'}`}>

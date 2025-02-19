@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run prefetch && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prefetch": "ts-node --project tsconfig.node.json scripts/fetchEventInfo.ts && ts-node --project tsconfig.node.json scripts/fetchMasterInfo.ts"

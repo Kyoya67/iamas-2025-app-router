@@ -6,7 +6,7 @@ export const NonAccordion = ({ days }: { days: { id: string; label: string }[] }
     const { selectedDay, setSelectedDay } = useEvent();
 
     return (
-        <div className="hidden md:flex justify-between text-md border-b-[0.1rem] border-[#000f9f] mb-4 pb-2">
+        <div className="hidden md:flex justify-between text-md border-b-[0.1rem] border-[#000f9f] pb-2">
             {days.map((day) => (
                 <label
                     key={day.id}

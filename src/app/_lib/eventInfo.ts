@@ -49,7 +49,7 @@ export const EVENTS = [
         "student3": "BAK Somin"
     },
     {
-        "eventName": "クリティカルサイクリング　―寒中ライド―",
+        "eventName": "クリティカルサイクリング\n―寒中ライド―",
         "exhibitors": "クリティカル・サイクリング",
         "day": "Saturday",
         "time": "8:00-10:30",
@@ -60,7 +60,7 @@ export const EVENTS = [
     },
     {
         "eventName": "プロジェクト研究：口頭発表",
-        "exhibitors": "体験拡張表現プロジェクト・Collaborative Design Research Project・場所・感覚・メディア・テクノロジーの〈解釈学〉",
+        "exhibitors": "・Collaborative Design Research Project\n・テクノロジーの〈解釈学〉\n・体験拡張表現プロジェクト\n・場所・感覚・メディア",
         "day": "Saturday",
         "time": "11:00-12:00",
         "place": "レセプションルーム大特設ステージ(12F)",
@@ -75,11 +75,11 @@ export const EVENTS = [
         "participant4_profile": "https://www.iamas.ac.jp/master_projects/interpretive-practices-of-technology/"
     },
     {
-        "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか：トーク",
+        "eventName": "なぜ私たちは自らの校舎を\nディストピアと呼ぶのか：\nサイクリングツアー",
         "exhibitors": "志村翔太・坂根大悟・赤松正行",
-        "day": "Saturday",
-        "time": "12:00-13:00",
-        "place": "メインステージ(4F)",
+        "day": "Sunday",
+        "time": "7:00-10:30",
+        "place": "ソフトピア・ジャパン・センタービル 北玄関前(1F)",
         "content": "梶原岐阜県知事時代の箱物行政政策によって誕生したセンタービルをはじめとする建築群と、運動体設計プロジェクト内で昨年実施したIAMAS旧校舎や門入集落へのリサーチ、荒川修作に関する調査、さらに2024年10月に訪問した磯崎新による奈義町美術館（「建築と作品が一体化した公共建築」）と養老天命反転地の比較を関連付け、「エッジ」の視点から考察を行います。ゲストとして東京藝術大学メディア映像M1の坂根大悟さんをお迎えし、彼の専門である鉄道史の視点から大垣と箱物について話題提供をいただきます。午後には自転車に乗って実際に養老へ向かい、養老天命反転地を訪問しつつ、センタービルが街の外れから見える境界（エッジ）を探ります。",
         "student1": "Shota Shimura",
         "participant1_name": "坂根大悟",
@@ -99,8 +99,8 @@ export const EVENTS = [
         "participant1_profile": "IAMASガムラン部は、岡戸香里先生のご指導のもと、IAMASの有志学生のみならず、岐阜県内外の方も含めたメンバーで構成されています。IAMAS外部の方の参加を心よりお待ちしております。ガムランに興味のある方は是非お声がけください。"
     },
     {
-        "eventName": "プロジェクト研究：展示コアタイム",
-        "exhibitors": "体験拡張表現プロジェクト・福祉の技術プロジェクト3・The Art of Listening・Extreme Biologies・Collaborative Design Research Project・テクノロジーの〈解釈学〉",
+        "eventName": "プロジェクト研究：\n展示コアタイム",
+        "exhibitors": "・Collaborative Design Research Project\n・体験拡張表現プロジェクト\n・テクノロジーの〈解釈学〉\n・福祉の技術プロジェクト\n・The Art of Listening\n・Extreme Biologies",
         "day": "Saturday",
         "time": "13:00-14:00",
         "place": "レセプションルーム大(12F)",
@@ -120,7 +120,7 @@ export const EVENTS = [
     },
     {
         "eventName": "ジェンダーじゃない話をしよう！",
-        "exhibitors": "菅実花・松井茂・小林史佳・早田仁知\n・髙岸航平(ファシリテーター)",
+        "exhibitors": "菅実花・松井茂・小林史佳・早田仁知\n・髙岸航平（ファシリテーター）",
         "day": "Saturday",
         "time": "14:00-15:30",
         "place": "メインステージ(4F)",
@@ -168,22 +168,8 @@ export const EVENTS = [
         "participant4_profile": "乱数発生器は観客に反応するのか？乱数発生器が観客の情動に反応するというアイデアを実証するための実験的パフォーマンス"
     },
     {
-        "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか ：サイクリングツアー",
-        "exhibitors": "志村翔太・坂根大悟・赤松正行",
-        "day": "Sunday",
-        "time": "7:00-10:30",
-        "place": "ソフトピア・ジャパン・センタービル 北玄関前(1F)",
-        "content": "梶原岐阜県知事時代の箱物行政政策によって誕生したセンタービルをはじめとする建築群と、運動体設計プロジェクト内で昨年実施したIAMAS旧校舎や門入集落へのリサーチ、荒川修作に関する調査、さらに2024年10月に訪問した磯崎新による奈義町美術館（「建築と作品が一体化した公共建築」）と養老天命反転地の比較を関連付け、「エッジ」の視点から考察を行います。ゲストとして東京藝術大学メディア映像M1の坂根大悟さんをお迎えし、彼の専門である鉄道史の視点から大垣と箱物について話題提供をいただきます。午後には自転車に乗って実際に養老へ向かい、養老天命反転地を訪問しつつ、センタービルが街の外れから見える境界（エッジ）を探ります。",
-        "student1": "Shota Shimura",
-        "participant1_name": "坂根大悟",
-        "participant1_profile": "1995年旧大宮市出身。学習院大学文学部史学科卒業。東京藝術大学映像研究科メディア映像専攻修士１年。その土地の持つ歴史や都市を題材に、相反するものが共存しながら、複数の可能性が同時存在する「陰陽太極図的メディア空間」を探求しつつ、立体、映像、中間媒介物を組み合わせ、作品を制作。主な展示歴に2023 年さいたま国際芸術祭公募作品展、2022年六本木アートナイト・オープンコールプロジェクトなど。",
-        "participant2_name": "赤松正行",
-        "participant2_status": "IAMAS教授",
-        "participant2_profile": "1961年兵庫県生まれ。メディア作家。京都市立芸術大学大学院美術研究科修了、 博士（美術）。インタラクティブな音楽や映像作品を制作、近年はモビリティとリアリティをテーマにテクノロジーが人と社会へ及ぼす影響を制作を通して考察している。代表作は書籍「Maxの教科書」、「iOSの教科書」、アプリ「Spatial Poetry」、「セカイカメラ（頓智ドット）」、インスタレーション「ウロボロスのトーチ」 など。"
-    },
-    {
         "eventName": "プロジェクト研究：口頭発表",
-        "exhibitors": "運動体設計・The Art of Listening・Extreme Biologies",
+        "exhibitors": "・The Art of Listening\n・Extreme Biologies\n・運動体設計",
         "day": "Sunday",
         "time": "11:00-12:00",
         "place": "レセプションルーム大特設ステージ(12F)",
@@ -207,8 +193,8 @@ export const EVENTS = [
         "student3": "Kosei Izaki"
     },
     {
-        "eventName": "プロジェクト研究：展示コアタイム",
-        "exhibitors": "体験拡張表現プロジェクト・福祉の技術プロジェクト3・The Art of Listening・Extreme Biologies・Collaborative Design Research Project・テクノロジーの〈解釈学〉",
+        "eventName": "プロジェクト研究：\n展示コアタイム",
+        "exhibitors": "・Collaborative Design Research Project\n・体験拡張表現プロジェクト\n・テクノロジーの〈解釈学〉\n・福祉の技術プロジェクト\n・The Art of Listening\n・Extreme Biologies",
         "day": "Sunday",
         "time": "13:00-14:00",
         "place": "レセプションルーム大(12F)",
@@ -227,8 +213,8 @@ export const EVENTS = [
         "participant6_profile": "https://www.iamas.ac.jp/master_projects/interpretive-practices-of-technology/"
     },
     {
-        "eventName": "ポスト言語学：「言葉とは何か」とは何か",
-        "exhibitors": "早田仁知・伊藤雄馬・マユンキキ・髙岸航平",
+        "eventName": "ポスト言語学：\n「言葉とは何か」とは何か",
+        "exhibitors": "早田仁知・伊藤雄馬・マユンキキ\n・髙岸航平",
         "day": "Sunday",
         "time": "14:00-15:30",
         "place": "メインステージ(4F)",
@@ -246,7 +232,7 @@ export const EVENTS = [
         "participant4_profile": "学部の専門は漆工と木工。成層圏で漆造形作品を撮影する「宙漆プロジェクト」代表。現在は生成AIを通した芸術教育について研究に取り組む。"
     },
     {
-        "eventName": "技術/手法の実験の積み重ねから生まれる視覚表現を紐解く",
+        "eventName": "技術/手法の実験の積み重ねから\n生まれる視覚表現を紐解く",
         "exhibitors": "成瀬陽太・橋本麦・石川将也",
         "day": "Sunday",
         "time": "16:00-17:30",
@@ -263,7 +249,7 @@ export const EVENTS = [
     {
         "eventName": "レセプション",
         "day": "Sunday",
-        "time": "18:00-",
+        "time": "18:30-20:00",
         "place": "こみゅれす 美濃味匠(1F)",
         "content": "来場者の皆さまと学生・教職員との親睦を深めるためのパーティ。どなたでもお気軽にご参加ください。"
     },
@@ -278,8 +264,8 @@ export const EVENTS = [
         "student2": "Yua Riduki"
     },
     {
-        "eventName": "プロジェクト研究：展示コアタイム",
-        "exhibitors": "体験拡張表現プロジェクト・福祉の技術プロジェクト3・The Art of Listening・Extreme Biologies・Collaborative Design Research Project・テクノロジーの〈解釈学〉",
+        "eventName": "プロジェクト研究：\n展示コアタイム",
+        "exhibitors": "・Collaborative Design Research Project\n・体験拡張表現プロジェクト\n・テクノロジーの〈解釈学〉\n・福祉の技術プロジェクト\n・The Art of Listening\n・Extreme Biologies",
         "day": "Monday",
         "time": "13:00-14:00",
         "place": "レセプションルーム大(12F)",
@@ -298,8 +284,8 @@ export const EVENTS = [
         "participant6_profile": "https://www.iamas.ac.jp/master_projects/interpretive-practices-of-technology/"
     },
     {
-        "eventName": "IAMASのはじまり、坂根厳夫先生を偲んで",
-        "exhibitors": "岩井俊雄・ 山元史朗・ クワクボリョウタ(聞き手)",
+        "eventName": "IAMASのはじまり、\n坂根厳夫先生を偲んで",
+        "exhibitors": "岩井俊雄・ 山元史朗・鈴木宣也\n・ クワクボリョウタ(聞き手)",
         "day": "Monday",
         "time": "16:00-17:30",
         "place": "メインステージ(4F)",
@@ -310,10 +296,10 @@ export const EVENTS = [
         "participant2_name": "山元史朗\n（テクニカルディレクター）",
         "participant2_status": "※ゲスト",
         "participant2_profile": "1970年生まれ。テクニカルディレクター、日本大学芸術学部非常勤講師。筑波大学大学院芸術研究科修了後、IAMAS、YCAMの設立に携わり、日本科学未来館で企画展・巡回展の制作を担当。2012年よりフリーランスのテクニカルディレクターとして、メディアアートを中心に展示技術の開発やテクニカルディレクションを手がける。現在、2026年開館予定の「MoN Takanawa」の設立準備にも携わっている。",
-        "participant3_name": "クワクボリョウタ\n（情報科学芸術大学院大学 教授）",
-        "participant3_status": "：聞き手",
-        "participant4_name": "鈴木宣也\n（情報科学芸術大学院大学 学長）",
-        "participant4_profile": "慶應義塾大学環境情報学部卒業時、情報通信技術を用いたメディアアートの活動をはじめる。IAMAS開学時には助手を務め、現在は情報科学芸術大学院大学学長。メディアアートで得た知見から、インタラクションデザインやデザインプロセス、ヴィジュアルリテラシーについて研究をすすめる。アート、デザイン、工学などの複合領域を横断しながら活動している。"
+        "participant3_name": "鈴木宣也\n（情報科学芸術大学院大学 学長）",
+        "participant3_profile": "慶應義塾大学環境情報学部卒業時、情報通信技術を用いたメディアアートの活動をはじめる。IAMAS開学時には助手を務め、現在は情報科学芸術大学院大学学長。メディアアートで得た知見から、インタラクションデザインやデザインプロセス、ヴィジュアルリテラシーについて研究をすすめる。アート、デザイン、工学などの複合領域を横断しながら活動している。",
+        "participant4_name": "クワクボリョウタ\n（情報科学芸術大学院大学 教授）",
+        "participant4_status": "：聞き手"
     },
     {
         "eventName": "IAMASONIC 2025 - pit in",

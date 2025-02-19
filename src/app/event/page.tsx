@@ -26,7 +26,7 @@ export default function Event() {
                 w-fit h-fit
             ">
                 <div className="
-                    w-[80vw] md:w-[58vw] xl:w-[29rem]
+                    w-[90vw] md:w-[58vw] xl:w-[29rem]
                     flex flex-col xl:flex-row
                     md:ml-[8vw] 
                     mt-[12vh] md:mt-[20vh]
@@ -45,7 +45,7 @@ export default function Event() {
                         <EventImage />
                     </div>
 
-                    <div className="w-full px-4">
+                    <div className="px-4">
                         <Accordion days={days} />
                         <NonAccordion days={days} />
                         <Schedule />

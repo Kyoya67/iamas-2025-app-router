@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function Access() {
     return (
         <div className="
-            absolute inset-0 w-[75%] min-h-screen
-            sm:w-[80%] sm:max-w-[32rem] 
+            absolute inset-0 w-[81%] min-h-screen
+            sm:w-[80%] sm:max-w-[32rem]
             md:max-w-[70vw]
             mx-auto 
             ten-mincho-text
@@ -73,7 +73,7 @@ export default function Access() {
                                     </div>
                                     <div className="h-[1px] bg-[#000f9f] flex-grow"></div>
                                 </div>
-                                <div className="text-[0.63rem] sm:text-sm ten-mincho-text text-black">
+                                <div className="text-[0.7rem] sm:text-sm ten-mincho-text text-black">
                                     <div>
                                         タクシー：JR大垣駅南口から約5分
                                     </div>
@@ -104,7 +104,7 @@ export default function Access() {
                                     </h2>
                                     <div className="h-[1px] bg-[#000f9f] flex-grow"></div>
                                 </div>
-                                <div className="text-[0.63rem] sm:text-sm ten-mincho-text text-black">
+                                <div className="text-[0.73rem] sm:text-sm ten-mincho-text text-black">
                                     <div>
                                         JR 東京駅からJR 名古屋駅：新幹線1時間40分<br />
                                         JR 名古屋駅からJR 大垣駅：東海道本線・新快速30分<br />
@@ -116,7 +116,7 @@ export default function Access() {
                                     </h2>
                                     <div className="h-[1px] bg-[#000f9f] flex-grow"></div>
                                 </div>
-                                <div className="text-[0.63rem] sm:text-sm ten-mincho-text text-black">
+                                <div className="text-[0.73rem] sm:text-sm ten-mincho-text text-black">
                                     <div>
                                         JR 新大阪駅からJR 米原駅：新幹線40分<br />
                                         JR 米原駅からJR 大垣駅：東海道本線・普通列車30分<br />
@@ -128,7 +128,7 @@ export default function Access() {
                                     </h2>
                                     <div className="h-[1px] bg-[#000f9f] flex-grow"></div>
                                 </div>
-                                <div className="text-[0.6rem] sm:text-[0.85rem] ten-mincho-text text-black">
+                                <div className="text-[0.66rem] sm:text-[0.85rem] ten-mincho-text text-black">
                                     <div>
                                         セントレア空港からJR 金山駅：名古屋鉄道ミュースカイ30分<br />
                                         JR 金山駅からJR 大垣駅：JR 東海道本線・新快速40分
