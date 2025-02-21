@@ -143,13 +143,37 @@ export const EventContent = ({ day, time }: { day: string, time: string }) => {
                 {(() => {
                     return (
                         <ScrollMaskContent className="h-[70vh] mb-4 pr-5 pb-2 flex-1 overflow-y-auto">
-                            <div className="relative w-full aspect-[16/9] my-4 border-[0.08px] border-black">
+                            <div className="relative w-full aspect-[16/9] my-4 border-[0.08px] border-black group">
                                 <Image
                                     src={getImagePath(getEventImagePath(event))}
                                     alt={event.eventName ?? ''}
                                     fill
                                     className="contain"
                                 />
+                                {event.archiveLink && (
+                                    <div className="absolute top-1 left-1 md:top-2 md:left-2">
+                                        <a
+                                            href={event.archiveLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 
+                                                     bg-[#000f9f] 
+                                                     text-white
+                                                     rounded-md shadow-md
+                                                     transition-all duration-300 ease-in-out group
+                                                     hover:bg-[#000f9f]/90 hover:scale-105 hover:shadow-lg"
+                                        >
+                                            <svg
+                                                className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-1.5"
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                                            </svg>
+                                            <span className="text-[10px] sm:text-xs font-medium tracking-wider">アーカイブ配信</span>
+                                        </a>
+                                    </div>
+                                )}
                             </div>
                             <div className="text-sm sm:text-base text-black mb-4 ten-mincho whitespace-pre-wrap">{event.content}</div>
                             {[1, 2, 3, 4, 5, 6].map(index => (

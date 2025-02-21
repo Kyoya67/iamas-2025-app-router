@@ -14,7 +14,8 @@ export const EVENTS = [
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Santa Naruse",
         "student2": "Haruto Tokubo",
-        "student3": "Mio Matsui"
+        "student3": "Mio Matsui",
+        "archiveLink": "https://www.youtube.com/watch?v=V1sKdkaM2AU"
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -24,7 +25,8 @@ export const EVENTS = [
         "place": "メインステージ(4F)",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Masataka Hashimoto",
-        "student2": "Rintaro UEDA"
+        "student2": "Rintaro UEDA",
+        "archiveLink": "https://www.youtube.com/watch?v=kQChBabqwnk"
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -35,7 +37,8 @@ export const EVENTS = [
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Azumi Shima",
         "student2": "Makoto Takemoto",
-        "student3": "Nanako Miyazaki"
+        "student3": "Nanako Miyazaki",
+        "archiveLink": "https://www.youtube.com/watch?v=TaNvQYDVF3o"
     },
     {
         "eventName": "IAMAS JUNCTION",
@@ -46,7 +49,8 @@ export const EVENTS = [
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "aona minami",
         "student2": "Tomomi Goto",
-        "student3": "BAK Somin"
+        "student3": "BAK Somin",
+        "archiveLink": "https://www.youtube.com/watch?v=OBRmX9iwMrs"
     },
     {
         "eventName": "クリティカルサイクリング\n―寒中ライド―",
@@ -86,7 +90,8 @@ export const EVENTS = [
         "participant1_profile": "1995年旧大宮市出身。学習院大学文学部史学科卒業。東京藝術大学映像研究科メディア映像専攻修士１年。その土地の持つ歴史や都市を題材に、相反するものが共存しながら、複数の可能性が同時存在する「陰陽太極図的メディア空間」を探求しつつ、立体、映像、中間媒介物を組み合わせ、作品を制作。主な展示歴に2023 年さいたま国際芸術祭公募作品展、2022年六本木アートナイト・オープンコールプロジェクトなど。",
         "participant2_name": "赤松正行",
         "participant2_status": "IAMAS教授",
-        "participant2_profile": "1961年兵庫県生まれ。メディア作家。京都市立芸術大学大学院美術研究科修了、 博士（美術）。インタラクティブな音楽や映像作品を制作、近年はモビリティとリアリティをテーマにテクノロジーが人と社会へ及ぼす影響を制作を通して考察している。代表作は書籍「Maxの教科書」、「iOSの教科書」、アプリ「Spatial Poetry」、「セカイカメラ（頓智ドット）」、インスタレーション「ウロボロスのトーチ」 など。"
+        "participant2_profile": "1961年兵庫県生まれ。メディア作家。京都市立芸術大学大学院美術研究科修了、 博士（美術）。インタラクティブな音楽や映像作品を制作、近年はモビリティとリアリティをテーマにテクノロジーが人と社会へ及ぼす影響を制作を通して考察している。代表作は書籍「Maxの教科書」、「iOSの教科書」、アプリ「Spatial Poetry」、「セカイカメラ（頓智ドット）」、インスタレーション「ウロボロスのトーチ」 など。",
+        "archiveLink": "https://youtube.com/live/1cDtA8LsRt8?feature=share"
     },
     {
         "eventName": "ガムラン演奏",
@@ -150,7 +155,8 @@ export const EVENTS = [
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Yuiko Yamaguchi",
         "student2": "JUNG Jieyun",
-        "student3": "Yoshie Kikuta"
+        "student3": "Yoshie Kikuta",
+        "archiveLink": "https://youtube.com/live/lBuhj7Raw7A?feature=share"
     },
     {
         "eventName": "NxPC.Live vol.72 唵楽と影像",
@@ -168,7 +174,7 @@ export const EVENTS = [
         "participant4_profile": "乱数発生器は観客に反応するのか？乱数発生器が観客の情動に反応するというアイデアを実証するための実験的パフォーマンス"
     },
     {
-        "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか：\nサイクリングツアー",
+        "eventName": "なぜ私たちは自らの校舎をディストピアと呼ぶのか ：\nサイクリングツアー",
         "exhibitors": "志村翔太・坂根大悟・赤松正行",
         "day": "Sunday",
         "time": "7:00-10:30",
@@ -204,7 +210,8 @@ export const EVENTS = [
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Masaru Tainaka",
         "student2": "KAWAI Takeshi",
-        "student3": "Kosei Izaki"
+        "student3": "Kosei Izaki",
+        "archiveLink": "https://youtube.com/live/n3kgF0UgGig?feature=share"
     },
     {
         "eventName": "プロジェクト研究：\n展示コアタイム",
@@ -243,7 +250,8 @@ export const EVENTS = [
         "participant3_profile": "2001年生まれ。東京外大言語文化学部ヒンディー語専攻卒業。学部時代には音声学を専門にし、日本語とヒンディー語のオノマトペ対照をテーマに研究。多言語社会であるインド・デリー大学への交換留学を経て、現在は言語の消滅・忘却に関する研究と制作に取り組む。学外では作詞作曲家として楽曲制作等の活動も行っている。",
         "participant4_name": "髙岸航平",
         "participant4_status": "IAMAS修士1年",
-        "participant4_profile": "学部の専門は漆工と木工。成層圏で漆造形作品を撮影する「宙漆プロジェクト」代表。現在は生成AIを通した芸術教育について研究に取り組む。"
+        "participant4_profile": "学部の専門は漆工と木工。成層圏で漆造形作品を撮影する「宙漆プロジェクト」代表。現在は生成AIを通した芸術教育について研究に取り組む。",
+        "archiveLink": "https://youtube.com/live/5YMvUnarf4o?feature=share"
     },
     {
         "eventName": "技術/手法の実験の積み重ねから\n生まれる視覚表現を紐解く",
@@ -258,7 +266,8 @@ export const EVENTS = [
         "participant1_profile": "実験映像やハッカー文化に影響を受け、CGIからコマ撮りアニメーション、ミュージック・ビデオ、インタラクティブ作品まで、多岐に渡って個人で制作を続けてきた。さまざまな表現手法の実験の積み重ねにより、多様な視覚表象のスタイルを模索している。",
         "participant2_name": "石川将也",
         "participant2_status": "グラフィックデザイナー / 研究者",
-        "participant2_profile": "1980年生まれ。慶應義塾大学大学院 政策・メディア研究科 修了。佐藤雅彦研究室を経て、2019年までクリエイティブグループ「ユーフラテス」に所属。20年独立。視覚表現の開発と、視覚認知の研究を基点に、グラフィックデザイン、映像、インスタレーション、科学玩具とそれを用いたワークショップの開発など、さまざま活動している。代表作に「factory of dream」「そうとしかみえない」「歩くの歌」（Eテレ2355 / 0655）「ねじねじの歌」「クッキー型の型の歌」（ピタゴラスイッチ）、「Layers Act」「光のレイヤー」「マグネタクトアニマル」「四角が行く」「開け箱」など。2024年より U-NEXT Kids オリジナルコンテンツ「ねむるま えほん」「うご工作」の監督として企画の立案から携わっている。"
+        "participant2_profile": "1980年生まれ。慶應義塾大学大学院 政策・メディア研究科 修了。佐藤雅彦研究室を経て、2019年までクリエイティブグループ「ユーフラテス」に所属。20年独立。視覚表現の開発と、視覚認知の研究を基点に、グラフィックデザイン、映像、インスタレーション、科学玩具とそれを用いたワークショップの開発など、さまざま活動している。代表作に「factory of dream」「そうとしかみえない」「歩くの歌」（Eテレ2355 / 0655）「ねじねじの歌」「クッキー型の型の歌」（ピタゴラスイッチ）、「Layers Act」「光のレイヤー」「マグネタクトアニマル」「四角が行く」「開け箱」など。2024年より U-NEXT Kids オリジナルコンテンツ「ねむるま えほん」「うご工作」の監督として企画の立案から携わっている。",
+        "archiveLink": "https://youtube.com/live/hSqGNcGTPnQ?feature=share"
     },
     {
         "eventName": "レセプション",
@@ -275,7 +284,8 @@ export const EVENTS = [
         "place": "メインステージ(4F)",
         "content": "IAMASで扱われている研究分野は多様であるゆえに、学生間でも他の人の研究は知っているようで知らないものです。異なる目的地へ向かう者が行き交いながらも合流する交通の要所「JUNCTION」のように、修士二年生の出展者同士が談話を通して互いの研究テーマについて話し合うIAMAS JUNCTIONを開催します。",
         "student1": "Mutsushi Asai",
-        "student2": "Yua Riduki"
+        "student2": "Yua Riduki",
+        "archiveLink": "https://youtube.com/live/bRJBUoEfakU?feature=share"
     },
     {
         "eventName": "プロジェクト研究：\n展示コアタイム",
@@ -313,7 +323,8 @@ export const EVENTS = [
         "participant3_name": "鈴木宣也\n（情報科学芸術大学院大学 学長）",
         "participant3_profile": "慶應義塾大学環境情報学部卒業時、情報通信技術を用いたメディアアートの活動をはじめる。IAMAS開学時には助手を務め、現在は情報科学芸術大学院大学学長。メディアアートで得た知見から、インタラクションデザインやデザインプロセス、ヴィジュアルリテラシーについて研究をすすめる。アート、デザイン、工学などの複合領域を横断しながら活動している。",
         "participant4_name": "クワクボリョウタ\n（情報科学芸術大学院大学 教授）",
-        "participant4_status": "：聞き手"
+        "participant4_status": "：聞き手",
+        "archiveLink": "https://www.youtube.com/live/ByNouXNEGOA"
     },
     {
         "eventName": "IAMASONIC 2025 - pit in",
