@@ -22,7 +22,7 @@ export const Schedule = () => {
                 {filteredEvents.map((event, index) => {
                     const eventPath = `${selectedDay.toLowerCase()}${index}`;
 
-                    const dystopiaCyclingEvent = "なぜ私たちは自らの校舎を\nディストピアと呼ぶのか：\nサイクリングツアー";
+                    const dystopiaCyclingEvent = "なぜ私たちは自らの校舎をディストピアと呼ぶのか：\nサイクリングツアー";
                     const longTitleEvent = "技術/手法の実験の積み重ねから\n生まれる視覚表現を紐解く";
                     const dystopiaTalkEvent = "なぜ私たちは自らの校舎を\nディストピアと呼ぶのか：トーク";
                     const projectEvent = "プロジェクト研究：\n展示コアタイム";
