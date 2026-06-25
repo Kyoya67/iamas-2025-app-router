@@ -16,6 +16,7 @@ IAMAS（情報科学芸術大学院大学）卒業・修了制作展 2025 の公
     <td align="center"><b>Mobile</b></td>
   </tr>
 </table>
+
 ## Overview
 
 本プロジェクトでは、卒業・修了制作展のWebサイト開発を1人で担当しました。
