@@ -2,6 +2,20 @@
 
 IAMAS（情報科学芸術大学院大学）卒業・修了制作展 2025 の公式Webサイトです。
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/55917158-7118-4991-bcd5-142ee618ab49" alt="Desktop" width="100%" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/c47f989b-d93c-4c5f-abe9-9ed957e2d4e2" alt="Mobile" width="80%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>PC</b></td>
+    <td align="center"><b>Mobile</b></td>
+  </tr>
+</table>
 ## Overview
 
 本プロジェクトでは、卒業・修了制作展のWebサイト開発を1人で担当しました。
